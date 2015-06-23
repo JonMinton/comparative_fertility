@@ -53,7 +53,7 @@ spool_asfr_figs <- function(x){
     "asfr_", this_country, "_(", min_year, "_", max_year, ")" 
   )
   
-  png(paste0("figures/hfd/asfr/", file_label, ".png"),
+  png(paste0("figures/asfr/", file_label, ".png"),
       res=300, width=25, height=25, units = "cm"
   )
   
@@ -103,7 +103,7 @@ spool_cpfr_figs <- function(x){
     "cpfr_", this_country, "_(", min_year, "_", max_year, ")" 
   )
   
-  png(paste0("figures/hfd/cpfr/", file_label, ".png"),
+  png(paste0("figures/cpfr/", file_label, ".png"),
       res=300, width=25, height=25, units = "cm"
   )
   
@@ -137,11 +137,27 @@ spool_cpfr_figs <- function(x){
 }
 
 
-d_ply(dta_hfd, .(code), spool_cpfr_figs, .progress="text")
+d_ply(dta, .(code), spool_cpfr_figs, .progress="text")
 
 
 
 spool_ccfr_figs <- function(x){
+  this_country <- x$code[1]
+  min_year <- min(x$year)
+  max_year <- max(x$year)
+  
+  title_label <- paste0(
+    this_country, " (", min_year, " - ", max_year, ")"
+  )
+  
+  file_label <- paste0(
+    "cpfr_", this_country, "_(", min_year, "_", max_year, ")" 
+  )
+  
+  png(paste0("figures/ccfr/", file_label, ".png"),
+      res=300, width=25, height=25, units = "cm"
+  )
+  
   
   
   p <- x %>% filter( age <= 50 ) %>% 
@@ -165,9 +181,12 @@ spool_ccfr_figs <- function(x){
       )
     )
   
-  return(p)
+  print(p)
+  dev.off()
+  
+  return(NULL)
 }
 
 
-tmp <- dlply(dta, .(code), spool_ccfr_figs, .progress="text")
+d_ply(dta, .(code), spool_ccfr_figs, .progress="text")
 
