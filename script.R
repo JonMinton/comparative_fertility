@@ -190,3 +190,72 @@ spool_ccfr_figs <- function(x){
 
 d_ply(dta, .(code), spool_ccfr_figs, .progress="text")
 
+
+
+# Contour plot for many countries, from 1950 onwards, with 2.1 contour highlighted
+
+
+shading <- dta %>% 
+  filter(year >= 1950) %>% 
+  filter( age <= 50 ) %>% 
+  filter(code != "DEUTNP") %>% 
+  levelplot(
+    my_ccfr ~ birth_year * age | code, 
+    data=. , 
+    par.strip.text=list(cex=1.4, fontface="bold"),
+    ylab=list(label="Age in years", cex=1.4),
+    xlab=list(label="Birth year", cex=1.4),
+    cex=1.4,
+    cuts=20,
+    col.regions=colorRampPalette(brewer.pal(6, "Purples"))(200),
+    labels=list(cex=1.2),
+    col="black",
+    scales=list(
+      x=list(cex=1.4), 
+      y=list(cex=1.4),
+      alternating=3
+    ),
+    par.settings=list(strip.background=list(col="lightgrey"))
+  ) 
+
+replace_line <- dta %>% 
+  filter(year >= 1950) %>% 
+  filter( age <= 50 ) %>% 
+  filter(code != "DEUTNP") %>% 
+  
+  contourplot(
+    my_ccfr ~ birth_year * age | code, 
+    data=. , 
+    region = F,
+    ylab = "",
+    xlab = "", 
+    scales = list(NULL),
+    at = c(1.5, 2.05), 
+    lwd = 2, 
+    labels = F
+  )
+
+near_line <- dta %>% 
+  filter(year >= 1950) %>% 
+  filter( age <= 50 ) %>% 
+  filter(code != "DEUTNP") %>% 
+  contourplot(
+    my_ccfr ~ birth_year * age | code, 
+    data=. , 
+    region = F,
+    ylab = "",
+    xlab = "", 
+    scales = list(NULL),
+    at = 1.80, 
+    lwd = 1,
+    lty= "dashed",
+    labels = F
+  )
+
+
+png("figures/ccfr/latticeplot.png",
+    res=300, width=30, height=30, units = "cm"
+)
+print(shading + replace_line + near_line)
+
+dev.off()
