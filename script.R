@@ -198,7 +198,7 @@ d_ply(dta, .(code), spool_ccfr_figs, .progress="text")
 shading <- dta %>% 
   filter(year >= 1950) %>% 
   filter( age <= 50 ) %>% 
-  filter(code != "DEUTNP") %>% 
+  filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
   levelplot(
     my_ccfr ~ birth_year * age | code, 
     data=. , 
@@ -221,7 +221,7 @@ shading <- dta %>%
 replace_line <- dta %>% 
   filter(year >= 1950) %>% 
   filter( age <= 50 ) %>% 
-  filter(code != "DEUTNP") %>% 
+  filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
   
   contourplot(
     my_ccfr ~ birth_year * age | code, 
@@ -238,7 +238,7 @@ replace_line <- dta %>%
 near_line <- dta %>% 
   filter(year >= 1950) %>% 
   filter( age <= 50 ) %>% 
-  filter(code != "DEUTNP") %>% 
+  filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
   contourplot(
     my_ccfr ~ birth_year * age | code, 
     data=. , 
