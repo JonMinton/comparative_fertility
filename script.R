@@ -33,6 +33,16 @@ dta <- dta  %>%
   mutate(my_ccfr = lag(cumsum(total/exposure), 1)) %>% 
   ungroup
 
+selector <- dta  %>% 
+  arrange(code, birth_year)  %>% 
+  filter(!is.na(my_ccfr))  %>% 
+  group_by(code, birth_year)  %>% 
+  summarise(min_age = min(age), max_age = max(age))  %>% 
+  mutate(series_ok = min_age <= 16)  %>% 
+  select(code, birth_year, series_ok)
+
+dta <- dta %>% left_join(selector)
+
 
 
 dir.create("figures/asfr/", recursive = TRUE)
@@ -60,7 +70,7 @@ spool_asfr_figs <- function(x){
   
   
   p <- x %>% filter( age <= 50 ) %>% 
-    contourplot(
+    levelplot(
       my_asfr ~ year * age , 
       data=. , 
       region=T, 
@@ -79,6 +89,8 @@ spool_asfr_figs <- function(x){
         alternating=3
       )
     )
+  
+
   
   print(p)
   dev.off()
@@ -151,7 +163,7 @@ spool_ccfr_figs <- function(x){
   )
   
   file_label <- paste0(
-    "cpfr_", this_country, "_(", min_year, "_", max_year, ")" 
+    "ccfr_", this_country, "_(", min_year, "_", max_year, ")" 
   )
   
   png(paste0("figures/ccfr/", file_label, ".png"),
@@ -160,8 +172,8 @@ spool_ccfr_figs <- function(x){
   
   
   
-  p <- x %>% filter( age <= 50 ) %>% 
-    contourplot(
+  p1 <- x %>% filter( age <= 50 ) %>% 
+    levelplot(
       my_ccfr ~ birth_year * age , 
       data=. , 
       region=T, 
@@ -170,8 +182,26 @@ spool_ccfr_figs <- function(x){
       xlab=list(label="Birth year", cex=1.4),
       main = x$code[1],
       cex=1.4,
-      cuts=20,
       col.regions=colorRampPalette(brewer.pal(6, "Purples"))(200),
+      scales=list(
+        x=list(cex=1.4), 
+        y=list(cex=1.4),
+        alternating=3
+      )
+    )
+  
+  p2 <- x %>% 
+    filter( age <= 50 ) %>% 
+    filter(series_ok == TRUE) %>% 
+    contourplot(
+      my_ccfr ~ birth_year * age , 
+      data=. , 
+      region=F, 
+      par.strip.text=list(cex=1.4, fontface="bold"),
+      ylab="",
+      xlab="",
+      main ="",
+      cuts=20,
       labels=list(cex=1.2),
       col="black",
       scales=list(
@@ -181,7 +211,8 @@ spool_ccfr_figs <- function(x){
       )
     )
   
-  print(p)
+  
+  print(p1 + p2)
   dev.off()
   
   return(NULL)
@@ -222,6 +253,7 @@ replace_line <- dta %>%
   filter(year >= 1950) %>% 
   filter( age <= 50 ) %>% 
   filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
+  filter(series_ok == TRUE) %>% 
   
   contourplot(
     my_ccfr ~ birth_year * age | code, 
@@ -239,6 +271,7 @@ near_line <- dta %>%
   filter(year >= 1950) %>% 
   filter( age <= 50 ) %>% 
   filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
+  filter(series_ok == TRUE) %>% 
   contourplot(
     my_ccfr ~ birth_year * age | code, 
     data=. , 
