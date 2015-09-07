@@ -174,7 +174,7 @@ spool_ccfr_figs <- function(x){
   
   p1 <- x %>% filter( age <= 50 ) %>% 
     levelplot(
-      my_ccfr ~ birth_year * age , 
+      my_asfr ~ birth_year * age , 
       data=. , 
       region=T, 
       par.strip.text=list(cex=1.4, fontface="bold"),
@@ -201,7 +201,7 @@ spool_ccfr_figs <- function(x){
       ylab="",
       xlab="",
       main ="",
-      cuts=20,
+      at = seq(from = 0.5, to = 2.5, by = 0.1 ),
       labels=list(cex=1.2),
       col="black",
       scales=list(
@@ -231,7 +231,7 @@ shading <- dta %>%
   filter( age <= 50 ) %>% 
   filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
   levelplot(
-    my_ccfr ~ birth_year * age | code, 
+    my_asfr ~ birth_year * age | code, 
     data=. , 
     par.strip.text=list(cex=1.4, fontface="bold"),
     ylab=list(label="Age in years", cex=1.4),
@@ -292,3 +292,4 @@ png("figures/ccfr/latticeplot.png",
 print(shading + replace_line + near_line)
 
 dev.off()
+
