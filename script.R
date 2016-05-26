@@ -352,7 +352,7 @@ near_line <- dta %>%
     ylab = "",
     xlab = "", 
     scales = list(NULL),
-    at = 1.80, 
+    at = c(1.30, 1.80), 
     lwd = 1,
     lty= "dashed",
     labels = F
@@ -425,7 +425,7 @@ near_line <- dta %>%
     ylab = "",
     xlab = "", 
     scales = list(NULL),
-    at = 1.80, 
+    at = c(1.30, 1.80), 
     lwd = 1,
     lty= "dashed",
     labels = F
