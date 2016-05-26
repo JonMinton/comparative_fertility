@@ -1,0 +1,101 @@
+Country,Code,to_keep,Geography
+Albania,ALB,1,East
+American Samoa,ASM,0,
+Argentina,ARG,0,
+Armenia,ARM,0,
+Aruba,ABW,0,
+Australia,AUS,1,Anglophone
+Austria,AUT,1,West
+Azerbaijan,AZE,0,
+Bahamas,BHS,0,
+Bahrain,BHR,0,
+Bangladesh,BGD,0,
+Belarus,BLR,1,Baltic
+Belgium,BEL,1,West
+Bosnia and Herzegovina,BIH,1,East
+Brasil,BRA,0,
+Bulgaria,BGR,1,East
+Canada,CAN,1,Anglophone
+Chile,CHL,0,
+China,CHN,1,Asian
+Costa Rica,CRI,0,
+Croatia,HRV,1,East
+Cuba,CUB,0,
+Cyprus,CYP,0,
+Czech Republic,CZE,1,East
+Czechoslovakia,CSK,0,
+Denmark,DNK,1,North
+Egypt,EGY,0,
+Estonia,EST,1,Baltic
+Faroe Islands,FRO,0,
+Fiji,FJI,0,
+Finland,FIN,1,North
+France,FRA,1,West
+Georgia,GEO,0,
+Germany,DEUTNP,0,
+"Germany, East",DEUTE,1,West
+"Germany, West",DEUTW,1,West
+Greece,GRC,1,South
+Greenland,GRL,0,
+Hong Kong,HKG,0,
+Hungary,HUN,1,East
+Iceland,ISL,1,North
+India,IND,0,
+Indonesia,IDN,0,
+Iran,IRN,0,
+Ireland,IRL,1,West
+Israel,ISR,0,
+Italy,ITA,1,South
+Japan,JPN,1,Asian
+Jordan,JOR,0,
+Kazakhstan,KAZ,0,
+Kosovo,RKS,1,East
+Latvia,LVA,1,Baltic
+Liechtenstein,LIE,0,
+Lithuania,LTU,1,Baltic
+Luxembourg,LUX,0,
+Macedonia,MKD,1,East
+Malaysia,MYS,0,
+Malta,MLT,0,
+Mauritius,MUS,0,
+Mexico,MEX,0,
+Micronesia,FSM,0,
+Moldova,MDA,1,East
+Mongolia,MNG,0,
+Montenegro,MNE,0,
+Netherlands,NLD,1,West
+New Zealand,NZL,1,Anglophone
+Norway,NOR,1,North
+Pakistan,PAK,0,
+Palau,PLW,0,
+Panama,PAN,0,
+Philippines,PHL,0,
+Poland,POL,1,East
+Portugal,PRT,1,South
+Qatar,QAT,0,
+Republic of Korea,KOR,1,Asian
+Romania,ROU,1,East
+Russia,RUS,1,Baltic
+San Marino,SMR,0,
+Serbia,SRB,0,
+Serbia and Montenegro,SCG,0,
+Seychelles,SYC,0,
+Singapore,SGP,0,
+Slovakia,SVK,1,East
+Slovenia,SVN,1,East
+Spain,ESP,1,South
+Sri Lanka,LKA,0,
+Sweden,SWE,1,North
+Switzerland,CHE,1,West
+Taiwan,TWN,1,Asian
+Thailand,THA,0,
+Tunisia,TUN,0,
+Turkey,TUR,1,East
+UK,GBR_NP,0,
+"UK, England and Wales",GBRTENW,1,West
+"UK, Northern Ireland",GBR_NIR,1,West
+"UK, Scotland",GBR_SCO,1,West
+Ukraine,UKR,1,Baltic
+United States of America,USA,1,Anglophone
+Uruguay,URY,0,
+Yugoslavia,YUG,0,
