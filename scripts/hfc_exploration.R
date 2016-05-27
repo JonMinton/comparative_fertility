@@ -82,28 +82,185 @@ dta_both_simple %>%
   mutate(best_asfr = map_dbl(data, select_best_asfr)) %>% 
   select(code, year, age, asfr = best_asfr) -> dta_simplified
 
+# Values for BIH (Bosnia and Hertzegovina) are missing 
+# for the years 1991 to 1995. However, the rest of the series 
+# seems relatively complete. 
+# Because of this, I will produce a linear imputation of the ASFRs 
+# based on the 1990 to 1996 years, weighted towards the nearest year
+
+
+tmp <- dta_simplified %>% 
+  filter(code == "BIH") %>% 
+  filter(year %in% c(1990, 1996)) %>% 
+  select(year, age, asfr)  %>% 
+  arrange(age)  %>% 
+  spread(year, asfr)
+
+tmp2 <- expand.grid(age = 14:50, year = 1991:1995) %>% tbl_df
+
+tmp3 <- tmp2 %>% left_join(tmp) 
+
+tmp4 <- tmp3 %>% mutate(
+  dif = 1996 - 1990, 
+  x1 = (1996 - year) / dif, 
+  x2 = 1 - x1, 
+  weighted_asfr = x1 * `1990`  + x2 * `1996`) %>% 
+  mutate(code = "BIH") %>% 
+  select(code, year, age, asfr = weighted_asfr)
+
+dta_simplified <- bind_rows(dta_simplified, tmp4)
+
+rm(tmp, tmp2, tmp3, tmp4)
+
+# Finished imputation of BIH missing years
+
+# Now to do something similar for Belarus - though just one year (2013) missing!
+tmp <- dta_simplified %>% 
+  filter(code == "BLR") %>% 
+  filter(year %in% c(2012, 2014)) %>% 
+  select(year, age, asfr)  %>% 
+  arrange(age)  %>% 
+  spread(year, asfr)
+
+tmp2 <- expand.grid(age = 14:50, year = 2013) %>% tbl_df
+
+tmp3 <- tmp2 %>% left_join(tmp) 
+
+tmp4 <- tmp3 %>% mutate(
+  dif = 2014 - 2012, 
+  x1 = (2014 - year) / dif, 
+  x2 = 1 - x1, 
+  weighted_asfr = x1 * `2012`  + x2 * `2014`) %>% 
+  mutate(code = "BLR") %>% 
+  select(code, year, age, asfr = weighted_asfr)
+
+dta_simplified <- bind_rows(dta_simplified, tmp4)
+
+rm(tmp, tmp2, tmp3, tmp4)
 
 
 
+#####
+
+
+dta <- dta_simplified %>% 
+  mutate(birth_year = year - age) %>% 
+  group_by(code, year) %>% 
+  mutate(cpfr = lag(cumsum(asfr), 1)) %>% 
+  ungroup 
+
+dta <- dta  %>% 
+  arrange(code, birth_year, age) %>%  
+  group_by(code, birth_year) %>%  
+  mutate(my_ccfr = lag(cumsum(asfr), 1)) %>% 
+  ungroup
+
+selector <- dta  %>% 
+  arrange(code, birth_year)  %>% 
+  filter(!is.na(my_ccfr))  %>% 
+  group_by(code, birth_year)  %>% 
+  summarise(min_age = min(age), max_age = max(age))  %>% 
+  mutate(series_ok = min_age <= 16)  %>% 
+  select(code, birth_year, series_ok)
+
+
+dta <- dta %>% left_join(selector)
+
+dta <- dta %>% filter(!code %in% c("CHL", "CHN", "TUR", "GBR_NP", "DEUTNP"))
+names(country_codes) <- tolower(names(country_codes))
+
+dta <- dta %>% 
+  left_join(country_codes) %>% 
+  filter(to_keep == 1) %>% 
+  select(-to_keep)
+
+
+
+# Order the plots by fertility level in last year 
+
+ordered_codes <- dta  %>% 
+  group_by(code)  %>% 
+  filter(year == max(year))  %>% 
+  mutate(last_ccfr = max(my_ccfr, na.rm= T))  %>% 
+  ungroup  %>% 
+  select(code, year, last_ccfr)  %>% 
+  distinct  %>% 
+  mutate(fert_rank = dense_rank(last_ccfr))  %>% 
+  arrange(fert_rank)  %>% 
+  .$code
+
+country_codes  %>% select(country, code)   -> tmp
+
+tmp  %>% 
+  mutate(code = factor(code, levels = ordered_codes))  %>% 
+  filter(!is.na(code))  %>% 
+  arrange(code)  %>% 
+  .$country -> ordered_country_labels
+
+rm(tmp)
+
+dta <- dta  %>% mutate(country = factor(country, levels = ordered_country_labels))
+
+dta <- dta %>% arrange(country)
 # Plot new lattice --------------------------------------------------------
 
+# The important and slightly challenging new tasks are: 
+# 1) To replace each of the codes with the country names - DONE
+# 2) To have the colours of the strips dependent on the 
+# country region
+# 3) To have the order of the strips dependent on the highest 
+# fertility rate in the last year  - DONE
+# 4) To remove CHL and CHN, TUR and GBR_NP - DONE
 
 
-shading <- dta_both_simple %>% 
-  filter(year >= 1900) %>% 
+# Strip function
+# http://stackoverflow.com/questions/8536239/change-background-and-text-of-strips-associated-to-muliple-panels-in-r-lattice/8537752#8537752
+
+colour_values <- c(
+  "#7fc97f",
+  "#beaed4",
+  "#fdc086",
+  "#ffff99",
+  "#386cb0",
+  "#f0027f",
+  "#bf5b17"
+) # Picked using colorbrewer2 website - qualitative, 7 class
+country_codes  %>% .$geography  %>% unique()  -> lbls
+lbls[!is.na(lbls)] -> lbls
+
+names(colour_values) <- lbls
+rm(lbls)
+
+dta  %>% group_by(country)  %>% select(geography)  %>% slice(1)  %>% .$geography -> tmp
+colour_values_selection <- colour_values[tmp]
+rm(tmp)
+
+my_strip_style <- function(which.panel, factor.levels, ...) {
+  panel.rect(0, 0, 1, 1,
+             col = colour_values_selection[which.panel],
+             border = 1)
+  panel.text(x = 0.5, y = 0.5,
+             lab = factor.levels[which.panel]
+             )
+}    
+
+
+
+shading <- dta %>% 
+  filter(year >= 1950) %>% 
   filter( age <= 50 ) %>% 
-  filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
   levelplot(
-    asfr ~ year * age | code, 
+    asfr ~ birth_year * age | country, 
     data=. , 
-    par.strip.text=list(cex=1.2, fontface="bold"),
+    par.strip.text=list(cex=1.1, fontface="bold"),
     ylab=list(label="Age in years", cex=1.2),
-    xlab=list(label="Year", cex=1.2),
+    xlab=list(label="Birth Year", cex=1.2),
     cex=1.4,
     cuts=20,
     col.regions=colorRampPalette(brewer.pal(6, "Purples"))(200),
     labels=list(cex=1.2),
     col="black",
+    strip = my_strip_style,
     scales=list(
       x=list(cex=1.2), 
       y=list(cex=1.2),
@@ -112,47 +269,77 @@ shading <- dta_both_simple %>%
     par.settings=list(strip.background=list(col="lightgrey"))
   ) 
 
-replace_line <- dta %>% 
+line_2_05 <- dta %>% 
   filter(year >= 1950) %>% 
   filter( age <= 50 ) %>% 
-  filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
   filter(series_ok == TRUE) %>% 
-  
   contourplot(
-    my_ccfr ~ birth_year * age | code, 
+    my_ccfr ~ birth_year * age | country, 
     data=. , 
     region = F,
     ylab = "",
     xlab = "", 
     scales = list(NULL),
-    at = c(1.5, 2.05), 
+    at = 2.05, 
     lwd = 2, 
     labels = F
   )
 
-near_line <- dta %>% 
+line_1_80 <- dta %>% 
   filter(year >= 1950) %>% 
   filter( age <= 50 ) %>% 
-  filter(!(code %in% c("DEUTNP", "GBR_NP"))) %>% 
   filter(series_ok == TRUE) %>% 
   contourplot(
-    my_ccfr ~ birth_year * age | code, 
+    my_ccfr ~ birth_year * age | country, 
     data=. , 
     region = F,
     ylab = "",
     xlab = "", 
     scales = list(NULL),
-    at = c(1.30, 1.80), 
+    at = 1.80, 
+    lwd = 2,
+    lty= "dashed",
+    labels = F
+  )
+
+line_1_50 <- dta %>% 
+  filter(year >= 1950) %>% 
+  filter( age <= 50 ) %>% 
+  filter(series_ok == TRUE) %>% 
+  contourplot(
+    my_ccfr ~ birth_year * age | country, 
+    data=. , 
+    region = F,
+    ylab = "",
+    xlab = "", 
+    scales = list(NULL),
+    at = 1.50, 
+    lwd = 1, 
+    labels = F
+  )
+
+line_1_30 <- dta %>% 
+  filter(year >= 1950) %>% 
+  filter( age <= 50 ) %>% 
+  filter(series_ok == TRUE) %>% 
+  contourplot(
+    my_ccfr ~ birth_year * age | country, 
+    data=. , 
+    region = F,
+    ylab = "",
+    xlab = "", 
+    scales = list(NULL),
+    at = 1.30, 
     lwd = 1,
     lty= "dashed",
     labels = F
   )
 
 
-png("figures/ccfr/latticeplot.png",
-    res=300, width=30, height=30, units = "cm"
+png("figures/ccfr/hfd_hfc_combined_latticeplot.png",
+    res=600, width=60, height=40, units = "cm"
 )
-print(shading + replace_line + near_line)
+print(shading + line_2_05 + line_1_80 + line_1_50 + line_1_30)
 
 dev.off()
 
