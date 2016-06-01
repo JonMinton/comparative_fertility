@@ -353,7 +353,8 @@ dev.off()
 max_val <- max(germanies$asfr)
 min_val <- 0.03 * max_val
 east_matrix <- germanies %>% 
-  select(code, year, age, asfr) 
+  select(code, year, age, asfr) %>% 
+  mutate(asfr = ifelse(asfr < min_val, min_val, asfr))
 east_matrix$asfr[is.na(east_matrix$asfr)] <- min_val
 east_matrix <-   east_matrix %>%  
   filter(code == "DEUTE") %>% 
