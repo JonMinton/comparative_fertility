@@ -9,6 +9,8 @@ require(stringr)
 require(dplyr)
 require(purrr)
 
+require(r2stl)
+
 
 require(ggplot2)
 require(lattice)
@@ -148,6 +150,9 @@ dta <- dta_simplified %>%
   group_by(code, year) %>% 
   mutate(cpfr = lag(cumsum(asfr), 1)) %>% 
   ungroup 
+
+#germanies <- dta %>% filter(code %in% c("DEUTE", "DEUTW"))
+
 
 dta <- dta  %>% 
   arrange(code, birth_year, age) %>%  
@@ -343,5 +348,43 @@ print(shading + line_2_05 + line_1_80 + line_1_50 + line_1_30)
 
 dev.off()
 
+
+# Stl file for East and West Germany --------------------------------------
+max_val <- max(germanies$asfr)
+min_val <- 0.03 * max_val
+east_matrix <- germanies %>% 
+  select(code, year, age, asfr) 
+east_matrix$asfr[is.na(east_matrix$asfr)] <- min_val
+east_matrix <-   east_matrix %>%  
+  filter(code == "DEUTE") %>% 
+  select(-code) %>% 
+  spread(age, asfr, fill = min_val) %>% as.matrix()
+rownames(east_matrix) <- east_matrix[,1]
+east_matrix <- east_matrix[,-1]
+
+west_matrix <- germanies %>% 
+  select(code, year, age, asfr) 
+west_matrix$asfr[is.na(west_matrix$asfr)] <- min_val
+west_matrix <-   west_matrix %>%  
+  mutate(asfr = asfr + min_val) %>% 
+  filter(year >= 1952) %>% 
+  filter(code == "DEUTW") %>% 
+  select(-code) %>% 
+  spread(age, asfr, fill = min_val) %>% as.matrix()
+rownames(west_matrix) <- west_matrix[,1]
+west_matrix <- west_matrix[,-1]
+
+
+both_matrix <- cbind(east_matrix, west_matrix)
+
+dimnames(both_matrix) <- list(1:dim(both_matrix)[1], 1:dim(both_matrix)[2])
+
+r2stl(
+  x = as.numeric(rownames(both_matrix)), 
+  y = as.numeric(colnames(both_matrix)),
+  z = both_matrix, 
+  show.persp = T,
+  filename = "stl/both_germanies.stl"
+)
 
 
