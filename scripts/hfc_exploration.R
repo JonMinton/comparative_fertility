@@ -222,13 +222,13 @@ dta <- dta %>% arrange(country)
 # http://stackoverflow.com/questions/8536239/change-background-and-text-of-strips-associated-to-muliple-panels-in-r-lattice/8537752#8537752
 
 colour_values <- c(
-  "#7fc97f",
-  "#beaed4",
-  "#fdc086",
-  "#ffff99",
-  "#386cb0",
-  "#f0027f",
-  "#bf5b17"
+  "#fbb4ae",
+  "#b3cde3",
+  "#ccebc5",
+  "#decbe4",
+  "#fed9a6",
+  "#ffffcc",
+  "#e5d8bd"
 ) # Picked using colorbrewer2 website - qualitative, 7 class
 country_codes  %>% .$geography  %>% unique()  -> lbls
 lbls[!is.na(lbls)] -> lbls
