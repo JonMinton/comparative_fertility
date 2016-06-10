@@ -204,7 +204,7 @@ tmp  %>%
 
 rm(tmp)
 
-dta <- dta  %>% mutate(country = factor(country, levels = ordered_country_labels))
+dta <- dta  %>% mutate(country = factor(country, levels = rev(ordered_country_labels)))
 
 dta <- dta %>% arrange(country)
 # Plot new lattice --------------------------------------------------------
@@ -228,7 +228,8 @@ colour_values <- c(
   "#decbe4",
   "#fed9a6",
   "#ffffcc",
-  "#e5d8bd"
+  "#e5d8bd",
+  "#fddaec"
 ) # Picked using colorbrewer2 website - qualitative, 7 class
 country_codes  %>% .$geography  %>% unique()  -> lbls
 lbls[!is.na(lbls)] -> lbls
@@ -264,7 +265,8 @@ shading <- dta %>%
     cuts=20,
     col.regions=colorRampPalette(brewer.pal(6, "Purples"))(200),
     labels=list(cex=1.2),
-    col="black",
+    col="black", 
+    as.table = TRUE,
     strip = my_strip_style,
     scales=list(
       x=list(cex=1.2), 
@@ -282,6 +284,7 @@ line_2_05 <- dta %>%
     my_ccfr ~ birth_year * age | country, 
     data=. , 
     region = F,
+    as.table = TRUE,
     ylab = "",
     xlab = "", 
     scales = list(NULL),
@@ -298,6 +301,7 @@ line_1_80 <- dta %>%
     my_ccfr ~ birth_year * age | country, 
     data=. , 
     region = F,
+    as.table = TRUE,
     ylab = "",
     xlab = "", 
     scales = list(NULL),
@@ -315,6 +319,7 @@ line_1_50 <- dta %>%
     my_ccfr ~ birth_year * age | country, 
     data=. , 
     region = F,
+    as.table = TRUE,
     ylab = "",
     xlab = "", 
     scales = list(NULL),
@@ -331,6 +336,7 @@ line_1_30 <- dta %>%
     my_ccfr ~ birth_year * age | country, 
     data=. , 
     region = F,
+    as.table = TRUE,
     ylab = "",
     xlab = "", 
     scales = list(NULL),
@@ -347,6 +353,10 @@ png("figures/ccfr/hfd_hfc_combined_latticeplot.png",
 print(shading + line_2_05 + line_1_80 + line_1_50 + line_1_30)
 
 dev.off()
+
+
+
+
 
 
 # Stl file for East and West Germany --------------------------------------
