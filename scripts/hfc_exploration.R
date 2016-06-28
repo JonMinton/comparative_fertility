@@ -2,19 +2,15 @@
 rm(list=ls())
 
 
-require(readr)
+require(pacman)
 
-require(tidyr)
-require(stringr)
-require(dplyr)
-require(purrr)
-
-require(r2stl)
-
-
-require(ggplot2)
-require(lattice)
-require(latticeExtra)
+pacman::p_load(
+  readr, 
+  tidyr,  stringr, dplyr,
+  purrr, r2stl, 
+  ggplot2, lattice, latticeExtra,
+  RColorBrewer
+)
 
 
 # Load data ---------------------------------------------------------------
@@ -263,7 +259,7 @@ shading <- dta %>%
     xlab=list(label="Birth Year", cex=1.2),
     cex=1.4,
     cuts=20,
-    col.regions=colorRampPalette(brewer.pal(6, "Purples"))(200),
+    col.regions=rev(colorRampPalette(brewer.pal(6, "Spectral"))(200)),
     labels=list(cex=1.2),
     col="black", 
     as.table = TRUE,
@@ -353,6 +349,185 @@ png("figures/ccfr/hfd_hfc_combined_latticeplot.png",
 print(shading + line_2_05 + line_1_80 + line_1_50 + line_1_30)
 
 dev.off()
+
+
+
+# Separate complex figures for all countries  -----------------------------
+
+# ASFR, some contours
+
+fn <- function(x) {
+  this_title = paste0(x$country[1], " (", x$geography[1], ")")
+  x %>% 
+    mutate(asfr = 100 * asfr) %>% 
+    contourplot(
+      asfr ~ year * age , 
+      data=. , 
+      region = T,
+      xlim = c(1950, 2015),
+      ylim = c(15, 50),
+      ylab = "Age of woman",
+      xlab = "Year", 
+      scales = list(NULL),
+      lwd = 1,
+      labels = list(col = "darkgreen", cex = 0.7),
+      aspect = "iso",
+      col = "grey",
+      at = c(0, seq(5, 40, 5)),
+      col.regions = rev(colorRampPalette(brewer.pal(6, "Spectral"))(200)),
+      main = this_title
+    ) -> output
+  
+  png(
+    paste0("figures/asfr/", this_title, ".png"),
+    width = 15, height = 12, units = "cm", res = 300
+  )  
+  print(output)
+  dev.off()
+  return(output)
+}
+
+
+
+dta %>% 
+  group_by(code) %>% 
+  nest() %>% 
+  mutate(figure = map(data, fn))
+
+# ASFR, heatmap 
+
+fn <- function(x) {
+  this_title = paste0(x$country[1], " (", x$geography[1], ")")
+  x %>% 
+    mutate(asfr = 100 * asfr) %>% 
+    levelplot(
+      asfr ~ year * age , 
+      data=. , 
+      xlim = c(1950, 2015),
+      ylim = c(15, 50),
+      ylab = "Age of woman",
+      xlab = "Year", 
+      scales = list(NULL),
+      lwd = 1,
+      aspect = "iso",
+      col = "grey",
+      at = c(0:40),
+      col.regions = rev(colorRampPalette(brewer.pal(6, "Spectral"))(200)),
+      main = this_title
+    ) -> output
+  
+  png(
+    paste0("figures/asfr_heat/", this_title, ".png"),
+    width = 15, height = 12, units = "cm", res = 300
+  )  
+  print(output)
+  dev.off()
+  return(output)
+}
+
+
+dta %>% 
+  group_by(code) %>% 
+  nest() %>% 
+  mutate(figure = map(data, fn))
+
+# Now CCFR with heat only
+
+fn <- function(x){
+  this_title = paste0(x$country[1], " (", x$geography[1], ")")
+  x %>% 
+
+    filter( age <= 50 ) %>%
+    mutate(asfr = 100 * asfr) %>% 
+    levelplot(
+      asfr ~ birth_year * age, 
+      data=. , 
+      ylab="Age in years",
+      xlab="Birth Year",
+      cuts=20,
+      xlim = c(1900, 2000),
+      ylim = c(15, 50),
+      at = c(0:40),
+      col.regions=rev(colorRampPalette(brewer.pal(6, "Spectral"))(200)),
+      labels=list(cex=1.2),
+      col="black", 
+      main = this_title
+    )   -> output
+  
+
+  png(
+    paste0("figures/asfr_cohort_heat/", this_title, ".png"),
+    width = 15, height = 12, units = "cm", res = 300
+  )  
+  print(output)
+  dev.off()
+  return(output)
+  
+}
+
+dta %>% 
+  group_by(code) %>% 
+  nest() %>% 
+  mutate(figure = map(data, fn))
+
+
+# Now finally CCFR with selected contours added 
+
+
+fn <- function(x){
+  this_title = paste0(x$country[1], " (", x$geography[1], ")")
+  x %>% 
+    filter( age <= 50 ) %>%
+    mutate(asfr = 100 * asfr) %>% 
+    levelplot(
+      asfr ~ birth_year * age, 
+      data=. , 
+      ylab="Age in years",
+      xlab="Birth Year",
+      cuts=20,
+      xlim = c(1900, 2000),
+      ylim = c(15, 50),
+      at = c(0:40),
+      col.regions=rev(colorRampPalette(brewer.pal(6, "Spectral"))(200)),
+      labels=list(cex=1.2),
+      col="black", 
+      main = this_title
+    )   -> part1
+  
+  x %>% 
+    filter( age <= 50 ) %>% 
+    filter(series_ok == TRUE) %>% 
+    contourplot(
+      my_ccfr ~ birth_year * age, 
+      data=. , 
+      region = F,
+      as.table = TRUE,
+      ylab = "",
+      xlab = "", 
+      scales = list(NULL),
+      at = c(1.30, 1.50, 1.80, 2.05), 
+      lwd = 1,
+      labels = list(col = "darkgreen")
+    ) -> part2
+  
+  output <- part1 + part2
+  
+  png(
+    paste0("figures/ccfr/", this_title, ".png"),
+    width = 15, height = 12, units = "cm", res = 300
+  )  
+  print(output)
+  dev.off()
+  return(output)
+  
+}
+
+dta %>% 
+  group_by(code) %>% 
+  nest() %>% 
+  mutate(figure = map(data, fn))
+
+
 
 
 
