@@ -5,7 +5,7 @@ rm(list=ls())
 require(pacman)
 
 pacman::p_load(
-  readr, 
+  readr, car,
   tidyr,  stringr, dplyr,
   purrr, r2stl, 
   ggplot2, lattice, latticeExtra,
@@ -23,6 +23,24 @@ dta_hfd <- read_csv("data/lexis_square_combined.csv")
 country_codes <- read_csv("data/hfc/code_definitions.csv")
 # work on tidying/filtering hfc -------------------------------------------
 
+
+# Simple illustration of asfr and age relationship
+
+dta_hfd  %>% 
+  filter(code %in% c("GBRTENW", "GBR_SCO"))  %>% 
+  filter(year %in% c(1960, 1980, 2000))  %>% 
+  mutate(
+    year = factor(year), 
+    country = recode(code, "'GBRTENW' = 'England & Wales'; 'GBR_SCO' = 'Scotland'")
+    ) %>% 
+  ggplot(.) + 
+  geom_line(
+    aes(x = age, y = asfr, group = year, colour = year, linetype = year)) + 
+  facet_wrap(~country) + 
+  labs(x = "Age in years", y = "Age-specific fertility rate") + 
+  theme_minimal()
+
+ggsave(filename = "figures/asfr_example.png", height = 20, width = 30, units = "cm", dpi = 300)
 # So, the rule is 
 # 1 ) See if the country is in the countries to include 
 # 2 ) See if year1 and year2 match. Discard if they do not
