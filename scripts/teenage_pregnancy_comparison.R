@@ -84,7 +84,17 @@ dta %>%
 
 
 
+# GGTILE of fert rate at younger ages 
 
+dta %>% 
+  filter(age <= 35) %>% 
+  filter(code %in% c("GBR_SCO", "GBRTENW", "GBR_NIR", "USA", "NOR", "USA", "RUS")) %>% 
+  mutate(fr = total / exposure) %>% 
+  ggplot(., aes(x = year, y = age, fill = fr)) + 
+  geom_tile() + 
+  facet_wrap( ~ code)
+
+  
 
 
   
