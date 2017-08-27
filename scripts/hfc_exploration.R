@@ -16,27 +16,30 @@ pacman::p_load(
 country_codes <- read_csv("data/hfc/code_definitions.csv")
 
 if(file.exists("data/data_combined_and_standardised.csv")){
-  dta_simplified <- read_csv("data/data_combined_and_standardised.csv")
+  dta_simplified <- read.csv(
+    "data/data_combined_and_standardised.csv"
+    ) %>% tbl_df %>% 
+    arrange(code, year, age) 
 } else {
   source("scripts/hfc_hfd_data_combine.R")
 }
 
 #####
+dta_simplified %>%
+  ggplot(., aes(x = year, y = age, fill = asfr)) +
+  facet_wrap(~code) +
+  geom_tile()
+
 
 dta <- dta_simplified %>% 
-  mutate(birth_year = year - age) %>% 
   group_by(code, year) %>% 
-  mutate(cpfr = lag(cumsum(asfr), 1)) %>% 
-  ungroup 
-
-#germanies <- dta %>% filter(code %in% c("DEUTE", "DEUTW"))
-
-
-dta <- dta  %>% 
+  arrange(age) %>% 
+  mutate(cpfr = lag(cumsum(asfr), 1, default = 0)) %>% 
+  mutate(birth_year = year - age) %>% 
   arrange(code, birth_year, age) %>%  
   group_by(code, birth_year) %>%  
   mutate(my_ccfr = lag(cumsum(asfr), 1)) %>% 
-  ungroup
+  ungroup()
 
 selector <- dta  %>% 
   arrange(code, birth_year)  %>% 
@@ -61,10 +64,18 @@ dta <- dta %>%
 
 # Order the plots by fertility level in last year 
 
+# Want to know what is the last common year
+
+dta %>% 
+  group_by(code) %>% 
+  summarise(max_year = max(year)) %>% 
+  arrange(max_year)
+
+# Last common is 2007 
+
+
 ordered_codes <- dta  %>% 
-  group_by(code)  %>% 
-  mutate(max_year = max(year)) %>% 
-  filter(year == max(year))  %T>% print(sample_n(10)) %>% 
+  filter(year == 2007)  %T>% print(sample_n(10)) %>% 
   mutate(last_ccfr = max(my_ccfr, na.rm= T))  %>% 
   ungroup  %>% 
   select(code, year, last_ccfr)  %>% 
@@ -87,7 +98,7 @@ dta <- dta  %>% mutate(country = factor(country, levels = rev(ordered_country_la
 
 dta <- dta %>% arrange(country)
 
-produce_composite_lattice <- function(DTA){
+produce_composite_lattice <- function(DTA, add_gridlines = T){
   # Plot new lattice --------------------------------------------------------
   
   # The important and slightly challenging new tasks are: 
@@ -131,7 +142,25 @@ produce_composite_lattice <- function(DTA){
                )
   }    
   
-  
+  panel_select <- function(add_gridlines){
+    if(!add_gridlines){
+      return(
+        function(...){
+          panel.levelplot(...)
+        }
+      )
+    } else {
+      return(
+        function(...){
+          panel.levelplot(...)
+          panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
+          panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
+        }
+      )
+    }
+    NULL
+  }
+
   
   shading <- DTA %>% 
     filter(year >= 1950) %>% 
@@ -144,6 +173,7 @@ produce_composite_lattice <- function(DTA){
       xlab=list(label="Birth Year", cex=1.2),
       cex=1.4,
       cuts=20,
+      aspect = "iso",
       col.regions=rev(colorRampPalette(brewer.pal(6, "Spectral"))(200)),
       labels=list(cex=1.2),
       col="black", 
@@ -154,6 +184,7 @@ produce_composite_lattice <- function(DTA){
         y=list(cex=1.2),
         alternating=3
       ),
+      panel = panel_select(add_gridlines),
       par.settings=list(strip.background=list(col="lightgrey"))
     ) 
   
@@ -165,6 +196,7 @@ produce_composite_lattice <- function(DTA){
       my_ccfr ~ birth_year * age | country, 
       data=. , 
       region = F,
+      aspect = "iso",
       as.table = TRUE,
       ylab = "",
       xlab = "", 
@@ -182,6 +214,7 @@ produce_composite_lattice <- function(DTA){
       my_ccfr ~ birth_year * age | country, 
       data=. , 
       region = F,
+      aspect = "iso",
       as.table = TRUE,
       ylab = "",
       xlab = "", 
@@ -200,6 +233,7 @@ produce_composite_lattice <- function(DTA){
       my_ccfr ~ birth_year * age | country, 
       data=. , 
       region = F,
+      aspect = "iso",
       as.table = TRUE,
       ylab = "",
       xlab = "", 
@@ -217,6 +251,7 @@ produce_composite_lattice <- function(DTA){
       my_ccfr ~ birth_year * age | country, 
       data=. , 
       region = F,
+      aspect = "iso",
       as.table = TRUE,
       ylab = "",
       xlab = "", 
@@ -227,20 +262,56 @@ produce_composite_lattice <- function(DTA){
       labels = F
     )
   
+  
   output <- shading + line_2_05 + line_1_80 + line_1_50 + line_1_30
+  
   
   return(output)
 
 }
 
+p_overall <- produce_composite_lattice(dta, add_gridlines = F)
+
 
 png("figures/ccfr/hfd_hfc_combined_latticeplot.png",
     res=600, width=60, height=40, units = "cm"
 )
-print(shading + line_2_05 + line_1_80 + line_1_50 + line_1_30)
-
+print(p_overall)
 dev.off()
 
+# Britain
+dta %>% 
+  filter(code %in% c("GBRTENW", "GBR_SCO", "GBR_NIR", "IRL")) %>% 
+  produce_composite_lattice()
+
+
+# USA, Norway, New Zealand, Australia, Canada
+
+dta %>% 
+  filter(code %in% c("USA", "NOR", "NZL", "AUS", "CAN")) %>% 
+  produce_composite_lattice()
+
+
+# Germany, Italy and Spain 
+
+dta %>% 
+  filter(code %in% c("DEUTE", "DEUTW", "ITA", "ESP")) %>% 
+  produce_composite_lattice()
+
+
+# Asian countries 
+
+dta %>% 
+  filter(code %in% c("TWN", "JPN", "KOR")) %>% 
+  produce_composite_lattice()
+
+# 
+
+# East/Central European 
+
+dta %>% 
+  filter(code %in% c("ALB", "ROU", "POL", "HUN", "RUS", "MDA")) %>% 
+  produce_composite_lattice()
 
 
 # Separate complex figures for all countries  -----------------------------

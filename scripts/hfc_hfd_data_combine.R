@@ -124,168 +124,131 @@ dta_simplified %>% sample_n(10)
 # based on the 1990 to 1996 years, weighted towards the nearest year
 
 # Produce a function for automating the filling in of ASFRs for multiple cases
+k <- 0
 
 fill_in_asfr <- function(DTA){
 
-  # find number of contiguous missing pieces 
-  find_breaks <- function(x){
-    x_lag <- x[-1]
-    x_2   <- x[-length(x)]
+  impute_between <- function(START, END, DTA_){
     
-    breaks <- x[!which(x_2 == x_lag - 1)]
-    browser()
-    
-    # THIS IS WHAT NEEDS RE-DOING
-    output <- data_frame(
-      block = 1:(length(breaks + 1))
-    ) %>% 
-      mutate(
-        start_missing = case_when(
-          block == 1 ~ x[1], 
-          TRUE ~ x[lag(breaks)]
-        ),
-        end_missing = x[breaks]
-      )
-    
-    return(output)
-  }
-  
-  impute_between <- function(START, END){
-    
-    tmp1 <- DTA %>% 
+    tmp1 <- DTA_ %>% 
       filter(year %in% c(START - 1, END + 1)) %>% 
       select(year, age, asfr)  %>% 
-      arrange(age)  
+      arrange(year, age)  
     
+    # Need to find the max and min age range for 
+    # the last and next year available 
+    
+    age_ranges <- tmp1 %>% 
+      group_by(age) %>% 
+      summarise(vals_available = !is.na(sum(asfr))) %>% 
+      ungroup() %>% 
+      filter(vals_available) %>% 
+      summarise(min_age_available = min(age), max_age_available = max(age))
     
     tmp2 <- expand.grid(
-        age = 14:50, 
-        year = START:END
+        age = age_ranges[[1]]:age_ranges[[2]], 
+        year = START:END,
+        asfr = NA
       ) %>% 
       tbl_df
     
     output <- tmp2 %>% 
-      left_join(tmp1) %>%
+      bind_rows(tmp1) %>%
+      arrange(year, age) %>% 
       group_by(age) %>% 
       mutate(
         dif = max(year) - min(year),
         x1 = (max(year) - year) / dif,
         x2 = 1 - x1,
         weighted_asfr = x1 * asfr[year == min(year)] + x2 * asfr[year == max(year)]
-        ) %>% 
+        ) %>% ungroup() %>% 
+      filter(year %in% START:END) %>% 
       select(year, age, asfr = weighted_asfr)
 
     return(output)
   }
   
   impute_asfrs <- function(d2){
+    k <<- k + 1
     max_year <- max(d2$year)
     min_year <- min(d2$year)
     
     num_years <- length(unique(d2$year))
     
     if (num_years == (max_year - min_year + 1)){
+      print(paste(k, ": No missing years"))
       # No problems - return input
       return(d2)
     } else {
+      print(paste(k, ": At least one missing year"))
       # at least one missing year
       all_possible_years <- min_year:max_year
       all_available_years <- sort(unique(d2$year))
       
-      missing_years <- setdiff(
-        all_possible_years, 
-        all_available_years
+      missing_year_indicators_df <- data_frame(
+        all_possible_years = all_possible_years, 
+        missing = !(all_possible_years %in% all_available_years),
+        lag_missing = lag(missing, default = F)
+      ) %>% 
+        mutate(
+          new_missing_block = missing - lag_missing == 1,
+          block_num = cumsum(new_missing_block),
+          block_num = ifelse(!missing, NA, block_num)
+        ) %>% 
+        group_by(block_num) %>% 
+        filter(!is.na(block_num)) %>% 
+        summarise(
+          start_missing = min(all_possible_years),
+          end_missing = max(all_possible_years)
         )
       
-      missing_year_indicators_df <- find_breaks(missing_years) 
-      
+
       output <- missing_year_indicators_df %>% 
-        mutate(imputed_data = map2(start_missing, end_missing, impute_between)) %>% 
+        mutate(imputed_data = map2(start_missing, end_missing, impute_between, DTA_ = d2)) %>% 
         unnest() %>% 
         select(year, age, asfr) %>% 
-        bind_row(d2) 
-      
+        bind_rows(d2) %>% 
+        arrange(year, age)
+
       return(output)
     }
     
     return(NULL) # Error if this happens
   }  
 
-  
   output <- DTA %>% 
     group_by(code) %>% 
     nest() %>% 
-    mutate(all_data = map(data, impute_asfrs)) %>% 
+    mutate(data = map(data, impute_asfrs)) %>% 
     unnest()
-  
+
   return(output)
 
 }
 
+dta_including_imputations <- fill_in_asfr(dta_simplified) %>% 
+  filter(!is.na(asfr))
 
-fill_in_asfr(dta_simplified)
+# Fill in younger and older ages 
 
-# 
-# 
-# tmp <- dta_simplified %>% 
-#   filter(code == "BIH") %>% 
-#   filter(year %in% c(1990, 1996)) %>% 
-#   select(year, age, asfr)  %>% 
-#   arrange(age)  %>% 
-#   spread(year, asfr)
-# 
-# tmp2 <- expand.grid(age = 14:50, year = 1991:1995) %>% tbl_df
-# 
-# tmp3 <- tmp2 %>% left_join(tmp) 
-# 
-# tmp4 <- tmp3 %>% mutate(
-#   dif = 1996 - 1990, 
-#   x1 = (1996 - year) / dif, 
-#   x2 = 1 - x1, 
-#   weighted_asfr = x1 * `1990`  + x2 * `1996`) %>% 
-#   mutate(code = "BIH") %>% 
-#   select(code, year, age, asfr = weighted_asfr)
-# 
-# dta_simplified <- bind_rows(dta_simplified, tmp4)
-# 
-# rm(tmp, tmp2, tmp3, tmp4)
-# 
-# # Finished imputation of BIH missing years
-# 
-# # Now to do something similar for Belarus - though just one year (2013) missing!
-# tmp <- dta_simplified %>% 
-#   filter(code == "BLR") %>% 
-#   filter(year %in% c(2012, 2014)) %>% 
-#   select(year, age, asfr)  %>% 
-#   arrange(age)  %>% 
-#   spread(year, asfr)
-# 
-# tmp2 <- expand.grid(age = 14:50, year = 2013) %>% tbl_df
-# 
-# tmp3 <- tmp2 %>% left_join(tmp) 
-# 
-# tmp4 <- tmp3 %>% mutate(
-#   dif = 2014 - 2012, 
-#   x1 = (2014 - year) / dif, 
-#   x2 = 1 - x1, 
-#   weighted_asfr = x1 * `2012`  + x2 * `2014`) %>% 
-#   mutate(code = "BLR") %>% 
-#   select(code, year, age, asfr = weighted_asfr)
-# 
-# dta_simplified <- dta_simplified %>% 
-#   bind_rows(tmp4) 
-# rm(tmp, tmp2, tmp3, tmp4)
+fill_in_ages <- function(DTA){
+  OUT <- data_frame(
+    age = 12:55
+  ) %>% 
+    full_join(DTA) %>% 
+    mutate(asfr = ifelse(is.na(asfr), 0, asfr))
+  OUT
+}
 
-dta_simplified %>% 
-  group_by(code) %>% 
-  summarise(
-    min_year = min(year), max_year = max(year), 
-    min_age = min(age), max_age = max(age),
-    n_missing = (max_year - min_year + 1) - length(unique(year)),
-    n = n()
-    )
+filled_data <- dta_including_imputations %>% 
+  group_by(code, year) %>% 
+  arrange(age) %>% 
+  nest() %>% 
+  mutate(data = map(data, fill_in_ages)) %>% 
+  unnest
 
 
-write_csv(dta_simplified, "data/data_combined_and_standardised.csv")
+
+write_csv(filled_data, "data/data_combined_and_standardised.csv")
 
 rm(list = ls())
