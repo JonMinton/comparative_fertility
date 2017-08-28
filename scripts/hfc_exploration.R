@@ -273,11 +273,15 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
 p_overall <- produce_composite_lattice(dta, add_gridlines = F)
 
 
-png("figures/ccfr/hfd_hfc_combined_latticeplot.png",
-    res=600, width=60, height=40, units = "cm"
-)
+# png("figures/ccfr/hfd_hfc_combined_latticeplot.png",
+#     res=600, width=60, height=40, units = "cm"
+# )
+svg("figures/overall_new.svg", width = 8.0, height = 10.5,
+    pointsize = 4)
 print(p_overall)
 dev.off()
+
+# dev.off()
 
 # Britain
 dta %>% 
