@@ -25,10 +25,10 @@ if(file.exists("data/data_combined_and_standardised.csv")){
 }
 
 #####
-dta_simplified %>%
-  ggplot(., aes(x = year, y = age, fill = asfr)) +
-  facet_wrap(~code) +
-  geom_tile()
+# dta_simplified %>%
+#   ggplot(., aes(x = year, y = age, fill = asfr)) +
+#   facet_wrap(~code) +
+#   geom_tile()
 
 
 dta <- dta_simplified %>% 
@@ -73,9 +73,9 @@ dta %>%
 
 # Last common is 2007 
 
-
 ordered_codes <- dta  %>% 
   filter(year == 2007)  %T>% print(sample_n(10)) %>% 
+  group_by(code) %>% 
   mutate(last_ccfr = max(my_ccfr, na.rm= T))  %>% 
   ungroup  %>% 
   select(code, year, last_ccfr)  %>% 
@@ -161,10 +161,11 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
     NULL
   }
 
-  
-  shading <- DTA %>% 
+  DTA_SS <- DTA %>% 
     filter(year >= 1950) %>% 
-    filter( age <= 50 ) %>% 
+    filter(age <= 50)
+  
+  shading <- DTA_SS %>% 
     levelplot(
       asfr ~ birth_year * age | country, 
       data=. , 
@@ -180,7 +181,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       as.table = TRUE,
       strip = my_strip_style,
       scales=list(
-        x=list(cex=1.2), 
+        x=list(cex=1.2, rot = 90), 
         y=list(cex=1.2),
         alternating=3
       ),
@@ -188,9 +189,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       par.settings=list(strip.background=list(col="lightgrey"))
     ) 
   
-  line_2_05 <- DTA %>% 
-    filter(year >= 1950) %>% 
-    filter( age <= 50 ) %>% 
+  line_2_05 <- DTA_SS %>% 
     filter(series_ok == TRUE) %>% 
     contourplot(
       my_ccfr ~ birth_year * age | country, 
@@ -206,7 +205,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       labels = F
     )
   
-  line_1_80 <- DTA %>% 
+  line_1_80 <- DTA_SS %>% 
     filter(year >= 1950) %>% 
     filter( age <= 50 ) %>% 
     filter(series_ok == TRUE) %>% 
@@ -225,9 +224,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       labels = F
     )
   
-  line_1_50 <- DTA %>% 
-    filter(year >= 1950) %>% 
-    filter( age <= 50 ) %>% 
+  line_1_50 <- DTA_SS %>% 
     filter(series_ok == TRUE) %>% 
     contourplot(
       my_ccfr ~ birth_year * age | country, 
@@ -243,9 +240,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       labels = F
     )
   
-  line_1_30 <- DTA %>% 
-    filter(year >= 1950) %>% 
-    filter( age <= 50 ) %>% 
+  line_1_30 <- DTA_SS %>% 
     filter(series_ok == TRUE) %>% 
     contourplot(
       my_ccfr ~ birth_year * age | country, 
@@ -273,6 +268,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
 p_overall <- produce_composite_lattice(dta, add_gridlines = F)
 
 
+<<<<<<< HEAD
 # png("figures/ccfr/hfd_hfc_combined_latticeplot.png",
 #     res=600, width=60, height=40, units = "cm"
 # )
@@ -282,32 +278,83 @@ print(p_overall)
 dev.off()
 
 # dev.off()
+=======
+png("figures/for_ms/overall_poster.png",
+    res=300, width=40, height=40, units = "cm"
+)
+print(p_overall)
+dev.off()
+
+png("figures/for_ms/overall_poster_gridded.png",
+    res=300, width=40, height=40, units = "cm"
+)
+print(produce_composite_lattice(dta, add_gridlines = T))
+dev.off()
+
+# How about a version with code instead of country in label? 
+
+dta %>% 
+  mutate(country = code) %>% 
+  mutate(country = factor(country, levels = rev(ordered_codes), ordered = T)) %>% 
+  produce_composite_lattice(add_gridlines = F) -> p1
+
+png("figures/for_ms/overall_paper_coded.png",
+    res = 300, width = 25, height = 25, units = "cm"
+    )
+print(p1)
+dev.off()
+>>>>>>> cf97cceb76855a00134151919614934d0df02c8f
 
 # Britain
 dta %>% 
   filter(code %in% c("GBRTENW", "GBR_SCO", "GBR_NIR", "IRL")) %>% 
-  produce_composite_lattice()
+  produce_composite_lattice() -> p2
+
+png("figures/for_ms/Britain.png",
+    res = 300, width= 20, height = 20, units = "cm")
+print(p2)
+dev.off()
 
 
 # USA, Norway, New Zealand, Australia, Canada
 
 dta %>% 
   filter(code %in% c("USA", "NOR", "NZL", "AUS", "CAN")) %>% 
-  produce_composite_lattice()
+  produce_composite_lattice() -> p3
+
+png("figures/for_ms/anglonor.png",
+    res = 300, width = 20, height = 18, units = "cm"
+    )
+print(p3)
+dev.off()
 
 
 # Germany, Italy and Spain 
 
 dta %>% 
   filter(code %in% c("DEUTE", "DEUTW", "ITA", "ESP")) %>% 
-  produce_composite_lattice()
+  produce_composite_lattice() -> p4
+
+png("figures/for_ms/lowfert_westsouth.png",
+    res = 300, width = 20, height = 15, units = "cm"
+    )
+print(p4)
+dev.off()
+
 
 
 # Asian countries 
 
 dta %>% 
   filter(code %in% c("TWN", "JPN", "KOR")) %>% 
-  produce_composite_lattice()
+  produce_composite_lattice() -> p5
+
+png("figures/for_ms/asian.png",
+    res = 300, width = 20, height = 15, 
+    units = "cm"
+    )
+print(p5)
+dev.off()
 
 # 
 
@@ -315,7 +362,14 @@ dta %>%
 
 dta %>% 
   filter(code %in% c("ALB", "ROU", "POL", "HUN", "RUS", "MDA")) %>% 
-  produce_composite_lattice()
+  produce_composite_lattice() -> p6
+
+png("figures/for_ms/eastcent.png",
+    res = 300, width = 20, height = 20,
+    units = "cm"
+    )
+print(p6)
+dev.off()
 
 
 # Separate complex figures for all countries  -----------------------------
