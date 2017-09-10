@@ -177,6 +177,9 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       aspect = "iso",
       col.regions=rev(colorRampPalette(brewer.pal(6, "Spectral"))(200)),
       labels=list(cex=1.2),
+      colorkey = list(
+        space = "top"
+      ),
       col="black", 
       as.table = TRUE,
       strip = my_strip_style,
@@ -257,33 +260,14 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       labels = F
     )
   
-  
-  output <- shading + line_2_05 + line_1_80 + line_1_50 + line_1_30
+
+  output <- shading + line_2_05 + line_1_80 + line_1_50 + line_1_30 
   
   
   return(output)
 
 }
 
-p_overall <- produce_composite_lattice(dta, add_gridlines = F)
-
-
-<<<<<<< HEAD
-# png("figures/ccfr/hfd_hfc_combined_latticeplot.png",
-#     res=600, width=60, height=40, units = "cm"
-# )
-svg("figures/overall_new.svg", width = 8.0, height = 10.5,
-    pointsize = 4)
-print(p_overall)
-dev.off()
-
-# dev.off()
-=======
-png("figures/for_ms/overall_poster.png",
-    res=300, width=40, height=40, units = "cm"
-)
-print(p_overall)
-dev.off()
 
 png("figures/for_ms/overall_poster_gridded.png",
     res=300, width=40, height=40, units = "cm"
@@ -303,7 +287,7 @@ png("figures/for_ms/overall_paper_coded.png",
     )
 print(p1)
 dev.off()
->>>>>>> cf97cceb76855a00134151919614934d0df02c8f
+
 
 # Britain
 dta %>% 
@@ -370,6 +354,102 @@ png("figures/for_ms/eastcent.png",
     )
 print(p6)
 dev.off()
+
+
+
+# Attempt to produce CCFR legend in grid ----------------------------------
+# Examples from here:
+# https://stat.ethz.ch/R-manual/R-devel/library/grid/doc/grid.pdf
+
+require(grid)
+# # First example
+# grid.rect(gp = gpar(lty = "dashed"))
+# vp1 <- viewport(x = 0, y = 0.5, w = 0.5, h = 0.5,
+#                   just = c("left", "bottom"), name = "vp1")
+# vp2 <- viewport(x = 0.5, y = 0, w = 0.5, h = 0.5,
+#                    just = c("left", "bottom"))
+# pushViewport(vp1)
+# grid.rect(gp = gpar(col = "grey"))
+# grid.text("Some drawing in graphics region 1", y = 0.8)
+# upViewport()
+# pushViewport(vp2)
+# grid.rect(gp = gpar(col = "grey"))
+# grid.text("Some drawing in graphics region 2", y = 0.8)
+# upViewport()
+# downViewport("vp1")
+# grid.text("MORE drawing in graphics region 1", y = 0.2)
+# popViewport()
+# 
+# # Second example:
+# grid.rect(gp = gpar(lty = "dashed"))
+# vp <- viewport(width = 0.5, height = 0.5)
+# pushViewport(vp)
+# grid.rect(gp = gpar(col = "grey"))
+# grid.text("quarter of the page", y = 0.85)
+# pushViewport(vp)
+# grid.rect()
+# grid.text("quarter of the\nprevious viewport")
+# popViewport(2)
+# 
+# dev.off()
+# 
+# # Third example
+# pushViewport(viewport(layout = grid.layout(4, 5)))
+# grid.rect (gp = gpar(col = "grey"))
+# grid.segments( 
+#   c(1:4/5, rep(0, 3)), c(rep(0, 4), 1:3 / 4),
+#   c(1:4/5, rep(1, 3)), c(rep(1, 4), 1:3 / 4),
+#   gp = gpar(col = "grey")
+#   )
+# pushViewport(viewport(layout.pos.col = 2:3, layout.pos.row = 3))
+# grid.rect(gp = gpar(lwd = 3))
+# popViewport(2)
+
+grid.newpage()
+
+pushViewport(viewport(layout = grid.layout(5, 2)))
+# grid.rect(gp = gpar(col = "red"))  
+
+pushViewport(viewport(layout.pos.col = 1:2, layout.pos.row = 1))
+# grid.rect(gp = gpar(col = "blue", fill = "grey"))
+grid.text("CCFR", gp = gpar(fontface = "bold", cex = 1.5 ))
+popViewport()
+
+pushViewport(viewport(layout.pos.col = 1, layout.pos.row = 2:5))
+# grid.rect(gp = gpar(fill = "lightgreen"))
+# grid.text("lines go here")
+grid.move.to(x = 0.3, y = 0.8)
+grid.line.to(x = 0.7, y = 0.8, gp = gpar(lwd = 2))
+grid.move.to(x = 0.3, y = 0.6)
+grid.line.to(x = 0.7, y = 0.6, gp = gpar(lwd = 2, lty = "dashed"))
+grid.move.to(x = 0.3, y = 0.4)
+grid.line.to(x = 0.7, y = 0.4)
+grid.move.to(x = 0.3, y = 0.2)
+grid.line.to(x = 0.7, y = 0.2, gp = gpar(lty = "dashed"))
+popViewport()
+
+pushViewport(viewport(layout.pos.col= 2, layout.pos.row = 2:5))
+# grid.rect(gp = gpar(fill = "lightblue"))
+grid.text("2.05", x = 0.05, y = 0.8, just = "left")
+grid.text("1.80", x = 0.05, y = 0.6, just = "left")
+grid.text("1.50", x = 0.05, y = 0.4, just = "left")
+grid.text("1.30", x = 0.05, y = 0.2, just = "left")
+#grid.text("Labels go here")
+popViewport(2)
+
+
+
+# First division: 
+# Top 
+# The challenges 
+
+
+
+
+
+
+# Older material ----------------------------------------------------------
+
 
 
 # Separate complex figures for all countries  -----------------------------
