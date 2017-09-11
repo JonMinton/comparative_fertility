@@ -406,7 +406,7 @@ require(grid)
 # popViewport(2)
 
 grid.newpage()
-
+png("figures/ccfr_legend.png", height = 2.5, width = 2.5, units = "cm", res = 300)
 pushViewport(viewport(layout = grid.layout(5, 2)))
 # grid.rect(gp = gpar(col = "red"))  
 
@@ -437,6 +437,7 @@ grid.text("1.30", x = 0.05, y = 0.2, just = "left")
 #grid.text("Labels go here")
 popViewport(2)
 
+dev.off()
 
 
 # First division: 
