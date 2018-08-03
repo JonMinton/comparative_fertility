@@ -24,6 +24,135 @@ if(file.exists("data/data_combined_and_standardised.csv")){
   source("scripts/hfc_hfd_data_combine.R")
 }
 
+
+# Create illustrative figure
+
+dta_simplified %>% 
+  filter(code == "DEUTW") %>% 
+  mutate(cohort = year - age) %>% 
+  filter(cohort %in% seq(1935, 1945, by = 10)) %>%
+  mutate(cohort = factor(cohort)) %>%
+  group_by(cohort) %>% 
+  arrange(age) %>% 
+  mutate(sum_asfr = cumsum(asfr)) %>% 
+  ungroup() -> dta
+
+
+find_age_of_hurdle <- function(dta, crate){
+
+  xvals <- pull(dta, age)
+  yvals <- pull(dta, sum_asfr)
+  curvefun <- splinefun(xvals, yvals)
+  fn <- function(x, CRATE = crate){
+    (curvefun(x) - CRATE) ^ 2
+  }
+  out <- optimize(fn, c(10, 100))$`minimum`
+}
+
+crossing(
+  cohort = c(1935, 1945), crate = c(1.3, 1.5,1.8,2.05)
+  ) %>% 
+  left_join(
+    dta %>% 
+      mutate(cohort = as.double(as.character(cohort))) %>% 
+      group_by(cohort) %>% 
+      nest()
+  ) %>% 
+  mutate(crossing_age = 
+    map2_dbl(
+      data, crate,
+      find_age_of_hurdle
+    )
+  ) %>% 
+  select(cohort, cumulative_fertility = crate, age_cf_achieved = crossing_age) -> 
+  ages_fertility_achieved
+
+dta %>% 
+  ggplot(aes(x = sum_asfr, y = age, group = cohort, colour = cohort)) +
+  geom_line() +
+  geom_vline(xintercept = 1.3, linetype = "dashed") + 
+  geom_vline(xintercept = 1.5) +
+  geom_vline(xintercept = 1.8, size = 1.2, linetype = "dashed") + 
+  geom_vline(xintercept = 2.05, size = 1.2) +
+  scale_color_manual(values = c("#a6cee3", "#b2df8a")) +
+  theme_minimal() + 
+  labs(x = "Cumulative fertility of cohorts (live births / woman)",
+       y = "Age in years") +
+  geom_hline(
+    aes(yintercept = age_cf_achieved, 
+        size = factor(cumulative_fertility),
+        linetype = factor(cumulative_fertility),
+        colour = factor(cohort)),
+    data = ages_fertility_achieved, 
+    inherit.aes = F
+  ) +
+  scale_size_manual(values = c(1, 1, 1.2, 1.2)) + 
+  scale_linetype_manual(values = c("dashed", "solid", "dashed", "solid")) + 
+  scale_color_manual(values = c("#a6cee3", "#b2df8a")) +
+  coord_cartesian(xlim = c(0, 2.5), ylim = c(12, 50))
+
+
+dta %>% 
+  ggplot(aes(x = sum_asfr, y = age, group = cohort, colour = cohort)) +
+  geom_line() +
+  geom_vline(xintercept = 1.3, linetype = "dashed") + 
+  geom_vline(xintercept = 1.5) +
+  geom_vline(xintercept = 1.8, size = 1.2, linetype = "dashed") + 
+  geom_vline(xintercept = 2.05, size = 1.2) +
+  scale_color_manual(values = c("#a6cee3", "#b2df8a"), guide = F) +
+  theme_minimal() + 
+  labs(x = "Cumulative fertility of cohorts (live births / woman)",
+       y = "Age in years") +
+  geom_segment(
+    aes(y = age_cf_achieved, 
+        yend = age_cf_achieved,
+        x = cumulative_fertility,
+        xend = 0,
+        size = factor(cumulative_fertility),
+        linetype = factor(cumulative_fertility),
+        colour = factor(cohort)),
+    data = ages_fertility_achieved, 
+    inherit.aes = F
+  ) +
+  scale_size_manual(values = c(1, 1, 1.2, 1.2), guide = FALSE) + 
+  scale_linetype_manual(values = c("dashed", "solid", "dashed", "solid"), guide = FALSE) + 
+  scale_color_manual(values = c("#a6cee3", "#b2df8a"), guide = F) +
+  coord_cartesian(xlim = c(0, 2.5), ylim = c(12, 50)) + 
+  annotate(
+    "text", x = 1.32, y = 14,
+    label = "1.3 babies/woman", fontface = "italic",
+    angle = 90
+  ) + 
+  annotate(
+    "text", x = 1.52, y = 14,
+    label = "1.5 babies/woman", fontface = "italic",
+    angle = 90
+  ) +
+  annotate(
+    "text", x = 1.82, y = 14,
+    label = "1.8 babies/woman", fontface = "italic",
+    angle = 90
+  ) + 
+  annotate(
+  "text", x = 2.07, y = 14,
+  label = "2.05 babies/woman", fontface = "italic",
+  angle = 90
+  ) + 
+  annotate(
+    "text", x = 0.5, y = 23,
+    label = "Cumulative fertility, 1935 cohort", fontface = "bold",
+    angle = 16, colour = "#a6cee3"
+  ) + 
+  annotate(
+    "text", x = 0.5, y = 20,
+    label = "Cumulative fertility, 1935 cohort", fontface = "bold",
+    angle = 19, colour = "#b2df8a"
+  ) + 
+  
+
+
+
+ages_fertility_achieved
 #####
 # dta_simplified %>%
 #   ggplot(., aes(x = year, y = age, fill = asfr)) +
