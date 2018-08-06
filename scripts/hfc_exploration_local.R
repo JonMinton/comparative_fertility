@@ -30,7 +30,7 @@ if(file.exists("data/data_combined_and_standardised.csv")){
 dta_simplified %>% 
   filter(code == "DEUTW") %>% 
   mutate(cohort = year - age) %>% 
-  filter(cohort %in% seq(1935, 1945, by = 10)) %>%
+  filter(cohort %in% c(1935, 1938)) %>%
   mutate(cohort = factor(cohort)) %>%
   group_by(cohort) %>% 
   arrange(age) %>% 
@@ -49,8 +49,9 @@ find_age_of_hurdle <- function(dta, crate){
   out <- optimize(fn, c(10, 100))$`minimum`
 }
 
+
 crossing(
-  cohort = c(1935, 1945), crate = c(1.3, 1.5,1.8,2.05)
+  cohort = c(1935, 1938), crate = c(1.3, 1.5,1.8,2.05)
   ) %>% 
   left_join(
     dta %>% 
@@ -66,6 +67,16 @@ crossing(
   ) %>% 
   select(cohort, cumulative_fertility = crate, age_cf_achieved = crossing_age) -> 
   ages_fertility_achieved
+
+ages_fertility_achieved <- ages_fertility_achieved %>%
+  mutate(nearest_age = round(age_cf_achieved, 0)) %>% 
+  left_join(
+    dta %>% mutate(cohort = as.numeric(as.character(cohort))),
+    by = c("cohort"= "cohort", "nearest_age" = "age")
+  ) %>% select(cohort, cumulative_fertility, age_cf_achieved, asfr)
+
+
+            
 
 dta %>% 
   ggplot(aes(x = sum_asfr, y = age, group = cohort, colour = cohort)) +
@@ -107,10 +118,11 @@ dta %>%
     aes(y = age_cf_achieved, 
         yend = age_cf_achieved,
         x = cumulative_fertility,
-        xend = 0,
+        xend = asfr + 0.01, 
         size = factor(cumulative_fertility),
         linetype = factor(cumulative_fertility),
         colour = factor(cohort)),
+    arrow = arrow(length = unit(0.01, "npc")),
     data = ages_fertility_achieved, 
     inherit.aes = F
   ) +
@@ -119,36 +131,87 @@ dta %>%
   scale_color_manual(values = c("#a6cee3", "#b2df8a"), guide = F) +
   coord_cartesian(xlim = c(0, 2.5), ylim = c(12, 50)) + 
   annotate(
-    "text", x = 1.32, y = 14,
+    "text", x = 1.32, y = 20,
     label = "1.3 babies/woman", fontface = "italic",
-    angle = 90
+    angle = 90,
+    size = 2
   ) + 
   annotate(
-    "text", x = 1.52, y = 14,
+    "text", x = 1.52, y = 20,
     label = "1.5 babies/woman", fontface = "italic",
-    angle = 90
+    angle = 90,
+    size = 2
   ) +
   annotate(
-    "text", x = 1.82, y = 14,
+    "text", x = 1.82, y = 20,
     label = "1.8 babies/woman", fontface = "italic",
-    angle = 90
+    angle = 90,
+    size = 2
   ) + 
   annotate(
-  "text", x = 2.07, y = 14,
+  "text", x = 2.07, y = 20,
   label = "2.05 babies/woman", fontface = "italic",
-  angle = 90
+  angle = 90,
+  size = 2
   ) + 
   annotate(
     "text", x = 0.5, y = 23,
     label = "Cumulative fertility, 1935 cohort", fontface = "bold",
-    angle = 16, colour = "#a6cee3"
+    angle = 15, colour = "#a6cee3"
   ) + 
   annotate(
-    "text", x = 0.5, y = 20,
-    label = "Cumulative fertility, 1935 cohort", fontface = "bold",
-    angle = 19, colour = "#b2df8a"
+    "text", x = 0.5, y = 21.5,
+    label = "Cumulative fertility, 1938 cohort", fontface = "bold",
+    angle = 15, colour = "#b2df8a"
+  ) +
+  geom_polygon(
+    aes(x = asfr, y = age),
+    data = dta %>% filter(cohort == "1935"),
+    fill = "#a6cee3", alpha = 0.5
   ) + 
-  
+  geom_polygon(
+    aes(x = asfr, y = age), 
+    data = dta %>% filter(cohort == "1938"),
+    fill = "#b2df8a", alpha = 0.5
+  ) + 
+  annotate(
+    "text", x = 0.065, y = 25,
+    label = "Fertility Schedules\n(1935 and 1938)", fontface = "bold",
+    angle = 270
+  ) + 
+  annotate(
+    "text", x = 0.60, y = 37.5,
+    label = "Placement of replacement fertility contour for 1938 cohort",
+    size = 1.8
+  ) +
+  annotate(
+    "text", x = 0.62, y = 35,
+    label = "Placement of replacement fertility contour for 1935 cohort",
+    size = 1.8
+  ) +
+  annotate(
+    "text", x = 0.60, y = 31.5,
+    label = "Placement of 1.8 babies/woman contours",
+    size = 1.8
+  ) +
+  annotate(
+    "text", x = 0.60, y = 28.50,
+    label = "Placement of 1.5 babies/woman contours",
+    size = 1.8
+  ) +
+  annotate(
+    "text", x = 0.60, y = 26.75,
+    label = "Placement of 1.3 babies/woman contours",
+    size = 1.8
+  ) 
+ggsave("figures/annotation_fig.png", height = 10, width = 15, units = "cm", dpi = 300)
+
+ggsave("figures/annotation_fig.svg")
+
+
+# Produce figure for West Germany 
+# contours only 
+# colours only (paired colourscheme)
 
 
 
@@ -227,7 +290,11 @@ dta <- dta  %>% mutate(country = factor(country, levels = rev(ordered_country_la
 
 dta <- dta %>% arrange(country)
 
-produce_composite_lattice <- function(DTA, add_gridlines = T){
+produce_composite_lattice <- function(DTA, add_gridlines = T,
+                                      colscheme = colorRampPalette(brewer.pal(12, "Paired"))(200),
+                                      return = "all"
+                                      
+                                      ){
   # Plot new lattice --------------------------------------------------------
   
   # The important and slightly challenging new tasks are: 
@@ -289,6 +356,26 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
     }
     NULL
   }
+  
+  
+  panel_select2 <- function(add_gridlines){
+    if(!add_gridlines){
+      return(
+        function(...){
+          panel.contourplot(...)
+        }
+      )
+    } else {
+      return(
+        function(...){
+          panel.contourplot(...)
+          panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
+          panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
+        }
+      )
+    }
+    NULL
+  }
 
   DTA_SS <- DTA %>% 
     filter(year >= 1950) %>% 
@@ -297,17 +384,18 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
   shading <- DTA_SS %>% 
     levelplot(
       asfr ~ birth_year * age | country, 
-      data=. , 
+      data= . , 
       par.strip.text=list(cex=1.1, fontface="bold"),
       ylab=list(label="Age in years", cex=1.2),
       xlab=list(label="Birth Year", cex=1.2),
       cex=1.4,
       cuts=20,
       aspect = "iso",
-      col.regions=rev(colorRampPalette(brewer.pal(6, "Spectral"))(200)),
+      col.regions=colscheme,
       labels=list(cex=1.2),
       colorkey = list(
-        space = "top"
+        space = "top",
+        labels = list(cex = 1.2)
       ),
       col="black", 
       as.table = TRUE,
@@ -321,21 +409,52 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       par.settings=list(strip.background=list(col="lightgrey"))
     ) 
   
-  line_2_05 <- DTA_SS %>% 
-    filter(series_ok == TRUE) %>% 
-    contourplot(
-      my_ccfr ~ birth_year * age | country, 
-      data=. , 
-      region = F,
-      aspect = "iso",
-      as.table = TRUE,
-      ylab = "",
-      xlab = "", 
-      scales = list(NULL),
-      at = 2.05, 
-      lwd = 2, 
-      labels = F
-    )
+  if (return == "all"){
+    line_2_05 <- DTA_SS %>% 
+      filter(series_ok == TRUE) %>% 
+      contourplot(
+        my_ccfr ~ birth_year * age | country, 
+        data= . , 
+        region = F,
+        aspect = "iso",
+        as.table = TRUE,
+        ylab = "",
+        xlab = "", 
+        scales = list(NULL),
+        at = 2.05, 
+        lwd = 2, 
+        labels = F
+      )
+  } else if (return == "contours"){
+    line_2_05 <- DTA_SS %>% 
+      filter(series_ok == TRUE) %>% 
+      contourplot(
+        my_ccfr ~ birth_year * age | country, 
+        data= . , 
+        par.strip.text=list(cex=1.1, fontface="bold"),
+        ylab=list(label="Age in years", cex=1.2),
+        xlab=list(label="Birth Year", cex=1.2),
+        region = F,
+        cex=1.4,
+        aspect = "iso",
+        as.table = TRUE,
+        labels = F,
+
+       at = 2.05, 
+       lwd = 2, 
+       strip = my_strip_style,
+       scales=list(
+         x=list(cex=1.2, rot = 90),
+         y=list(cex=1.2),
+         alternating=3
+       ),
+       xlim = c(1900, 2000),
+        panel = panel_select2(add_gridlines),
+        par.settings=list(strip.background=list(col="lightgrey"))
+        
+      )
+
+  }
   
   line_1_80 <- DTA_SS %>% 
     filter(year >= 1950) %>% 
@@ -343,7 +462,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
     filter(series_ok == TRUE) %>% 
     contourplot(
       my_ccfr ~ birth_year * age | country, 
-      data=. , 
+      data= . , 
       region = F,
       aspect = "iso",
       as.table = TRUE,
@@ -360,7 +479,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
     filter(series_ok == TRUE) %>% 
     contourplot(
       my_ccfr ~ birth_year * age | country, 
-      data=. , 
+      data= . , 
       region = F,
       aspect = "iso",
       as.table = TRUE,
@@ -376,7 +495,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
     filter(series_ok == TRUE) %>% 
     contourplot(
       my_ccfr ~ birth_year * age | country, 
-      data=. , 
+      data= . , 
       region = F,
       aspect = "iso",
       as.table = TRUE,
@@ -389,8 +508,13 @@ produce_composite_lattice <- function(DTA, add_gridlines = T){
       labels = F
     )
   
-
-  output <- shading + line_2_05 + line_1_80 + line_1_50 + line_1_30 
+  if (return == "all"){
+    output <- shading + line_2_05 + line_1_80 + line_1_50 + line_1_30 
+  } else if (return == "shade") {
+    output <- shading
+  } else if (return == "contours") {
+    output <- line_2_05 + line_1_80 + line_1_50 + line_1_30 
+  }
   
   
   return(output)
@@ -403,6 +527,8 @@ png("figures/for_ms/overall_poster_gridded.png",
 )
 print(produce_composite_lattice(dta, add_gridlines = T))
 dev.off()
+
+
 
 # How about a version with code instead of country in label? 
 
@@ -418,10 +544,38 @@ print(p1)
 dev.off()
 
 
+# Illustration for fig 1: West Germany with Shade only
+# Illustration for fig 1: West Germany with Contour lines only 
+# Illustration for fig 1: East and West Germany combined
+
+dta %>% 
+  filter(code %in% c("DEUTW")) %>% 
+  produce_composite_lattice(add_gridlines = F, return = "contours") -> f1b
+
+
+dta %>% 
+  filter(code %in% c("DEUTW")) %>% 
+  produce_composite_lattice(add_gridlines = F, return = "shade") -> f1c
+
+dta %>% 
+  filter(code %in% c("DEUTW")) %>% 
+  produce_composite_lattice(add_gridlines = F, return = "all") -> f1d
+
+
+dta %>% 
+  filter(code %in% c("DEUTW", "DEUTE")) %>% 
+  produce_composite_lattice(add_gridlines = F, return = "all") -> f1e
+
+svg("figures/fig1_b.svg"); print(f1b); dev.off()
+svg("figures/fig1_c.svg"); print(f1c); dev.off()
+svg("figures/fig1_d.svg"); print(f1d); dev.off()
+svg("figures/fig1_e.svg"); print(f1e); dev.off()
+
+
 # Britain
 dta %>% 
   filter(code %in% c("GBRTENW", "GBR_SCO", "GBR_NIR", "IRL")) %>% 
-  produce_composite_lattice() -> p2
+  produce_composite_lattice(add_gridlines = F, return = "contours") -> p2
 
 png("figures/for_ms/Britain.png",
     res = 300, width= 20, height = 20, units = "cm")
