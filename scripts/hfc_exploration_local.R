@@ -525,7 +525,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
 png("figures/for_ms/overall_poster_gridded.png",
     res=300, width=40, height=40, units = "cm"
 )
-print(produce_composite_lattice(dta, add_gridlines = T))
+print(produce_composite_lattice(dta, add_gridlines = F))
 dev.off()
 
 
@@ -575,7 +575,7 @@ svg("figures/fig1_e.svg"); print(f1e); dev.off()
 # Britain
 dta %>% 
   filter(code %in% c("GBRTENW", "GBR_SCO", "GBR_NIR", "IRL")) %>% 
-  produce_composite_lattice(add_gridlines = F, return = "contours") -> p2
+  produce_composite_lattice(add_gridlines = F) -> p2
 
 png("figures/for_ms/Britain.png",
     res = 300, width= 20, height = 20, units = "cm")
@@ -587,7 +587,7 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("USA", "NOR", "NZL", "AUS", "CAN")) %>% 
-  produce_composite_lattice() -> p3
+  produce_composite_lattice(add_gridlines = F) -> p3
 
 png("figures/for_ms/anglonor.png",
     res = 300, width = 20, height = 18, units = "cm"
@@ -600,7 +600,7 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("DEUTE", "DEUTW", "ITA", "ESP")) %>% 
-  produce_composite_lattice() -> p4
+  produce_composite_lattice(add_gridlines = F) -> p4
 
 png("figures/for_ms/lowfert_westsouth.png",
     res = 300, width = 20, height = 15, units = "cm"
@@ -614,7 +614,7 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("TWN", "JPN", "KOR")) %>% 
-  produce_composite_lattice() -> p5
+  produce_composite_lattice(add_gridlines = F) -> p5
 
 png("figures/for_ms/asian.png",
     res = 300, width = 20, height = 15, 
@@ -629,7 +629,7 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("ALB", "ROU", "POL", "HUN", "RUS", "MDA")) %>% 
-  produce_composite_lattice() -> p6
+  produce_composite_lattice(add_gridlines = F) -> p6
 
 png("figures/for_ms/eastcent.png",
     res = 300, width = 20, height = 20,
