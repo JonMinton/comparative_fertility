@@ -290,8 +290,11 @@ dta <- dta  %>% mutate(country = factor(country, levels = rev(ordered_country_la
 
 dta <- dta %>% arrange(country)
 
+# adjust the paired colour scheme so reds and greens are not next to each other
+adjusted_paired <- brewer.pal(12, "Paired")[c(1,2,3,4,9,10,7,8,5,6,11,12)]
+
 produce_composite_lattice <- function(DTA, add_gridlines = T,
-                                      colscheme = colorRampPalette(brewer.pal(12, "Paired"))(200),
+                                      colscheme = colorRampPalette(adjusted_paired)(200),
                                       return = "all"
                                       
                                       ){
@@ -538,7 +541,7 @@ dta %>%
   produce_composite_lattice(add_gridlines = F) -> p1
 
 png("figures/for_ms/overall_paper_coded.png",
-    res = 300, width = 25, height = 25, units = "cm"
+    res = 300, width = 26, height = 26, units = "cm"
     )
 print(p1)
 dev.off()
@@ -639,93 +642,6 @@ print(p6)
 dev.off()
 
 
-
-# Attempt to produce CCFR legend in grid ----------------------------------
-# Examples from here:
-# https://stat.ethz.ch/R-manual/R-devel/library/grid/doc/grid.pdf
-
-require(grid)
-# # First example
-# grid.rect(gp = gpar(lty = "dashed"))
-# vp1 <- viewport(x = 0, y = 0.5, w = 0.5, h = 0.5,
-#                   just = c("left", "bottom"), name = "vp1")
-# vp2 <- viewport(x = 0.5, y = 0, w = 0.5, h = 0.5,
-#                    just = c("left", "bottom"))
-# pushViewport(vp1)
-# grid.rect(gp = gpar(col = "grey"))
-# grid.text("Some drawing in graphics region 1", y = 0.8)
-# upViewport()
-# pushViewport(vp2)
-# grid.rect(gp = gpar(col = "grey"))
-# grid.text("Some drawing in graphics region 2", y = 0.8)
-# upViewport()
-# downViewport("vp1")
-# grid.text("MORE drawing in graphics region 1", y = 0.2)
-# popViewport()
-# 
-# # Second example:
-# grid.rect(gp = gpar(lty = "dashed"))
-# vp <- viewport(width = 0.5, height = 0.5)
-# pushViewport(vp)
-# grid.rect(gp = gpar(col = "grey"))
-# grid.text("quarter of the page", y = 0.85)
-# pushViewport(vp)
-# grid.rect()
-# grid.text("quarter of the\nprevious viewport")
-# popViewport(2)
-# 
-# dev.off()
-# 
-# # Third example
-# pushViewport(viewport(layout = grid.layout(4, 5)))
-# grid.rect (gp = gpar(col = "grey"))
-# grid.segments( 
-#   c(1:4/5, rep(0, 3)), c(rep(0, 4), 1:3 / 4),
-#   c(1:4/5, rep(1, 3)), c(rep(1, 4), 1:3 / 4),
-#   gp = gpar(col = "grey")
-#   )
-# pushViewport(viewport(layout.pos.col = 2:3, layout.pos.row = 3))
-# grid.rect(gp = gpar(lwd = 3))
-# popViewport(2)
-
-grid.newpage()
-png("figures/ccfr_legend.png", height = 2.5, width = 2.5, units = "cm", res = 300)
-pushViewport(viewport(layout = grid.layout(5, 2)))
-# grid.rect(gp = gpar(col = "red"))  
-
-pushViewport(viewport(layout.pos.col = 1:2, layout.pos.row = 1))
-# grid.rect(gp = gpar(col = "blue", fill = "grey"))
-grid.text("CCFR", gp = gpar(fontface = "bold", cex = 1.5 ))
-popViewport()
-
-pushViewport(viewport(layout.pos.col = 1, layout.pos.row = 2:5))
-# grid.rect(gp = gpar(fill = "lightgreen"))
-# grid.text("lines go here")
-grid.move.to(x = 0.3, y = 0.8)
-grid.line.to(x = 0.7, y = 0.8, gp = gpar(lwd = 2))
-grid.move.to(x = 0.3, y = 0.6)
-grid.line.to(x = 0.7, y = 0.6, gp = gpar(lwd = 2, lty = "dashed"))
-grid.move.to(x = 0.3, y = 0.4)
-grid.line.to(x = 0.7, y = 0.4)
-grid.move.to(x = 0.3, y = 0.2)
-grid.line.to(x = 0.7, y = 0.2, gp = gpar(lty = "dashed"))
-popViewport()
-
-pushViewport(viewport(layout.pos.col= 2, layout.pos.row = 2:5))
-# grid.rect(gp = gpar(fill = "lightblue"))
-grid.text("2.05", x = 0.05, y = 0.8, just = "left")
-grid.text("1.80", x = 0.05, y = 0.6, just = "left")
-grid.text("1.50", x = 0.05, y = 0.4, just = "left")
-grid.text("1.30", x = 0.05, y = 0.2, just = "left")
-#grid.text("Labels go here")
-popViewport(2)
-
-dev.off()
-
-
-# First division: 
-# Top 
-# The challenges 
 
 
 
