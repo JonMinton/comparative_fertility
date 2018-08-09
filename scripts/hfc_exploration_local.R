@@ -215,7 +215,9 @@ ggsave("figures/annotation_fig.svg")
 
 
 
-ages_fertility_achieved
+# ages_fertility_achieved
+
+
 #####
 # dta_simplified %>%
 #   ggplot(., aes(x = year, y = age, fill = asfr)) +
@@ -573,6 +575,15 @@ svg("figures/fig1_b.svg"); print(f1b); dev.off()
 svg("figures/fig1_c.svg"); print(f1c); dev.off()
 svg("figures/fig1_d.svg"); print(f1d); dev.off()
 svg("figures/fig1_e.svg"); print(f1e); dev.off()
+
+
+# USA Norway comparison
+
+dta %>% 
+  filter(code %in% c("USA", "NOR")) %>% 
+  produce_composite_lattice(add_gridlines = F) -> fig_usanor
+
+svg("figures/usanor.svg"); print(fig_usanor); dev.off()
 
 
 # Britain
