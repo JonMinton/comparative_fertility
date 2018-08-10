@@ -204,7 +204,6 @@ dta %>%
     label = "Placement of 1.3 babies/woman contours",
     size = 1.8
   ) 
-ggsave("figures/annotation_fig.png", height = 10, width = 15, units = "cm", dpi = 300)
 
 ggsave("figures/annotation_fig.svg")
 
@@ -294,6 +293,22 @@ dta <- dta %>% arrange(country)
 
 # adjust the paired colour scheme so reds and greens are not next to each other
 adjusted_paired <- brewer.pal(12, "Paired")[c(1,2,3,4,9,10,7,8,5,6,11,12)]
+paired <- brewer.pal(12, "Paired")
+
+col_df <- tibble(
+  type = rep(c("unadjusted", "adjusted"), each = 12),
+  col = c(adjusted_paired, paired),
+  x = rep(1:12, 2)
+)
+
+svg("figures/paired_pal.svg")
+plot(1:12, rep(2, 12), pch = 15, cex = 5, col = col_df$col[1:12], ylim = c(0, 2.5), axes = F,
+     xlab = "", ylab = "")
+points(1:12, rep(1, 12), pch = 15, cex = 5, col = col_df$col[13:24])
+dev.off()
+
+
+brewer.pal(12, "Paired")
 
 produce_composite_lattice <- function(DTA, add_gridlines = T,
                                       colscheme = colorRampPalette(adjusted_paired)(200),
