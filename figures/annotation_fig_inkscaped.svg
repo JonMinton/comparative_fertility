@@ -13,8 +13,8 @@
    version="1.1"
    id="svg4687"
    sodipodi:docname="annotation_fig_inkscaped.svg"
-   inkscape:version="0.92.1 r15371"
-   inkscape:export-filename="E:\repos\comparative_fertility\figures\fig_1a_construction_of_contours.png"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08a.png"
    inkscape:export-xdpi="300.03"
    inkscape:export-ydpi="300.03"
    width="580.00159"
@@ -27,7 +27,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -38,19 +38,19 @@
      objecttolerance="10"
      gridtolerance="10"
      guidetolerance="10"
-     inkscape:pageopacity="0"
+     inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1005"
+     inkscape:window-height="1017"
      id="namedview4689"
      showgrid="false"
      inkscape:zoom="2.0000001"
-     inkscape:cx="280.50106"
-     inkscape:cy="164.91555"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:cx="317.9679"
+     inkscape:cy="167.20741"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer9" />
+     inkscape:current-layer="layer3" />
   <defs
      id="defs4487">
     <linearGradient
@@ -257,6 +257,36 @@
          stdDeviation="0.53925001"
          id="feGaussianBlur5772" />
     </filter>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5438-3"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5436-6"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#a6cde3;fill-opacity:1;fill-rule:evenodd;stroke:#a6cde3;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker5448-4"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         id="path5446-9"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#b3df8c;fill-opacity:1;fill-rule:evenodd;stroke:#b3df8c;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
   </defs>
   <defs
      id="defs4494">
@@ -288,17 +318,8 @@
      inkscape:groupmode="layer"
      id="layer9"
      inkscape:label="canvas"
-     transform="translate(9.5007876,10.175858)">
-    <rect
-       style="display:inline;opacity:0.75;fill:#ffffff;fill-opacity:0.98139535;stroke:#000000;stroke-width:1.02645838;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.17209299"
-       id="rect16372"
-       width="578.97516"
-       height="340.97513"
-       x="-8.9875584"
-       y="-9.6626291"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-  </g>
+     transform="translate(9.5007876,10.175858)"
+     style="display:inline" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
@@ -306,7 +327,10 @@
      style="display:inline"
      transform="translate(-0.92493644,-1.0940677)">
     <g
-       id="g16326">
+       id="g16326"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03">
       <polyline
          transform="translate(4.9497476,5.7899256)"
          id="polyline4496"
@@ -577,13 +601,62 @@
        style="fill:#a6cee3;fill-opacity:0.5;stroke:#a6cee3;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4602"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="57.53,285.63 57.53,278.61 57.54,271.59 57.61,264.57 58.45,257.55 60.68,250.53 64.90,243.51 70.36,236.48 75.09,229.46 80.76,222.44 84.58,215.42 88.52,208.40 90.18,201.38 91.29,194.36 90.47,187.33 87.93,180.31 85.66,173.29 82.34,166.27 78.63,159.25 74.99,152.23 70.99,145.21 68.53,138.18 65.87,131.16 63.89,124.14 62.41,117.12 61.14,110.10 60.33,103.08 59.45,96.06 58.79,89.03 58.36,82.01 58.08,74.99 57.85,67.97 57.72,60.95 57.62,53.93 57.58,46.91 57.55,39.88 57.54,32.86 57.54,25.84 57.54,18.82 57.54,11.80 57.53,4.78 57.53,0.00 57.53,0.00 "
        style="fill:#b2df8a;fill-opacity:0.5;stroke:#b2df8a;stroke-width:1.07000005;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4604"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <text
+       xml:space="preserve"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Italic Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="160.82262"
+       y="-69.643021"
+       id="text4990"
+       transform="rotate(90)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
+         sodipodi:role="line"
+         id="tspan4988"
+         x="160.82262"
+         y="-69.643021">Fertility schedules</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="asfrs_temp_annotation"
+     style="display:none">
+    <text
+       transform="translate(-0.92493644,-1.0940677)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#b3df8c;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.17209299"
+       x="84.904533"
+       y="245.948"
+       id="text5432-8-8-6"><tspan
+         sodipodi:role="line"
+         id="tspan5488-8"
+         x="84.904533"
+         y="245.948"
+         style="fill:#b3df8c;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.17209299">1938</tspan></text>
+    <text
+       transform="translate(-0.92493644,-1.0940677)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#a6cde3;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.17209299"
+       x="84.883698"
+       y="158.91785"
+       id="text5432-8-4-0"><tspan
+         sodipodi:role="line"
+         id="tspan5468-7-8"
+         x="84.883698"
+         y="158.91785">1935</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -596,13 +669,187 @@
        style="fill:none;stroke:#a6cee3;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4534"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="57.53,285.63 57.53,278.61 57.54,271.59 57.61,264.57 58.53,257.55 61.68,250.53 69.05,243.51 81.87,236.48 99.44,229.46 122.66,222.44 149.71,215.42 180.70,208.40 213.34,201.38 247.10,194.36 280.05,187.33 310.44,180.31 338.57,173.29 363.38,166.27 384.48,159.25 401.94,152.23 415.40,145.21 426.39,138.18 434.73,131.16 441.08,124.14 445.97,117.12 449.58,110.10 452.38,103.08 454.30,96.06 455.55,89.03 456.38,82.01 456.92,74.99 457.24,67.97 457.42,60.95 457.51,53.93 457.56,46.91 457.57,39.88 457.59,32.86 457.59,25.84 457.60,18.82 457.60,11.80 457.60,4.78 457.60,0.00 "
        style="fill:none;stroke:#b2df8a;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4536"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="ccfr_annotation"
+     style="display:inline">
+    <text
+       transform="translate(-0.92493644,-1.0940677)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="124.74695"
+       y="266.46329"
+       id="text5432"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
+         sodipodi:role="line"
+         id="tspan5430"
+         x="124.74695"
+         y="266.46329">Cumulative fertility schedules</tspan></text>
+    <path
+       transform="translate(-0.92493644,-1.0940677)"
+       style="display:inline;fill:#a6cde3;fill-opacity:1;fill-rule:evenodd;stroke:#a6cde3;stroke-width:0.98596191px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#marker5438)"
+       d="M 177.66058,258.44752 V 216.77683"
+       id="path5434"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <path
+       transform="translate(-0.92493644,-1.0940677)"
+       style="display:inline;fill:#b3df8c;fill-opacity:1;fill-rule:evenodd;stroke:#b3df8c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#marker5448)"
+       d="M 213.1927,257.38686 V 209.78584"
+       id="path5440"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <text
+       transform="translate(-0.92493644,-1.0940677)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#a6cde3;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5770)"
+       x="166.21017"
+       y="249.80556"
+       id="text5432-8-4"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
+         sodipodi:role="line"
+         id="tspan5468-7"
+         x="166.21017"
+         y="249.80556">1935</tspan></text>
+    <text
+       transform="translate(-0.92493644,-1.0940677)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="166.25349"
+       y="249.83572"
+       id="text5432-8"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
+         sodipodi:role="line"
+         id="tspan5468"
+         x="166.25349"
+         y="249.83572">1935</tspan></text>
+    <text
+       transform="translate(-0.92493644,-1.0940677)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#b3df8c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5664)"
+       x="201.18396"
+       y="249.83572"
+       id="text5432-8-8"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
+         sodipodi:role="line"
+         id="tspan5488"
+         x="201.18396"
+         y="249.83572"
+         style="fill:#b3df8c;fill-opacity:1">1938</tspan></text>
+    <text
+       transform="translate(-0.92493644,-1.0940677)"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="201.231"
+       y="249.80556"
+       id="text5432-8-8-8"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
+         sodipodi:role="line"
+         id="tspan5488-0"
+         x="201.231"
+         y="249.80556"
+         style="fill:#000000;fill-opacity:1">1938</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="ccfr_annotation_2"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#b3df8c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="494.0498"
+       y="21.178717"
+       id="text4905"
+       transform="rotate(-0.12908722,-486.06774,409.98882)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
+         sodipodi:role="line"
+         id="tspan5076"
+         x="494.0498"
+         y="21.178717">Completed </tspan><tspan
+         sodipodi:role="line"
+         id="tspan5078"
+         x="494.0498"
+         y="33.678719">fertility,</tspan><tspan
+         sodipodi:role="line"
+         id="tspan5080"
+         x="494.0498"
+         y="46.178719">1938 cohort</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#a6cee3;fill-opacity:0.96666721;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="493.94159"
+       y="69.206169"
+       id="text4905-3"
+       transform="rotate(-0.12908722,-486.06774,409.98882)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
+         sodipodi:role="line"
+         id="tspan5106"
+         x="493.94159"
+         y="69.206169">Completed </tspan><tspan
+         sodipodi:role="line"
+         id="tspan5108"
+         x="493.94159"
+         y="81.706169">fertility,</tspan><tspan
+         sodipodi:role="line"
+         id="tspan5110"
+         x="493.94159"
+         y="94.206169">1935 cohort</tspan></text>
+    <path
+       transform="translate(-0.92493644,-1.0940677)"
+       style="display:inline;fill:#a6cde3;fill-opacity:0.96862745;fill-rule:evenodd;stroke:#a6cde3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:0.96862745;marker-end:url(#marker5386)"
+       d="m 493.49525,77.289926 h -11.2955"
+       id="path5112"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <path
+       transform="translate(-0.92493644,-1.0940677)"
+       style="display:inline;fill:#b3df8c;fill-opacity:1;fill-rule:evenodd;stroke:#b3df8c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#marker5386-8)"
+       d="M 493.37927,29.246926 H 464.40611"
+       id="path5112-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -618,7 +865,10 @@
        style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:5.69, 5.69"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4538"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="345.10001"
        y1="298.97"
@@ -627,7 +877,10 @@
        style="fill:none;stroke:#000000;stroke-width:1.07000005;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4540"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="402.60999"
        y1="298.97"
@@ -636,7 +889,10 @@
        style="fill:none;stroke:#000000;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:20.47999954, 20.47999954;stroke-dashoffset:0"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4542"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="450.54001"
        y1="298.97"
@@ -645,7 +901,10 @@
        style="fill:none;stroke:#000000;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4544"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -654,7 +913,10 @@
        id="text4994"
        transform="rotate(-90)"
        inkscape:transform-center-x="148.13887"
-       inkscape:transform-center-y="46.315494"><tspan
+       inkscape:transform-center-y="46.315494"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
          sodipodi:role="line"
          id="tspan4992"
          x="-300.56406"
@@ -667,7 +929,10 @@
        id="text4994-5"
        transform="rotate(-90)"
        inkscape:transform-center-x="148.13887"
-       inkscape:transform-center-y="46.315494"><tspan
+       inkscape:transform-center-y="46.315494"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
          sodipodi:role="line"
          id="tspan5014"
          x="-300.21051"
@@ -680,7 +945,10 @@
        id="text4994-5-0"
        transform="rotate(-90)"
        inkscape:transform-center-x="148.13887"
-       inkscape:transform-center-y="46.315494"><tspan
+       inkscape:transform-center-y="46.315494"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
          sodipodi:role="line"
          id="tspan5034"
          x="-300.21051"
@@ -693,7 +961,10 @@
        id="text4994-5-0-8"
        transform="rotate(-90)"
        inkscape:transform-center-x="148.13887"
-       inkscape:transform-center-y="46.315494"><tspan
+       inkscape:transform-center-y="46.315494"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
          sodipodi:role="line"
          id="tspan5058"
          x="-299.60114"
@@ -717,7 +988,10 @@
        style="fill:none;stroke:#a6cee3;stroke-width:1.33333337;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7.11458349, 7.11458349;stroke-dashoffset:0"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4546"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="345.10001"
        y1="169.38"
@@ -726,7 +1000,10 @@
        style="fill:none;stroke:#a6cee3;stroke-width:1.33333337;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4550"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="402.60999"
        y1="151.22"
@@ -735,7 +1012,10 @@
        style="fill:none;stroke:#a6cee3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:10.67187524, 10.67187524;stroke-dashoffset:0"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4554"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="450.54001"
        y1="125.78"
@@ -744,7 +1024,10 @@
        style="fill:none;stroke:#a6cee3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4558"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="306.75"
        y1="181.19"
@@ -753,7 +1036,10 @@
        style="fill:none;stroke:#b2df8a;stroke-width:1.33333337;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:7.11458349, 7.11458349;stroke-dashoffset:0"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4562"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="345.10001"
        y1="171.53999"
@@ -762,7 +1048,10 @@
        style="fill:none;stroke:#b2df8a;stroke-width:1.33333337;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4566"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="402.60999"
        y1="151.92"
@@ -771,7 +1060,10 @@
        style="fill:none;stroke:#b2df8a;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:10.67187524, 10.67187524;stroke-dashoffset:0"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4570"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <line
        x1="450.54001"
        y1="107.9"
@@ -780,135 +1072,123 @@
        style="fill:none;stroke:#b2df8a;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="line4574"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="92.20,177.55 89.66,179.01 92.20,180.48 "
        style="fill:none;stroke:#a6cee3;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:11.38, 11.38"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4548"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="88.38,167.91 85.84,169.38 88.38,170.84 "
        style="fill:none;stroke:#a6cee3;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4552"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="82.36,149.75 79.82,151.22 82.36,152.68 "
        style="fill:none;stroke:#a6cee3;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:13.66, 13.66"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4556"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="71.08,124.32 68.53,125.78 71.08,127.25 "
        style="fill:none;stroke:#a6cee3;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4560"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="92.38,179.72 89.84,181.19 92.38,182.66 "
        style="fill:none;stroke:#b2df8a;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:11.38, 11.38"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4564"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="90.12,170.08 87.58,171.54 90.12,173.01 "
        style="fill:none;stroke:#b2df8a;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4568"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="79.45,150.45 76.91,151.92 79.45,153.39 "
        style="fill:none;stroke:#b2df8a;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:13.66, 13.66"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4572"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
     <polyline
        points="65.60,106.44 63.06,107.90 65.60,109.37 "
        style="fill:none;stroke:#b2df8a;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
        clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
        id="polyline4576"
-       transform="translate(4.9497476,5.7899256)" />
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer4"
-     inkscape:label="incanvas_annotations"
-     style="display:inline"
-     transform="translate(-0.92493644,-1.0940677)">
+     id="layer12"
+     inkscape:label="crossing_annotation"
+     style="display:inline">
     <text
+       transform="translate(-0.92493644,-1.0940677)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#b3df8c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="494.0498"
-       y="21.178717"
-       id="text4905"
-       transform="rotate(-0.12908722)"><tspan
-         sodipodi:role="line"
-         id="tspan5076"
-         x="494.0498"
-         y="21.178717">Completed </tspan><tspan
-         sodipodi:role="line"
-         id="tspan5078"
-         x="494.0498"
-         y="33.678719">fertility,</tspan><tspan
-         sodipodi:role="line"
-         id="tspan5080"
-         x="494.0498"
-         y="46.178719">1938 cohort</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#a6cee3;fill-opacity:0.96666721;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="493.94159"
-       y="69.206169"
-       id="text4905-3"
-       transform="rotate(-0.12908722)"><tspan
-         sodipodi:role="line"
-         id="tspan5106"
-         x="493.94159"
-         y="69.206169">Completed </tspan><tspan
-         sodipodi:role="line"
-         id="tspan5108"
-         x="493.94159"
-         y="81.706169">fertility,</tspan><tspan
-         sodipodi:role="line"
-         id="tspan5110"
-         x="493.94159"
-         y="94.206169">1935 cohort</tspan></text>
-    <path
-       style="fill:#a6cde3;fill-opacity:0.96862745;fill-rule:evenodd;stroke:#a6cde3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:0.96862745;marker-end:url(#marker5386)"
-       d="m 493.49525,77.289926 h -11.2955"
-       id="path5112"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:#b3df8c;fill-opacity:1;fill-rule:evenodd;stroke:#b3df8c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#marker5386-8)"
-       d="M 493.37927,29.246926 H 464.40611"
-       id="path5112-6"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="76.205063"
        y="130.2796"
-       id="text4695"><tspan
+       id="text4695"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
          sodipodi:role="line"
          id="tspan4693"
          x="76.205063"
          y="130.2796">Replacement fertility contour, 1935 cohort</tspan></text>
     <text
+       transform="translate(-0.92493644,-1.0940677)"
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="70.596008"
        y="113.04"
-       id="text4695-2"><tspan
+       id="text4695-2"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03"><tspan
          sodipodi:role="line"
          id="tspan4715"
          x="70.596008"
          y="113.04">Replacement fertility contour, 1938 cohort</tspan></text>
     <g
+       style="display:inline"
        id="g4803"
-       transform="translate(-6.1430844,5.7257204)">
+       transform="translate(-7.0680208,4.6316527)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03">
       <text
          id="text4695-2-7"
          y="154.82137"
@@ -931,8 +1211,12 @@
            sodipodi:role="line">1.8 babies/woman contours</tspan></text>
     </g>
     <g
+       style="display:inline"
        id="g4797"
-       transform="translate(-2.5132132,5.1594467)">
+       transform="translate(-3.4381496,4.065379)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03">
       <text
          id="text4695-2-7-0-2"
          y="174.39558"
@@ -955,8 +1239,12 @@
            y="174.7375">1.5 babies/woman contours</tspan></text>
     </g>
     <g
+       style="display:inline"
        id="g4901"
-       transform="translate(-6.2874754,-5.6946494)">
+       transform="translate(-7.2124118,-6.7887171)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03">
       <text
          id="text4695-2-7-0-2-7"
          y="195.08209"
@@ -978,81 +1266,6 @@
            x="105.73063"
            y="195.42401">1.3 babies/woman contours</tspan></text>
     </g>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="124.74695"
-       y="266.46329"
-       id="text5432"><tspan
-         sodipodi:role="line"
-         id="tspan5430"
-         x="124.74695"
-         y="266.46329">Cumulative fertility schedules</tspan></text>
-    <path
-       style="fill:#a6cde3;fill-opacity:1;fill-rule:evenodd;stroke:#a6cde3;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#marker5438)"
-       d="M 177.66058,258.44752 V 215.58177"
-       id="path5434"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="fill:#b3df8c;fill-opacity:1;fill-rule:evenodd;stroke:#b3df8c;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;marker-end:url(#marker5448)"
-       d="M 213.1927,257.38686 V 209.78584"
-       id="path5440"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="166.25349"
-       y="249.83572"
-       id="text5432-8"><tspan
-         sodipodi:role="line"
-         id="tspan5468"
-         x="166.25349"
-         y="249.83572">1935</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="201.231"
-       y="249.80556"
-       id="text5432-8-8-8"><tspan
-         sodipodi:role="line"
-         id="tspan5488-0"
-         x="201.231"
-         y="249.80556"
-         style="fill:#000000;fill-opacity:1">1938</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#b3df8c;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5664)"
-       x="201.18396"
-       y="249.83572"
-       id="text5432-8-8"><tspan
-         sodipodi:role="line"
-         id="tspan5488"
-         x="201.18396"
-         y="249.83572"
-         style="fill:#b3df8c;fill-opacity:1">1938</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#a6cde3;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter5770)"
-       x="166.21017"
-       y="249.80556"
-       id="text5432-8-4"><tspan
-         sodipodi:role="line"
-         id="tspan5468-7"
-         x="166.21017"
-         y="249.80556">1935</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:10.66666698px;line-height:125%;font-family:Arial;-inkscape-font-specification:'Arial, Italic Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="160.82262"
-       y="-69.643021"
-       id="text4990"
-       transform="rotate(90)"><tspan
-         sodipodi:role="line"
-         id="tspan4988"
-         x="160.82262"
-         y="-69.643021">Fertility schedules</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
@@ -1061,7 +1274,10 @@
      style="display:inline"
      transform="translate(-0.92493644,-1.0940677)">
     <g
-       id="g16031">
+       id="g16031"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03">
       <rect
          y="23.541622"
          x="75.955109"

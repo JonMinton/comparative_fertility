@@ -16,116 +16,12 @@
    version="1.1"
    id="svg32331"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="production_of_composite.svg"
-   inkscape:export-filename="E:\repos\comparative_fertility\figures\second_figure_animation\figure_35.png"
+   sodipodi:docname="production_of_composite_full.svg"
+   inkscape:export-filename="E:\repos\comparative_fertility\figures\fig_1b_production_of_west_germany_composite.png"
    inkscape:export-xdpi="300.03"
    inkscape:export-ydpi="300.03">
   <defs
      id="defs32325">
-    <inkscape:path-effect
-       only_selected="false"
-       apply_with_weight="true"
-       apply_no_weight="true"
-       helper_size="0"
-       steps="2"
-       weight="33.333333"
-       is_visible="true"
-       id="path-effect12916"
-       effect="bspline" />
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker11730"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path11728"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker11412"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path11410"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker11106"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path11104"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
-       id="marker10105"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         inkscape:connector-curvature="0"
-         id="path10103"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker9232"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend"
-       inkscape:collect="always">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path9230"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker8088"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path8086"
-         inkscape:connector-curvature="0" />
-    </marker>
     <clipPath
        id="clip1">
       <path
@@ -973,8 +869,7 @@
        refX="0"
        id="marker30765"
        style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
+       inkscape:isstock="true">
       <path
          inkscape:connector-curvature="0"
          id="path30763"
@@ -5760,36 +5655,6 @@
          id="path44140-1"
          d="m 299,193.375 h 6 V 198 h -6 z m 0,0" />
     </clipPath>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker8088-3"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path8086-6"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="marker8088-5"
-       refX="0"
-       refY="0"
-       orient="auto"
-       inkscape:stockid="Arrow1Lend">
-      <path
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
-         d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path8086-2"
-         inkscape:connector-curvature="0" />
-    </marker>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -5798,11 +5663,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="133.47752"
-     inkscape:cy="337.7827"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="89.85858"
+     inkscape:cy="857.47619"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer35"
+     inkscape:current-layer="layer10"
      showgrid="false"
      inkscape:snap-grids="false"
      inkscape:snap-to-guides="true"
@@ -5914,187 +5779,6 @@
          x="-188.95934"
          y="10.770786"
          style="stroke-width:0.26458332px">Contour plot</tspan></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer1"
-     inkscape:label="Fundamental"
-     style="display:none">
-    <rect
-       transform="rotate(90)"
-       style="display:inline;opacity:0.75;fill:#ff7f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.27706891;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
-       id="rect130574-7"
-       width="27.252083"
-       height="30.956251"
-       x="221.44643"
-       y="-143.9982" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="115.00925"
-       y="231.83617"
-       id="text130432-2"><tspan
-         sodipodi:role="line"
-         id="tspan7971"
-         x="115.00925"
-         y="231.83617">Level</tspan><tspan
-         sodipodi:role="line"
-         id="tspan7973"
-         x="115.00925"
-         y="245.06534">plot</tspan></text>
-    <rect
-       transform="rotate(90)"
-       style="display:inline;opacity:0.75;fill:#047fea;fill-opacity:0.52093021;stroke:none;stroke-width:0.37808347;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
-       id="rect130574-3-5-2"
-       width="26.987499"
-       height="58.208347"
-       x="221.32443"
-       y="-92.255035" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="35.103489"
-       y="231.11545"
-       id="text130440-1"
-       inkscape:transform-center-x="-61.73926"
-       inkscape:transform-center-y="80.448132"><tspan
-         sodipodi:role="line"
-         id="tspan7979"
-         x="35.103489"
-         y="231.11545">Composite</tspan><tspan
-         sodipodi:role="line"
-         id="tspan7981"
-         x="35.103489"
-         y="244.34462">plot</tspan></text>
-    <rect
-       transform="rotate(90)"
-       style="display:inline;opacity:0.75;fill:#047f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.34049594;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
-       id="rect130574-3-9"
-       width="27.516668"
-       height="46.302094"
-       x="220.95541"
-       y="-206.83673" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="162.06841"
-       y="230.51288"
-       id="text130436-3"><tspan
-         sodipodi:role="line"
-         id="tspan7975"
-         x="162.06841"
-         y="230.51288">Contour</tspan><tspan
-         sodipodi:role="line"
-         id="tspan7977"
-         x="162.06841"
-         y="243.74205">plot</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="147.80573"
-       y="237.42513"
-       id="text130432-2-5"><tspan
-         sodipodi:role="line"
-         id="tspan8004"
-         x="147.80573"
-         y="237.42513">+</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="96.937508"
-       y="238.89687"
-       id="text130432-2-5-1"><tspan
-         sodipodi:role="line"
-         id="tspan8024"
-         x="96.937508"
-         y="238.89687">=</tspan></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer3"
-     inkscape:label="Fundamental Text "
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="32.922855"
-       y="209.76073"
-       id="text130440-1-4"
-       inkscape:transform-center-x="-61.73926"
-       inkscape:transform-center-y="80.448132"><tspan
-         sodipodi:role="line"
-         id="tspan8047"
-         x="32.922855"
-         y="209.76073">The fundamental idea:</tspan></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer7"
-     inkscape:label="Fundamental 01"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="117.88943"
-       y="80.180206"
-       id="text130432-2-8"><tspan
-         sodipodi:role="line"
-         id="tspan8070"
-         x="117.88943"
-         y="80.180206">Age-specific </tspan><tspan
-         sodipodi:role="line"
-         id="tspan8072"
-         x="117.88943"
-         y="88.117706">fertility rates</tspan><tspan
-         sodipodi:role="line"
-         id="tspan8074"
-         x="117.88943"
-         y="96.055206">(arranged by </tspan><tspan
-         sodipodi:role="line"
-         id="tspan8076"
-         x="117.88943"
-         y="103.99271">cohort)</tspan></text>
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker8088)"
-       d="m 126.47194,108.73108 -0.74836,109.65599"
-       id="path8360"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer9"
-     inkscape:label="Fundamental 02"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="146.12932"
-       y="145.40805"
-       id="text130432-2-8-6"><tspan
-         sodipodi:role="line"
-         id="tspan9582"
-         x="146.12932"
-         y="145.40805">Ages at which </tspan><tspan
-         sodipodi:role="line"
-         id="tspan9584"
-         x="146.12932"
-         y="153.34555">cumulative fertility </tspan><tspan
-         sodipodi:role="line"
-         id="tspan9586"
-         x="146.12932"
-         y="161.28305">milestones reached</tspan></text>
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:6, 0.5;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker9232)"
-       d="m 155.76025,108.00932 23.47069,26.9362"
-       id="path9222"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker10105)"
-       d="m 182.97272,166.7506 -0.37418,51.26229"
-       id="path10095"
-       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -6387,87 +6071,6 @@
         </g>
       </g>
     </g>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot11030"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
-       transform="scale(0.26458333)"><flowRegion
-         id="flowRegion11032"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
-           id="rect11034"
-           width="111.72287"
-           height="121.62237"
-           x="229.1026"
-           y="382.7511"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-         id="flowPara11036">Fertility Colours/shades indicating different age-specific fertility rates</flowPara></flowRoot>  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer12"
-     inkscape:label="Annotation of legend panelname"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="139.19398"
-       y="73.206268"
-       id="text11040"><tspan
-         sodipodi:role="line"
-         id="tspan11042"
-         x="139.19398"
-         y="73.206268">Age-specific fertility </tspan><tspan
-         sodipodi:role="line"
-         id="tspan11044"
-         x="139.19398"
-         y="81.143768">value colour key</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="101.21474"
-       y="84.496941"
-       id="text11040-6"><tspan
-         sodipodi:role="line"
-         id="tspan12123"
-         x="101.21474"
-         y="84.496941">Name of </tspan><tspan
-         sodipodi:role="line"
-         id="tspan12125"
-         x="101.21474"
-         y="92.434441">population </tspan><tspan
-         sodipodi:role="line"
-         id="tspan12127"
-         x="101.21474"
-         y="100.37194">of interest</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.3499999px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="32.040478"
-       y="109.01945"
-       id="text11040-6-7"><tspan
-         sodipodi:role="line"
-         id="tspan11092"
-         x="32.040478"
-         y="109.01945">Colour of tile indicates</tspan><tspan
-         sodipodi:role="line"
-         id="tspan11094"
-         x="32.040478"
-         y="116.95695">population region</tspan></text>
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11106)"
-       d="M 117.49168,78.444744 V 59.361702"
-       id="path11096"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11412)"
-       d="M 168.75398,66.845248 V 48.136381"
-       id="path11402"
-       inkscape:connector-curvature="0" />
-    <path
-       style="display:inline;fill:none;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker11730)"
-       d="M 63.984324,102.76627 V 55.619927"
-       id="path11720"
-       inkscape:connector-curvature="0" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -31011,7 +30614,7 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="cells_new_guide"
-     style="display:none" />
+     style="display:inline" />
   <g
      inkscape:groupmode="layer"
      id="layer10"
@@ -31485,7 +31088,128 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="in_panel_annotation"
-     style="display:none">
+     style="display:inline">
+    <path
+       style="display:inline;fill:#ffffff;fill-opacity:0.56279069;fill-rule:evenodd;stroke:#000000;stroke-width:0.31218001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.50232562"
+       d="m 63.664235,58.720506 v 0 l 46.950895,48.092024 18.44619,18.89452 h 6.70727 L 70.371502,58.720506 Z"
+       id="path12624"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.32992053px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.31218001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="116.15942"
+       y="-5.7219958"
+       id="text12628"
+       transform="matrix(0.69866721,0.7156483,-0.69866721,0.7156483,0,0)"><tspan
+         sodipodi:role="line"
+         id="tspan12626"
+         x="116.15942"
+         y="-5.7219958"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.32992053px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.31218001px">Fall in fertility in late 1960s</tspan></text>
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 104.72386,93.805287 c 5.43339,-2.562281 10.86641,-5.124385 20.17559,-6.698742 9.30918,-1.574357 22.49616,-2.161199 35.68201,-2.747991"
+       id="path7384"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect7386"
+       inkscape:original-d="m 104.72386,93.805287 c 5.43334,-2.562396 10.86636,-5.124501 16.29906,-7.686313 13.1857,-0.587095 26.37268,-1.173939 39.55854,-1.76042"
+       sodipodi:nodetypes="ccc" />
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 118.48293,106.96331 c 6.00682,-3.42467 12.01327,-6.84913 20.45661,-9.210978 8.44334,-2.361843 19.32477,-3.661377 30.20525,-4.960798"
+       id="path7388"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect7390"
+       inkscape:original-d="m 118.48293,106.96331 c 6.00677,-3.42476 12.01322,-6.84922 18.01935,-10.273386 10.88057,-1.299665 21.762,-2.599199 32.64251,-3.89839"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="151.49423"
+       y="61.983471"
+       id="text7394"
+       transform="scale(0.98806468,1.0120795)"><tspan
+         sodipodi:role="line"
+         id="tspan7392"
+         x="151.49423"
+         y="61.983471"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.32019773px">Increased age of peak fertility</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="157.01083"
+       y="70.950432"
+       id="text7394-0"
+       transform="scale(0.98806468,1.0120795)"><tspan
+         sodipodi:role="line"
+         id="tspan7414"
+         x="157.01083"
+         y="70.950432"
+         style="stroke-width:0.32019773px">Falling fertility at peak age</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="28.596952"
+       y="118.49133"
+       id="text7394-0-5"
+       transform="matrix(0.98806468,0,0,1.0120795,3.7041667,3.5666661)"><tspan
+         sodipodi:role="line"
+         id="tspan7434"
+         x="28.596952"
+         y="118.49133"
+         style="stroke-width:0.32019773px">Increased fertility in 1950s</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="171.26593"
+       y="85.702499"
+       id="text7394-0-2"
+       transform="scale(0.98806468,1.0120795)"><tspan
+         sodipodi:role="line"
+         id="tspan7454"
+         x="171.26593"
+         y="85.702499"
+         style="stroke-width:0.32019773px">More concentration</tspan><tspan
+         sodipodi:role="line"
+         id="tspan7456"
+         x="171.26593"
+         y="89.971802"
+         style="stroke-width:0.32019773px">around peak age?</tspan></text>
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker15060)"
+       d="m 65.922655,116.88182 c 5.426193,-4.68599 11.508351,-9.93847 17.262019,-14.90727"
+       id="path7458"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect7460"
+       inkscape:original-d="m 65.922655,116.88182 c 5.181439,-4.96941 11.508327,-9.9385 17.262019,-14.90727" />
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7750)"
+       d="m 145.08638,60.131904 c -10.31404,12.18566 -20.62837,24.371667 -30.94299,36.55802"
+       id="path7744"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect7746"
+       inkscape:original-d="m 145.08638,60.131904 c -10.31401,12.185683 -20.62834,24.371689 -30.94299,36.55802" />
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7794)"
+       d="m 145.08638,60.131904 c 2.29836,9.249493 4.59678,18.499218 6.89526,27.749174"
+       id="path7788"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect7790"
+       inkscape:original-d="m 145.08638,60.131904 c 2.29873,9.249402 4.59716,18.499124 6.89526,27.749174" />
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7832)"
+       d="m 165.98099,70.044488 c -9.25244,7.119986 -18.50525,14.240255 -27.75842,21.360803"
+       id="path7826"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect7828"
+       inkscape:original-d="m 165.98099,70.044488 c -9.25247,7.119949 -18.50528,14.240215 -27.75842,21.360803"
+       sodipodi:nodetypes="cc" />
     <g
        id="g113686">
       <rect
@@ -31534,12 +31258,6 @@
        inkscape:path-effect="#path-effect8278"
        inkscape:original-d="m 38.702438,91.949377 c 4.269065,-13.605134 8.537846,-27.20994 12.806339,-40.81441"
        sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer14"
-     inkscape:label="contourplot annotation"
-     style="display:inline">
     <rect
        transform="translate(3.7041667,3.5666661)"
        style="display:inline;opacity:0.75;fill:#ffffff;fill-opacity:0.5699482;stroke:none;stroke-width:0.29153529;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
@@ -31548,36 +31266,35 @@
        height="10.659239"
        x="143.21527"
        y="108.15313" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer27"
-     inkscape:label="cp_anno_00"
-     style="display:inline">
+    <text
+       id="text7956"
+       y="106.41174"
+       x="152.02234"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.60136938px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33762836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"
+       transform="matrix(0.93947163,0,0,1.0644281,3.7041667,3.5666661)"><tspan
+         y="106.41174"
+         x="152.02234"
+         id="tspan7958"
+         sodipodi:role="line"
+         style="stroke-width:0.33762836px">Speculative extrapolation </tspan><tspan
+         y="110.91345"
+         x="152.02234"
+         id="tspan7960"
+         sodipodi:role="line"
+         style="stroke-width:0.33762836px">of 1.5 contour line</tspan></text>
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#ff7800;stroke-width:0.55537742;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.5553774, 1.66613219;stroke-dashoffset:0;stroke-opacity:1"
        d="M 92.161222,191.78156 V 126.41014"
        id="path4871-6"
        inkscape:connector-curvature="0" />
-    <path
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#ff7800;stroke-width:0.5661571;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.56615706, 1.69847118;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 201.79552,192.19665 135.447,125.82246"
-       id="path4871-5"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer21"
-     inkscape:label="cp_anno_01"
-     style="display:none">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="34.558998"
        y="175.93864"
        id="text4875"
-       transform="scale(0.94490024,1.0583128)"><tspan
+       transform="scale(0.94490023,1.0583128)"><tspan
          sodipodi:role="line"
          id="tspan4873"
          x="34.558998"
@@ -31598,10 +31315,166 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="34.240826"
+       y="143.44914"
+       id="text4875-6"
+       transform="scale(0.94490023,1.0583128)"><tspan
+         sodipodi:role="line"
+         id="tspan5256"
+         x="34.240826"
+         y="143.44914"
+         style="stroke-width:0.33484045px">Replacement Fertility contour</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="38.816978"
+       y="147.51347"
+       id="text4875-6-2"
+       transform="scale(0.94490023,1.0583128)"><tspan
+         sodipodi:role="line"
+         id="tspan5214"
+         x="38.816978"
+         y="147.51347"
+         style="stroke-width:0.33484045px">1.8 babies/woman contour</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="38.816978"
+       y="151.51778"
+       id="text4875-6-2-0"
+       transform="scale(0.94490023,1.0583128)"><tspan
+         sodipodi:role="line"
+         id="tspan5234"
+         x="38.816978"
+         y="151.51778"
+         style="stroke-width:0.33484045px">1.5 babies/woman contour</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="38.816978"
+       y="155.95427"
+       id="text4875-6-2-0-4"
+       transform="scale(0.94490023,1.0583128)"><tspan
+         sodipodi:role="line"
+         id="tspan5254"
+         x="38.816978"
+         y="155.95427"
+         style="stroke-width:0.33484045px">1.3 babies/woman contour</tspan></text>
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5358)"
+       d="m 79.274241,147.54617 8.312197,0.11405"
+       id="path5258"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5268)"
+       d="m 82.997478,154.71808 c 0.450456,0 8.199583,2.22133 8.199583,2.22133"
+       id="path5260"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5296-3)"
+       d="m 83.25904,159.51525 8.218653,1.88249"
+       id="path5262"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5324)"
+       d="m 83.409794,163.92981 7.787266,0.10537"
+       id="path5264"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="115.75677"
+       y="133.74857"
+       id="text4875-6-28"
+       transform="scale(0.94490023,1.0583128)"><tspan
+         sodipodi:role="line"
+         id="tspan6092"
+         x="115.75677"
+         y="133.74857"
+         style="stroke-width:0.33484045px">1.8 contour lost </tspan><tspan
+         sodipodi:role="line"
+         id="tspan6094"
+         x="115.75677"
+         y="138.2131"
+         style="stroke-width:0.33484045px">after 1944 cohort</tspan></text>
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5358-0-3)"
+       d="M 78.921324,130.54253 94.152952,130.0217"
+       id="path5258-6"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163143px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="44.21217"
+       y="123.09659"
+       id="text4875-6-28-4"
+       transform="matrix(0.94490024,0,0,1.0583128,3.7041667,3.5666661)"><tspan
+         style="stroke-width:0.33484045px"
+         sodipodi:role="line"
+         id="tspan5594-2"
+         x="44.21217"
+         y="123.09659">Replacement fertility </tspan><tspan
+         style="stroke-width:0.33484045px"
+         sodipodi:role="line"
+         id="tspan5596-4"
+         x="44.21217"
+         y="127.56113">lost after 1939 cohort</tspan></text>
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5358-0-9-8)"
+       d="m 115.68638,134.28438 -9.63178,-4.55383"
+       id="path5258-6-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="163.84299"
+       y="122.48847"
+       id="text4875-6-28-3"
+       transform="scale(0.94490023,1.0583128)"><tspan
+         sodipodi:role="line"
+         id="tspan6788"
+         x="163.84299"
+         y="122.48847"
+         style="stroke-width:0.33484045px">1.5 contour likely to be </tspan><tspan
+         sodipodi:role="line"
+         id="tspan6790"
+         x="163.84299"
+         y="126.95301"
+         style="stroke-width:0.33484045px">lost with 1967-1968 cohort</tspan><tspan
+         sodipodi:role="line"
+         id="tspan6792"
+         x="163.84299"
+         y="131.41756"
+         style="stroke-width:0.33484045px" /></text>
+    <path
+       transform="translate(3.7041667,3.5666661)"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6808-3)"
+       d="m 149.94464,130.87825 -6.94757,7.15932"
+       id="path6798"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#ff7800;stroke-width:0.5661571;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.56615706, 1.69847118;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 201.79552,192.19665 135.447,125.82246"
+       id="path4871-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        x="161.03719"
        y="180.73973"
        id="text4875-4"
-       transform="scale(0.94490024,1.0583128)"><tspan
+       transform="scale(0.94490023,1.0583128)"><tspan
          sodipodi:role="line"
          id="tspan7455"
          x="161.03719"
@@ -31613,143 +31486,33 @@
        id="path4879-3"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer22"
-     inkscape:label="cp_anno_02"
-     style="display:none">
+    <path
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#fb00ff;stroke-width:0.2815966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.28159662, 0.28159662;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 147.11279,137.13947 0.28942,-2.31615 v -8.55063"
+       id="path7655-6"
+       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="38.816978"
-       y="155.95427"
-       id="text4875-6-2-0-4"
-       transform="scale(0.94490024,1.0583128)"><tspan
+       x="167.16405"
+       y="132.41458"
+       id="text4875-4-9"
+       transform="scale(0.94490023,1.0583128)"><tspan
          sodipodi:role="line"
-         id="tspan5254"
-         x="38.816978"
-         y="155.95427"
-         style="stroke-width:0.33484045px">1.3 babies/woman contour</tspan></text>
-    <path
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5324)"
-       d="m 83.409794,163.92981 7.787266,0.10537"
-       id="path5264"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer23"
-     inkscape:label="cp_anno_03"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="38.816978"
-       y="151.51778"
-       id="text4875-6-2-0"
-       transform="scale(0.94490024,1.0583128)"><tspan
+         id="tspan7756"
+         x="167.16405"
+         y="132.41458"
+         style="stroke-width:0.33484045px">Cohort total fertility likely </tspan><tspan
          sodipodi:role="line"
-         id="tspan5234"
-         x="38.816978"
-         y="151.51778"
-         style="stroke-width:0.33484045px">1.5 babies/woman contour</tspan></text>
-    <path
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5296-3)"
-       d="m 83.25904,159.51525 8.218653,1.88249"
-       id="path5262"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer24"
-     inkscape:label="cp_anno_04"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="38.816978"
-       y="147.51347"
-       id="text4875-6-2"
-       transform="scale(0.94490024,1.0583128)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\second_figure_animation\figure_21.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03"><tspan
+         id="tspan7758"
+         x="167.16405"
+         y="136.87912"
+         style="stroke-width:0.33484045px">to stabilise between 1.3 </tspan><tspan
          sodipodi:role="line"
-         id="tspan5214"
-         x="38.816978"
-         y="147.51347"
-         style="stroke-width:0.33484045px">1.8 babies/woman contour</tspan></text>
-    <path
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5268)"
-       d="m 82.997478,154.71808 c 0.450456,0 8.199583,2.22133 8.199583,2.22133"
-       id="path5260"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\second_figure_animation\figure_21.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer25"
-     inkscape:label="cp_anno_05"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="34.240826"
-       y="143.44914"
-       id="text4875-6"
-       transform="scale(0.94490024,1.0583128)"><tspan
-         sodipodi:role="line"
-         id="tspan5256"
-         x="34.240826"
-         y="143.44914"
-         style="stroke-width:0.33484045px">Replacement Fertility contour</tspan></text>
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5358)"
-       d="m 79.274241,147.54617 8.312197,0.11405"
-       id="path5258"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer26"
-     inkscape:label="cp_anno_06"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.571522px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="114.55097"
-       y="162.40611"
-       id="text4875-6-28-3-4"
-       transform="scale(0.94490021,1.0583128)"><tspan
-         sodipodi:role="line"
-         id="tspan13182"
-         x="114.55097"
-         y="162.40611">1.3 contour stabilised</tspan><tspan
-         sodipodi:role="line"
-         id="tspan13184"
-         x="114.55097"
-         y="166.87051" /></text>
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33762836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6808-9-1)"
-       d="m 125.91219,164.9099 21.799,-16.49689"
-       id="path6798-1"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer28"
-     inkscape:label="cp_anno_07"
-     style="display:none">
+         id="tspan7760"
+         x="167.16405"
+         y="141.34366"
+         style="stroke-width:0.33484045px">and 1.5 babies/woman</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -31777,354 +31540,46 @@
        inkscape:original-d="m 170.41248,164.48639 c 0.71777,-4.88089 1.43525,-9.7614 2.15244,-14.64149"
        sodipodi:nodetypes="cc" />
     <path
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:0.31006292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.31006293, 0.31006293;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 161.65409,151.64033 c 2.66194,0.58122 5.32366,1.16239 8.49787,1.06754 3.1742,-0.0949 6.86139,-0.86573 10.79382,-1.0584 3.93242,-0.19268 8.11126,0.19277 11.62917,0.21991 3.51791,0.0271 6.36297,-0.30251 9.21382,-0.63282"
-       id="path7659-7"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect7661-4"
-       inkscape:original-d="m 161.65409,151.64033 c 2.66202,0.58085 5.32374,1.16202 7.98516,1.74351 3.68686,-0.77108 7.37405,-1.54196 11.06062,-2.31244 4.17836,0.38503 8.3572,0.77048 12.53536,1.15622 2.8513,-0.38572 5.70266,-0.66102 8.55354,-0.99106" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer30"
-     inkscape:label="cp_anno_08"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="163.84299"
-       y="122.48847"
-       id="text4875-6-28-3"
-       transform="scale(0.94490024,1.0583128)"><tspan
-         sodipodi:role="line"
-         id="tspan6788"
-         x="163.84299"
-         y="122.48847"
-         style="stroke-width:0.33484045px">1.5 contour likely to be </tspan><tspan
-         sodipodi:role="line"
-         id="tspan6790"
-         x="163.84299"
-         y="126.95301"
-         style="stroke-width:0.33484045px">lost with 1967-1968 cohort</tspan><tspan
-         sodipodi:role="line"
-         id="tspan6792"
-         x="163.84299"
-         y="131.41756"
-         style="stroke-width:0.33484045px" /></text>
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6808-3)"
-       d="m 149.94464,130.87825 -6.94757,7.15932"
-       id="path6798"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer31"
-     inkscape:label="cp_anno_09"
-     style="display:none">
-    <text
-       id="text7956"
-       y="106.41174"
-       x="152.02234"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.60136938px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33762836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"
-       transform="matrix(0.93947163,0,0,1.0644281,3.7041667,3.5666661)"><tspan
-         y="106.41174"
-         x="152.02234"
-         id="tspan7958"
-         sodipodi:role="line"
-         style="stroke-width:0.33762836px">Speculative extrapolation </tspan><tspan
-         y="110.91345"
-         x="152.02234"
-         id="tspan7960"
-         sodipodi:role="line"
-         style="stroke-width:0.33762836px">of 1.5 contour line</tspan></text>
-    <path
-       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#fb00ff;stroke-width:0.2815966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.28159662, 0.28159662;stroke-dashoffset:0;stroke-opacity:1"
-       d="m 147.11279,137.13947 0.28942,-2.31615 v -8.55063"
-       id="path7655-6"
-       inkscape:connector-curvature="0" />
-    <path
        transform="translate(3.7041667,3.5666661)"
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker30765)"
        d="m 151.98164,119.63902 c 0,1.7621 -7.62323,7.18299 -7.62323,7.18299"
        id="path130486"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer32"
-     inkscape:label="cp_anno_10"
-     style="display:none">
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="115.75677"
-       y="133.74857"
-       id="text4875-6-28"
-       transform="scale(0.94490024,1.0583128)"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.571522px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="114.55097"
+       y="162.40611"
+       id="text4875-6-28-3-4"
+       transform="scale(0.94490022,1.0583128)"><tspan
          sodipodi:role="line"
-         id="tspan6092"
-         x="115.75677"
-         y="133.74857"
-         style="stroke-width:0.33484045px">1.8 contour lost </tspan><tspan
+         id="tspan13182"
+         x="114.55097"
+         y="162.40611">1.3 contour stabilised</tspan><tspan
          sodipodi:role="line"
-         id="tspan6094"
-         x="115.75677"
-         y="138.2131"
-         style="stroke-width:0.33484045px">after 1944 cohort</tspan></text>
+         id="tspan13184"
+         x="114.55097"
+         y="166.87051" /></text>
     <path
        transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5358-0-9-8)"
-       d="m 115.68638,134.28438 -9.63178,-4.55383"
-       id="path5258-6-0"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33762836px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6808-9-1)"
+       d="m 125.91219,164.9099 21.799,-16.49689"
+       id="path6798-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer33"
-     inkscape:label="cp_anno_11"
-     style="display:none" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer34"
-     inkscape:label="cp_anno_12"
-     style="display:none">
     <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker5358-0-3)"
-       d="M 78.921324,130.54253 94.152952,130.0217"
-       id="path5258-6"
+       style="display:inline;fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:0.31006292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.31006293, 0.31006293;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 161.65409,151.64033 c 2.66194,0.58122 5.32366,1.16239 8.49787,1.06754 3.1742,-0.0949 6.86139,-0.86573 10.79382,-1.0584 3.93242,-0.19268 8.11126,0.19277 11.62917,0.21991 3.51791,0.0271 6.36297,-0.30251 9.21382,-0.63282"
+       id="path7659-7"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163143px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="44.21217"
-       y="123.09659"
-       id="text4875-6-28-4"
-       transform="matrix(0.94490024,0,0,1.0583128,3.7041667,3.5666661)"><tspan
-         style="stroke-width:0.33484045px"
-         sodipodi:role="line"
-         id="tspan5594-2"
-         x="44.21217"
-         y="123.09659">Replacement fertility </tspan><tspan
-         style="stroke-width:0.33484045px"
-         sodipodi:role="line"
-         id="tspan5596-4"
-         x="44.21217"
-         y="127.56113">lost after 1939 cohort</tspan></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer35"
-     inkscape:label="cp_anno_13"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.57163167px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="167.16405"
-       y="132.41458"
-       id="text4875-4-9"
-       transform="scale(0.94490024,1.0583128)"><tspan
-         sodipodi:role="line"
-         id="tspan7756"
-         x="167.16405"
-         y="132.41458"
-         style="stroke-width:0.33484045px">Cohort total fertility likely </tspan><tspan
-         sodipodi:role="line"
-         id="tspan7758"
-         x="167.16405"
-         y="136.87912"
-         style="stroke-width:0.33484045px">to stabilise between 1.3 </tspan><tspan
-         sodipodi:role="line"
-         id="tspan7760"
-         x="167.16405"
-         y="141.34366"
-         style="stroke-width:0.33484045px">and 1.5 babies/woman</tspan></text>
+       inkscape:path-effect="#path-effect7661-4"
+       inkscape:original-d="m 161.65409,151.64033 c 2.66202,0.58085 5.32374,1.16202 7.98516,1.74351 3.68686,-0.77108 7.37405,-1.54196 11.06062,-2.31244 4.17836,0.38503 8.3572,0.77048 12.53536,1.15622 2.8513,-0.38572 5.70266,-0.66102 8.55354,-0.99106" />
     <path
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.33484045px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker6808-3-5)"
        d="m 157.0984,143.08914 -10.12257,4.77807"
        id="path6798-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
-    <path
-       inkscape:original-d="m 161.65409,151.64033 c 2.66202,0.58085 5.32374,1.16202 7.98516,1.74351 3.68686,-0.77108 7.37405,-1.54196 11.06062,-2.31244 4.17836,0.38503 8.3572,0.77048 12.53536,1.15622 2.8513,-0.38572 5.70266,-0.66102 8.55354,-0.99106"
-       inkscape:path-effect="#path-effect12916"
-       inkscape:connector-curvature="0"
-       id="path12914"
-       d="m 161.65409,151.64033 c 2.66194,0.58122 5.32366,1.16239 8.49787,1.06754 3.1742,-0.0949 6.86139,-0.86573 10.79382,-1.0584 3.93242,-0.19268 8.11126,0.19277 11.62917,0.21991 3.51791,0.0271 6.36297,-0.30251 9.21382,-0.63282"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#ff00ff;stroke-width:0.31006292;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.31006293, 0.31006293;stroke-dashoffset:0;stroke-opacity:1" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path12925"
-       d="m 147.11279,137.13947 0.28942,-2.31615 v -8.55063"
-       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#fb00ff;stroke-width:0.2815966;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.28159662, 0.28159662;stroke-dashoffset:0;stroke-opacity:1" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer13"
-     inkscape:label="levelplot_annotation"
-     style="display:none" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer15"
-     inkscape:label="lp_anno_01"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="28.596952"
-       y="118.49133"
-       id="text7394-0-5"
-       transform="matrix(0.98806468,0,0,1.0120795,3.7041667,3.5666661)"><tspan
-         sodipodi:role="line"
-         id="tspan7434"
-         x="28.596952"
-         y="118.49133"
-         style="stroke-width:0.32019773px">Increased fertility in 1950s</tspan></text>
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker15060)"
-       d="m 65.922655,116.88182 c 5.426193,-4.68599 11.508351,-9.93847 17.262019,-14.90727"
-       id="path7458"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect7460"
-       inkscape:original-d="m 65.922655,116.88182 c 5.181439,-4.96941 11.508327,-9.9385 17.262019,-14.90727" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer16"
-     inkscape:label="lp_anno_02"
-     style="display:none">
-    <path
-       style="display:inline;fill:#ffffff;fill-opacity:0.56279069;fill-rule:evenodd;stroke:#000000;stroke-width:0.31218001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.50232562"
-       d="m 63.664235,58.720506 v 0 l 46.950895,48.092024 18.44619,18.89452 h 6.70727 L 70.371502,58.720506 Z"
-       id="path12624"
-       inkscape:connector-curvature="0" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.32992053px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.31218001px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="116.15942"
-       y="-5.7219958"
-       id="text12628"
-       transform="matrix(0.69866722,0.71564831,-0.69866722,0.71564831,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan12626"
-         x="116.15942"
-         y="-5.7219958"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.32992053px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.31218001px">Fall in fertility in late 1960s</tspan></text>
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer17"
-     inkscape:label="lp_anno_03"
-     style="display:none">
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 104.72386,93.805287 c 5.43339,-2.562281 10.86641,-5.124385 20.17559,-6.698742 9.30918,-1.574357 22.49616,-2.161199 35.68201,-2.747991"
-       id="path7384"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect7386"
-       inkscape:original-d="m 104.72386,93.805287 c 5.43334,-2.562396 10.86636,-5.124501 16.29906,-7.686313 13.1857,-0.587095 26.37268,-1.173939 39.55854,-1.76042"
-       sodipodi:nodetypes="ccc" />
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 118.48293,106.96331 c 6.00682,-3.42467 12.01327,-6.84913 20.45661,-9.210978 8.44334,-2.361843 19.32477,-3.661377 30.20525,-4.960798"
-       id="path7388"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect7390"
-       inkscape:original-d="m 118.48293,106.96331 c 6.00677,-3.42476 12.01322,-6.84922 18.01935,-10.273386 10.88057,-1.299665 21.762,-2.599199 32.64251,-3.89839"
-       sodipodi:nodetypes="ccc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer18"
-     inkscape:label="lp_anno_04"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="151.49423"
-       y="61.983471"
-       id="text7394"
-       transform="scale(0.98806468,1.0120795)"><tspan
-         sodipodi:role="line"
-         id="tspan7392"
-         x="151.49423"
-         y="61.983471"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.32019773px">Increased age of peak fertility</tspan></text>
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7750)"
-       d="m 145.08638,60.131904 c -10.31404,12.18566 -20.62837,24.371667 -30.94299,36.55802"
-       id="path7744"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect7746"
-       inkscape:original-d="m 145.08638,60.131904 c -10.31401,12.185683 -20.62834,24.371689 -30.94299,36.55802" />
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7794)"
-       d="m 145.08638,60.131904 c 2.29836,9.249493 4.59678,18.499218 6.89526,27.749174"
-       id="path7788"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect7790"
-       inkscape:original-d="m 145.08638,60.131904 c 2.29873,9.249402 4.59716,18.499124 6.89526,27.749174" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer19"
-     inkscape:label="lp_anno_05"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="157.01083"
-       y="70.950432"
-       id="text7394-0"
-       transform="scale(0.98806468,1.0120795)"><tspan
-         sodipodi:role="line"
-         id="tspan7414"
-         x="157.01083"
-         y="70.950432"
-         style="stroke-width:0.32019773px">Falling fertility at peak age</tspan></text>
-    <path
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker7832)"
-       d="m 165.98099,70.044488 c -9.25244,7.119986 -18.50525,14.240255 -27.75842,21.360803"
-       id="path7826"
-       inkscape:connector-curvature="0"
-       inkscape:path-effect="#path-effect7828"
-       inkscape:original-d="m 165.98099,70.044488 c -9.25247,7.119949 -18.50528,14.240215 -27.75842,21.360803"
-       sodipodi:nodetypes="cc" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
-     id="layer20"
-     inkscape:label="lp_anno_06"
-     style="display:none">
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="171.26593"
-       y="85.702499"
-       id="text7394-0-2"
-       transform="scale(0.98806468,1.0120795)"><tspan
-         sodipodi:role="line"
-         id="tspan7454"
-         x="171.26593"
-         y="85.702499"
-         style="stroke-width:0.32019773px">More concentration</tspan><tspan
-         sodipodi:role="line"
-         id="tspan7456"
-         x="171.26593"
-         y="89.971802"
-         style="stroke-width:0.32019773px">around peak age?</tspan></text>
   </g>
 </svg>
