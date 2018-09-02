@@ -5799,10 +5799,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1"
-     inkscape:cx="133.47752"
-     inkscape:cy="337.7827"
+     inkscape:cx="277.86671"
+     inkscape:cy="577.7827"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer35"
+     inkscape:current-layer="layer14"
      showgrid="false"
      inkscape:snap-grids="false"
      inkscape:snap-to-guides="true"
@@ -5821,7 +5821,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -31539,16 +31539,7 @@
      inkscape:groupmode="layer"
      id="layer14"
      inkscape:label="contourplot annotation"
-     style="display:inline">
-    <rect
-       transform="translate(3.7041667,3.5666661)"
-       style="display:inline;opacity:0.75;fill:#ffffff;fill-opacity:0.5699482;stroke:none;stroke-width:0.29153529;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
-       id="rect130484"
-       width="42.997486"
-       height="10.659239"
-       x="143.21527"
-       y="108.15313" />
-  </g>
+     style="display:inline" />
   <g
      inkscape:groupmode="layer"
      id="layer27"
