@@ -34,7 +34,7 @@ ui <- fluidPage(
    # Application title
    titlePanel("Select Countries"),
    
-   # Sidebar with a slider input for number of bins 
+   # Sidebar 
    sidebarLayout(fluid = T,
       sidebarPanel(width = 3,
         selectInput("countries", label = "Select countries to compare",
@@ -42,6 +42,7 @@ ui <- fluidPage(
           selected = "GBR_SCO",
           multiple = TRUE
         ),
+        actionButton("redraw_figure", "Click to render figure"),
         checkboxInput("gridlines", label = "Check for gridlines",
           value = FALSE
         ),
@@ -63,13 +64,17 @@ ui <- fluidPage(
         sliderInput("contour_2", label = "Second contour",
           value = 1.50, min = 0, max = 3.0, step = 0.05),
         sliderInput("contour_1", label = "Bottom contour",
-          value = 1.30, min = 0, max = 3.0, step = 0.05)
+          value = 1.30, min = 0, max = 3.0, step = 0.05),
+        
+        sliderInput("cohort", label = "Birth cohort", sep = "",
+          value = 1950, min = 1920, max = 1980, step = 1)
         
       ),
       
       # Show a plot of the generated distribution
       mainPanel( width = 9,
-         plotOutput("cclp")
+         plotOutput("cclp"),
+         plotOutput("schedule")
       )
     )
   )
@@ -89,20 +94,54 @@ server <- function(input, output) {
   })
   
    output$cclp <- renderPlot({
+     input$redraw_figure
+     
+     isolate({
+       dta_subset <- dta %>% filter(code %in% input$countries)
+       pal <- pal_set()
+       add_gridlines <- input$gridlines
+       return <- input$vis_type
+       contour_vals <- c(
+         input$contour_1, 
+         input$contour_2,
+         input$contour_3,
+         input$contour_4
+       )
+       
+     })
+     
 
-     dta_subset <- dta %>% filter(code %in% input$countries)
+     dta_subset <- isolate(dta %>% filter(code %in% input$countries))
      pal <- pal_set()
      produce_composite_lattice(
-       DTA = dta %>% 
-         filter(code %in% input$countries),
-       add_gridlines = input$gridlines,
-       return = input$vis_type,
+       DTA = dta_subset,
+       add_gridlines = add_gridlines,
+       return = return,
        colscheme = pal,
-       contour_vals = c(input$contour_1, input$contour_2, input$contour_3, input$contour_4)
+       contour_vals = contour_vals
         )
 
-   }
-   )
+   })
+   
+   output$schedule <- renderPlot({
+     input$redraw_figure
+     
+     isolate({
+       dta_subset <- dta %>% 
+         filter(code %in% input$countries) %>% 
+         filter(birth_year == input$cohort)
+       
+     })
+     
+     dta_subset %>% 
+       ggplot(
+         aes(x = age, y = asfr, group = country, fill = country, colour = geography)
+         ) +
+       geom_polygon(alpha = 0.3)
+     
+   })
+   
+   
 }
 
 # Run the application 
