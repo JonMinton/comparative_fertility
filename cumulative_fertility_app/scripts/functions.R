@@ -6,8 +6,10 @@ brewer.pal(12, "Paired")
 produce_composite_lattice <- function(DTA, add_gridlines = T,
                                       colscheme = colorRampPalette(adjusted_paired)(200),
                                       return = "all",
-                                      contour_vals = c(1.30, 1.50, 1.80, 2.05)
-                                      
+                                      contour_vals = c(1.30, 1.50, 1.80, 2.05),
+                                      cohort = NULL,
+                                      shading_cuts = 20,
+                                      shading_limits = NULL
 ){
   # Plot new lattice --------------------------------------------------------
   
@@ -57,6 +59,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
       return(
         function(...){
           panel.levelplot(...)
+          panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
         }
       )
     } else {
@@ -65,6 +68,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
           panel.levelplot(...)
           panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
           panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
+          panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
         }
       )
     }
@@ -77,6 +81,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
       return(
         function(...){
           panel.contourplot(...)
+          panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
         }
       )
     } else {
@@ -85,6 +90,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
           panel.contourplot(...)
           panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
           panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
+          panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
         }
       )
     }
@@ -95,33 +101,65 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
     filter(year >= 1950) %>% 
     filter(age <= 50)
   
-  shading <- DTA_SS %>% 
-    levelplot(
-      asfr ~ birth_year * age | country, 
-      data= . , 
-      par.strip.text=list(cex=1.1, fontface="bold"),
-      ylab=list(label="Age in years", cex=1.2),
-      xlab=list(label="Birth Year", cex=1.2),
-      cex=1.4,
-      cuts=20,
-      aspect = "iso",
-      col.regions=colscheme,
-      labels=list(cex=1.2),
-      colorkey = list(
-        space = "top",
-        labels = list(cex = 1.2)
-      ),
-      col="black", 
-      as.table = TRUE,
-      strip = my_strip_style,
-      scales=list(
-        x=list(cex=1.2, rot = 90), 
-        y=list(cex=1.2),
-        alternating=3
-      ),
-      panel = panel_select(add_gridlines),
-      par.settings=list(strip.background=list(col="lightgrey"))
-    ) 
+  if(is.null(shading_limits)){
+    shading <- DTA_SS %>% 
+      levelplot(
+        asfr ~ birth_year * age | country, 
+        data= . , 
+        par.strip.text=list(cex=1.1, fontface="bold"),
+        ylab=list(label="Age in years", cex=1.2),
+        xlab=list(label="Birth Year", cex=1.2),
+        cex=1.4,
+        cuts=shading_cuts,
+        aspect = "iso",
+        col.regions=colscheme,
+        labels=list(cex=1.2),
+        colorkey = list(
+          space = "top",
+          labels = list(cex = 1.2)
+        ),
+        col="black", 
+        as.table = TRUE,
+        strip = my_strip_style,
+        scales=list(
+          x=list(cex=1.2, rot = 90), 
+          y=list(cex=1.2),
+          alternating=3
+        ),
+        panel = panel_select(add_gridlines),
+        par.settings=list(strip.background=list(col="lightgrey"))
+      ) 
+  } else {
+    shading <- DTA_SS %>% 
+      levelplot(
+        asfr ~ birth_year * age | country, 
+        data= . , 
+        par.strip.text=list(cex=1.1, fontface="bold"),
+        ylab=list(label="Age in years", cex=1.2),
+        xlab=list(label="Birth Year", cex=1.2),
+        cex=1.4,
+        at = seq(from = shading_limits[1], to = shading_limits[2], length.out = shading_cuts),
+        aspect = "iso",
+        col.regions=colscheme,
+        labels=list(cex=1.2),
+        colorkey = list(
+          space = "top",
+          labels = list(cex = 1.2)
+        ),
+        col="black", 
+        as.table = TRUE,
+        strip = my_strip_style,
+        scales=list(
+          x=list(cex=1.2, rot = 90), 
+          y=list(cex=1.2),
+          alternating=3
+        ),
+        panel = panel_select(add_gridlines),
+        par.settings=list(strip.background=list(col="lightgrey"))
+      ) 
+    
+    
+  }
   
   if (return == "all"){
     line_4 <- DTA_SS %>% 

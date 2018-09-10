@@ -25,7 +25,7 @@ names(countries_to_select) <- country_codes %>%
   filter(to_keep == 1) %>% 
   pull(country)
 
-palette_options <- c("New" = "adjusted_paired", brew_pals)
+palette_options <- c("New" = "adjusted_paired", "Cube YF" = "cubeyf", brew_pals)
 
 
 # Define UI for application that draws a histogram
@@ -53,11 +53,34 @@ ui <- fluidPage(
             "Lines only" = "contours"
           )            
         ),
-        selectInput("pal_type", label = "Select colour palette",
-          choices = palette_options,
-          selected = "adjusted_paired"
+        
+        checkboxInput("shade", label = "Check to adjust palette/shading"),
+        conditionalPanel(
+          condition = "input.shade == true",
+          selectInput("pal_type", label = "Select colour palette",
+                      choices = palette_options,
+                      selected = "adjusted_paired"
+          )
         ),
-
+        conditionalPanel(
+          condition = "input.shade == true",
+          sliderInput("num_cuts", label = "change number of shades displayed",
+                      min = 3, max = 100, value = 20
+          )
+        ),
+        conditionalPanel(
+          condition = "input.shade == true",
+          checkboxInput("adjust_shade_range", label = "Check to adjust shade range manually",
+                      value = FALSE
+          )
+        ),
+        conditionalPanel(
+          condition = "input.adjust_shade_range == true",
+          sliderInput("shade_range", label = "Adjust min and max of shade range",
+                      min = 0, max = 1, value = c(0, 0.25)
+          )
+        ),
+        
         checkboxInput("contour_sliders", label = "Check to adjust contour lines",
                       value = FALSE
         ),
@@ -113,11 +136,12 @@ server <- function(input, output) {
    
   pal_set <- reactive({
     palname <- input$pal_type
-    
     if (palname == "adjusted_paired"){
       out <- colorRampPalette(adjusted_paired)(200)
+    } else if (palname == "cubeyf"){
+      out <- cubeyf_palette 
     } else {
-      out <- colorRampPalette(brewer.pal(12, palname))(200)
+      out <- colorRampPalette(brewer.pal(11, palname))(200)
     }
     return(out)
   })
@@ -141,18 +165,34 @@ server <- function(input, output) {
        input$contour_4
      )
      
-     
-
-     dta_subset <- isolate(dta %>% filter(code %in% input$countries))
      pal <- pal_set()
-     produce_composite_lattice(
-       DTA = dta_subset,
-       add_gridlines = add_gridlines,
-       return = return,
-       colscheme = pal,
-       contour_vals = contour_vals
-        )
+    
+     if(is.null(input$shade_range)){
 
+       out <- produce_composite_lattice(
+         DTA = dta_subset,
+         add_gridlines = add_gridlines,
+         return = return,
+         colscheme = pal,
+         cohort = input$cohort,
+         contour_vals = contour_vals,
+         shading_cuts = input$num_cuts
+       )
+     }  else {
+        
+       out <- produce_composite_lattice(
+         DTA = dta_subset,
+         add_gridlines = add_gridlines,
+         return = return,
+         colscheme = pal,
+         cohort = input$cohort,
+         contour_vals = contour_vals,
+         shading_cuts = input$num_cuts,
+         shading_limits = isolate(input$shade_range)
+       )
+     }
+    return(out)
+     
    })
    
    output$schedule <- renderPlot({
@@ -161,12 +201,42 @@ server <- function(input, output) {
          filter(code %in% input$countries) %>% 
          filter(birth_year == input$cohort)
 
-            dta_subset %>% 
-       ggplot(
-         aes(x = age, y = asfr, group = country, fill = country, colour = geography)
-         ) +
-       geom_polygon(alpha = 0.3)
-     
+      dta_subset %>% 
+        select(country, geography, age, series_ok, country, geography, asfr, my_ccfr) %>% 
+        mutate(ccfr = ifelse(series_ok, my_ccfr, NA)) %>% 
+        select(-my_ccfr) %>% 
+        gather(key = "measure", value = "value", asfr:ccfr) %>% 
+        select(-series_ok) -> dta_subset 
+      
+      dta_subset %>% 
+        ggplot(aes(x = age, y = value, colour = country, group = country)) + 
+        geom_line() + 
+        coord_flip() + 
+        facet_grid(. ~ measure, scales = "free_x") + 
+        geom_hline(
+          data = dta_subset %>% filter(measure == "ccfr"),
+          aes(yintercept = input$contour_1),
+          linetype = "dashed"
+        ) + 
+        geom_hline(
+          data = dta_subset %>% filter(measure == "ccfr"),
+          aes(yintercept = input$contour_2)
+        ) + 
+        geom_hline(
+          data = dta_subset %>% filter(measure == "ccfr"),
+          aes(yintercept = input$contour_3),
+          linetype = "dashed",
+          size = 2
+        ) + 
+        geom_hline(
+          data = dta_subset %>% filter(measure == "ccfr"),
+          aes(yintercept = input$contour_4),
+          size = 2
+        )  
+        
+            
+
+
    })
    
    

@@ -86,3 +86,4 @@ names(seqlist) <- seqlist
 brew_pals <-c(divlist,quallist,seqlist)
 
 
+cubeyf_palette <- read_csv("data/cube_yf_palette.csv") %>% pull(x)
