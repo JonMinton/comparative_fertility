@@ -1,0 +1,12 @@
+name: cumulative_fertility_app
+title: cumulative_fertility_app
+username:
+account: aqmen
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 431507
+bundleId: 1578004
+url: https://aqmen.shinyapps.io/cumulative_fertility_app/
+when: 1536564298.24351
+asMultiple: FALSE
+asStatic: FALSE
