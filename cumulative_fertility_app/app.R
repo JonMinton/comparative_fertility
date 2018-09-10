@@ -13,8 +13,8 @@ library(latticeExtra)
 library(shiny)
 library(RColorBrewer)
 
-source("../scripts/functions.R")
-source("../scripts/data_prep.R")
+source("scripts/functions.R")
+source("scripts/data_prep.R")
 
 
 countries_to_select <- country_codes %>% 
@@ -57,24 +57,53 @@ ui <- fluidPage(
           choices = palette_options,
           selected = "adjusted_paired"
         ),
-        sliderInput("contour_4", label = "Top contour",
-          value = 2.05, min = 0, max = 3.0, step = 0.05),
-        sliderInput("contour_3", label = "Third contour",
-          value = 1.80, min = 0, max = 3.0, step = 0.05),
-        sliderInput("contour_2", label = "Second contour",
-          value = 1.50, min = 0, max = 3.0, step = 0.05),
-        sliderInput("contour_1", label = "Bottom contour",
-          value = 1.30, min = 0, max = 3.0, step = 0.05),
-        
+
+        checkboxInput("contour_sliders", label = "Check to adjust contour lines",
+                      value = FALSE
+        ),
+        conditionalPanel(
+          condition = "input.contour_sliders == true",
+            sliderInput("contour_4", label = "Top contour",
+                        value = 2.05, min = 0, max = 3.0, step = 0.05
+            )
+        ),
+        conditionalPanel(
+          condition = "input.contour_sliders == true",
+          sliderInput("contour_3", label = "Third contour",
+                      value = 1.80, min = 0, max = 3.0, step = 0.05)
+        ),
+        conditionalPanel(
+          condition = "input.contour_sliders == true",
+          sliderInput("contour_2", label = "Second contour",
+                      value = 1.50, min = 0, max = 3.0, step = 0.05)
+          
+        ),
+        conditionalPanel(
+          condition = "input.contour_sliders == true",
+          sliderInput("contour_1", label = "Bottom contour",
+                      value = 1.30, min = 0, max = 3.0, step = 0.05)
+        ),
+      
+      checkboxInput("show_schedule", label = "Check to visualise a cohort's schedule",
+                      value = FALSE
+        ),
+      
+      conditionalPanel(
+        condition = "input.show_schedule == true",
         sliderInput("cohort", label = "Birth cohort", sep = "",
-          value = 1950, min = 1920, max = 1980, step = 1)
-        
+                    value = 1950, min = 1920, max = 1980, step = 1)
+        )
       ),
+
       
       # Show a plot of the generated distribution
+      
       mainPanel( width = 9,
          plotOutput("cclp"),
-         plotOutput("schedule")
+         conditionalPanel(
+           condition = "input.show_schedule == true",
+           plotOutput("schedule")
+         )
       )
     )
   )
@@ -93,6 +122,8 @@ server <- function(input, output) {
     return(out)
   })
   
+
+  
    output$cclp <- renderPlot({
      input$redraw_figure
      
@@ -101,14 +132,15 @@ server <- function(input, output) {
        pal <- pal_set()
        add_gridlines <- input$gridlines
        return <- input$vis_type
-       contour_vals <- c(
-         input$contour_1, 
-         input$contour_2,
-         input$contour_3,
-         input$contour_4
-       )
-       
      })
+     
+     contour_vals <- c(
+       input$contour_1, 
+       input$contour_2,
+       input$contour_3,
+       input$contour_4
+     )
+     
      
 
      dta_subset <- isolate(dta %>% filter(code %in% input$countries))
@@ -124,16 +156,12 @@ server <- function(input, output) {
    })
    
    output$schedule <- renderPlot({
-     input$redraw_figure
      
-     isolate({
        dta_subset <- dta %>% 
          filter(code %in% input$countries) %>% 
          filter(birth_year == input$cohort)
-       
-     })
-     
-     dta_subset %>% 
+
+            dta_subset %>% 
        ggplot(
          aes(x = age, y = asfr, group = country, fill = country, colour = geography)
          ) +
