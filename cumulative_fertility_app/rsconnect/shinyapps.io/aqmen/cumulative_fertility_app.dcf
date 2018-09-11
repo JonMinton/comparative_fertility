@@ -5,8 +5,8 @@ account: aqmen
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 431507
-bundleId: 1578851
+bundleId: 1580991
 url: https://aqmen.shinyapps.io/cumulative_fertility_app/
-when: 1536598608.38356
+when: 1536698229.75447
 asMultiple: FALSE
 asStatic: FALSE

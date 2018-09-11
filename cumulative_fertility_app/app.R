@@ -12,6 +12,7 @@ library(lattice)
 library(latticeExtra)
 library(shiny)
 library(RColorBrewer)
+library(plotly)
 
 source("scripts/functions.R")
 source("scripts/data_prep.R")
@@ -114,7 +115,8 @@ ui <- fluidPage(
       conditionalPanel(
         condition = "input.show_schedule == true",
         sliderInput("cohort", label = "Birth cohort", sep = "",
-                    value = 1950, min = 1920, max = 1980, step = 1)
+                    value = 1950, min = 1920, max = 1980, step = 1,
+                    animate = animationOptions(interval = 300, loop = FALSE))
         )
       ),
 
@@ -125,8 +127,9 @@ ui <- fluidPage(
          plotOutput("cclp"),
          conditionalPanel(
            condition = "input.show_schedule == true",
-           plotOutput("schedule")
-         )
+           plotlyOutput("schedule")
+         ),
+         plotlyOutput("surfaceplot")
       )
     )
   )
@@ -146,18 +149,30 @@ server <- function(input, output) {
     return(out)
   })
   
-
+  get_schedule_subset <- reactive({
+    dta_subset <- dta %>% 
+      filter(code %in% input$countries) %>% 
+      filter(birth_year == input$cohort)
+    
+    dta_subset %>% 
+      select(country, geography, age, series_ok, country, geography, asfr, my_ccfr) %>% 
+      mutate(ccfr = ifelse(series_ok, my_ccfr, NA)) %>% 
+      select(-my_ccfr) %>% 
+      gather(key = "measure", value = "value", asfr:ccfr) %>% 
+      select(-series_ok) -> dta_subset 
+    
+    
+  })
   
    output$cclp <- renderPlot({
      input$redraw_figure
      
-     isolate({
-       dta_subset <- dta %>% filter(code %in% input$countries)
-       pal <- pal_set()
-       add_gridlines <- input$gridlines
-       return <- input$vis_type
-     })
+     dta_subset <- isolate(dta %>% filter(code %in% input$countries))
+     add_gridlines <- isolate(input$gridlines)
+     return <- isolate(input$vis_type)
      
+    pal <- pal_set()
+
      contour_vals <- c(
        input$contour_1, 
        input$contour_2,
@@ -195,51 +210,119 @@ server <- function(input, output) {
      
    })
    
-   output$schedule <- renderPlot({
+   output$schedule <- renderPlotly({
      
-       dta_subset <- dta %>% 
-         filter(code %in% input$countries) %>% 
-         filter(birth_year == input$cohort)
+      get_schedule_subset() %>% 
+       spread(measure, value) -> dta_subset
 
       dta_subset %>% 
-        select(country, geography, age, series_ok, country, geography, asfr, my_ccfr) %>% 
-        mutate(ccfr = ifelse(series_ok, my_ccfr, NA)) %>% 
-        select(-my_ccfr) %>% 
-        gather(key = "measure", value = "value", asfr:ccfr) %>% 
-        select(-series_ok) -> dta_subset 
-      
-      dta_subset %>% 
-        ggplot(aes(x = age, y = value, colour = country, group = country)) + 
-        geom_line() + 
-        coord_flip() + 
-        facet_grid(. ~ measure, scales = "free_x") + 
-        geom_hline(
-          data = dta_subset %>% filter(measure == "ccfr"),
-          aes(yintercept = input$contour_1),
-          linetype = "dashed"
-        ) + 
-        geom_hline(
-          data = dta_subset %>% filter(measure == "ccfr"),
-          aes(yintercept = input$contour_2)
-        ) + 
-        geom_hline(
-          data = dta_subset %>% filter(measure == "ccfr"),
-          aes(yintercept = input$contour_3),
-          linetype = "dashed",
-          size = 2
-        ) + 
-        geom_hline(
-          data = dta_subset %>% filter(measure == "ccfr"),
-          aes(yintercept = input$contour_4),
-          size = 2
-        )  
+        plot_ly(y = ~age, x = ~asfr, color = ~country,
+          hoverinfo = 'text',
+          text = ~paste0(
+            country, " (", geography, ")\n",
+            round(asfr * 1000, 0), " babies/1000 women at age ", age
+            )
+      ) %>% 
+        add_paths(name = ~country) %>% 
+        layout(title = paste("Age-specific & cumulative schedules for", input$cohort, "Birth cohort"),
+               xaxis = list(title = "Fertility rate"),
+               yaxis = list(title = "Age in years")
+        ) -> p1
         
-            
+      
+      p2 <- dta_subset %>% 
+        plot_ly(x = ~ccfr, y = ~age, color = ~country, showlegend = FALSE,
+                hoverinfo = 'text',
+                text = ~paste0(
+                  country, " (", geography, ")\n",
+                  round(ccfr , 2), " babies by age ", age
+                )
+                
+                ) %>% 
+        add_paths(name = ~country) %>% 
+        add_segments( 
+          x = input$contour_1, xend = input$contour_1, 
+          y = ~min(age), yend = ~max(age),
+          line = list(color = 'black', dash = 'dash')
+        ) %>% 
+        add_segments( 
+          x = input$contour_2, xend = input$contour_2, 
+          y = ~min(age), yend = ~max(age),
+          line = list(color = 'black')
+        ) %>% 
+        add_segments( 
+          x = input$contour_3, xend = input$contour_3, 
+          y = ~min(age), yend = ~max(age),
+          line = list(color = 'black', dash = 'dash', width = 3)
+        ) %>% 
+        add_segments( 
+          x = input$contour_4, xend = input$contour_4, 
+          y = ~min(age), yend = ~max(age),
+          line = list(color = 'black',                width = 3)
+        ) %>% 
+        layout(
+               xaxis = list(title = "Cumulative Fertility")
+        ) 
+        
+
+      
+      subplot(
+        p1, p2,
+        shareY = TRUE,
+        titleX = TRUE
+      ) %>% 
+        layout(
+          xaxis = list(title = "Fertility rate (Babies/woman)"),
+          xaxis2 = list(title = "Cumulative fertility (Babies by age on y axis)")
+        )
 
 
    })
    
+   # Now to add a surface plot 
    
+   
+   output$surfaceplot <- renderPlotly({
+     
+     input$redraw_figure
+     dta_subset <- isolate(dta %>% filter(code %in% input$countries))
+     
+     # temp while getting to work with just one figure
+     dta_first_country <- dta_subset %>% filter(code == unique(code)[1])
+     
+     dta_first_country %>% 
+       select(birth_year, age, asfr) %>% 
+       spread(age, asfr) ->  tmp
+     birth_years <- pull(tmp, birth_year)
+     tmp <- tmp[,-1]
+     ages <- colnames(tmp)
+     asfr <- as.matrix(tmp)
+#     asfr <- asfr[,dim(asfr)[2]:1]
+     n_years <- length(birth_years)
+     n_ages <- length(ages)
+      
+     pal <- pal_set()
+     
+     plot_ly(
+
+     ) %>% 
+       add_surface(
+         x = ~ages, y = ~birth_years, z = ~asfr,
+         colorscale = list(
+           seq(from = 0, to = 1, length.out = length(pal)), 
+           pal
+          )
+       )  %>% 
+         layout(
+  
+           scene = list(
+             aspectratio = list(x = n_ages / n_years, y = 1, z = 1)
+           )
+           
+         ) 
+       
+   })
+
 }
 
 # Run the application 
