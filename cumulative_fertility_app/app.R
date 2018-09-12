@@ -117,6 +117,15 @@ ui <- fluidPage(
         sliderInput("cohort", label = "Birth cohort", sep = "",
                     value = 1950, min = 1920, max = 1980, step = 1,
                     animate = animationOptions(interval = 300, loop = FALSE))
+        ),
+
+      conditionalPanel(
+        condition = "input.tabset_1 == '3D Surface Plot'",
+        selectInput("country_for_surface", label = "Select countries visualise in 3D",
+                    choices = countries_to_select,
+                    selected = "GBR_SCO",
+                    multiple = FALSE
+          )
         )
       ),
 
@@ -124,12 +133,19 @@ ui <- fluidPage(
       # Show a plot of the generated distribution
       
       mainPanel( width = 9,
-         plotOutput("cclp"),
-         conditionalPanel(
-           condition = "input.show_schedule == true",
-           plotlyOutput("schedule")
-         ),
-         plotlyOutput("surfaceplot")
+        tabsetPanel(id = "tabset_1", type = "tab",
+          tabPanel(title = "Composite Plot", 
+            plotOutput("cclp"),
+            conditionalPanel(
+              condition = "input.show_schedule == true",
+              plotlyOutput("schedule")
+            )
+          ),
+          tabPanel(title = "3D Surface Plot",
+            plotlyOutput("surfaceplot", height = 'auto', width = 'auto')       
+          )
+        )
+
       )
     )
   )
@@ -285,12 +301,10 @@ server <- function(input, output) {
    output$surfaceplot <- renderPlotly({
      
      input$redraw_figure
-     dta_subset <- isolate(dta %>% filter(code %in% input$countries))
      
-     # temp while getting to work with just one figure
-     dta_first_country <- dta_subset %>% filter(code == unique(code)[1])
-     
-     dta_first_country %>% 
+     this_dta <- dta %>% filter(code == input$country_for_surface)
+
+     this_dta %>% 
        select(birth_year, age, asfr) %>% 
        spread(age, asfr) ->  tmp
      birth_years <- pull(tmp, birth_year)
@@ -316,7 +330,7 @@ server <- function(input, output) {
          layout(
   
            scene = list(
-             aspectratio = list(x = n_ages / n_years, y = 1, z = 1)
+             aspectratio = list(x = n_ages / n_years, y = 1, z = 0.40)
            )
            
          ) 
