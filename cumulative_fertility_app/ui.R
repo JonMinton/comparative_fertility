@@ -146,7 +146,6 @@ ui <- fluidPage(
         ),
         
 
-        
         conditionalPanel(
           condition = "input.tabset_1 == 'Composite Plot'",
           checkboxInput("contour_sliders", label = "Check to adjust contour lines",
@@ -188,6 +187,30 @@ ui <- fluidPage(
           checkboxInput("show_schedule", label = "Check to visualise a cohort's schedule",
             value = FALSE
           )          
+        ),
+        conditionalPanel(
+          condition = "input.tabset_1 == 'Composite Plot' && input.show_schedule == true ",
+          sliderInput("cohort", label = "Birth cohort", sep = "",
+                      value = 1950, min = 1920, max = 1980, step = 1)
+        ),
+        conditionalPanel(
+          condition = "input.tabset_1 == 'Composite Plot' && input.show_schedule == true",
+          checkboxInput("subplot_limit", label = "Check to manually adjust subplot limits",
+                        value = FALSE
+          )
+        ),
+        
+        conditionalPanel(
+          condition = "input.tabset_1 == 'Composite Plot' && input.subplot_limit == true",
+          sliderInput("subplot_limits_asfr", label = "Slide to adjust ASFR subplot limits",
+                      min = 0, max = 1, value = c(0, 0.3), step = 0.1
+          )
+        ),
+        conditionalPanel(
+          condition = "input.tabset_1 == 'Composite Plot' && input.subplot_limit == true",
+          sliderInput("subplot_limits_ccfr", label = "Slide to adjust CCFR subplot limits",
+                      min = 0, max = 5, value = c(0, 3), step = 0.1
+          )
         ),
         
         conditionalPanel(
@@ -249,13 +272,9 @@ ui <- fluidPage(
                       ),
                       selected = "png"
           )
-        ),
-        
-        conditionalPanel(
-          condition = "input.tabset_1 == 'Composite Plot' && input.show_schedule == true ",
-          sliderInput("cohort", label = "Birth cohort", sep = "",
-                      value = 1950, min = 1920, max = 1980, step = 1)
         )
+        
+
 
 
       ),

@@ -1,5 +1,22 @@
 # Define server logic required to draw a histogram
-server <- function(input, output) {
+server <- function(input, output, session) {
+  
+  # Contour line adjustments 
+  # See example from here 
+  # https://shiny.rstudio.com/reference/shiny/1.1.0/updateSliderInput.html
+  
+  observe({
+    val <- input$contour_4
+    updateSliderInput(session, "contour_3", max = val)
+  })
+  observe({
+    val <- input$contour_3
+    updateSliderInput(session, "contour_2", max = val)
+  })
+  observe({
+    val <- input$contour_2
+    updateSliderInput(session, "contour_1", max = val)
+  })
   
   pal_set <- reactive({
     palname <- input$pal_type
@@ -36,24 +53,24 @@ server <- function(input, output) {
     pal <- pal_set()
     
     contour_vals <- c(
-      input$contour_1, 
-      input$contour_2,
-      input$contour_3,
-      input$contour_4
+      isolate(input$contour_1), 
+      isolate(input$contour_2),
+      isolate(input$contour_3),
+      isolate(input$contour_4)
     )
     
     pal <- pal_set()
     
-    if(is.null(input$shade_range)){
+    if(is.null(isolate(input$shade_range))){
       
       out <- produce_composite_lattice(
         DTA = dta_subset,
         add_gridlines = add_gridlines,
         return = return,
         colscheme = pal,
-        cohort = ifelse(input$show_schedule, input$cohort, NA),
+        cohort = ifelse(isolate(input$show_schedule), isolate(input$cohort), NA),
         contour_vals = contour_vals,
-        shading_cuts = input$num_cuts
+        shading_cuts = isolate(input$num_cuts)
       )
     }  else {
       
@@ -62,9 +79,9 @@ server <- function(input, output) {
         add_gridlines = add_gridlines,
         return = return,
         colscheme = pal,
-        cohort = ifelse(input$show_schedule, input$cohort, NA),
+        cohort = ifelse(isolate(input$show_schedule), isolate(input$cohort), NA),
         contour_vals = contour_vals,
-        shading_cuts = input$num_cuts,
+        shading_cuts = isolate(input$num_cuts),
         shading_limits = isolate(input$shade_range)
       )
     }
@@ -156,9 +173,17 @@ server <- function(input, output) {
       layout(
         xaxis = list(title = "Fertility rate (Babies/woman)"),
         xaxis2 = list(title = "Cumulative fertility (Babies by age on y axis)")
-      )
+      ) -> out
     
+    if (input$subplot_limit == TRUE){
+      out %>% 
+        layout(
+          xaxis = list(range = input$subplot_limits_asfr),
+          xaxis2 = list(range = input$subplot_limits_ccfr)
+        ) -> out
+    }
     
+    return(out)
   })
   
   # Now to add a surface plot 
@@ -227,6 +252,8 @@ server <- function(input, output) {
     } else if (input$show_second_surface == 'one'){
       if(input$pal_type == "cubeyf"){
         pal <- colorRampPalette(cubeyf_palette)(200)
+      } else {
+        pal <- pal_set()
       }
       plot_ly() %>% 
         add_surface(
@@ -291,14 +318,6 @@ server <- function(input, output) {
           ),
           zaxis = list(
             title = ifelse(input$show_second_surface == "diff", "Fertility difference", "Fertility")
-            # range = ifelse(
-            #   input$show_second_surface == "diff",
-            #   c(-abs_max_diff, abs_max_diff),
-            #   c(0, 0.05)
-            # )
-            
-            # range = c(-, 0.10) 
-            
           )
         )
       )
