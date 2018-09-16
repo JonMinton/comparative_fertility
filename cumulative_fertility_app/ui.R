@@ -62,6 +62,24 @@ ui <- fluidPage(
         ),
 
         conditionalPanel(
+          condition= "input.tabset_1 == '3D Surface Plot'",
+          selectInput("select_surface_type", label = "Select type of surface to show",
+                        choices = c(
+                          "ASFR by year" = "asfr_year",
+                          "ASFR by cohort" = "asfr_cohort",
+                          "CCFR by cohort" = "ccfr"
+                      ),
+                      selected = "asfr_cohort", multiple = FALSE
+          )
+        ),
+        
+        conditionalPanel(
+          condition= "input.tabset_1 == '3D Surface Plot'",
+          checkboxInput("show_threshold_planes", label = "Check to display contour thresholds",
+            value = FALSE
+          )
+        ),
+        conditionalPanel(
           condition = "input.tabset_1 == '3D Surface Plot'",
           selectInput("show_second_surface", label = "Show one surface, two surfaces, or differences?",
                         choices = c(
