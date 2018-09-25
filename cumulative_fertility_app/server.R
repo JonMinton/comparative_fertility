@@ -215,7 +215,6 @@ server <- function(input, output, session) {
           cohort <- year - age
           code <- input$country_for_surface
 
-#          browser()          
           # schedule by age 
           p1 <- dta %>% 
             filter(year == !!year) %>% 
@@ -512,14 +511,156 @@ server <- function(input, output, session) {
           }
         
       } else if (input$show_second_surface == "diff"){
+          code1 <- input$country_for_surface
+          code2 <- input$second_country_for_surface
+          
         if (input$select_surface_type == "asfr_year"){
-        NULL  
+
+          diff_df <- dta %>% 
+            filter(code %in% c(code1, code2)) %>% 
+            select(code, year, birth_year, age, asfr) %>% 
+            group_by(year, age) %>% 
+            filter(n() == 2) %>% 
+            mutate(diff = asfr[code == code1] - asfr[code == code2]) %>% 
+            filter(!is.na(diff)) %>% 
+            ungroup() %>% 
+            spread(code, asfr) %>% 
+            select(year, age, birth_year, !!code1, !!code2, diff) 
+
+          this_age <- as.numeric(s$x)
+          this_year <- s$y
+          this_cohort <- this_year - this_age
+          
+          p1 <- diff_df %>% 
+            filter(year == this_year) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~age, y = ~diff)
+          
+          p2 <- diff_df %>% 
+            filter(age == this_age) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~year, y = ~diff)
+          
+          p3 <- diff_df %>% 
+            filter(birth_year == this_cohort) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~age, y = ~diff)
+          
+          p <- subplot(list(p1, p2, p3), shareY = TRUE) %>% 
+            layout(
+              yaxis = list(title = "Difference in fertility", 
+                           range = c(-0.1, 0.1)
+              ),
+              xaxis = list(title = "Age in years", range = c(12, 60)),
+              xaxis2 = list(title = "Year", range = c(1900, 2016)),
+              xaxis3 = list(title = "Age (cohort)", range = c(12, 60)),
+              showlegend = FALSE
+            )
+          
+          return(p)
+          
         } else if (input$select_surface_type == "asfr_cohort"){
-        NULL
+          diff_df <- dta %>% 
+            filter(code %in% c(code1, code2)) %>% 
+            select(code, year, birth_year, age, asfr) %>% 
+            group_by(birth_year, age) %>% 
+            filter(n() == 2) %>% 
+            mutate(diff = asfr[code == code1] - asfr[code == code2]) %>% 
+            filter(!is.na(diff)) %>% 
+            ungroup() %>% 
+            spread(code, asfr) %>% 
+            select(year, age, birth_year, !!code1, !!code2, diff) 
+          
+          this_age <- as.numeric(s$x)
+          this_year <- s$y
+          this_cohort <- this_year - this_age
+          
+          p1 <- diff_df %>% 
+            filter(birth_year == this_cohort) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~age, y = ~diff)
+          
+          p2 <- diff_df %>% 
+            filter(age == this_age) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~year, y = ~diff)
+          
+          p3 <- diff_df %>% 
+            filter(year == this_year) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~age, y = ~diff)
+          
+          p <- subplot(list(p1, p2, p3), shareY = TRUE) %>% 
+            layout(
+              yaxis = list(title = "Difference in fertility", 
+                           range = c(-0.1, 0.1)
+              ),
+              xaxis = list(title = "Age (cohort)",
+                           range = c(12, 60)
+              ),
+              xaxis2 = list(title = "Year", 
+                            range = c(1900, 2016)
+              ),
+              xaxis3 = list(title = "Age", 
+                            range = c(12, 60)
+              ),
+              
+              showlegend = FALSE
+            )
+          
+          return(p)
           
         } else if (input$select_surface_type == "ccfr"){
-        NULL
-      }
+          diff_df <- dta %>% 
+            filter(code %in% c(code1, code2)) %>% 
+            filter(series_ok) %>% 
+            select(code, year, birth_year, age, ccfr = my_ccfr) %>% 
+            group_by(birth_year, age) %>% 
+            filter(n() == 2) %>% 
+            mutate(diff = ccfr[code == code1] - ccfr[code == code2]) %>% 
+            filter(!is.na(diff)) %>% 
+            ungroup() %>% 
+            spread(code, ccfr) %>% 
+            select(year, age, birth_year, !!code1, !!code2, diff) 
+          
+          this_age <- as.numeric(s$x)
+          this_year <- s$y
+          this_cohort <- this_year - this_age
+          
+          p1 <- diff_df %>% 
+            filter(birth_year == this_cohort) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~age, y = ~diff)
+          
+          p2 <- diff_df %>% 
+            filter(age == this_age) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~year, y = ~diff)
+          
+          p3 <- diff_df %>% 
+            filter(year == this_year) %>% 
+            plot_ly() %>% 
+            add_lines(x = ~age, y = ~diff)
+          
+          p <- subplot(list(p1, p2, p3), shareY = TRUE) %>% 
+            layout(
+              yaxis = list(title = "Difference in cumulative fertility", 
+                           range = c(-1, 1)
+              ),
+              xaxis = list(title = "Age (cohort)",
+                           range = c(12, 60)
+              ),
+              xaxis2 = list(title = "Year", 
+                            range = c(1900, 2016)
+              ),
+              xaxis3 = list(title = "Age", 
+                            range = c(12, 60)
+              ),
+              
+              showlegend = FALSE
+            )
+          
+        }
         
       }
         
