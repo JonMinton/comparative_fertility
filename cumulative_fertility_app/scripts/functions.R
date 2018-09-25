@@ -272,3 +272,6 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
   return(output)
   
 }
+
+
+

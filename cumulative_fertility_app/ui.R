@@ -53,7 +53,7 @@ ui <- fluidPage(
         
         # COUNTRY (singular) to compare (3D surface plot)
         conditionalPanel(
-          condition = "input.tabset_1 == '3D Surface Plot'",
+          condition = "input.tabset_1 == '3D Surface Plot' || input.tabset_1 == 'Linked Plots'",
           selectInput("country_for_surface", label = "Select country visualise in 3D",
                       choices = countries_to_select,
                       selected = "GBR_SCO",
@@ -62,7 +62,7 @@ ui <- fluidPage(
         ),
 
         conditionalPanel(
-          condition= "input.tabset_1 == '3D Surface Plot'",
+          condition= "input.tabset_1 == '3D Surface Plot' || input.tabset_1 == 'Linked Plots'",
           selectInput("select_surface_type", label = "Select type of surface to show",
                         choices = c(
                           "ASFR by year" = "asfr_year",
@@ -74,13 +74,13 @@ ui <- fluidPage(
         ),
         
         conditionalPanel(
-          condition= "input.tabset_1 == '3D Surface Plot'",
+          condition= "input.tabset_1 == '3D Surface Plot' || input.tabset_1 == 'Linked Plots'",
           checkboxInput("show_threshold_planes", label = "Check to display contour thresholds",
             value = FALSE
           )
         ),
         conditionalPanel(
-          condition = "input.tabset_1 == '3D Surface Plot'",
+          condition = "input.tabset_1 == '3D Surface Plot' || input.tabset_1 == 'Linked Plots'",
           selectInput("show_second_surface", label = "Show one surface, two surfaces, or differences?",
                         choices = c(
                           "One surface" = "one",
@@ -312,7 +312,12 @@ ui <- fluidPage(
             )
           ),
           tabPanel(title = "3D Surface Plot",
-            plotlyOutput("surfaceplot", height = 800)       
+            plotlyOutput("surfaceplot", height = 800)
+          ),
+          tabPanel(title = "Linked Plots",
+            plotlyOutput("surfaceplot_mini", height = 500),
+            plotlyOutput("cross_sections", height = 300)
+
           )
         )
 
