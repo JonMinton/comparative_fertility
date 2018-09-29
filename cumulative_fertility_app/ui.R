@@ -309,15 +309,135 @@ ui <- fluidPage(
             conditionalPanel(
               condition = "input.show_schedule == true",
               plotlyOutput("schedule")
-            )
+            ),
+            br(),
+            br(),
+            h2("Information"),
+            br(),
+            p("Welcome to the comparative cohort fertility explorer app!"),
+            br(),
+            h3("Options"),
+            p("The initial options available in this tab include:"),
+            tags$ol(
+              tags$li(
+                tags$b("Select countries to compare"),
+                tags$i(
+                  "This allows you to select one or more of 45 countries from the Human Fertility Database",
+                  " and Human Fertility Collection. The countries you select will appear in the",
+                  "Composite plot at the top, whenever you click the button",
+                  tags$b("'Click to render figure'"),
+                  "and will appear in the cohort schedule plot below if activated"
+                )
+              ),
+              tags$li(
+                tags$b("Check for gridlines"),
+                tags$i("This adds 5 year by 5 year gridlines to the composite plot")
+              ),
+              tags$li(
+                tags$b("Select type of visualisation"),
+                tags$i("This allows you to select three different renderings of the main plot:"),
+                tags$ul(
+                  tags$li("Lines: shows only the contour lines which map the ages at which particular cumulative fertility milestones are reached for different birth cohorts in each of the countries selected"),
+                  tags$li("Shade: Show only the heatmap part of the visualisation, which are mapped from the age-specific fertility rates at each age and cohort"),
+                  tags$li("Shades and lines (Default): Show both the heatmap/levelplot and contour plot aspects of the visualisation, meaning both age-specific fertility rates and cumulative cohort fertility milestones are shown in the same visualisation")
+                )
+              ),
+              tags$li(
+                tags$b("Check to adjust palette/shading"),
+                tags$i("This opens up two additional options:"),
+                tags$ul(
+                  tags$li("Select colour palette: Select from a range of colour palettes for presenting the visualisations. These are mainly taken from the ColorBrewer package, but also include the Cube YF palette"),
+                  tags$li("Change number of shades displayed: This determines the number of distinct colours/shades displayed in the composite plots")
+                )
+              ),
+              tags$li(
+                tags$b("Check to adjust shade range manually"),
+                tags$i("This sets a lower and upper limit to the age-specific fertility rates shown on the composite plot")
+              ),
+              tags$li(
+                tags$b("Check to adjust contour lines"),
+                tags$i("This opens up four sliders, which determine the 'milestone' values for cumulative cohort fertility levels which each of the four contours are mapped to:"),
+                tags$ol(
+                  tags$li("Top contour: This is the thick solid line on the plots"),
+                  tags$li("Third contour: This is represented by a thick dashed line"),
+                  tags$li("Second contour: This is represented by a think solid line"),
+                  tags$li("Bottom contour: This is represented by a thin dashed line")
+                )
+              ),
+              tags$li(
+                tags$b("Click to render figure"),
+                tags$i("This redraws the composite figure")
+              ),
+              tags$li(
+                tags$b("Check to visualise a cohort's schedule"),
+                tags$i("This opens up two subfigures which show the age-specific fertility rates (left plot), and cumulative cohort fertility rates along with vertical dashed lines indicating fertility milestones (right plot)",
+                        "for a specific selected birth cohort. Hovering over the lines reveals further information about that population"),
+                tags$ul(
+                  tags$li("Birth cohort: A slider which allows different birth cohorts to be selected"),
+                  tags$li("Check to manually adjust subplot limits: Opens up two sliders to set the range of the left and right subplots")
+                )
+              ),
+              tags$li(
+                tags$b("Check to adjust figure download options"),
+                tags$i("This opens up a range of drop-down options to configure file download options. This includes the 
+                       name of the figure, the width and height, the units of the width and height, the resolution in 
+                       dots per inch (DPI), and the file type (default PNG)")
+              )
+            ),
+            br(),
+            p("Finally, below the top figure is a button, 'download figure', which allows you to download the composite figure you have produced in your preferred file format, size and resolution")
           ),
           tabPanel(title = "3D Surface Plot",
-            plotlyOutput("surfaceplot", height = 800)
+            plotlyOutput("surfaceplot", height = 800),
+            br(),
+            h3("Information"),
+            p("The 3D surface plot tab shows the Lexis surfaces which the composite plots visualise in a number of different ways."),
+            p("The difference between the 3D surface plot and the 'linked plots' tab is that the linked plots tab has a smaller 'canvas' for the 3d Surface, 
+              but also additional subplots which show 'slices' through the surface across the age, year and birth cohort axes"),
+            p("There are a number of options available in the side panel"),
+            tags$ol(
+              tags$li(
+                tags$b("Select country to visualise"),
+                tags$i("This selects a single country to display on the Lexis surface. Unlike the Composite plot version only a single country
+                       can be selected within this drop-down menu")
+              ),
+              tags$li(
+                tags$b("Select type of surface to show"),
+                tags$i("Options include: Age-specific fertility rates by cohort (the attribute mapped to the colour/shade in the composite
+chart); ASFR by period; and cumulative cohort fertility rates (CCFR) by cohort, which is the attribute the contour lines in the composite plot maps to")
+                ),
+              tags$li(
+                tags$b("Check to display contour thresholds"),
+                tags$i("If the surface type shown is CCFR by cohort, then four horizontal planes are shown when this option is selected.
+                       The intersection between the CCFR surface and a horizontal plane shows the age at which each displayed birth cohort 
+                       reaches the cumulative fertility associated with that plane. These intersections between surfaces and planes is what the 
+                       contour lines in the composite plot show (though the surfaces in the 3D plots and composite plots are reversed)")
+              ),
+              tags$li(
+                tags$b("Show one surface, two surfaces or differences"),
+                tags$i("If two surfaces are selected, another drop-down menu opens allowing a second population to be 
+                       visualised within the same Lexis space. The first population surface is coloured blue and the second 
+                       red, and the opacity of both surfaces can be adjusted with slider options that open up when 
+                       this option is selected, allowing you to see one surface within another. If differences is selected,
+                        then difference between surfaces (second - first) is shown on a scale whose z value is set to the middle of the scale. The 
+                        surfaces are coloured red if the second population has a higher value than the first, and blue if the first population has a 
+                        higher value than the second")
+                )
+              ),
+            br(),
+            p(
+              tags$b("Note:"),
+              "When the user hovers over the surface, tooltips appear with information corresponding to the surface's point"
+            )
           ),
           tabPanel(title = "Linked Plots",
             plotlyOutput("surfaceplot_mini", height = 500),
-            plotlyOutput("cross_sections", height = 300)
-
+            plotlyOutput("cross_sections", height = 300),
+            br(),
+            h3("Information"),
+            p("The linked plot is like the previous tab ('3d surface plot'), except the 3D surface canvas is smaller, 
+              and when the user moves the cursor over the 3D surface corresponding sweeps through the data along age,
+              period and year appear in subplots below the main image.")
           )
         )
 

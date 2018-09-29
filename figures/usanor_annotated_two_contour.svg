@@ -15,7 +15,7 @@
    id="svg11448"
    sodipodi:docname="usanor_annotated_two_contour.svg"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   inkscape:export-filename="E:\repos\comparative_fertility\figures\usanor_annotated.png"
+   inkscape:export-filename="E:\repos\comparative_fertility\figures\usanor_annotated_two_contour.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <metadata
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,8 +39,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
      id="namedview11450"
      showgrid="false"
      inkscape:snap-to-guides="false"
@@ -49,9 +49,9 @@
      inkscape:snap-nodes="false"
      inkscape:snap-global="false"
      inkscape:zoom="1.4047619"
-     inkscape:cx="394.72105"
+     inkscape:cx="276.19563"
      inkscape:cy="282.92927"
-     inkscape:window-x="1912"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer5" />
