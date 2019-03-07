@@ -15,7 +15,7 @@
    viewBox="0 0 218.54585 292.10001"
    version="1.1"
    id="svg32331"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="production_of_composite_full_two_contour.svg"
    inkscape:export-filename="E:\repos\comparative_fertility\figures\fig_1b_production_of_west_germany_composite.png"
    inkscape:export-xdpi="300.03"
@@ -5632,19 +5632,19 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="405.36916"
-     inkscape:cy="477.36429"
+     inkscape:cx="232.83511"
+     inkscape:cy="644.49346"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer10"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:snap-grids="false"
      inkscape:snap-to-guides="true"
      inkscape:snap-others="true"
      inkscape:snap-nodes="false"
-     inkscape:window-width="1680"
-     inkscape:window-height="987"
-     inkscape:window-x="1912"
-     inkscape:window-y="-8"
+     inkscape:window-width="3000"
+     inkscape:window-height="1875"
+     inkscape:window-x="-13"
+     inkscape:window-y="-13"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata32328">
@@ -5654,7 +5654,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -5663,8 +5663,7 @@
      id="layer2"
      inkscape:label="Background_Title_Side"
      transform="translate(3.7041667,3.5666661)"
-     style="display:inline"
-     sodipodi:insensitive="true">
+     style="display:inline">
     <rect
        style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
        id="rect15792"
@@ -5712,22 +5711,6 @@
          x="-250.76562"
          y="10.475158"
          style="stroke-width:0.26458332px">Composite</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="9.7286129"
-       y="13.747755"
-       id="text133213"><tspan
-         sodipodi:role="line"
-         id="tspan133211"
-         x="9.7286129"
-         y="13.747755"
-         style="stroke-width:0.26458332px">Production of composite cohort plot </tspan><tspan
-         sodipodi:role="line"
-         x="9.7286129"
-         y="26.976921"
-         style="stroke-width:0.26458332px"
-         id="tspan133215">for West Germany</tspan></text>
     <rect
        style="opacity:0.75;fill:#047f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.29850668;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
        id="rect130574-3"
@@ -30649,7 +30632,7 @@
          y="271.93549"
          x="101.23637"
          id="tspan130480"
-         sodipodi:role="line">Birth Year</tspan></text>
+         sodipodi:role="line">Birth year</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333311px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -31168,7 +31151,7 @@
            y="49.36343"
            x="97.109734"
            id="tspan8026"
-           sodipodi:role="line">fertility rates</tspan></text>
+           sodipodi:role="line">Fertility rates</tspan></text>
     </g>
     <text
        xml:space="preserve"
