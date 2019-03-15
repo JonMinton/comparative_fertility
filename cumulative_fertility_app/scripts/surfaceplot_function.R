@@ -145,7 +145,7 @@ surfaceplot_function <- function(input, output, pal_set) {
     }
     
     plot_ly(
-      
+      source = "fert_surface"
     ) %>%
       add_surface(
         x = ~dta_list$ages,
@@ -191,7 +191,7 @@ surfaceplot_function <- function(input, output, pal_set) {
         "Fertility: ", round(dta_list$asfr * 1000, 1), " babies / 1000 women"
       ) %>%
         matrix(length(dta_list$birth_years), length(dta_list$ages))
-    } else if (input$select_surface_type == "asfr_period"){
+    } else if (input$select_surface_type == "asfr_year"){
       paste0(
         "Year: ", rep(dta_list$years, times = length(dta_list$ages)), "\n",
         "Age: ", rep(dta_list$ages, each = length(dta_list$years)), "\n",
@@ -223,6 +223,7 @@ surfaceplot_function <- function(input, output, pal_set) {
     
     
     plot_ly(
+      source = "fert_surface"
     ) %>%
       add_surface(
         x = ~dta_list$ages,
@@ -339,7 +340,9 @@ surfaceplot_function <- function(input, output, pal_set) {
         matrix(length(diff_mtrx$birth_years), length(diff_mtrx$ages))
       
       
-      plot_ly() %>%
+      plot_ly(
+        source = "fert_surface"
+      ) %>%
         add_surface(
           x = ~diff_mtrx$ages, y = ~diff_mtrx$birth_years, z = ~diff_mtrx$vals,
           colorbar = list(
@@ -402,7 +405,10 @@ surfaceplot_function <- function(input, output, pal_set) {
       ) %>%
         matrix(length(diff_mtrx$years), length(diff_mtrx$ages))
       
-      plot_ly() %>%
+      plot_ly(
+        source = "fert_surface"
+        
+      ) %>%
         add_surface(
           x = ~diff_mtrx$ages, y = ~diff_mtrx$years, z = ~diff_mtrx$vals,
           colorbar = list(
@@ -468,7 +474,10 @@ surfaceplot_function <- function(input, output, pal_set) {
       ) %>%
         matrix(length(diff_mtrx$birth_years), length(diff_mtrx$ages))
       
-      plot_ly() %>%
+      plot_ly(
+        source = "fert_surface"
+        
+      ) %>%
         add_surface(
           x = ~diff_mtrx$ages, y = ~diff_mtrx$birth_years, z = ~diff_mtrx$vals,
           colorbar = list(
@@ -497,7 +506,7 @@ surfaceplot_function <- function(input, output, pal_set) {
           title = "Age in years"
         ),
         yaxis = list(
-          title = ifelse(input$select_surface_type == "asfr_period", "Year", "Birth cohort year")
+          title = ifelse(input$select_surface_type == "asfr_year", "Year", "Birth cohort year")
         ),
         zaxis = list(
           title = ifelse(input$show_second_surface == "diff", "Fertility difference", "Fertility")

@@ -203,7 +203,7 @@ server <- function(input, output, session) {
   })
   
   output$cross_sections <- renderPlotly({
-    s <- event_data("plotly_hover")
+    s <- event_data("plotly_click", source = "fert_surface")
     if (length(s) == 0){
       return(NULL)
     } else {
@@ -258,7 +258,7 @@ server <- function(input, output, session) {
           cohort <- year - age
           code <- input$country_for_surface
           
-          #          browser()          
+    
           # schedule by age 
           p3 <- dta %>% 
             filter(year == !!year) %>% 
@@ -357,7 +357,7 @@ server <- function(input, output, session) {
             year <- as.numeric(s$y)
             cohort <- year - age
 
-            #          browser()          
+        
             # schedule by age 
             p1 <- dta %>% 
               filter(year == !!year) %>% 
@@ -404,7 +404,7 @@ server <- function(input, output, session) {
           year <- as.numeric(s$y)
           cohort <- year - age
           
-          #          browser()          
+        
           # schedule by age 
           p1 <- dta %>% 
             filter(year == !!year) %>% 
@@ -670,7 +670,7 @@ server <- function(input, output, session) {
   })
   
   output$selection <- renderPrint({
-    s <- event_data("plotly_hover")
+    s <- event_data("plotly_hover", source = "fert_surface")
     if (length(s) == 0 ){
     "Move around!"
     } else {

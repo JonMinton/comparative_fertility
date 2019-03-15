@@ -89,7 +89,7 @@ ui <- fluidPage(
                       selected = "one", multiple = FALSE
           )
         ),
-        # Second CountRY to compare (3D surface plot)
+        # Second Country to compare (3D surface plot)
         conditionalPanel(
           condition = "input.show_second_surface == 'two' || input.show_second_surface == 'diff'",
           selectInput("second_country_for_surface", label = "Select second country to visualise",
@@ -98,14 +98,14 @@ ui <- fluidPage(
                       multiple = FALSE
           )
         ),
-        # Second CountRY to compare (3D surface plot)
+        # Second Country to compare (3D surface plot)
         conditionalPanel(
           condition = "input.show_second_surface == 'two'",
           sliderInput("alpha_first_country", label = "Adjust first country transparency",
                         value = 1, min = 0, max = 1, step = 0.05)
         ),
         
-        # Second CountRY to compare (3D surface plot)
+        # Second Country to compare (3D surface plot)
         conditionalPanel(
           condition = "input.show_second_surface == 'two'",
           sliderInput("alpha_second_country", label = "Adjust second country transparency",
