@@ -5632,8 +5632,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4142136"
-     inkscape:cx="59.593953"
-     inkscape:cy="418.2193"
+     inkscape:cx="282.57547"
+     inkscape:cy="559.64065"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -5641,10 +5641,10 @@
      inkscape:snap-to-guides="true"
      inkscape:snap-others="true"
      inkscape:snap-nodes="false"
-     inkscape:window-width="3000"
-     inkscape:window-height="1875"
+     inkscape:window-width="3840"
+     inkscape:window-height="2035"
      inkscape:window-x="-13"
-     inkscape:window-y="-13"
+     inkscape:window-y="277"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata32328">
@@ -5680,16 +5680,13 @@
        y="60.676807" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:8.46666667px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'Sans, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
        x="-114.80116"
        y="11.073893"
        id="text130432"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
-         id="tspan130430"
-         x="-114.80116"
-         y="11.073893"
-         style="stroke-width:0.26458332px">Level plot</tspan></text>
+         id="tspan6588">a) Level plot</tspan></text>
     <rect
        style="opacity:0.75;fill:#047fea;fill-opacity:0.52093021;stroke:none;stroke-width:0.2699537;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
        id="rect130574-3-5"
@@ -5699,7 +5696,7 @@
        y="193.61407" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:8.46666667px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'Sans, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
        x="-250.76562"
        y="10.475158"
        id="text130440"
@@ -5707,10 +5704,7 @@
        inkscape:transform-center-x="-80.448128"
        inkscape:transform-center-y="-61.739261"><tspan
          sodipodi:role="line"
-         id="tspan130438"
-         x="-250.76562"
-         y="10.475158"
-         style="stroke-width:0.26458332px">Composite</tspan></text>
+         id="tspan6592">c) Composite</tspan></text>
     <rect
        style="opacity:0.75;fill:#047f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.29850668;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
        id="rect130574-3"
@@ -5720,16 +5714,13 @@
        y="120.11392" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-weight:normal;font-size:8.46666667px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-font-specification:'Sans, Normal';font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;"
        x="-188.95934"
        y="10.770786"
        id="text130436"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
-         id="tspan130434"
-         x="-188.95934"
-         y="10.770786"
-         style="stroke-width:0.26458332px">Contour plot</tspan></text>
+         id="tspan6590">b) Contour plot</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
