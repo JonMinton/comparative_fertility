@@ -9,7 +9,8 @@ pacman::p_load(
   tidyr,  stringr, dplyr,
   purrr, r2stl, 
   ggplot2, lattice, latticeExtra,
-  RColorBrewer
+  RColorBrewer,
+  viridis
 )
 
 # Data 
@@ -73,7 +74,8 @@ ages_fertility_achieved <- ages_fertility_achieved %>%
   left_join(
     dta %>% mutate(cohort = as.numeric(as.character(cohort))),
     by = c("cohort"= "cohort", "nearest_age" = "age")
-  ) %>% select(cohort, cumulative_fertility, age_cf_achieved, asfr)
+  ) %>% 
+  select(cohort, cumulative_fertility, age_cf_achieved, asfr)
 
 
             
@@ -545,7 +547,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
 png("figures/for_ms/overall_poster_gridded.png",
     res=300, width=40, height=40, units = "cm"
 )
-print(produce_composite_lattice(dta, add_gridlines = F))
+print(produce_composite_lattice(dta, add_gridlines = F, colscheme = viridis_pal(direction = -1)(200)))
 dev.off()
 
 
@@ -555,7 +557,7 @@ dev.off()
 dta %>% 
   mutate(country = code) %>% 
   mutate(country = factor(country, levels = rev(ordered_codes), ordered = T)) %>% 
-  produce_composite_lattice(add_gridlines = F) -> p1
+  produce_composite_lattice(add_gridlines = F,colscheme = viridis_pal(direction = -1)(200)) -> p1
 
 png("figures/for_ms/overall_paper_coded.png",
     res = 300, width = 26, height = 26, units = "cm"
@@ -570,21 +572,25 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("DEUTW")) %>% 
-  produce_composite_lattice(add_gridlines = F, return = "contours") -> f1b
+  produce_composite_lattice(add_gridlines = F, return = "contours",
+                            colscheme = viridis_pal(direction=-1)(200)) -> f1b
 
 
 dta %>% 
   filter(code %in% c("DEUTW")) %>% 
-  produce_composite_lattice(add_gridlines = F, return = "shade") -> f1c
+  produce_composite_lattice(add_gridlines = F, return = "shade",
+                            colscheme = viridis_pal(direction=-1)(200)) -> f1c
 
 dta %>% 
   filter(code %in% c("DEUTW")) %>% 
-  produce_composite_lattice(add_gridlines = F, return = "all") -> f1d
+  produce_composite_lattice(add_gridlines = F, return = "all",
+                            colscheme = viridis_pal(direction=-1 )(200)) -> f1d
 
 
 dta %>% 
   filter(code %in% c("DEUTW", "DEUTE")) %>% 
-  produce_composite_lattice(add_gridlines = F, return = "all") -> f1e
+  produce_composite_lattice(add_gridlines = F, return = "all",
+                            colscheme = viridis_pal(direction=-1)(200)) -> f1e
 
 svg("figures/fig1_b.svg"); print(f1b); dev.off()
 svg("figures/fig1_c.svg"); print(f1c); dev.off()
@@ -596,7 +602,9 @@ svg("figures/fig1_e.svg"); print(f1e); dev.off()
 
 dta %>% 
   filter(code %in% c("USA", "NOR")) %>% 
-  produce_composite_lattice(add_gridlines = F) -> fig_usanor
+  produce_composite_lattice(add_gridlines = F,
+                            colscheme = viridis_pal(direction = -1)(200)
+                            ) -> fig_usanor
 
 svg("figures/usanor.svg"); print(fig_usanor); dev.off()
 
@@ -604,7 +612,7 @@ svg("figures/usanor.svg"); print(fig_usanor); dev.off()
 # Britain
 dta %>% 
   filter(code %in% c("GBRTENW", "GBR_SCO", "GBR_NIR", "IRL")) %>% 
-  produce_composite_lattice(add_gridlines = F) -> p2
+  produce_composite_lattice(add_gridlines = F,                             colscheme = viridis_pal(direction = -1)(200)) -> p2
 
 png("figures/for_ms/Britain.png",
     res = 300, width= 20, height = 20, units = "cm")
@@ -616,7 +624,7 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("USA", "NOR", "NZL", "AUS", "CAN")) %>% 
-  produce_composite_lattice(add_gridlines = F) -> p3
+  produce_composite_lattice(add_gridlines = F,                             colscheme = viridis_pal(direction = -1)(200)) -> p3
 
 png("figures/for_ms/anglonor.png",
     res = 300, width = 20, height = 18, units = "cm"
@@ -629,7 +637,7 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("DEUTE", "DEUTW", "ITA", "ESP")) %>% 
-  produce_composite_lattice(add_gridlines = F) -> p4
+  produce_composite_lattice(add_gridlines = F,                             colscheme = viridis_pal(direction = -1)(200)) -> p4
 
 png("figures/for_ms/lowfert_westsouth.png",
     res = 300, width = 20, height = 15, units = "cm"
@@ -643,7 +651,7 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("TWN", "JPN", "KOR")) %>% 
-  produce_composite_lattice(add_gridlines = F) -> p5
+  produce_composite_lattice(add_gridlines = F,                            colscheme = viridis_pal(direction = -1)(200)) -> p5
 
 png("figures/for_ms/asian.png",
     res = 300, width = 20, height = 15, 
@@ -658,7 +666,7 @@ dev.off()
 
 dta %>% 
   filter(code %in% c("ALB", "ROU", "POL", "HUN", "RUS", "MDA")) %>% 
-  produce_composite_lattice(add_gridlines = F) -> p6
+  produce_composite_lattice(add_gridlines = F,                            colscheme = viridis_pal(direction = -1)(200)) -> p6
 
 png("figures/for_ms/eastcent.png",
     res = 300, width = 20, height = 20,

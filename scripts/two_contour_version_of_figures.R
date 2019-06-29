@@ -12,7 +12,8 @@ pacman::p_load(
   tidyr,  stringr, dplyr,
   purrr, r2stl, 
   ggplot2, lattice, latticeExtra,
-  RColorBrewer
+  RColorBrewer,
+  viridis 
 )
 
 # Data 
@@ -333,25 +334,31 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
   
 }
 
-# 
-# png("figures/for_ms/overall_poster_gridded.png",
-#     res=300, width=40, height=40, units = "cm"
-# )
-# print(produce_composite_lattice(dta, add_gridlines = F))
-# dev.off()
-# 
-# Split into three pages, each of 16
+
+png("figures/for_ms/overall_poster_gridded.png",
+    res=300, width=40, height=40, units = "cm"
+)
+print(produce_composite_lattice(dta, add_gridlines = F, colscheme = viridis_pal(direction = -1)(200)))
+dev.off()
+
+#Split into three pages, each of 16
 
 png("figures/for_ms/overall_split_1.png", 
     res = 300, width = 18, height = 15, units = "cm")
-produce_composite_lattice(dta %>% filter(country %in% levels(dta$country)[1:15]), add_gridlines = F)
+produce_composite_lattice(dta %>% filter(country %in% levels(dta$country)[1:15]), add_gridlines = F,
+                          colscheme = viridis_pal(direction = -1)(200)
+                          )
 dev.off()
 
 png("figures/for_ms/overall_split_2.png", res = 300, width = 18, height = 15, units = "cm")
-produce_composite_lattice(dta %>% filter(country %in% levels(dta$country)[16:30]), add_gridlines = F)
+produce_composite_lattice(dta %>% filter(country %in% levels(dta$country)[16:30]), add_gridlines = F,
+                          colscheme = viridis_pal(direction = -1)(200)
+                          )
 dev.off()
 
 png("figures/for_ms/overall_split_3.png", res = 300, width = 18, height = 15, units = "cm")
-produce_composite_lattice(dta %>% filter(country %in% levels(dta$country)[31:45]), add_gridlines = F)
+produce_composite_lattice(dta %>% filter(country %in% levels(dta$country)[31:45]), add_gridlines = F,
+                          colscheme = viridis_pal(direction = -1)(200)
+                          )
 dev.off()
 
