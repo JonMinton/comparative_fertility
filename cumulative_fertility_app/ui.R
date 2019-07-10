@@ -91,7 +91,7 @@ ui <- fluidPage(
         ),
         # Second Country to compare (3D surface plot)
         conditionalPanel(
-          condition = "input.show_second_surface == 'two' || input.show_second_surface == 'diff'",
+          condition = "input.show_second_surface == 'two' || input.show_second_surface == 'diff' && input.tabset_1 != 'Composite Plot'",
           selectInput("second_country_for_surface", label = "Select second country to visualise",
                       choices = countries_to_select,
                       selected = "GBRTENW",
@@ -100,14 +100,14 @@ ui <- fluidPage(
         ),
         # Second Country to compare (3D surface plot)
         conditionalPanel(
-          condition = "input.show_second_surface == 'two'",
+          condition = "input.show_second_surface == 'two' && input.tabset_1 != 'Composite Plot'",
           sliderInput("alpha_first_country", label = "Adjust first country transparency",
                         value = 1, min = 0, max = 1, step = 0.05)
         ),
         
         # Second Country to compare (3D surface plot)
         conditionalPanel(
-          condition = "input.show_second_surface == 'two'",
+          condition = "input.show_second_surface == 'two' && input.tabset_1 != 'Composite Plot'",
           sliderInput("alpha_second_country", label = "Adjust second country transparency",
                       value = 1, min = 0, max = 1, step = 0.05)
         ),
@@ -116,6 +116,13 @@ ui <- fluidPage(
         conditionalPanel(
           condition = "input.tabset_1 == 'Composite Plot'",
           checkboxInput("gridlines", label = "Check for gridlines",
+                        value = FALSE
+          )
+        ),
+        # Composite: Gridline options
+        conditionalPanel(
+          condition = "input.tabset_1 == 'Composite Plot' && input.gridlines == true",
+          checkboxInput("period_gridlines", label = "Also add period gridlines?",
                         value = FALSE
           )
         ),

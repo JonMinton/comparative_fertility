@@ -3,7 +3,7 @@
 
 brewer.pal(12, "Paired")
 
-produce_composite_lattice <- function(DTA, add_gridlines = T,
+produce_composite_lattice <- function(DTA, add_gridlines = TRUE, add_periodgridlines = FALSE,
                                       colscheme = colorRampPalette(adjusted_paired)(200),
                                       return = "all",
                                       contour_vals = c(1.30, 1.50, 1.80, 2.05),
@@ -54,7 +54,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
     )
   }    
   
-  panel_select <- function(add_gridlines){
+  panel_select <- function(add_gridlines, add_periodgridlines){
     if(!add_gridlines){
       return(
         function(...){
@@ -63,20 +63,35 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
         }
       )
     } else {
-      return(
-        function(...){
-          panel.levelplot(...)
-          panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
-          panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
-          panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
-        }
-      )
+      if (!add_periodgridlines){
+        return(
+          function(...){
+            panel.levelplot(...)
+            panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
+            panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
+            panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
+          }
+        )
+      } else {
+        return(
+          function(...){
+            panel.levelplot(...)
+            panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
+            A <- seq(-2020, -1800, by = 5)
+            for (i in seq_along(A)){
+              panel.abline(a = A[i], b = 1, lty = "dashed", col = "grey")
+            }
+            panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
+            panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
+          }
+        )
+      }
     }
     NULL
   }
   
   
-  panel_select2 <- function(add_gridlines){
+  panel_select2 <- function(add_gridlines, add_periodgridlines){
     if(!add_gridlines){
       return(
         function(...){
@@ -85,14 +100,26 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
         }
       )
     } else {
-      return(
-        function(...){
-          panel.contourplot(...)
-          panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
-          panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
-          panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
-        }
-      )
+      if (!add_periodgridlines){
+        return(
+          function(...){
+            panel.levelplot(...)
+            panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
+            panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
+            panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
+          }
+        )
+      } else {
+        return(
+          function(...){
+            panel.levelplot(...)
+            panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
+            panel.abline(a = seq(-80, 80, by = 5), b = 1, lty = "dashed", col = "grey")
+            panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
+            panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
+          }
+        )
+      }
     }
     NULL
   }
@@ -126,7 +153,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
           y=list(cex=1.2),
           alternating=3
         ),
-        panel = panel_select(add_gridlines),
+        panel = panel_select(add_gridlines, add_periodgridlines),
         par.settings=list(strip.background=list(col="lightgrey"))
       ) 
   } else {
@@ -154,7 +181,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
           y=list(cex=1.2),
           alternating=3
         ),
-        panel = panel_select(add_gridlines),
+        panel = panel_select(add_gridlines, add_periodgridlines),
         par.settings=list(strip.background=list(col="lightgrey"))
       ) 
     
@@ -201,7 +228,7 @@ produce_composite_lattice <- function(DTA, add_gridlines = T,
           alternating=3
         ),
         xlim = c(1900, 2000),
-        panel = panel_select2(add_gridlines),
+        panel = panel_select2(add_gridlines, add_periodgridlines),
         par.settings=list(strip.background=list(col="lightgrey"))
         
       )

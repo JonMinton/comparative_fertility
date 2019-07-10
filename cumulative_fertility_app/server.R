@@ -34,9 +34,10 @@ server <- function(input, output, session) {
   })
   
   make_cclp <- function(){
-    dta_subset <- isolate(dta %>% filter(code %in% input$countries))
-    add_gridlines <- isolate(input$gridlines)
-    return <- isolate(input$vis_type)
+    dta_subset          <- isolate(dta %>% filter(code %in% input$countries))
+    add_gridlines       <- isolate(input$gridlines)
+    add_periodgridlines <- isolate(input$period_gridlines)
+    return              <- isolate(input$vis_type)
     
     pal <- pal_set()
     
@@ -52,25 +53,27 @@ server <- function(input, output, session) {
     if(is.null(isolate(input$shade_range))){
       
       out <- produce_composite_lattice(
-        DTA = dta_subset,
-        add_gridlines = add_gridlines,
-        return = return,
-        colscheme = pal,
-        cohort = ifelse(isolate(input$show_schedule), isolate(input$cohort), NA),
-        contour_vals = contour_vals,
-        shading_cuts = isolate(input$num_cuts)
+        DTA                 = dta_subset,
+        add_gridlines       = add_gridlines,
+        add_periodgridlines = add_periodgridlines,
+        return              = return,
+        colscheme           = pal,
+        cohort              = ifelse(isolate(input$show_schedule), isolate(input$cohort), NA),
+        contour_vals        = contour_vals,
+        shading_cuts        = isolate(input$num_cuts)
       )
     }  else {
       
       out <- produce_composite_lattice(
-        DTA = dta_subset,
-        add_gridlines = add_gridlines,
-        return = return,
-        colscheme = pal,
-        cohort = ifelse(isolate(input$show_schedule), isolate(input$cohort), NA),
-        contour_vals = contour_vals,
-        shading_cuts = isolate(input$num_cuts),
-        shading_limits = isolate(input$shade_range)
+        DTA                 = dta_subset,
+        add_gridlines       = add_gridlines,
+        add_periodgridlines = add_periodgridlines,
+        return              = return,
+        colscheme           = pal,
+        cohort              = ifelse(isolate(input$show_schedule), isolate(input$cohort), NA),
+        contour_vals        = contour_vals,
+        shading_cuts        = isolate(input$num_cuts),
+        shading_limits      = isolate(input$shade_range)
       )
     }
     return(out)

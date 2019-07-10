@@ -5,8 +5,8 @@ account: datascapes
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 431507
-bundleId: 1943265
+bundleId: 2218114
 url: https://datascapes.shinyapps.io/cumulative_fertility_app/
-when: 1552679152.28052
+when: 1562760871.80968
 asMultiple: FALSE
 asStatic: FALSE
