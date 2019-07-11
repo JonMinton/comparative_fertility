@@ -1,8 +1,23 @@
 # Define server logic required to draw a histogram
 
+code_country_table <- read_csv("data/code_definitions.csv") %>% 
+  select(code = Code, country = Country)
+
+get_country_label <- function(x){
+  code_country_table %>% 
+    filter(code == x) %>% 
+    select(country) %>% 
+    pull()
+}
+
+
+
+
 source("scripts/surfaceplot_function.R")
 
 server <- function(input, output, session) {
+  
+
   
   # REACTIVE FUNCTIONS
   
@@ -223,14 +238,28 @@ server <- function(input, output, session) {
             filter(year == !!year) %>% 
             filter(code == !!code) %>% 
             plot_ly(x = ~age, y = ~asfr) %>% 
-            add_lines() 
+            add_lines(
+              hoverinfo = 'text',
+              text = ~paste0(
+                "Age: ", age,
+                "\nFertility rate: ", round(1000 * asfr, 1), 
+                " babies per 1000"
+              )
+            ) 
           
           # schedule by year
           p2 <- dta %>% 
             filter(age == !!age) %>% 
             filter(code == !!code) %>% 
             plot_ly(x = ~year, y = ~asfr) %>% 
-            add_lines()
+            add_lines(
+              hoverinfo = 'text',
+              text = ~paste0(
+                "Year: ", year, 
+                "\nFertility rate: ", round(1000 * asfr, 1),
+                " babies per 1000"
+              )
+            )
           
           # schedule by cohort 
           p3 <- dta %>% 
@@ -238,7 +267,15 @@ server <- function(input, output, session) {
             filter(cohort == !!cohort) %>% 
             filter(code == !!code) %>% 
             plot_ly(x = ~age, y = ~asfr) %>% 
-            add_lines()
+            add_lines(
+              hoverinfo = 'text',
+              text = ~paste0(
+                "Age: ", age,
+                "\nFertility rate: ", round(1000 * asfr, 1),
+                " babies per 1000"
+              )
+              
+            )
           
           p <- subplot(list(p1, p2, p3), shareY = T, shareX = F) %>% 
             layout(
@@ -267,14 +304,28 @@ server <- function(input, output, session) {
             filter(year == !!year) %>% 
             filter(code == !!code) %>% 
             plot_ly(x = ~age, y = ~asfr) %>% 
-            add_lines() 
+            add_lines(
+              hoverinfo = 'text',
+              text = ~paste0(
+                "Age: ", age,
+                "\nFertility rate: ", round(1000 * asfr, 1), 
+                " babies / 1000 women"
+              )
+            ) 
           
           # schedule by year
           p2 <- dta %>% 
             filter(age == !!age) %>% 
             filter(code == !!code) %>% 
             plot_ly(x = ~year, y = ~asfr) %>% 
-            add_lines()
+            add_lines(
+              hoverinfo = 'text',
+              text = ~paste0(
+                "Year: ", year, 
+                "\nFertility rate: ", round(1000 * asfr, 1),
+                " babies / 1000 women"
+              )
+            )
           
           # schedule by cohort 
           p1 <- dta %>% 
@@ -282,7 +333,15 @@ server <- function(input, output, session) {
             filter(cohort == !!cohort) %>% 
             filter(code == !!code) %>% 
             plot_ly(x = ~age, y = ~asfr) %>% 
-            add_lines()
+            add_lines(
+              hoverinfo = 'text',
+              text = ~paste0(
+                "Age: ", age,
+                "\nFertility rate: ", round(1000 * asfr, 1),
+                " babies / 1000 women"
+              )
+              
+            )
           
           p <- subplot(list(p1, p2, p3), shareY = T, shareX = F) %>% 
             layout(
@@ -336,7 +395,12 @@ server <- function(input, output, session) {
                 x = ~min(age), xend = 60,
                 line = list(color = 'black',                width = 3)
               ) %>% 
-              add_ribbons(ymin = 0, ymax = ~my_ccfr) %>% 
+              add_ribbons(ymin = 0, ymax = ~my_ccfr,
+                hoverinfo = "text", 
+                text = ~paste0(
+                  "Cumulative fertility: ", round(my_ccfr, 2), " by age ", age
+                )
+              ) %>% 
               layout(
                 yaxis = list(title = "Cumulative Fertility", range = c(0, 3)),
                 xaxis = list(
@@ -360,14 +424,22 @@ server <- function(input, output, session) {
             year <- as.numeric(s$y)
             cohort <- year - age
 
-        
+
+            
+            # to find out whether country names available here
+            
             # schedule by age 
+            
             p1 <- dta %>% 
               filter(year == !!year) %>% 
               filter(code %in% !!c(code, code2)) %>% 
               group_by(code) %>% 
-              plot_ly(x = ~age, y = ~asfr, color = ~code, colors = c("red", "blue")) %>% 
-              add_lines(showlegend = TRUE) 
+              plot_ly(
+                x = ~age, y = ~asfr, color = ~code, colors = c("red", "blue")
+              ) %>% 
+              add_lines(showlegend = FALSE)
+ 
+              
             
             # schedule by year
             p2 <- dta %>% 
@@ -537,17 +609,35 @@ server <- function(input, output, session) {
           p1 <- diff_df %>% 
             filter(year == this_year) %>% 
             plot_ly() %>% 
-            add_lines(x = ~age, y = ~diff)
+            add_lines(x = ~age, y = ~diff,
+                hoverinfo = "text",
+                text = ~ paste0(
+                  "Age: ", age,
+                  "\nDifference in fertility: ", round(1000 * diff, 1), " babies / 1000 women"
+                )
+            )
           
           p2 <- diff_df %>% 
             filter(age == this_age) %>% 
             plot_ly() %>% 
-            add_lines(x = ~year, y = ~diff)
+            add_lines(x = ~year, y = ~diff,
+              hoverinfo = "text",
+              text = ~paste0(
+                "Year: ", year,
+                "\nDifference in fertility: ", round(1000 * diff, 1), " babies / 1000 women"
+              )
+            )
           
           p3 <- diff_df %>% 
             filter(birth_year == this_cohort) %>% 
             plot_ly() %>% 
-            add_lines(x = ~age, y = ~diff)
+            add_lines(x = ~age, y = ~diff,
+              hoverinfo = "text",
+              text = ~ paste0(
+                "Age: ", age,
+                "\nDifference in fertility: ", round(1000 * diff, 1), " babies / 1000 women"
+              )
+          )
           
           p <- subplot(list(p1, p2, p3), shareY = TRUE) %>% 
             layout(
@@ -581,17 +671,35 @@ server <- function(input, output, session) {
           p1 <- diff_df %>% 
             filter(birth_year == this_cohort) %>% 
             plot_ly() %>% 
-            add_lines(x = ~age, y = ~diff)
-          
+            add_lines(x = ~age, y = ~diff,
+                hoverinfo = "text",
+                text = ~paste0(
+                  "Age: ", age,
+                  "\nDifference in fertility: ", round(1000 * diff, 1), " babies / 1000 women"
+                )
+            )
+
           p2 <- diff_df %>% 
             filter(age == this_age) %>% 
             plot_ly() %>% 
-            add_lines(x = ~year, y = ~diff)
+            add_lines(x = ~year, y = ~diff,
+                hoverinfo = "text", 
+                text = ~paste0(
+                  "Year: ", year,
+                  "\nDifference in fertility: ", round(1000 * diff, 1), " babies / 1000 women"
+                )
+            )
           
           p3 <- diff_df %>% 
             filter(year == this_year) %>% 
             plot_ly() %>% 
-            add_lines(x = ~age, y = ~diff)
+            add_lines(x = ~age, y = ~diff,
+                hoverinfo = "text",
+                text = ~paste0(
+                  "Age: ", age,
+                  "\nDifference in fertility: ", round(1000 * diff, 1), " babies / 1000 women"
+                )
+            )
           
           p <- subplot(list(p1, p2, p3), shareY = TRUE) %>% 
             layout(
@@ -633,17 +741,35 @@ server <- function(input, output, session) {
           p1 <- diff_df %>% 
             filter(birth_year == this_cohort) %>% 
             plot_ly() %>% 
-            add_lines(x = ~age, y = ~diff)
+            add_lines(x = ~age, y = ~diff,
+              hoverinfo = "text",
+              text = ~ paste0(
+                "Cumulative difference in fertility of\n",
+                round(diff, 2), " babies by age ", age
+              )
+          )
           
           p2 <- diff_df %>% 
             filter(age == this_age) %>% 
             plot_ly() %>% 
-            add_lines(x = ~year, y = ~diff)
+            add_lines(x = ~year, y = ~diff,
+                hoverinfo = "text",
+                text = ~paste0(
+                  "Cumulative difference in fertility of\n",
+                  round(diff, 2), " babies in year ", year
+                )
+            )
           
           p3 <- diff_df %>% 
             filter(year == this_year) %>% 
             plot_ly() %>% 
-            add_lines(x = ~age, y = ~diff)
+            add_lines(x = ~age, y = ~diff,
+                hoverinfo = "text",
+                text = ~paste0(
+                  "Cumulative difference in fertility of\n",
+                  round(diff, 2), " babies at age ", age
+                )
+          )
           
           p <- subplot(list(p1, p2, p3), shareY = TRUE) %>% 
             layout(
