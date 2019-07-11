@@ -292,7 +292,7 @@ ui <- fluidPage(
                       choices = c(
                         "PNG" = "png",
                         "SVG" = "svg",
-                        "PDf" = "pdf",
+                        "PDF" = "pdf",
                         "Bitmap" = "bmp"
                       ),
                       selected = "png"

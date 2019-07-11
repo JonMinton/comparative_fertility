@@ -690,6 +690,7 @@ server <- function(input, output, session) {
         png(file, width = input$fig_width, height = input$fig_height, units = input$fig_unit, res = input$fig_res)
         print(make_cclp())
         dev.off()
+        
       } else if (input$fig_type == "svg"){
         svg(file)
         print(make_cclp())
@@ -699,8 +700,25 @@ server <- function(input, output, session) {
         bmp(file, width = input$fig_width, height = input$fig_height, units = input$fig_unit, res = input$fig_res)
         print(make_cclp())
         dev.off()
+        
       } else if (input$fig_type == "pdf"){
-        pdf(file, width = input$fig_width, height = input$fig_height, units = input$fig_unit)
+        
+        if (input$fig_unit == "cm"){
+          fig_height <- input$fig_height * 0.393701
+          fig_width  <- input$fig_width  * 0.393701 
+        } else if (input$fig_unit == "mm"){
+          fig_height <- input$fig_height * 0.0393701
+          fig_width  <- input$fig_width  * 0.0393701 
+          
+        } else if (input$fig_unit == "px"){
+          fig_height <- input$fig_height * 72
+          fig_width  <- input$fig_width  * 72
+        } else {
+          fig_height <- input$fig_height
+          fig_width  <- input$fig_width
+        }
+        
+        pdf(file, width = fig_width, height = fig_height)
         print(make_cclp())
         dev.off()
       }
