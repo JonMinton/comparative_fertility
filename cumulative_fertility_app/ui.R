@@ -13,6 +13,7 @@ library(latticeExtra)
 library(shiny)
 library(RColorBrewer)
 library(plotly)
+library(glue)
 
 source("scripts/functions.R")
 source("scripts/data_prep.R")

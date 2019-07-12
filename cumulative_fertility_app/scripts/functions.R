@@ -77,9 +77,9 @@ produce_composite_lattice <- function(DTA, add_gridlines = TRUE, add_periodgridl
           function(...){
             panel.levelplot(...)
             panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
-            A <- seq(-2020, -1800, by = 5)
+            A <- seq(1800, 2200, by = 5)
             for (i in seq_along(A)){
-              panel.abline(a = A[i], b = 1, lty = "dashed", col = "grey")
+              panel.abline(a = A[i], b = -1, lty = "dashed", col = "grey")
             }
             panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
             panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
@@ -114,7 +114,10 @@ produce_composite_lattice <- function(DTA, add_gridlines = TRUE, add_periodgridl
           function(...){
             panel.levelplot(...)
             panel.abline(h = seq(15, 45, by = 5), lty = "dashed", col = "grey")
-            panel.abline(a = seq(-80, 80, by = 5), b = 1, lty = "dashed", col = "grey")
+            A <- seq(1800, 2200, by = 5)
+            for (i in seq_along(A)){
+              panel.abline(a = A[i], b = -1, lty = "dashed", col = "grey")
+            }
             panel.abline(v = seq(1900, 2000, by = 5), lty = "dashed", col = "grey")
             panel.abline(v = cohort, col = "blue", size = 2, lty = "dashed")
           }

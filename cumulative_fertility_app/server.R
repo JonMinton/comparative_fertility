@@ -423,41 +423,158 @@ server <- function(input, output, session) {
             age <- as.numeric(s$x)
             year <- as.numeric(s$y)
             cohort <- year - age
-
-
-            
-            # to find out whether country names available here
             
             # schedule by age 
-            
             p1 <- dta %>% 
               filter(year == !!year) %>% 
               filter(code %in% !!c(code, code2)) %>% 
-              group_by(code) %>% 
-              plot_ly(
-                x = ~age, y = ~asfr, color = ~code, colors = c("red", "blue")
+              left_join(
+                dta %>% 
+                  filter(year == !!year) %>% 
+                  filter(code %in% !!c(code, code2)) %>% 
+                  select(code, age, asfr) %>% 
+                  spread(code, asfr) %>% 
+                  mutate(difference = .data[[code2]] - .data[[code]]) %>% 
+                  select(age, difference)
               ) %>% 
-              add_lines(showlegend = FALSE)
- 
+              mutate(
+                description = glue("Country: {code}<br>At age {age} fertility: {round(1000 * asfr, 1)} per 1000 women."),
+                description = case_when(
+                  is.na(difference)                             ~ str_c(
+                                                                  description,
+                                                                  "<br>",
+                                                                  "No comparator data"
+                                                                ),
+                  difference >= 0 & code == !!code2              ~ str_c(
+                                                                  description,
+                                                                  "<br>",
+                                                                  glue("{round(1000 * difference, 1)} higher than comparator")
+                                                                ),
+                  difference < 0 & code == !!code2              ~ str_c(
+                                                                  description,
+                                                                  "<br>",
+                                                                  glue("{round(-1000 * difference, 1)} lower than comparator")
+                                                                ),
+                  difference >= 0 & code == !!code               ~ str_c(
+                                                                  description,
+                                                                  "<br>",
+                                                                  glue("{round(1000 * difference, 1)} lower than comparator")
+                                                                ),
+                  difference < 0 & code == !!code               ~ str_c(
+                                                                  description,
+                                                                  "<br>",
+                                                                  glue("{-round(1000 * difference, 1)} higher than comparator")
+                                                                ),
+                  
+                  TRUE                                          ~ "Not yet implemented"
+                )
+              ) %>% 
+              plot_ly(x = ~age, y = ~asfr, color = ~code, colors = c("red", "blue")) %>% 
+              add_lines(hoverinfo = "text", text = ~description, showlegend = FALSE)
+
               
             
             # schedule by year
-            p2 <- dta %>% 
+
+            p2 <-  dta %>% 
               filter(age == !!age) %>% 
-              filter(code %in% !!c(code, code2)) %>%
-              group_by(code) %>% 
+              filter(code %in% !!c(code, code2)) %>% 
+              left_join(
+                dta %>% 
+                  filter(age == !!age) %>% 
+                  filter(code %in% !!c(code, code2)) %>% 
+                  select(code, year, asfr) %>% 
+                  spread(code, asfr) %>% 
+                  mutate(difference = .data[[code2]] - .data[[code]]) %>% 
+                  select(year, difference)
+              ) %>% 
+              mutate(
+                description = glue("Country: {code}<br>In year {year} fertility: {round(1000 * asfr, 1)} per 1000 women."),
+                description = case_when(
+                  is.na(difference)                             ~ str_c(
+                                                                    description,
+                                                                    "<br>",
+                                                                    "No comparator data"
+                                                                ),
+                  difference >= 0 & code == !!code2              ~ str_c(
+                                                                  description,
+                                                                  "<br>",
+                                                                  glue("{round(1000 * difference, 1)} higher than comparator")
+                                                                ),
+                  difference < 0 & code == !!code2              ~ str_c(
+                                                                  description,
+                                                                  "<br>",
+                                                                  glue("{round(-1000 * difference, 1)} lower than comparator")
+                                                                ),
+                  difference >= 0 & code == !!code               ~ str_c(
+                                                                    description,
+                                                                    "<br>",
+                                                                    glue("{round(1000 * difference, 1)} lower than comparator")
+                                                                  ),
+                  difference < 0 & code == !!code               ~ str_c(
+                                                                    description,
+                                                                    "<br>",
+                                                                    glue("{-round(1000 * difference, 1)} higher than comparator")
+                                                                  ),
+                  
+                  TRUE                                          ~ "Not yet implemented"
+                )
+              ) %>% 
               plot_ly(x = ~year, y = ~asfr, color = ~code, colors = c("red", "blue")) %>% 
-              add_lines(showlegend = FALSE)
+              add_lines(hoverinfo = "text", text = ~description, showlegend = FALSE)
             
             # schedule by cohort 
-            p3 <- dta %>% 
+
+            p3 <-  dta %>%
               mutate(cohort = year - age) %>% 
               filter(cohort == !!cohort) %>% 
-              filter(code %in% !!c(code, code2)) %>%
-              group_by(code) %>% 
+              filter(code %in% !!c(code, code2)) %>% 
+              left_join(
+                dta %>% 
+                  mutate(cohort = year - age) %>% 
+                  filter(cohort == !!cohort) %>% 
+                  filter(code %in% !!c(code, code2)) %>% 
+                  select(code, age, asfr) %>% 
+                  spread(code, asfr) %>% 
+                  mutate(difference = .data[[code2]] - .data[[code]]) %>% 
+                  select(age, difference)
+              ) %>% 
+              mutate(
+                description = glue("Country: {code}<br>At age {age} fertility: {round(1000 * asfr, 1)} per 1000 women."),
+                description = case_when(
+                  is.na(difference)                             ~ str_c(
+                    description,
+                    "<br>",
+                    "No comparator data"
+                  ),
+                  difference >= 0 & code == !!code2              ~ str_c(
+                    description,
+                    "<br>",
+                    glue("{round(1000 * difference, 1)} higher than comparator")
+                  ),
+                  difference < 0 & code == !!code2              ~ str_c(
+                    description,
+                    "<br>",
+                    glue("{round(-1000 * difference, 1)} lower than comparator")
+                  ),
+                  difference >= 0 & code == !!code               ~ str_c(
+                    description,
+                    "<br>",
+                    glue("{round(1000 * difference, 1)} lower than comparator")
+                  ),
+                  difference < 0 & code == !!code               ~ str_c(
+                    description,
+                    "<br>",
+                    glue("{-round(1000 * difference, 1)} higher than comparator")
+                  ),
+                  
+                  TRUE                                          ~ "Not yet implemented"
+                )
+              ) %>% 
               plot_ly(x = ~age, y = ~asfr, color = ~code, colors = c("red", "blue")) %>% 
-              add_lines(showlegend = FALSE)
+              add_lines(hoverinfo = "text", text = ~description, showlegend = FALSE)
             
+                        
             p <- subplot(list(p1, p2, p3), shareY = T, shareX = F) %>% 
               layout(
                 yaxis = list(title = "Fertility", range = c(0, 0.5)),
@@ -484,26 +601,152 @@ server <- function(input, output, session) {
           p1 <- dta %>% 
             filter(year == !!year) %>% 
             filter(code %in% !!c(code, code2)) %>% 
-            group_by(code) %>% 
+            left_join(
+              dta %>% 
+                filter(year == !!year) %>% 
+                filter(code %in% !!c(code, code2)) %>% 
+                select(code, age, asfr) %>% 
+                spread(code, asfr) %>% 
+                mutate(difference = .data[[code2]] - .data[[code]]) %>% 
+                select(age, difference)
+            ) %>% 
+            mutate(
+              description = glue("Country: {code}<br>At age {age} fertility: {round(1000 * asfr, 1)} per 1000 women."),
+              description = case_when(
+                is.na(difference)                             ~ str_c(
+                  description,
+                  "<br>",
+                  "No comparator data"
+                ),
+                difference >= 0 & code == !!code2              ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(1000 * difference, 1)} higher than comparator")
+                ),
+                difference < 0 & code == !!code2              ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(-1000 * difference, 1)} lower than comparator")
+                ),
+                difference >= 0 & code == !!code               ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(1000 * difference, 1)} lower than comparator")
+                ),
+                difference < 0 & code == !!code               ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{-round(1000 * difference, 1)} higher than comparator")
+                ),
+                
+                TRUE                                          ~ "Not yet implemented"
+              )
+            ) %>% 
             plot_ly(x = ~age, y = ~asfr, color = ~code, colors = c("red", "blue")) %>% 
-            add_lines(showlegend = TRUE) 
+            add_lines(hoverinfo = "text", text = ~description, showlegend = FALSE)
+          
+          
           
           # schedule by year
-          p2 <- dta %>% 
+          
+          p2 <-  dta %>% 
             filter(age == !!age) %>% 
-            filter(code %in% !!c(code, code2)) %>%
-            group_by(code) %>% 
+            filter(code %in% !!c(code, code2)) %>% 
+            left_join(
+              dta %>% 
+                filter(age == !!age) %>% 
+                filter(code %in% !!c(code, code2)) %>% 
+                select(code, year, asfr) %>% 
+                spread(code, asfr) %>% 
+                mutate(difference = .data[[code2]] - .data[[code]]) %>% 
+                select(year, difference)
+            ) %>% 
+            mutate(
+              description = glue("Country: {code}<br>In year {year} fertility: {round(1000 * asfr, 1)} per 1000 women."),
+              description = case_when(
+                is.na(difference)                             ~ str_c(
+                  description,
+                  "<br>",
+                  "No comparator data"
+                ),
+                difference >= 0 & code == !!code2              ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(1000 * difference, 1)} higher than comparator")
+                ),
+                difference < 0 & code == !!code2              ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(-1000 * difference, 1)} lower than comparator")
+                ),
+                difference >= 0 & code == !!code               ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(1000 * difference, 1)} lower than comparator")
+                ),
+                difference < 0 & code == !!code               ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{-round(1000 * difference, 1)} higher than comparator")
+                ),
+                
+                TRUE                                          ~ "Not yet implemented"
+              )
+            ) %>% 
             plot_ly(x = ~year, y = ~asfr, color = ~code, colors = c("red", "blue")) %>% 
-            add_lines(showlegend = FALSE)
+            add_lines(hoverinfo = "text", text = ~description, showlegend = FALSE)
           
           # schedule by cohort 
-          p3 <- dta %>% 
+          
+          p3 <-  dta %>%
             mutate(cohort = year - age) %>% 
             filter(cohort == !!cohort) %>% 
-            filter(code %in% !!c(code, code2)) %>%
-            group_by(code) %>% 
+            filter(code %in% !!c(code, code2)) %>% 
+            left_join(
+              dta %>% 
+                mutate(cohort = year - age) %>% 
+                filter(cohort == !!cohort) %>% 
+                filter(code %in% !!c(code, code2)) %>% 
+                select(code, age, asfr) %>% 
+                spread(code, asfr) %>% 
+                mutate(difference = .data[[code2]] - .data[[code]]) %>% 
+                select(age, difference)
+            ) %>% 
+            mutate(
+              description = glue("Country: {code}<br>At age {age} fertility: {round(1000 * asfr, 1)} per 1000 women."),
+              description = case_when(
+                is.na(difference)                             ~ str_c(
+                  description,
+                  "<br>",
+                  "No comparator data"
+                ),
+                difference >= 0 & code == !!code2              ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(1000 * difference, 1)} higher than comparator")
+                ),
+                difference < 0 & code == !!code2              ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(-1000 * difference, 1)} lower than comparator")
+                ),
+                difference >= 0 & code == !!code               ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{round(1000 * difference, 1)} lower than comparator")
+                ),
+                difference < 0 & code == !!code               ~ str_c(
+                  description,
+                  "<br>",
+                  glue("{-round(1000 * difference, 1)} higher than comparator")
+                ),
+                
+                TRUE                                          ~ "Not yet implemented"
+              )
+            ) %>% 
             plot_ly(x = ~age, y = ~asfr, color = ~code, colors = c("red", "blue")) %>% 
-            add_lines(showlegend = FALSE)
+            add_lines(hoverinfo = "text", text = ~description, showlegend = FALSE)
+          
           
           p <- subplot(list(p1, p2, p3), shareY = T, shareX = F) %>% 
             layout(
