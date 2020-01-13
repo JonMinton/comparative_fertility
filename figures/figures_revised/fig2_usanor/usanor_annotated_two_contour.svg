@@ -15,7 +15,7 @@
    id="svg11448"
    sodipodi:docname="usanor_annotated_two_contour.svg"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   inkscape:export-filename="C:\Users\Jon Minton\repos\comparative_fertility\figures\usanor_annotated_two_contour.png"
+   inkscape:export-filename="C:\Users\Jon Minton\repos\comparative_fertility\figures\figures_revised\fig2_usanor\usanor_annotated_two_contour.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300">
   <metadata
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,8 +39,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3000"
-     inkscape:window-height="1875"
+     inkscape:window-width="3840"
+     inkscape:window-height="2035"
      id="namedview11450"
      showgrid="false"
      inkscape:snap-to-guides="false"
@@ -48,13 +48,13 @@
      inkscape:snap-others="false"
      inkscape:snap-nodes="false"
      inkscape:snap-global="false"
-     inkscape:zoom="0.99331666"
-     inkscape:cx="-475.05329"
-     inkscape:cy="227.53922"
-     inkscape:window-x="3827"
+     inkscape:zoom="1.9866333"
+     inkscape:cx="468.97762"
+     inkscape:cy="363.91625"
+     inkscape:window-x="1051"
      inkscape:window-y="-13"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4" />
+     inkscape:current-layer="layer5" />
   <defs
      id="defs559">
     <marker
@@ -29161,7 +29161,8 @@
     </g>
     <g
        id="g583"
-       style="fill:#000000;fill-opacity:1">
+       style="fill:#000000;fill-opacity:1"
+       transform="translate(0,-27)">
       <use
          height="100%"
          width="100%"
@@ -29553,7 +29554,8 @@
        style="fill:none;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
     <g
        id="g5999"
-       style="fill:#000000;fill-opacity:1">
+       style="fill:#000000;fill-opacity:1"
+       transform="rotate(90,148.03711,446.81718)">
       <use
          height="100%"
          width="100%"
@@ -29585,7 +29587,8 @@
     </g>
     <g
        id="g6009"
-       style="fill:#000000;fill-opacity:1">
+       style="fill:#000000;fill-opacity:1"
+       transform="rotate(90,222.83398,446.81718)">
       <use
          height="100%"
          width="100%"
@@ -29617,7 +29620,8 @@
     </g>
     <g
        id="g6019"
-       style="fill:#000000;fill-opacity:1">
+       style="fill:#000000;fill-opacity:1"
+       transform="rotate(90,297.62695,446.81718)">
       <use
          height="100%"
          width="100%"
@@ -29649,7 +29653,8 @@
     </g>
     <g
        id="g6029"
-       style="fill:#000000;fill-opacity:1">
+       style="fill:#000000;fill-opacity:1"
+       transform="rotate(90,372.42383,446.81718)">
       <use
          height="100%"
          width="100%"
@@ -29681,7 +29686,8 @@
     </g>
     <g
        id="g6039"
-       style="fill:#000000;fill-opacity:1">
+       style="fill:#000000;fill-opacity:1"
+       transform="rotate(90,447.9668,446.63251)">
       <use
          height="100%"
          width="100%"
@@ -29980,7 +29986,7 @@
     <g
        id="g609-3"
        style="display:inline;fill:#000000;fill-opacity:1"
-       transform="rotate(90,-41.974343,402.15025)">
+       transform="rotate(90,-28.474343,388.65025)">
       <use
          height="100%"
          width="100%"
@@ -30012,32 +30018,21 @@
      inkscape:label="annotation"
      style="display:inline"
      transform="translate(-12.187173,-59.581108)">
-    <path
-       style="display:inline;fill:#ffffff;fill-opacity:0.47906979;fill-rule:evenodd;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 255.28125,392.99219 143.08984,280.80078 h 11.21875 L 300.0717,426.56389 h -10.69882 z"
-       id="path32055"
-       inkscape:connector-curvature="0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="67.805084"
-       y="190.06779"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99999996px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="68.937653"
+       y="208.56642"
        id="text32074"><tspan
          sodipodi:role="line"
-         id="tspan32080"
-         x="67.805084"
-         y="190.06779">Before 1960s: </tspan><tspan
+         id="tspan7352">Just before 1960s: </tspan><tspan
          sodipodi:role="line"
-         id="tspan32082"
-         x="67.805084"
-         y="200.06779">replacement </tspan><tspan
+         id="tspan7354">replacement </tspan><tspan
          sodipodi:role="line"
-         id="tspan32084"
-         x="67.805084"
-         y="210.06779">by age 31</tspan></text>
+         id="tspan7356">by around age 31</tspan></text>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
-       d="m 125.73305,197.00848 67.80509,-5.33899"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.84118128px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="m 136.22541,200.62661 57.23518,-7.95637"
        id="path32086"
        inkscape:connector-curvature="0" />
     <rect
@@ -30045,33 +30040,33 @@
        id="rect33815"
        width="56.860168"
        height="37.372883"
-       x="108.64831"
-       y="285.90256" />
+       x="73.916183"
+       y="296.85074" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="108.22858"
-       y="292.55023"
+       x="73.87397"
+       y="302.93213"
        id="text32074-8"><tspan
          sodipodi:role="line"
          id="tspan33015"
-         x="108.22858"
-         y="292.55023">Before 1960s: </tspan><tspan
+         x="73.87397"
+         y="302.93213">Before 1960s: </tspan><tspan
          sodipodi:role="line"
          id="tspan33017"
-         x="108.22858"
-         y="302.55023">replacement</tspan><tspan
+         x="73.87397"
+         y="312.93213">replacement</tspan><tspan
          sodipodi:role="line"
          id="tspan33019"
-         x="108.22858"
-         y="312.55023">age falling </tspan><tspan
+         x="73.87397"
+         y="322.93213">age falling </tspan><tspan
          sodipodi:role="line"
          id="tspan33021"
-         x="108.22858"
-         y="322.55023">to 27</tspan></text>
+         x="73.87397"
+         y="332.93213">to 27</tspan></text>
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-1)"
-       d="m 148.5379,328.85532 46.71611,37.90677"
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.85428065px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend-1)"
+       d="m 134.72956,328.56531 60.29328,38.10598"
        id="path32086-8"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -30378,28 +30373,15 @@
          id="tspan38293"
          x="356.42587"
          y="261.49286">over time</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="401.27621"
-       y="128.81882"
-       id="text34076-4-9-7-2"><tspan
-         sodipodi:role="line"
-         id="tspan39273"
-         x="401.27621"
-         y="128.81882">Speculative extrapolation</tspan><tspan
-         sodipodi:role="line"
-         id="tspan39275"
-         x="401.27621"
-         y="138.81882">of replacement contour</tspan><tspan
-         sodipodi:role="line"
-         id="tspan39277"
-         x="401.27621"
-         y="148.81882" /></text>
     <path
-       style="display:inline;fill:#ffffff;fill-opacity:0.47906979;fill-rule:evenodd;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 255.53523,231.2463 143.34382,119.05489 h 11.21875 L 300.32567,264.818 h -10.69881 z"
-       id="path32055-1"
+       style="fill:none;stroke:#000000;stroke-width:0.74394512;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.48789028, 0.74394514;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 144.50726,120.09166 143.84287,144.50365 v 0 l 0.18656,-0.37583"
+       id="path7148"
+       inkscape:connector-curvature="0" />
+    <path
+       style="display:inline;fill:none;stroke:#000000;stroke-width:0.74394506;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.48789024, 0.74394512;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 147.20911,280.40147 143.84287,144.50365 v 0 l 0.18657,-0.37582"
+       id="path7148-8"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

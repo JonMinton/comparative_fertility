@@ -272,9 +272,9 @@ ordered_codes <- dta  %>%
   filter(year == 2007)  %T>% print(sample_n(10)) %>% 
   group_by(code) %>% 
   mutate(last_ccfr = max(my_ccfr, na.rm= T))  %>% 
-  ungroup  %>% 
+  ungroup()  %>% 
   select(code, year, last_ccfr)  %>% 
-  distinct  %>% 
+  distinct()  %>% 
   mutate(fert_rank = dense_rank(last_ccfr))  %>% 
   arrange(fert_rank)  %>% 
   .$code
