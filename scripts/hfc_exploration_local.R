@@ -276,7 +276,7 @@ ordered_codes <- dta  %>%
   select(code, year, last_ccfr)  %>% 
   distinct()  %>% 
   mutate(fert_rank = dense_rank(last_ccfr))  %>% 
-  arrange(fert_rank)  %>% 
+  arrange(fert_rank)  %T>% write_csv("ccfr_in_2007.csv") %>%  
   .$code
 
 country_codes  %>% select(country, code)   -> tmp
