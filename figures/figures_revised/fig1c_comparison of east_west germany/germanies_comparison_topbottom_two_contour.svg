@@ -39,17 +39,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="3000"
-     inkscape:window-height="1875"
+     inkscape:window-width="3840"
+     inkscape:window-height="2035"
      id="namedview10556"
      showgrid="false"
-     inkscape:zoom="1.9866333"
-     inkscape:cx="-85.378054"
-     inkscape:cy="474.41335"
-     inkscape:window-x="-13"
-     inkscape:window-y="2147"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="271.4113"
+     inkscape:cy="610.43898"
+     inkscape:window-x="1051"
+     inkscape:window-y="-13"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg10554" />
+     inkscape:current-layer="g31203" />
   <defs
      id="defs511">
     <g
@@ -1908,7 +1908,7 @@
   <g
      id="g561"
      style="fill:#000000;fill-opacity:1"
-     transform="translate(3.7372882,7.5338927)">
+     transform="translate(8.6611689,92.099072)">
     <use
        height="100%"
        width="100%"
@@ -14981,35 +14981,6 @@
          height="100%" />
     </g>
   </g>
-  <path
-     inkscape:connector-curvature="0"
-     id="path5397"
-     d="M 75.510726,126.64327 H 446.26854 V 110.80342 H 75.510726 Z m 0,0"
-     style="fill:#ccebc5;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
-  <g
-     id="g5425"
-     style="fill:#000000;fill-opacity:1"
-     transform="translate(101.57415,-52.663147)">
-    <use
-       height="100%"
-       width="100%"
-       id="use5415"
-       y="115.48438"
-       x="269.81836"
-       xlink:href="#glyph2-9" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:11.2005558px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28001389"
-       x="123.9007"
-       y="170.66885"
-       id="text26377"
-       transform="scale(0.97174326,1.0290784)"><tspan
-         sodipodi:role="line"
-         id="tspan26375"
-         x="123.9007"
-         y="170.66885"
-         style="stroke-width:0.28001389">Germany, East (Annotated)</tspan></text>
-  </g>
   <g
      id="g31203"
      transform="translate(3.7372882,-188.46611)">
@@ -27041,18 +27012,6 @@
        d="M 71.773438,460.96094 H 442.53125 V 315.10938 H 71.773438 Z m 0,0"
        id="path5395"
        inkscape:connector-curvature="0" />
-    <path
-       sodipodi:nodetypes="cccccc"
-       inkscape:connector-curvature="0"
-       id="path30364"
-       d="m 266.27342,431.04297 29.91798,29.91796 h 11.21874 L 169.03906,315.11328 h -11.21875 z"
-       style="display:inline;fill:#ffffdf;fill-opacity:0.29302326;fill-rule:evenodd;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-    <path
-       sodipodi:nodetypes="cccccc"
-       inkscape:connector-curvature="0"
-       id="path30364-1"
-       d="m 337.32812,431.04297 29.91797,29.91796 h 11.21876 L 240.09374,315.11328 h -11.21875 z"
-       style="display:inline;fill:#ffffdf;fill-opacity:0.29767444;fill-rule:evenodd;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
     <text
        id="text30749"
        y="446.30447"
@@ -27077,20 +27036,20 @@
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker30765)" />
     <text
        id="text30749-7"
-       y="445.43509"
-       x="283.85132"
+       y="450.12259"
+       x="296.60132"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.99999952px;line-height:125%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        xml:space="preserve"><tspan
-         id="tspan30846"
-         sodipodi:role="line"
-         x="283.85132"
-         y="445.43509"
-         style="stroke-width:0.75px">...then recovered fertility</tspan><tspan
          id="tspan30848"
          sodipodi:role="line"
-         x="283.85132"
-         y="455.43509"
-         style="stroke-width:0.75px">in 1970s/1980s...</tspan></text>
+         x="296.60132"
+         y="450.12259"
+         style="stroke-width:0.75px">...then recovered in </tspan><tspan
+         sodipodi:role="line"
+         x="296.60132"
+         y="460.12259"
+         style="stroke-width:0.75px"
+         id="tspan12610">1970s/1980s...</tspan></text>
     <text
        id="text30749-1"
        y="324.26105"
@@ -27140,6 +27099,35 @@
        id="path30755-1"
        d="M 333.34392,339.28118 292.4492,374.94532"
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker30765-3)" />
+  </g>
+  <path
+     inkscape:connector-curvature="0"
+     id="path5397"
+     d="M 75.510726,126.64327 H 446.26854 V 110.80342 H 75.510726 Z m 0,0"
+     style="fill:#ccebc5;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-opacity:1" />
+  <g
+     id="g5425"
+     style="fill:#000000;fill-opacity:1"
+     transform="translate(101.57415,-52.663147)">
+    <use
+       height="100%"
+       width="100%"
+       id="use5415"
+       y="115.48438"
+       x="269.81836"
+       xlink:href="#glyph2-9" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:11.2005558px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.28001389"
+       x="123.9007"
+       y="170.66885"
+       id="text26377"
+       transform="scale(0.97174326,1.0290784)"><tspan
+         sodipodi:role="line"
+         id="tspan26375"
+         x="123.9007"
+         y="170.66885"
+         style="stroke-width:0.28001389">Germany, East (Annotated)</tspan></text>
   </g>
   <path
      style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.6369859px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
@@ -39308,4 +39296,192 @@
        id="tspan30076"
        x="85.285118"
        y="156.37785">lost 1938 cohort </tspan></text>
+  <g
+     id="g561-5"
+     style="fill:#000000;fill-opacity:1"
+     transform="translate(8.6611689,252.82416)">
+    <use
+       height="100%"
+       width="100%"
+       id="use537-6"
+       y="312.90234"
+       x="32.75"
+       xlink:href="#glyph1-1" />
+    <use
+       height="100%"
+       width="100%"
+       id="use539-6"
+       y="303.29767"
+       x="32.75"
+       xlink:href="#glyph1-2" />
+    <use
+       height="100%"
+       width="100%"
+       id="use541-0"
+       y="295.28906"
+       x="32.75"
+       xlink:href="#glyph1-3" />
+    <use
+       height="100%"
+       width="100%"
+       id="use543-4"
+       y="287.28046"
+       x="32.75"
+       xlink:href="#glyph1-4" />
+    <use
+       height="100%"
+       width="100%"
+       id="use545-9"
+       y="283.27969"
+       x="32.75"
+       xlink:href="#glyph1-5" />
+    <use
+       height="100%"
+       width="100%"
+       id="use547-6"
+       y="280.08047"
+       x="32.75"
+       xlink:href="#glyph1-6" />
+    <use
+       height="100%"
+       width="100%"
+       id="use549-2"
+       y="272.07187"
+       x="32.75"
+       xlink:href="#glyph1-4" />
+    <use
+       height="100%"
+       width="100%"
+       id="use551-3"
+       y="268.07111"
+       x="32.75"
+       xlink:href="#glyph1-7" />
+    <use
+       height="100%"
+       width="100%"
+       id="use553-3"
+       y="260.87109"
+       x="32.75"
+       xlink:href="#glyph1-3" />
+    <use
+       height="100%"
+       width="100%"
+       id="use555-6"
+       y="252.8625"
+       x="32.75"
+       xlink:href="#glyph1-8" />
+    <use
+       height="100%"
+       width="100%"
+       id="use557-2"
+       y="244.85391"
+       x="32.75"
+       xlink:href="#glyph1-9" />
+    <use
+       height="100%"
+       width="100%"
+       id="use559-8"
+       y="240.05859"
+       x="32.75"
+       xlink:href="#glyph1-10" />
+  </g>
+  <g
+     id="g561-0"
+     style="fill:#000000;fill-opacity:1"
+     transform="translate(8.6611689,-69.610871)">
+    <use
+       height="100%"
+       width="100%"
+       id="use537-4"
+       y="312.90234"
+       x="32.75"
+       xlink:href="#glyph1-1" />
+    <use
+       height="100%"
+       width="100%"
+       id="use539-8"
+       y="303.29767"
+       x="32.75"
+       xlink:href="#glyph1-2" />
+    <use
+       height="100%"
+       width="100%"
+       id="use541-7"
+       y="295.28906"
+       x="32.75"
+       xlink:href="#glyph1-3" />
+    <use
+       height="100%"
+       width="100%"
+       id="use543-3"
+       y="287.28046"
+       x="32.75"
+       xlink:href="#glyph1-4" />
+    <use
+       height="100%"
+       width="100%"
+       id="use545-0"
+       y="283.27969"
+       x="32.75"
+       xlink:href="#glyph1-5" />
+    <use
+       height="100%"
+       width="100%"
+       id="use547-5"
+       y="280.08047"
+       x="32.75"
+       xlink:href="#glyph1-6" />
+    <use
+       height="100%"
+       width="100%"
+       id="use549-3"
+       y="272.07187"
+       x="32.75"
+       xlink:href="#glyph1-4" />
+    <use
+       height="100%"
+       width="100%"
+       id="use551-5"
+       y="268.07111"
+       x="32.75"
+       xlink:href="#glyph1-7" />
+    <use
+       height="100%"
+       width="100%"
+       id="use553-2"
+       y="260.87109"
+       x="32.75"
+       xlink:href="#glyph1-3" />
+    <use
+       height="100%"
+       width="100%"
+       id="use555-1"
+       y="252.8625"
+       x="32.75"
+       xlink:href="#glyph1-8" />
+    <use
+       height="100%"
+       width="100%"
+       id="use557-7"
+       y="244.85391"
+       x="32.75"
+       xlink:href="#glyph1-9" />
+    <use
+       height="100%"
+       width="100%"
+       id="use559-9"
+       y="240.05859"
+       x="32.75"
+       xlink:href="#glyph1-10" />
+  </g>
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.97500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:11.70000013,11.70000013;stroke-dashoffset:0"
+     d="m 161.5576,126.64717 137.25195,145.90228 v 0 0"
+     id="path12549"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#000000;stroke-width:0.97499996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:11.69999996, 11.69999996;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 234.05992,128.00825 137.25195,145.90228 v 0 0"
+     id="path12549-2"
+     inkscape:connector-curvature="0" />
 </svg>

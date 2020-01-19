@@ -6852,6 +6852,31 @@
          d="m 299,193.375 h 6 V 198 h -6 z m 0,0"
          id="path328-2-7" />
     </clipPath>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="marker8288-8"
+       style="overflow:visible"
+       inkscape:isstock="true">
+      <path
+         inkscape:connector-curvature="0"
+         id="path8286-1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1.00000003pt;stroke-opacity:1"
+         transform="matrix(-0.8,0,0,-0.8,-10,0)" />
+    </marker>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect8278-7"
+       is_visible="true"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -6860,20 +6885,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="72.013982"
-     inkscape:cy="354.92825"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="258.01708"
+     inkscape:cy="792.57635"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer4"
      showgrid="false"
      inkscape:snap-grids="false"
      inkscape:snap-to-guides="true"
      inkscape:snap-others="true"
      inkscape:snap-nodes="false"
-     inkscape:window-width="3840"
-     inkscape:window-height="2035"
-     inkscape:window-x="1051"
-     inkscape:window-y="-13"
+     inkscape:window-width="3000"
+     inkscape:window-height="1875"
+     inkscape:window-x="-13"
+     inkscape:window-y="2147"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata32328">
@@ -6883,7 +6908,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -6898,13 +6923,13 @@
        id="rect15792"
        width="215.87401"
        height="257.54367"
-       x="-214.66901"
-       y="26.215372"
+       x="-213.8271"
+       y="29.770058"
        transform="scale(-1,1)" />
     <rect
-       style="opacity:0.75;fill:#ff7f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.26499999;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
+       style="opacity:0.75;fill:#ff7f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.31062144;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
        id="rect130574"
-       width="13.758333"
+       width="18.903271"
        height="56.091667"
        x="-0.71900636"
        y="60.863895" />
@@ -6944,9 +6969,9 @@
          y="16.381273"
          id="tspan8391">plot</tspan></text>
     <rect
-       style="opacity:0.75;fill:#047f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.29850668;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
+       style="opacity:0.75;fill:#047f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.35334253;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
        id="rect130574-3"
-       width="13.758333"
+       width="19.277449"
        height="71.17292"
        x="-0.73505598"
        y="120.11392" />
@@ -32347,17 +32372,17 @@
        id="text8268"
        transform="scale(0.98806468,1.0120795)"><tspan
          sodipodi:role="line"
-         id="tspan8266"
          x="34.446579"
          y="99.137276"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.32019773px">Tile colour </tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.32019773px"
+         id="tspan8103">Bar colour indicates</tspan><tspan
          sodipodi:role="line"
          x="34.446579"
          y="103.40658"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.41544271px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.32019773px"
-         id="tspan8270">indicates region</tspan></text>
+         id="tspan8118">region of country</tspan></text>
     <path
-       transform="matrix(1.2136167,0,0,1.0886697,-4.5456413,-4.6048664)"
+       transform="matrix(1.2727415,0,0,0.95099614,-6.8860803,8.1069451)"
        style="display:inline;fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.32019773px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker8288)"
        d="m 38.702438,91.949377 c 4.2689,-13.605186 8.53768,-27.209992 12.806339,-40.81441"
        id="path8276"
