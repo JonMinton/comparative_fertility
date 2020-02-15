@@ -270,6 +270,7 @@ dta %>%
 
 ordered_codes <- dta  %>% 
   filter(year == 2007)  %T>% print(sample_n(10)) %>% 
+  filter(age <= 49) %>% # Added as per Sebastian's suggestion
   group_by(code) %>% 
   mutate(last_ccfr = max(my_ccfr, na.rm= T))  %>% 
   ungroup()  %>% 
