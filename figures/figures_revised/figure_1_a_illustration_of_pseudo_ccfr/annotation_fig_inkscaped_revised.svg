@@ -44,13 +44,13 @@
      inkscape:window-height="1875"
      id="namedview4689"
      showgrid="false"
-     inkscape:zoom="2.8284273"
-     inkscape:cx="148.41597"
-     inkscape:cy="206.15001"
+     inkscape:zoom="2.0000001"
+     inkscape:cx="-386.54711"
+     inkscape:cy="216.35726"
      inkscape:window-x="-13"
-     inkscape:window-y="2147"
+     inkscape:window-y="-13"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer10" />
+     inkscape:current-layer="layer6" />
   <defs
      id="defs4487">
     <linearGradient
@@ -287,6 +287,26 @@
          transform="matrix(-0.4,0,0,-0.4,-4,0)"
          inkscape:connector-curvature="0" />
     </marker>
+    <clipPath
+       id="cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==-5">
+      <rect
+         x="33.57"
+         y="5.48"
+         width="527.20001"
+         height="293.48999"
+         id="rect4491-2"
+         style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+    </clipPath>
+    <clipPath
+       id="cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==-3">
+      <rect
+         x="33.57"
+         y="5.48"
+         width="527.20001"
+         height="293.48999"
+         id="rect4491-0"
+         style="fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" />
+    </clipPath>
   </defs>
   <defs
      id="defs4494">
@@ -953,97 +973,6 @@
   </g>
   <g
      inkscape:groupmode="layer"
-     id="layer6"
-     inkscape:label="crossings"
-     style="display:inline"
-     transform="translate(-0.92493644,-1.0940677)">
-    <line
-       x1="345.10001"
-       y1="169.38"
-       x2="85.839996"
-       y2="169.38"
-       style="fill:none;stroke:#a6cee3;stroke-width:1.33333337;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
-       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
-       id="line4550"
-       transform="translate(4.9497476,5.7899256)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-    <line
-       x1="450.54001"
-       y1="125.78"
-       x2="68.529999"
-       y2="125.78"
-       style="fill:none;stroke:#a6cee3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
-       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
-       id="line4558"
-       transform="translate(4.9497476,5.7899256)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-    <line
-       x1="345.10001"
-       y1="171.53999"
-       x2="87.580002"
-       y2="171.53999"
-       style="fill:none;stroke:#b2df8a;stroke-width:1.33333337;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
-       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
-       id="line4566"
-       transform="translate(4.9497476,5.7899256)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-    <line
-       x1="450.54001"
-       y1="107.9"
-       x2="63.060001"
-       y2="107.9"
-       style="fill:none;stroke:#b2df8a;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
-       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
-       id="line4574"
-       transform="translate(4.9497476,5.7899256)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-    <polyline
-       points="88.38,167.91 85.84,169.38 88.38,170.84 "
-       style="fill:none;stroke:#a6cee3;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
-       id="polyline4552"
-       transform="translate(4.9497476,5.7899256)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-    <polyline
-       points="71.08,124.32 68.53,125.78 71.08,127.25 "
-       style="fill:none;stroke:#a6cee3;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
-       id="polyline4560"
-       transform="translate(4.9497476,5.7899256)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-    <polyline
-       points="90.12,170.08 87.58,171.54 90.12,173.01 "
-       style="fill:none;stroke:#b2df8a;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
-       id="polyline4568"
-       transform="translate(4.9497476,5.7899256)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-    <polyline
-       points="65.60,106.44 63.06,107.90 65.60,109.37 "
-       style="fill:none;stroke:#b2df8a;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
-       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
-       id="polyline4576"
-       transform="translate(4.9497476,5.7899256)"
-       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
-       inkscape:export-xdpi="300.03"
-       inkscape:export-ydpi="300.03" />
-  </g>
-  <g
-     inkscape:groupmode="layer"
      id="layer12"
      inkscape:label="crossing_annotation"
      style="display:inline">
@@ -1148,5 +1077,120 @@
          style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;font-family:Sans;-inkscape-font-specification:'Sans, Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
          x="178.46246"
          y="90.371109">1.50 at bottom</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="crossings"
+     style="display:inline"
+     transform="translate(-0.92493644,-1.0940677)">
+    <line
+       x1="345.10001"
+       y1="169.38"
+       x2="85.839996"
+       y2="169.38"
+       style="fill:none;stroke:#a6cee3;stroke-width:1.33333337;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
+       id="line4550"
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <line
+       x1="450.54001"
+       y1="125.78"
+       x2="68.529999"
+       y2="125.78"
+       style="fill:none;stroke:#a6cee3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
+       id="line4558"
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <line
+       x1="345.10001"
+       y1="171.53999"
+       x2="87.580002"
+       y2="171.53999"
+       style="fill:none;stroke:#b2df8a;stroke-width:1.33333337;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
+       id="line4566"
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <line
+       x1="450.54001"
+       y1="107.9"
+       x2="63.060001"
+       y2="107.9"
+       style="fill:none;stroke:#b2df8a;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
+       id="line4574"
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <polyline
+       points="88.38,167.91 85.84,169.38 88.38,170.84 "
+       style="fill:none;stroke:#a6cee3;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
+       id="polyline4552"
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <polyline
+       points="71.08,124.32 68.53,125.78 71.08,127.25 "
+       style="fill:none;stroke:#a6cee3;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
+       id="polyline4560"
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <polyline
+       points="90.12,170.08 87.58,171.54 90.12,173.01 "
+       style="fill:none;stroke:#b2df8a;stroke-width:2.13000011;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
+       id="polyline4568"
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <polyline
+       points="65.60,106.44 63.06,107.90 65.60,109.37 "
+       style="fill:none;stroke:#b2df8a;stroke-width:2.55999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==)"
+       id="polyline4576"
+       transform="translate(4.9497476,5.7899256)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <line
+       x1="450.54001"
+       y1="125.78"
+       x2="68.529999"
+       y2="125.78"
+       style="display:inline;fill:none;stroke:#a6cee3;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==-5)"
+       id="line4558-5"
+       transform="matrix(0,0.18430012,-1,0,239.14563,12.0349)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
+    <line
+       x1="450.54001"
+       y1="107.9"
+       x2="63.060001"
+       y2="107.9"
+       style="display:inline;fill:none;stroke:#b2df8a;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
+       clip-path="url(#cpMzMuNTY3N3w1NjAuNzcxfDI5OC45NzR8NS40Nzk0NQ==-3)"
+       id="line4574-8"
+       transform="matrix(0,0.18137551,-1,0,237.87192,13.249495)"
+       inkscape:export-filename="E:\repos\comparative_fertility\figures\first_figure_animation\figure_08.png"
+       inkscape:export-xdpi="300.03"
+       inkscape:export-ydpi="300.03" />
   </g>
 </svg>

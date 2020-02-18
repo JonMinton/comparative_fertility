@@ -6886,10 +6886,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284271"
-     inkscape:cx="258.01708"
-     inkscape:cy="792.57635"
+     inkscape:cx="171.3965"
+     inkscape:cy="396.59655"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:snap-grids="false"
      inkscape:snap-to-guides="true"
@@ -6898,7 +6898,7 @@
      inkscape:window-width="3000"
      inkscape:window-height="1875"
      inkscape:window-x="-13"
-     inkscape:window-y="2147"
+     inkscape:window-y="-13"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata32328">
@@ -6967,7 +6967,7 @@
          sodipodi:role="line"
          x="-251.1398"
          y="16.381273"
-         id="tspan8391">plot</tspan></text>
+         id="tspan8391">    plot</tspan></text>
     <rect
        style="opacity:0.75;fill:#047f00;fill-opacity:0.52093021;stroke:none;stroke-width:0.35334253;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.3534884"
        id="rect130574-3"
