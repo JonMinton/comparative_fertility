@@ -86,6 +86,15 @@ human review, per Jon's preprint-early strategy — review is now post-hoc):
    - Both: CC-BY 4.0; Sociology/Population subject; GitHub repo as public-data
      link; honest "no preregistration; choices fixed in public workplan"
      assertion; AI-assistance note in abstract; component linked as supplemental.
+   - REJECTION + FIX (2026-07-11, same day): both v1 submissions were rejected
+     by SocArXiv moderation for one reason — no ORCID linked to the OSF
+     profile (SocArXiv requires an ORCID with public identity/affiliations).
+     Fixed same day: Jon's ORCID record updated from his CV (employment
+     end-dated PHS 2024-09, added Smith & Nephew Senior Statistician
+     2024-09→present, three education entries added: PhD York 2011, MA
+     Nottingham 2004, BEng Nottingham 2003; CodeClan SCQF-8 entry pending
+     dates from Jon); ORCID connected to OSF profile (Jon's OAuth click);
+     both preprints now PENDING MODERATION again.
    - SocArXiv pre-moderation ~1–2 days; DOIs assigned on acceptance.
    - Remaining OSF nice-to-haves: upload this workplan file to project storage;
      verify components display as public; GitHub add-on link (needs Jon's OAuth).
