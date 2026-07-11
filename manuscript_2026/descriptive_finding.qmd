@@ -38,6 +38,16 @@ format:
   docx: default
 ---
 
+::: {.content-visible when-format="docx"}
+> **FOR REVIEWERS (Word copy).** Please comment using Word's *Comments* and
+> *Track Changes* features — do not edit silently. Return the file to
+> <jon.will.minton@gmail.com>. Comments will be logged in the project's public
+> feedback register (`manuscript_2026/review/FEEDBACK.md` on GitHub), actioned,
+> and credited; substantive contributions meeting authorship criteria are
+> recognized with co-authorship in later preprint versions. This is v0.1,
+> corresponding to SocArXiv preprint version 1.
+:::
+
 ::: {.callout-note}
 **Draft status.** This is an early working version posted for open comment; the
 analysis is reproducible from <https://github.com/JonMinton/Comparative_Fertility>
