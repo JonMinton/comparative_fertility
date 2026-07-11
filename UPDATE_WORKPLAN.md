@@ -57,6 +57,26 @@
 | Ragged right edge (countries end 2023–2025 at different points) | **Show ragged edge, grey annotation — don't truncate to common year** |
 | Commit refreshed combined CSV to public repo? | **Check current HFD/HFC terms first** — derived/combined data was committed in 2016; terms may have changed |
 
+### 🔴 Post-gallop review checklist (Jon, after the 2-hour sprint)
+
+All Claude-side work is committed locally; nothing is pushed. In review order:
+1. **Read the two drafts** — `manuscript_2026/descriptive_finding.qmd` (or its
+   rendered .html) first, then `wall_corridor_article.qmd`. Check especially the
+   US claim wording and the co-author invitation text.
+2. **Eyeball the figures** — `figures/figures_2026/`: norway_only, the three
+   splits, featured_wall_{nor,usa,kor}, wall_trajectories.
+3. **Skim the two reports** — `reports/validation_2026.md`, `reports/wall_analysis_2026.md`.
+4. **Decide**: commit the combined 2026 CSV? (HFD terms check; currently untracked.)
+5. **Send the courtesy/invitation email** to Serena Pattaro & Laura Vanderbloemen.
+6. **Push**: `git push origin master feature-claude-update demres-2020` — this
+   makes everything public (master already fast-forwarded locally; the
+   `demres-2020` tag preserves the 2020-paper state and is signposted in the
+   README). Then create a GitHub Release from the tag (name it after the paper)
+   so paper-followers see it prominently; optionally enable Zenodo first so the
+   release mints a DOI.
+7. **OSF**: create project + two components, link GitHub, submit the two
+   SocArXiv preprints (v0.1), upload workplan as time-stamped plan.
+
 ### Suggested split of the 2-hour timebox
 
 | Block | Time |
