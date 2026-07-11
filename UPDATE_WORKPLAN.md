@@ -275,7 +275,16 @@ The two outputs:
    explanation must match), not a separate paper.
 3. Outreach (N-IUSSP-style piece / refreshed app / blog): the debate-facing
    translation, citing 1 and 2. Not peer-reviewed, so it can move at news speed.
-Birth-order extension = the real future paper #3, when built.
+Birth-order extension = a real future paper #3, when built.
+**Candidate paper #3-or-#4 (Jon, 2026-07-11): the universality test.** A key
+implication of connectivity/smartphone hypotheses is that fertility decline
+has accelerated in ALL countries regardless of economic development — unlike
+recession- or policy-based explanations, which predict development-graded
+timing. Investigable, but NOT with HFD/HFC alone (rich-country biased):
+needs UN WPP-type estimates for global coverage, i.e. a distinct data
+pipeline, lower age-resolution, different quality caveats. Park until papers
+1–2 are through review; note it connects Phase 4's cross-country-timing idea
+to a global panel.
 Venue note: Comparative Population Studies published a direct methodological
 descendant (GDR paper, 2026) — evidence of a receptive venue for 1 or 2.
 

@@ -143,6 +143,16 @@ visually distinct: contours that climb into the ceiling and end there
 (censored). For Norway, both escapes of the replacement contour are
 wall-terminations, not censoring artifacts.
 
+A note on visual complexity: in grammar-of-graphics terms the ceiling adds a
+fifth encoding to an already four-dimensional composite (x, y, shading,
+contour weight) --- though it is better understood as a third *reading* of the
+single underlying ASFR field: its level (shading), its accumulation
+(contours), and its effective boundary (the ceiling), each a computation the
+eye cannot perform unaided. Because four encodings already approach the limit
+of comfortable readability for many audiences, we confine this densest form
+to the present paper; the companion descriptive finding retains the
+established four-encoding composite throughout.
+
 # Discussion
 
 <!-- TODO: full drafting. Key points fixed by the workplan's framing rule

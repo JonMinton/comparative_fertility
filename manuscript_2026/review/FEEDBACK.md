@@ -62,3 +62,35 @@ Entry template:
 - status: actioned (v1)
 - action/response: added to DF Methods and the repo README before the v1
   preprints were submitted.
+
+## F-004
+- date: 2026-07-11
+- source: chat (Jon, via forked side-question)
+- paper: both (decision affects both)
+- locus: figure design — the ceiling overlay
+- comment: The dotted ceiling line is a fifth graphing dimension in the
+  grammar-of-graphics sense (x, y, hue, contour weight were already four).
+  4D was plausibly already beyond most researchers' comfort — a likely factor
+  in the 2020 paper's limited uptake — so a fifth encoding needs care re:
+  reach/accessibility. Verdict: relevant to CC; too much for DF.
+- status: actioned (in source, ships with v2)
+- action/response: CC gains a "note on visual complexity" paragraph framing
+  the ceiling as a fifth encoding / third reading of one field and stating
+  the deliberate confinement to CC. DF stays four-encoding throughout (its
+  new USA panel is the plain composite, no ceiling).
+
+## F-005
+- date: 2026-07-11
+- source: chat (Jon)
+- paper: DF
+- locus: Results — US section and panel-as-a-whole
+- comment: (a) If DF shows the Norway panel it should show the USA panel too.
+  (b) Note that Norway and the USA were never the only populations at
+  replacement — only the notably rich ones whose cohort fertility RECOVERED;
+  others (Iceland, France, NZ, N. Ireland ~1980 cohorts; Macedonia 1974,
+  Albania 1973) also crossed.
+- status: actioned (in source, ships with v2)
+- action/response: plain `usa_only.png` generated and embedded in the US
+  section; "never the only populations" passage added with crossing cohorts
+  from data/derived_2026/last_cohort_replacement.csv, sharpening what the
+  2020 exception claim actually was (rich-world recovery).

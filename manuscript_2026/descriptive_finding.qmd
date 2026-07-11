@@ -126,8 +126,10 @@ record low [@hfd2026].
 
 ## United States
 
-The United States requires a more careful statement. Its period TFR fell from
-2.12 (2007) to 1.59 (2024), a record low. In cohort terms, however, the
+![United States: ASFR surface with CPCFR contours at 2.05 (heavy) and 1.50 (light), cohorts observed to 2024.](figures/usa_only.png){#fig-usa}
+
+The United States requires a more careful statement (@fig-usa). Its period TFR
+fell from 2.12 (2007) to 1.59 (2024), a record low. In cohort terms, however, the
 exception *persisted* longer than the period collapse suggests: cohorts born
 1982, 1983 and 1984 all crossed CPCFR = 2.05, at ages 39, 39 and 40
 respectively, with completed cumulative fertility of 2.14, 2.13 and 2.09. The
@@ -146,10 +148,18 @@ Across the full panel, 43 of 45 countries now have post-war cohorts observed
 beyond age 44 that never reached replacement. Only nine countries have *any*
 cohort born in 1970 or later that crossed 2.05 --- and the most recent
 crossing cohorts are: United States 1984, Iceland 1983, Northern Ireland 1981,
-France 1980, New Zealand 1980. South Korea, newly covered here from 1960
-(the 2020 panel's Korean series ended in 2007), last saw a cohort reach
-replacement with those born in 1958; its period TFR in 2024 was 0.75
-[@yoo2018].
+France 1980, New Zealand 1980. Norway and the United States were therefore
+never the *only* populations at or above replacement: Iceland, France, New
+Zealand and Northern Ireland also saw cohorts born around 1980 cross the
+milestone, as did several south-eastern European populations for cohorts born
+into the mid-1970s (Macedonia 1974, Albania 1973). What made Norway and the
+United States the named exceptions of the 2020 paper was narrower: among the
+notably rich populations of the panel, they were the two whose cohort
+fertility had *recovered* to replacement after earlier decline. It is that
+recovery, specifically, that the new data shows ending. South Korea, newly
+covered here from 1960 (the 2020 panel's Korean series ended in 2007), last
+saw a cohort reach replacement with those born in 1958; its period TFR in
+2024 was 0.75 [@yoo2018].
 
 # Conclusions
 
