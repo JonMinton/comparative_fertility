@@ -285,7 +285,13 @@ needs UN WPP-type estimates for global coverage, i.e. a distinct data
 pipeline, lower age-resolution, different quality caveats. Park until papers
 1–2 are through review; note it connects Phase 4's cross-country-timing idea
 to a global panel. Strategy options + objections drafted (2026-07-11):
-`manuscript_2026/universality_strategy.md` — recommended architecture is
+`manuscript_2026/universality_strategy.md`. LITERATURE PHASE COMPLETE
+(2026-07-11): `manuscript_2026/universality_lit_notes.md` — four parallel
+research tracks; focal PDFs obtained (no SSRN login needed; local copies
+git-ignored); headline finding: H&MB's "25+ null" is near-tautological given
+their eq.-6 detrending (verified against the PDF), reconciling it with
+Myers & Hooper's 33-52% all-ages claim and defining paper 3's niche. ~35
+verified refs added to references.bib Part 3. Next: prereg protocol drafting. — recommended architecture is
 fingerprint-first (WPP descriptive surface), estimated break dates with a
 permutation null, adoption-alignment and age-margin modules for
 discrimination; the crude fixed-2008 shift survives only as a baseline.
