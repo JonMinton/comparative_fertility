@@ -59,23 +59,36 @@
 
 ### 🔴 Post-gallop review checklist (Jon, after the 2-hour sprint)
 
-All Claude-side work is committed locally; nothing is pushed. In review order:
+In review order (items 5–7 and the push are DONE; v0.1 went public before full
+human review, per Jon's preprint-early strategy — review is now post-hoc):
 1. **Read the two drafts** — `manuscript_2026/descriptive_finding.qmd` (or its
    rendered .html) first, then `wall_corridor_article.qmd`. Check especially the
-   US claim wording and the co-author invitation text.
+   US claim wording and the co-author invitation text. Revisions become
+   preprint v2 (Edit button on each preprint page).
 2. **Eyeball the figures** — `figures/figures_2026/`: norway_only, the three
    splits, featured_wall_{nor,usa,kor}, wall_trajectories.
 3. **Skim the two reports** — `reports/validation_2026.md`, `reports/wall_analysis_2026.md`.
 4. **Decide**: commit the combined 2026 CSV? (HFD terms check; currently untracked.)
 5. ~~Contact Serena & Laura~~ — DONE 2026-07-11 via LinkedIn.
-6. **Push**: `git push origin master feature-claude-update demres-2020` — this
-   makes everything public (master already fast-forwarded locally; the
-   `demres-2020` tag preserves the 2020-paper state and is signposted in the
-   README). Then create a GitHub Release from the tag (name it after the paper)
-   so paper-followers see it prominently; optionally enable Zenodo first so the
-   release mints a DOI.
-7. **OSF**: create project + two components, link GitHub, submit the two
-   SocArXiv preprints (v0.1), upload workplan as time-stamped plan.
+6. ~~Push~~ — DONE 2026-07-11 (master, feature-claude-update, demres-2020 all on
+   GitHub). Remaining: create a GitHub Release from the tag; optionally enable
+   Zenodo first so the release mints a DOI.
+7. ~~OSF~~ — **DONE 2026-07-11** (Claude-driven browser session; Jon did the two
+   native file-picker clicks):
+   - Umbrella project (public): <https://osf.io/3ju29> — description carries the
+     AI-drafting provenance statement
+   - Components: Descriptive finding <https://osf.io/mkr79>; Research article
+     <https://osf.io/2yzmc>
+   - Preprint 1: "The exceptions collapse" —
+     <https://osf.io/preprints/socarxiv/8cb5g_v1> (pending moderation)
+   - Preprint 2: "The closing corridor" —
+     <https://osf.io/preprints/socarxiv/8jqad_v1> (pending moderation)
+   - Both: CC-BY 4.0; Sociology/Population subject; GitHub repo as public-data
+     link; honest "no preregistration; choices fixed in public workplan"
+     assertion; AI-assistance note in abstract; component linked as supplemental.
+   - SocArXiv pre-moderation ~1–2 days; DOIs assigned on acceptance.
+   - Remaining OSF nice-to-haves: upload this workplan file to project storage;
+     verify components display as public; GitHub add-on link (needs Jon's OAuth).
 
 ### Suggested split of the 2-hour timebox
 
