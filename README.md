@@ -10,6 +10,12 @@ Analysis and visualization codebase behind:
 …and its in-progress 2026 update (see [`UPDATE_WORKPLAN.md`](UPDATE_WORKPLAN.md)).
 Companion interactive app: <https://datascapes.shinyapps.io/cumulative_fertility_app/>.
 
+> **Following the link from the 2020 paper?** The repository exactly as it stood
+> at publication is preserved at the tag
+> [`demres-2020`](../../releases/tag/demres-2020) — everything after that tag is
+> the 2026 update. The published pipeline is also kept unmodified in the current
+> tree (see *Repo structure* below).
+
 ## Replicating the analyses: what to download, from where
 
 Raw source data are **not** redistributed in this repo (HFD/HFC terms); the
