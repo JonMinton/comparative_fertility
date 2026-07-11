@@ -1,0 +1,3831 @@
+code,country,year,wall_200,wall_1000
+ALB,Albania,1955,50,50
+ALB,Albania,1956,50,50
+ALB,Albania,1957,50,50
+ALB,Albania,1958,50,50
+ALB,Albania,1959,50,50
+ALB,Albania,1960,50,50
+ALB,Albania,1961,50,50
+ALB,Albania,1962,50,50
+ALB,Albania,1963,50,50
+ALB,Albania,1964,49,50
+ALB,Albania,1965,50,50
+ALB,Albania,1966,50,50
+ALB,Albania,1967,50,50
+ALB,Albania,1968,50,50
+ALB,Albania,1969,50,50
+ALB,Albania,1970,50,50
+ALB,Albania,1971,49,50
+ALB,Albania,1972,49,50
+ALB,Albania,1973,49,50
+ALB,Albania,1974,49,50
+ALB,Albania,1975,48,50
+ALB,Albania,1976,47,50
+ALB,Albania,1977,47,50
+ALB,Albania,1978,46,50
+ALB,Albania,1979,46,50
+ALB,Albania,1980,46,49
+ALB,Albania,1981,46,48
+ALB,Albania,1982,46,48
+ALB,Albania,1983,45,47
+ALB,Albania,1984,45,47
+ALB,Albania,1985,45,47
+ALB,Albania,1986,45,48
+ALB,Albania,1987,45,49
+ALB,Albania,1988,45,47
+ALB,Albania,1989,45,47
+ALB,Albania,1990,45,48
+ALB,Albania,1991,44,47
+ALB,Albania,1992,44,47
+ALB,Albania,1993,43,47
+ALB,Albania,1994,43,47
+ALB,Albania,1995,43,46
+ALB,Albania,1996,42,45
+ALB,Albania,1997,42,46
+ALB,Albania,1998,42,45
+ALB,Albania,1999,42,45
+ALB,Albania,2000,42,45
+ALB,Albania,2001,44,48
+ALB,Albania,2002,42,46
+ALB,Albania,2003,42,46
+ALB,Albania,2004,42,46
+ALB,Albania,2005,41,45
+ALB,Albania,2006,41,45
+ALB,Albania,2007,41,50
+ALB,Albania,2008,50,50
+AUS,Australia,1921,46,48
+AUS,Australia,1922,46,48
+AUS,Australia,1923,46,48
+AUS,Australia,1924,46,48
+AUS,Australia,1925,46,48
+AUS,Australia,1926,46,48
+AUS,Australia,1927,46,48
+AUS,Australia,1928,46,48
+AUS,Australia,1929,46,48
+AUS,Australia,1930,46,48
+AUS,Australia,1931,46,48
+AUS,Australia,1932,46,47
+AUS,Australia,1933,45,47
+AUS,Australia,1934,45,47
+AUS,Australia,1935,45,47
+AUS,Australia,1936,45,47
+AUS,Australia,1937,45,47
+AUS,Australia,1938,45,47
+AUS,Australia,1939,45,47
+AUS,Australia,1940,45,47
+AUS,Australia,1941,45,47
+AUS,Australia,1942,45,47
+AUS,Australia,1943,45,47
+AUS,Australia,1944,45,47
+AUS,Australia,1945,45,47
+AUS,Australia,1946,45,47
+AUS,Australia,1947,45,47
+AUS,Australia,1948,45,47
+AUS,Australia,1949,45,47
+AUS,Australia,1950,45,47
+AUS,Australia,1951,45,47
+AUS,Australia,1952,45,47
+AUS,Australia,1953,44,47
+AUS,Australia,1954,44,47
+AUS,Australia,1955,44,47
+AUS,Australia,1956,44,47
+AUS,Australia,1957,44,47
+AUS,Australia,1958,44,47
+AUS,Australia,1959,44,47
+AUS,Australia,1960,44,46
+AUS,Australia,1961,44,47
+AUS,Australia,1962,44,47
+AUS,Australia,1963,44,47
+AUS,Australia,1964,44,47
+AUS,Australia,1965,44,47
+AUS,Australia,1966,44,46
+AUS,Australia,1967,44,46
+AUS,Australia,1968,44,46
+AUS,Australia,1969,43,46
+AUS,Australia,1970,43,46
+AUS,Australia,1971,43,46
+AUS,Australia,1972,43,46
+AUS,Australia,1973,43,45
+AUS,Australia,1974,42,45
+AUS,Australia,1975,42,44
+AUS,Australia,1976,42,45
+AUS,Australia,1977,42,44
+AUS,Australia,1978,41,44
+AUS,Australia,1979,41,44
+AUS,Australia,1980,41,44
+AUS,Australia,1981,41,44
+AUS,Australia,1982,41,44
+AUS,Australia,1983,41,44
+AUS,Australia,1984,41,44
+AUS,Australia,1985,41,44
+AUS,Australia,1986,41,44
+AUS,Australia,1987,41,44
+AUS,Australia,1988,41,43
+AUS,Australia,1989,41,44
+AUS,Australia,1990,41,44
+AUS,Australia,1991,41,44
+AUS,Australia,1992,41,44
+AUS,Australia,1993,42,44
+AUS,Australia,1994,42,44
+AUS,Australia,1995,42,44
+AUS,Australia,1996,42,44
+AUS,Australia,1997,42,44
+AUS,Australia,1998,42,44
+AUS,Australia,1999,42,44
+AUS,Australia,2000,42,45
+AUS,Australia,2001,42,45
+AUS,Australia,2002,42,45
+AUS,Australia,2003,42,45
+AUS,Australia,2004,43,45
+AUS,Australia,2005,43,45
+AUS,Australia,2006,43,45
+AUS,Australia,2007,43,45
+AUS,Australia,2008,43,45
+AUS,Australia,2009,43,45
+AUS,Australia,2010,43,45
+AUS,Australia,2011,43,46
+AUS,Australia,2012,43,46
+AUS,Australia,2013,43,46
+AUS,Australia,2014,43,46
+AUS,Australia,2015,43,46
+AUS,Australia,2016,43,46
+AUS,Australia,2017,43,46
+AUS,Australia,2018,43,46
+AUS,Australia,2019,43,46
+AUS,Australia,2020,43,46
+AUS,Australia,2021,43,46
+AUS,Australia,2022,43,46
+AUS,Australia,2023,43,47
+AUS,Australia,2024,43,47
+AUT,Austria,1937,44,44
+AUT,Austria,1951,44,46
+AUT,Austria,1952,44,46
+AUT,Austria,1953,44,46
+AUT,Austria,1954,44,46
+AUT,Austria,1955,44,46
+AUT,Austria,1956,44,46
+AUT,Austria,1957,44,46
+AUT,Austria,1958,44,46
+AUT,Austria,1959,44,46
+AUT,Austria,1960,44,46
+AUT,Austria,1961,44,46
+AUT,Austria,1962,44,46
+AUT,Austria,1963,44,46
+AUT,Austria,1964,44,46
+AUT,Austria,1965,44,46
+AUT,Austria,1966,44,46
+AUT,Austria,1967,44,46
+AUT,Austria,1968,44,46
+AUT,Austria,1969,43,46
+AUT,Austria,1970,43,46
+AUT,Austria,1971,43,46
+AUT,Austria,1972,43,46
+AUT,Austria,1973,43,45
+AUT,Austria,1974,43,45
+AUT,Austria,1975,42,45
+AUT,Austria,1976,42,45
+AUT,Austria,1977,42,45
+AUT,Austria,1978,42,45
+AUT,Austria,1979,41,44
+AUT,Austria,1980,41,44
+AUT,Austria,1981,41,45
+AUT,Austria,1982,41,45
+AUT,Austria,1983,41,44
+AUT,Austria,1984,41,44
+AUT,Austria,1985,40,43
+AUT,Austria,1986,41,44
+AUT,Austria,1987,41,44
+AUT,Austria,1988,40,43
+AUT,Austria,1989,40,43
+AUT,Austria,1990,41,44
+AUT,Austria,1991,41,44
+AUT,Austria,1992,41,43
+AUT,Austria,1993,41,43
+AUT,Austria,1994,41,44
+AUT,Austria,1995,40,44
+AUT,Austria,1996,41,43
+AUT,Austria,1997,41,44
+AUT,Austria,1998,41,44
+AUT,Austria,1999,41,44
+AUT,Austria,2000,41,44
+AUT,Austria,2001,41,44
+AUT,Austria,2002,41,44
+AUT,Austria,2003,41,44
+AUT,Austria,2004,42,44
+AUT,Austria,2005,42,44
+AUT,Austria,2006,42,44
+AUT,Austria,2007,42,44
+AUT,Austria,2008,42,44
+AUT,Austria,2009,42,44
+AUT,Austria,2010,42,44
+AUT,Austria,2011,42,44
+AUT,Austria,2012,42,45
+AUT,Austria,2013,42,45
+AUT,Austria,2014,42,45
+AUT,Austria,2015,42,45
+AUT,Austria,2016,43,45
+AUT,Austria,2017,43,45
+AUT,Austria,2018,43,46
+AUT,Austria,2019,43,45
+AUT,Austria,2020,43,45
+AUT,Austria,2021,43,45
+AUT,Austria,2022,43,46
+AUT,Austria,2023,43,46
+AUT,Austria,2024,43,46
+BEL,Belgium,1939,44,47
+BEL,Belgium,1947,44,47
+BEL,Belgium,1948,44,47
+BEL,Belgium,1949,44,47
+BEL,Belgium,1950,44,47
+BEL,Belgium,1951,44,46
+BEL,Belgium,1952,44,46
+BEL,Belgium,1953,44,46
+BEL,Belgium,1954,44,46
+BEL,Belgium,1955,44,46
+BEL,Belgium,1956,44,46
+BEL,Belgium,1957,44,46
+BEL,Belgium,1958,44,46
+BEL,Belgium,1959,44,46
+BEL,Belgium,1960,44,46
+BEL,Belgium,1961,44,46
+BEL,Belgium,1962,44,46
+BEL,Belgium,1963,44,46
+BEL,Belgium,1964,44,46
+BEL,Belgium,1965,44,45
+BEL,Belgium,1966,43,46
+BEL,Belgium,1967,43,46
+BEL,Belgium,1968,43,45
+BEL,Belgium,1969,43,45
+BEL,Belgium,1970,43,45
+BEL,Belgium,1971,43,45
+BEL,Belgium,1972,42,45
+BEL,Belgium,1973,42,45
+BEL,Belgium,1974,42,44
+BEL,Belgium,1975,41,44
+BEL,Belgium,1976,41,44
+BEL,Belgium,1977,41,44
+BEL,Belgium,1978,41,44
+BEL,Belgium,1979,40,44
+BEL,Belgium,1980,40,43
+BEL,Belgium,1981,40,44
+BEL,Belgium,1982,40,43
+BEL,Belgium,1983,40,43
+BEL,Belgium,1984,40,44
+BEL,Belgium,1985,39,44
+BEL,Belgium,1986,40,45
+BEL,Belgium,1987,40,43
+BEL,Belgium,1988,40,43
+BEL,Belgium,1989,40,44
+BEL,Belgium,1990,40,43
+BEL,Belgium,1991,41,43
+BEL,Belgium,1992,41,44
+BEL,Belgium,1993,41,44
+BEL,Belgium,1994,41,44
+BEL,Belgium,1995,40,43
+BEL,Belgium,1996,40,43
+BEL,Belgium,1997,41,43
+BEL,Belgium,1998,41,44
+BEL,Belgium,1999,41,43
+BEL,Belgium,2000,41,44
+BEL,Belgium,2001,41,44
+BEL,Belgium,2002,41,44
+BEL,Belgium,2003,41,44
+BEL,Belgium,2004,42,44
+BEL,Belgium,2005,42,44
+BEL,Belgium,2006,42,44
+BEL,Belgium,2007,42,45
+BEL,Belgium,2008,42,44
+BEL,Belgium,2009,42,45
+BEL,Belgium,2010,42,45
+BEL,Belgium,2011,42,45
+BEL,Belgium,2012,43,45
+BEL,Belgium,2013,42,45
+BEL,Belgium,2014,42,45
+BEL,Belgium,2015,42,45
+BEL,Belgium,2016,43,45
+BEL,Belgium,2017,43,45
+BEL,Belgium,2018,43,45
+BEL,Belgium,2019,43,46
+BEL,Belgium,2020,43,46
+BEL,Belgium,2021,43,46
+BEL,Belgium,2022,43,46
+BEL,Belgium,2023,43,45
+BEL,Belgium,2024,43,46
+BGR,Bulgaria,1947,46,48
+BGR,Bulgaria,1948,46,48
+BGR,Bulgaria,1949,46,48
+BGR,Bulgaria,1950,46,48
+BGR,Bulgaria,1951,45,47
+BGR,Bulgaria,1952,44,47
+BGR,Bulgaria,1953,44,47
+BGR,Bulgaria,1954,44,47
+BGR,Bulgaria,1955,44,47
+BGR,Bulgaria,1956,44,47
+BGR,Bulgaria,1957,43,47
+BGR,Bulgaria,1958,43,47
+BGR,Bulgaria,1959,42,47
+BGR,Bulgaria,1960,43,45
+BGR,Bulgaria,1961,42,45
+BGR,Bulgaria,1962,42,46
+BGR,Bulgaria,1963,42,45
+BGR,Bulgaria,1964,41,46
+BGR,Bulgaria,1965,41,45
+BGR,Bulgaria,1966,40,44
+BGR,Bulgaria,1967,41,44
+BGR,Bulgaria,1968,41,44
+BGR,Bulgaria,1969,40,45
+BGR,Bulgaria,1970,40,44
+BGR,Bulgaria,1971,40,44
+BGR,Bulgaria,1972,40,43
+BGR,Bulgaria,1973,40,43
+BGR,Bulgaria,1974,40,43
+BGR,Bulgaria,1975,40,43
+BGR,Bulgaria,1976,40,43
+BGR,Bulgaria,1977,39,43
+BGR,Bulgaria,1978,39,43
+BGR,Bulgaria,1979,39,43
+BGR,Bulgaria,1980,39,43
+BGR,Bulgaria,1981,39,43
+BGR,Bulgaria,1982,38,43
+BGR,Bulgaria,1983,39,43
+BGR,Bulgaria,1984,39,42
+BGR,Bulgaria,1985,39,42
+BGR,Bulgaria,1986,39,43
+BGR,Bulgaria,1987,39,43
+BGR,Bulgaria,1988,39,42
+BGR,Bulgaria,1989,39,42
+BGR,Bulgaria,1990,38,42
+BGR,Bulgaria,1991,38,42
+BGR,Bulgaria,1992,38,42
+BGR,Bulgaria,1993,39,42
+BGR,Bulgaria,1994,38,42
+BGR,Bulgaria,1995,38,42
+BGR,Bulgaria,1996,38,42
+BGR,Bulgaria,1997,38,42
+BGR,Bulgaria,1998,38,42
+BGR,Bulgaria,1999,38,42
+BGR,Bulgaria,2000,38,42
+BGR,Bulgaria,2001,39,42
+BGR,Bulgaria,2002,38,42
+BGR,Bulgaria,2003,39,42
+BGR,Bulgaria,2004,39,42
+BGR,Bulgaria,2005,39,43
+BGR,Bulgaria,2006,39,42
+BGR,Bulgaria,2007,40,43
+BGR,Bulgaria,2008,40,43
+BGR,Bulgaria,2009,41,44
+BGR,Bulgaria,2010,41,43
+BGR,Bulgaria,2011,41,43
+BGR,Bulgaria,2012,41,43
+BGR,Bulgaria,2013,41,44
+BGR,Bulgaria,2014,41,44
+BGR,Bulgaria,2015,41,45
+BGR,Bulgaria,2016,42,45
+BGR,Bulgaria,2017,42,46
+BGR,Bulgaria,2018,42,45
+BGR,Bulgaria,2019,42,45
+BGR,Bulgaria,2020,42,46
+BGR,Bulgaria,2021,42,46
+BIH,Bosnia and Herzegovina,1950,50,50
+BIH,Bosnia and Herzegovina,1951,50,50
+BIH,Bosnia and Herzegovina,1952,50,50
+BIH,Bosnia and Herzegovina,1953,49,50
+BIH,Bosnia and Herzegovina,1954,49,50
+BIH,Bosnia and Herzegovina,1955,50,50
+BIH,Bosnia and Herzegovina,1956,49,50
+BIH,Bosnia and Herzegovina,1957,48,50
+BIH,Bosnia and Herzegovina,1958,48,50
+BIH,Bosnia and Herzegovina,1959,48,50
+BIH,Bosnia and Herzegovina,1960,47,50
+BIH,Bosnia and Herzegovina,1961,47,50
+BIH,Bosnia and Herzegovina,1962,47,49
+BIH,Bosnia and Herzegovina,1963,47,49
+BIH,Bosnia and Herzegovina,1964,47,49
+BIH,Bosnia and Herzegovina,1965,47,50
+BIH,Bosnia and Herzegovina,1966,46,50
+BIH,Bosnia and Herzegovina,1967,46,50
+BIH,Bosnia and Herzegovina,1968,46,49
+BIH,Bosnia and Herzegovina,1969,45,48
+BIH,Bosnia and Herzegovina,1970,45,48
+BIH,Bosnia and Herzegovina,1971,45,47
+BIH,Bosnia and Herzegovina,1972,45,47
+BIH,Bosnia and Herzegovina,1973,44,47
+BIH,Bosnia and Herzegovina,1974,44,46
+BIH,Bosnia and Herzegovina,1975,44,46
+BIH,Bosnia and Herzegovina,1976,44,47
+BIH,Bosnia and Herzegovina,1977,43,47
+BIH,Bosnia and Herzegovina,1978,43,46
+BIH,Bosnia and Herzegovina,1979,43,47
+BIH,Bosnia and Herzegovina,1980,43,46
+BIH,Bosnia and Herzegovina,1981,43,46
+BIH,Bosnia and Herzegovina,1982,42,46
+BIH,Bosnia and Herzegovina,1983,42,50
+BIH,Bosnia and Herzegovina,1984,42,45
+BIH,Bosnia and Herzegovina,1985,42,45
+BIH,Bosnia and Herzegovina,1986,41,45
+BIH,Bosnia and Herzegovina,1987,42,50
+BIH,Bosnia and Herzegovina,1988,41,50
+BIH,Bosnia and Herzegovina,1989,41,50
+BIH,Bosnia and Herzegovina,1990,41,50
+BIH,Bosnia and Herzegovina,1996,42,44
+BIH,Bosnia and Herzegovina,1997,41,44
+BIH,Bosnia and Herzegovina,1998,42,44
+BIH,Bosnia and Herzegovina,1999,41,43
+BIH,Bosnia and Herzegovina,2000,41,43
+BIH,Bosnia and Herzegovina,2001,41,43
+BIH,Bosnia and Herzegovina,2002,41,43
+BIH,Bosnia and Herzegovina,2003,41,43
+BIH,Bosnia and Herzegovina,2004,41,43
+BIH,Bosnia and Herzegovina,2005,40,43
+BIH,Bosnia and Herzegovina,2006,40,43
+BIH,Bosnia and Herzegovina,2007,40,43
+BIH,Bosnia and Herzegovina,2008,40,44
+BIH,Bosnia and Herzegovina,2009,40,43
+BIH,Bosnia and Herzegovina,2010,41,44
+BIH,Bosnia and Herzegovina,2011,40,44
+BIH,Bosnia and Herzegovina,2012,41,45
+BIH,Bosnia and Herzegovina,2013,41,45
+BIH,Bosnia and Herzegovina,2014,41,45
+BIH,Bosnia and Herzegovina,2015,41,45
+BIH,Bosnia and Herzegovina,2016,41,45
+BIH,Bosnia and Herzegovina,2017,42,45
+BIH,Bosnia and Herzegovina,2018,42,45
+BIH,Bosnia and Herzegovina,2019,42,45
+BIH,Bosnia and Herzegovina,2020,42,46
+BIH,Bosnia and Herzegovina,2021,42,46
+BIH,Bosnia and Herzegovina,2022,42,46
+BIH,Bosnia and Herzegovina,2023,43,46
+BIH,Bosnia and Herzegovina,2024,43,46
+BLR,Belarus,1960,46,50
+BLR,Belarus,1961,45,47
+BLR,Belarus,1962,45,47
+BLR,Belarus,1963,44,47
+BLR,Belarus,1964,44,47
+BLR,Belarus,1965,45,47
+BLR,Belarus,1966,44,48
+BLR,Belarus,1967,44,47
+BLR,Belarus,1968,44,48
+BLR,Belarus,1969,43,47
+BLR,Belarus,1970,43,46
+BLR,Belarus,1971,43,46
+BLR,Belarus,1972,43,46
+BLR,Belarus,1973,43,46
+BLR,Belarus,1974,43,45
+BLR,Belarus,1975,43,45
+BLR,Belarus,1976,42,45
+BLR,Belarus,1977,42,45
+BLR,Belarus,1978,42,45
+BLR,Belarus,1979,42,44
+BLR,Belarus,1980,41,45
+BLR,Belarus,1981,41,44
+BLR,Belarus,1982,41,44
+BLR,Belarus,1983,41,44
+BLR,Belarus,1984,41,44
+BLR,Belarus,1985,41,44
+BLR,Belarus,1986,41,44
+BLR,Belarus,1987,41,44
+BLR,Belarus,1988,41,44
+BLR,Belarus,1989,41,44
+BLR,Belarus,1990,40,43
+BLR,Belarus,1991,40,43
+BLR,Belarus,1992,40,43
+BLR,Belarus,1993,39,43
+BLR,Belarus,1994,39,43
+BLR,Belarus,1995,39,43
+BLR,Belarus,1996,39,43
+BLR,Belarus,1997,39,42
+BLR,Belarus,1998,39,43
+BLR,Belarus,1999,39,42
+BLR,Belarus,2000,39,43
+BLR,Belarus,2001,39,43
+BLR,Belarus,2002,39,43
+BLR,Belarus,2003,39,43
+BLR,Belarus,2004,39,43
+BLR,Belarus,2005,40,43
+BLR,Belarus,2006,40,43
+BLR,Belarus,2007,40,43
+BLR,Belarus,2008,40,43
+BLR,Belarus,2009,41,43
+BLR,Belarus,2010,41,43
+BLR,Belarus,2011,41,43
+BLR,Belarus,2012,41,44
+BLR,Belarus,2013,41,44
+BLR,Belarus,2014,41,44
+BLR,Belarus,2015,41,44
+BLR,Belarus,2016,42,44
+BLR,Belarus,2017,42,44
+BLR,Belarus,2018,42,44
+CAN,Canada,1921,46,47
+CAN,Canada,1922,46,48
+CAN,Canada,1923,46,49
+CAN,Canada,1924,46,48
+CAN,Canada,1925,46,48
+CAN,Canada,1926,46,48
+CAN,Canada,1927,46,49
+CAN,Canada,1928,46,48
+CAN,Canada,1929,46,48
+CAN,Canada,1930,46,48
+CAN,Canada,1931,46,48
+CAN,Canada,1932,46,48
+CAN,Canada,1933,46,48
+CAN,Canada,1934,46,48
+CAN,Canada,1935,46,48
+CAN,Canada,1936,46,48
+CAN,Canada,1937,46,48
+CAN,Canada,1938,46,48
+CAN,Canada,1939,46,48
+CAN,Canada,1940,46,48
+CAN,Canada,1941,45,48
+CAN,Canada,1942,45,48
+CAN,Canada,1943,45,47
+CAN,Canada,1944,45,47
+CAN,Canada,1945,45,47
+CAN,Canada,1946,46,48
+CAN,Canada,1947,45,47
+CAN,Canada,1948,45,47
+CAN,Canada,1949,45,47
+CAN,Canada,1950,45,47
+CAN,Canada,1951,45,47
+CAN,Canada,1952,45,47
+CAN,Canada,1953,45,47
+CAN,Canada,1954,45,47
+CAN,Canada,1955,45,47
+CAN,Canada,1956,45,47
+CAN,Canada,1957,45,47
+CAN,Canada,1958,45,47
+CAN,Canada,1959,45,47
+CAN,Canada,1960,45,47
+CAN,Canada,1961,45,47
+CAN,Canada,1962,45,47
+CAN,Canada,1963,45,47
+CAN,Canada,1964,45,47
+CAN,Canada,1965,45,47
+CAN,Canada,1966,44,47
+CAN,Canada,1967,44,46
+CAN,Canada,1968,44,46
+CAN,Canada,1969,43,46
+CAN,Canada,1970,43,46
+CAN,Canada,1971,43,45
+CAN,Canada,1972,42,45
+CAN,Canada,1973,42,45
+CAN,Canada,1974,41,44
+CAN,Canada,1975,41,45
+CAN,Canada,1976,41,44
+CAN,Canada,1977,40,44
+CAN,Canada,1978,40,44
+CAN,Canada,1979,40,44
+CAN,Canada,1980,40,43
+CAN,Canada,1981,40,43
+CAN,Canada,1982,40,43
+CAN,Canada,1983,40,43
+CAN,Canada,1984,40,43
+CAN,Canada,1985,40,43
+CAN,Canada,1986,40,43
+CAN,Canada,1987,40,43
+CAN,Canada,1988,40,43
+CAN,Canada,1989,40,43
+CAN,Canada,1990,41,43
+CAN,Canada,1991,41,43
+CAN,Canada,1992,41,43
+CAN,Canada,1993,41,44
+CAN,Canada,1994,41,44
+CAN,Canada,1995,41,44
+CAN,Canada,1996,41,44
+CAN,Canada,1997,41,44
+CAN,Canada,1998,41,44
+CAN,Canada,1999,41,44
+CAN,Canada,2000,41,44
+CAN,Canada,2001,41,44
+CAN,Canada,2002,42,44
+CAN,Canada,2003,42,44
+CAN,Canada,2004,42,44
+CAN,Canada,2005,42,44
+CAN,Canada,2006,42,44
+CAN,Canada,2007,42,44
+CAN,Canada,2008,42,45
+CAN,Canada,2009,42,45
+CAN,Canada,2010,42,45
+CAN,Canada,2011,42,45
+CAN,Canada,2012,43,45
+CAN,Canada,2013,43,45
+CAN,Canada,2014,43,45
+CAN,Canada,2015,43,45
+CAN,Canada,2016,43,45
+CAN,Canada,2017,43,45
+CAN,Canada,2018,43,46
+CAN,Canada,2019,43,46
+CAN,Canada,2020,43,46
+CAN,Canada,2021,43,46
+CAN,Canada,2022,43,45
+CAN,Canada,2023,43,46
+CAN,Canada,2024,44,47
+CHE,Switzerland,1932,45,47
+CHE,Switzerland,1933,45,47
+CHE,Switzerland,1934,45,47
+CHE,Switzerland,1935,45,47
+CHE,Switzerland,1936,44,47
+CHE,Switzerland,1937,44,47
+CHE,Switzerland,1938,44,46
+CHE,Switzerland,1939,44,46
+CHE,Switzerland,1940,44,46
+CHE,Switzerland,1941,44,47
+CHE,Switzerland,1942,44,47
+CHE,Switzerland,1943,44,47
+CHE,Switzerland,1944,45,47
+CHE,Switzerland,1945,45,47
+CHE,Switzerland,1946,45,47
+CHE,Switzerland,1947,45,46
+CHE,Switzerland,1948,44,47
+CHE,Switzerland,1949,44,46
+CHE,Switzerland,1950,44,46
+CHE,Switzerland,1951,44,47
+CHE,Switzerland,1952,44,46
+CHE,Switzerland,1953,44,47
+CHE,Switzerland,1954,44,46
+CHE,Switzerland,1955,44,46
+CHE,Switzerland,1956,44,46
+CHE,Switzerland,1957,44,46
+CHE,Switzerland,1958,44,46
+CHE,Switzerland,1959,44,47
+CHE,Switzerland,1960,44,46
+CHE,Switzerland,1961,44,47
+CHE,Switzerland,1962,44,46
+CHE,Switzerland,1963,44,46
+CHE,Switzerland,1964,44,46
+CHE,Switzerland,1965,44,46
+CHE,Switzerland,1966,44,46
+CHE,Switzerland,1967,44,46
+CHE,Switzerland,1968,43,46
+CHE,Switzerland,1969,43,46
+CHE,Switzerland,1970,43,45
+CHE,Switzerland,1971,42,46
+CHE,Switzerland,1972,42,45
+CHE,Switzerland,1973,42,45
+CHE,Switzerland,1974,42,45
+CHE,Switzerland,1975,41,44
+CHE,Switzerland,1976,41,45
+CHE,Switzerland,1977,41,45
+CHE,Switzerland,1978,41,44
+CHE,Switzerland,1979,40,44
+CHE,Switzerland,1980,41,44
+CHE,Switzerland,1981,40,43
+CHE,Switzerland,1982,40,44
+CHE,Switzerland,1983,40,44
+CHE,Switzerland,1984,40,43
+CHE,Switzerland,1985,40,43
+CHE,Switzerland,1986,40,43
+CHE,Switzerland,1987,40,43
+CHE,Switzerland,1988,41,43
+CHE,Switzerland,1989,41,43
+CHE,Switzerland,1990,41,43
+CHE,Switzerland,1991,41,44
+CHE,Switzerland,1992,41,43
+CHE,Switzerland,1993,41,43
+CHE,Switzerland,1994,41,43
+CHE,Switzerland,1995,41,43
+CHE,Switzerland,1996,41,44
+CHE,Switzerland,1997,41,43
+CHE,Switzerland,1998,41,44
+CHE,Switzerland,1999,41,44
+CHE,Switzerland,2000,41,44
+CHE,Switzerland,2001,41,44
+CHE,Switzerland,2002,42,44
+CHE,Switzerland,2003,42,44
+CHE,Switzerland,2004,42,44
+CHE,Switzerland,2005,42,44
+CHE,Switzerland,2006,42,44
+CHE,Switzerland,2007,42,45
+CHE,Switzerland,2008,42,45
+CHE,Switzerland,2009,42,45
+CHE,Switzerland,2010,43,45
+CHE,Switzerland,2011,43,45
+CHE,Switzerland,2012,43,45
+CHE,Switzerland,2013,43,46
+CHE,Switzerland,2014,43,46
+CHE,Switzerland,2015,43,45
+CHE,Switzerland,2016,43,46
+CHE,Switzerland,2017,43,46
+CHE,Switzerland,2018,43,46
+CHE,Switzerland,2019,43,46
+CHE,Switzerland,2020,43,46
+CHE,Switzerland,2021,43,46
+CHE,Switzerland,2022,44,46
+CHE,Switzerland,2023,43,46
+CHE,Switzerland,2024,43,46
+CZE,Czech Republic,1945,44,46
+CZE,Czech Republic,1946,44,46
+CZE,Czech Republic,1947,44,46
+CZE,Czech Republic,1948,44,46
+CZE,Czech Republic,1949,44,47
+CZE,Czech Republic,1950,44,46
+CZE,Czech Republic,1951,44,46
+CZE,Czech Republic,1952,44,46
+CZE,Czech Republic,1953,44,46
+CZE,Czech Republic,1954,43,46
+CZE,Czech Republic,1955,43,46
+CZE,Czech Republic,1956,43,46
+CZE,Czech Republic,1957,43,45
+CZE,Czech Republic,1958,42,45
+CZE,Czech Republic,1959,41,44
+CZE,Czech Republic,1960,41,44
+CZE,Czech Republic,1961,41,44
+CZE,Czech Republic,1962,41,44
+CZE,Czech Republic,1963,41,44
+CZE,Czech Republic,1964,41,44
+CZE,Czech Republic,1965,41,44
+CZE,Czech Republic,1966,41,44
+CZE,Czech Republic,1967,40,44
+CZE,Czech Republic,1968,40,43
+CZE,Czech Republic,1969,40,43
+CZE,Czech Republic,1970,40,43
+CZE,Czech Republic,1971,40,43
+CZE,Czech Republic,1972,40,43
+CZE,Czech Republic,1973,40,43
+CZE,Czech Republic,1974,40,43
+CZE,Czech Republic,1975,40,43
+CZE,Czech Republic,1976,39,43
+CZE,Czech Republic,1977,40,43
+CZE,Czech Republic,1978,40,43
+CZE,Czech Republic,1979,39,43
+CZE,Czech Republic,1980,39,43
+CZE,Czech Republic,1981,39,43
+CZE,Czech Republic,1982,39,42
+CZE,Czech Republic,1983,39,43
+CZE,Czech Republic,1984,38,42
+CZE,Czech Republic,1985,39,42
+CZE,Czech Republic,1986,39,42
+CZE,Czech Republic,1987,38,42
+CZE,Czech Republic,1988,39,42
+CZE,Czech Republic,1989,39,42
+CZE,Czech Republic,1990,39,42
+CZE,Czech Republic,1991,39,42
+CZE,Czech Republic,1992,39,42
+CZE,Czech Republic,1993,39,42
+CZE,Czech Republic,1994,39,42
+CZE,Czech Republic,1995,39,42
+CZE,Czech Republic,1996,39,42
+CZE,Czech Republic,1997,39,42
+CZE,Czech Republic,1998,39,42
+CZE,Czech Republic,1999,39,42
+CZE,Czech Republic,2000,39,42
+CZE,Czech Republic,2001,40,43
+CZE,Czech Republic,2002,40,43
+CZE,Czech Republic,2003,40,43
+CZE,Czech Republic,2004,40,43
+CZE,Czech Republic,2005,40,43
+CZE,Czech Republic,2006,41,44
+CZE,Czech Republic,2007,41,44
+CZE,Czech Republic,2008,41,44
+CZE,Czech Republic,2009,41,44
+CZE,Czech Republic,2010,41,44
+CZE,Czech Republic,2011,41,44
+CZE,Czech Republic,2012,42,44
+CZE,Czech Republic,2013,42,44
+CZE,Czech Republic,2014,42,45
+CZE,Czech Republic,2015,42,44
+CZE,Czech Republic,2016,42,44
+CZE,Czech Republic,2017,42,45
+CZE,Czech Republic,2018,42,45
+CZE,Czech Republic,2019,42,45
+CZE,Czech Republic,2020,43,45
+CZE,Czech Republic,2021,43,45
+CZE,Czech Republic,2022,43,44
+CZE,Czech Republic,2023,43,44
+CZE,Czech Republic,2024,42,44
+DEUTE,"Germany, East",1952,43,46
+DEUTE,"Germany, East",1953,43,46
+DEUTE,"Germany, East",1954,43,46
+DEUTE,"Germany, East",1955,43,45
+DEUTE,"Germany, East",1956,43,45
+DEUTE,"Germany, East",1957,43,45
+DEUTE,"Germany, East",1958,42,45
+DEUTE,"Germany, East",1959,43,45
+DEUTE,"Germany, East",1960,43,45
+DEUTE,"Germany, East",1961,42,45
+DEUTE,"Germany, East",1962,43,44
+DEUTE,"Germany, East",1963,43,45
+DEUTE,"Germany, East",1964,43,45
+DEUTE,"Germany, East",1965,42,45
+DEUTE,"Germany, East",1966,42,44
+DEUTE,"Germany, East",1967,41,44
+DEUTE,"Germany, East",1968,41,44
+DEUTE,"Germany, East",1969,41,44
+DEUTE,"Germany, East",1970,41,44
+DEUTE,"Germany, East",1971,41,44
+DEUTE,"Germany, East",1972,40,43
+DEUTE,"Germany, East",1973,40,43
+DEUTE,"Germany, East",1974,39,43
+DEUTE,"Germany, East",1975,39,43
+DEUTE,"Germany, East",1976,39,43
+DEUTE,"Germany, East",1977,39,43
+DEUTE,"Germany, East",1978,39,43
+DEUTE,"Germany, East",1979,39,43
+DEUTE,"Germany, East",1980,38,42
+DEUTE,"Germany, East",1981,38,42
+DEUTE,"Germany, East",1982,38,42
+DEUTE,"Germany, East",1983,38,42
+DEUTE,"Germany, East",1984,38,42
+DEUTE,"Germany, East",1985,38,42
+DEUTE,"Germany, East",1986,38,42
+DEUTE,"Germany, East",1987,38,42
+DEUTE,"Germany, East",1988,38,42
+DEUTE,"Germany, East",1989,38,42
+DEUTE,"Germany, East",1990,38,42
+DEUTE,"Germany, East",1991,37,42
+DEUTE,"Germany, East",1992,37,41
+DEUTE,"Germany, East",1993,37,42
+DEUTE,"Germany, East",1994,37,42
+DEUTE,"Germany, East",1995,38,42
+DEUTE,"Germany, East",1996,39,42
+DEUTE,"Germany, East",1997,39,42
+DEUTE,"Germany, East",1998,39,42
+DEUTE,"Germany, East",1999,39,43
+DEUTE,"Germany, East",2000,40,43
+DEUTE,"Germany, East",2001,40,43
+DEUTE,"Germany, East",2002,40,43
+DEUTE,"Germany, East",2003,40,43
+DEUTE,"Germany, East",2004,40,43
+DEUTE,"Germany, East",2005,40,43
+DEUTE,"Germany, East",2006,41,43
+DEUTE,"Germany, East",2007,41,43
+DEUTE,"Germany, East",2008,41,44
+DEUTE,"Germany, East",2009,41,44
+DEUTE,"Germany, East",2010,41,44
+DEUTE,"Germany, East",2011,42,44
+DEUTE,"Germany, East",2012,42,44
+DEUTE,"Germany, East",2013,42,44
+DEUTE,"Germany, East",2014,42,44
+DEUTE,"Germany, East",2015,42,45
+DEUTE,"Germany, East",2016,42,45
+DEUTE,"Germany, East",2017,42,45
+DEUTW,"Germany, West",1950,44,46
+DEUTW,"Germany, West",1951,44,46
+DEUTW,"Germany, West",1952,44,46
+DEUTW,"Germany, West",1953,44,46
+DEUTW,"Germany, West",1954,43,46
+DEUTW,"Germany, West",1955,43,46
+DEUTW,"Germany, West",1956,43,46
+DEUTW,"Germany, West",1957,43,46
+DEUTW,"Germany, West",1958,43,46
+DEUTW,"Germany, West",1959,43,46
+DEUTW,"Germany, West",1960,43,46
+DEUTW,"Germany, West",1961,43,45
+DEUTW,"Germany, West",1962,43,45
+DEUTW,"Germany, West",1963,43,45
+DEUTW,"Germany, West",1964,43,46
+DEUTW,"Germany, West",1965,43,46
+DEUTW,"Germany, West",1966,43,45
+DEUTW,"Germany, West",1967,43,45
+DEUTW,"Germany, West",1968,43,45
+DEUTW,"Germany, West",1969,43,45
+DEUTW,"Germany, West",1970,43,45
+DEUTW,"Germany, West",1971,43,45
+DEUTW,"Germany, West",1972,42,45
+DEUTW,"Germany, West",1973,42,45
+DEUTW,"Germany, West",1974,42,45
+DEUTW,"Germany, West",1975,42,44
+DEUTW,"Germany, West",1976,41,44
+DEUTW,"Germany, West",1977,41,44
+DEUTW,"Germany, West",1978,40,44
+DEUTW,"Germany, West",1979,40,44
+DEUTW,"Germany, West",1980,40,44
+DEUTW,"Germany, West",1981,40,43
+DEUTW,"Germany, West",1982,40,43
+DEUTW,"Germany, West",1983,40,43
+DEUTW,"Germany, West",1984,40,43
+DEUTW,"Germany, West",1985,40,43
+DEUTW,"Germany, West",1986,40,43
+DEUTW,"Germany, West",1987,40,43
+DEUTW,"Germany, West",1988,40,43
+DEUTW,"Germany, West",1989,40,43
+DEUTW,"Germany, West",1990,41,44
+DEUTW,"Germany, West",1991,41,43
+DEUTW,"Germany, West",1992,41,43
+DEUTW,"Germany, West",1993,41,43
+DEUTW,"Germany, West",1994,41,43
+DEUTW,"Germany, West",1995,41,43
+DEUTW,"Germany, West",1996,41,43
+DEUTW,"Germany, West",1997,41,44
+DEUTW,"Germany, West",1998,41,44
+DEUTW,"Germany, West",1999,41,44
+DEUTW,"Germany, West",2000,41,44
+DEUTW,"Germany, West",2001,41,44
+DEUTW,"Germany, West",2002,41,44
+DEUTW,"Germany, West",2003,41,44
+DEUTW,"Germany, West",2004,41,44
+DEUTW,"Germany, West",2005,42,44
+DEUTW,"Germany, West",2006,42,44
+DEUTW,"Germany, West",2007,42,44
+DEUTW,"Germany, West",2008,42,44
+DEUTW,"Germany, West",2009,42,44
+DEUTW,"Germany, West",2010,42,45
+DEUTW,"Germany, West",2011,42,45
+DEUTW,"Germany, West",2012,42,45
+DEUTW,"Germany, West",2013,42,45
+DEUTW,"Germany, West",2014,42,45
+DEUTW,"Germany, West",2015,43,45
+DEUTW,"Germany, West",2016,43,45
+DEUTW,"Germany, West",2017,43,45
+DNK,Denmark,1901,47,48
+DNK,Denmark,1902,47,48
+DNK,Denmark,1903,47,48
+DNK,Denmark,1904,47,48
+DNK,Denmark,1905,47,48
+DNK,Denmark,1906,47,48
+DNK,Denmark,1907,47,48
+DNK,Denmark,1908,47,48
+DNK,Denmark,1909,47,48
+DNK,Denmark,1910,47,48
+DNK,Denmark,1911,47,48
+DNK,Denmark,1912,47,48
+DNK,Denmark,1913,46,48
+DNK,Denmark,1914,46,48
+DNK,Denmark,1915,46,48
+DNK,Denmark,1916,46,48
+DNK,Denmark,1917,46,47
+DNK,Denmark,1918,46,47
+DNK,Denmark,1919,46,47
+DNK,Denmark,1920,46,48
+DNK,Denmark,1921,46,48
+DNK,Denmark,1922,45,47
+DNK,Denmark,1923,46,47
+DNK,Denmark,1924,45,47
+DNK,Denmark,1925,45,47
+DNK,Denmark,1926,45,48
+DNK,Denmark,1927,45,47
+DNK,Denmark,1928,45,47
+DNK,Denmark,1929,45,47
+DNK,Denmark,1930,45,46
+DNK,Denmark,1931,45,47
+DNK,Denmark,1932,45,48
+DNK,Denmark,1933,45,47
+DNK,Denmark,1934,45,46
+DNK,Denmark,1935,45,47
+DNK,Denmark,1936,44,47
+DNK,Denmark,1937,45,46
+DNK,Denmark,1938,44,47
+DNK,Denmark,1939,44,47
+DNK,Denmark,1940,44,46
+DNK,Denmark,1941,44,46
+DNK,Denmark,1942,44,47
+DNK,Denmark,1943,44,46
+DNK,Denmark,1944,44,46
+DNK,Denmark,1945,44,46
+DNK,Denmark,1946,44,47
+DNK,Denmark,1947,44,46
+DNK,Denmark,1948,44,47
+DNK,Denmark,1949,44,46
+DNK,Denmark,1950,44,46
+DNK,Denmark,1951,44,46
+DNK,Denmark,1952,44,46
+DNK,Denmark,1953,43,45
+DNK,Denmark,1954,43,46
+DNK,Denmark,1955,44,46
+DNK,Denmark,1956,43,46
+DNK,Denmark,1957,43,46
+DNK,Denmark,1958,43,45
+DNK,Denmark,1959,43,46
+DNK,Denmark,1960,43,45
+DNK,Denmark,1961,43,46
+DNK,Denmark,1962,43,45
+DNK,Denmark,1963,43,45
+DNK,Denmark,1964,43,45
+DNK,Denmark,1965,43,46
+DNK,Denmark,1966,42,45
+DNK,Denmark,1967,42,45
+DNK,Denmark,1968,42,44
+DNK,Denmark,1969,42,45
+DNK,Denmark,1970,42,44
+DNK,Denmark,1971,41,44
+DNK,Denmark,1972,41,44
+DNK,Denmark,1973,40,43
+DNK,Denmark,1974,41,43
+DNK,Denmark,1975,40,43
+DNK,Denmark,1976,40,43
+DNK,Denmark,1977,40,43
+DNK,Denmark,1978,39,43
+DNK,Denmark,1979,39,43
+DNK,Denmark,1980,40,43
+DNK,Denmark,1981,39,43
+DNK,Denmark,1982,39,43
+DNK,Denmark,1983,40,43
+DNK,Denmark,1984,40,43
+DNK,Denmark,1985,40,43
+DNK,Denmark,1986,40,43
+DNK,Denmark,1987,40,43
+DNK,Denmark,1988,40,43
+DNK,Denmark,1989,40,43
+DNK,Denmark,1990,41,44
+DNK,Denmark,1991,41,43
+DNK,Denmark,1992,41,43
+DNK,Denmark,1993,41,44
+DNK,Denmark,1994,41,43
+DNK,Denmark,1995,41,43
+DNK,Denmark,1996,41,44
+DNK,Denmark,1997,41,44
+DNK,Denmark,1998,41,44
+DNK,Denmark,1999,41,43
+DNK,Denmark,2000,42,44
+DNK,Denmark,2001,41,44
+DNK,Denmark,2002,42,44
+DNK,Denmark,2003,42,44
+DNK,Denmark,2004,42,44
+DNK,Denmark,2005,42,44
+DNK,Denmark,2006,42,44
+DNK,Denmark,2007,42,44
+DNK,Denmark,2008,42,45
+DNK,Denmark,2009,42,45
+DNK,Denmark,2010,42,44
+DNK,Denmark,2011,42,45
+DNK,Denmark,2012,42,45
+DNK,Denmark,2013,42,45
+DNK,Denmark,2014,43,45
+DNK,Denmark,2015,43,45
+DNK,Denmark,2016,43,45
+DNK,Denmark,2017,43,45
+DNK,Denmark,2018,43,46
+DNK,Denmark,2019,43,46
+DNK,Denmark,2020,43,46
+DNK,Denmark,2021,43,46
+DNK,Denmark,2022,43,46
+DNK,Denmark,2023,43,46
+DNK,Denmark,2024,43,46
+DNK,Denmark,2025,43,46
+ESP,Spain,1922,50,51
+ESP,Spain,1923,50,51
+ESP,Spain,1924,50,51
+ESP,Spain,1925,50,51
+ESP,Spain,1926,50,51
+ESP,Spain,1927,49,51
+ESP,Spain,1928,50,51
+ESP,Spain,1929,50,51
+ESP,Spain,1930,50,51
+ESP,Spain,1931,48,51
+ESP,Spain,1932,48,51
+ESP,Spain,1933,50,51
+ESP,Spain,1934,50,51
+ESP,Spain,1935,50,51
+ESP,Spain,1936,50,51
+ESP,Spain,1937,47,51
+ESP,Spain,1938,47,51
+ESP,Spain,1939,47,51
+ESP,Spain,1940,47,51
+ESP,Spain,1941,46,51
+ESP,Spain,1942,47,51
+ESP,Spain,1943,47,51
+ESP,Spain,1944,47,51
+ESP,Spain,1945,47,51
+ESP,Spain,1946,47,51
+ESP,Spain,1947,46,51
+ESP,Spain,1948,46,51
+ESP,Spain,1949,46,50
+ESP,Spain,1950,45,51
+ESP,Spain,1951,45,51
+ESP,Spain,1952,45,51
+ESP,Spain,1953,45,51
+ESP,Spain,1954,45,51
+ESP,Spain,1955,45,51
+ESP,Spain,1956,45,50
+ESP,Spain,1957,45,50
+ESP,Spain,1958,45,50
+ESP,Spain,1959,45,50
+ESP,Spain,1960,45,50
+ESP,Spain,1961,45,49
+ESP,Spain,1962,45,50
+ESP,Spain,1963,45,49
+ESP,Spain,1964,45,50
+ESP,Spain,1965,45,51
+ESP,Spain,1966,45,50
+ESP,Spain,1967,45,51
+ESP,Spain,1968,45,50
+ESP,Spain,1969,44,49
+ESP,Spain,1970,44,50
+ESP,Spain,1971,44,48
+ESP,Spain,1972,44,48
+ESP,Spain,1973,44,48
+ESP,Spain,1974,44,48
+ESP,Spain,1975,44,46
+ESP,Spain,1976,44,47
+ESP,Spain,1977,44,47
+ESP,Spain,1978,44,47
+ESP,Spain,1979,44,46
+ESP,Spain,1980,44,46
+ESP,Spain,1981,43,46
+ESP,Spain,1982,43,46
+ESP,Spain,1983,43,46
+ESP,Spain,1984,43,46
+ESP,Spain,1985,43,46
+ESP,Spain,1986,43,45
+ESP,Spain,1987,42,45
+ESP,Spain,1988,42,45
+ESP,Spain,1989,42,45
+ESP,Spain,1990,41,45
+ESP,Spain,1991,42,44
+ESP,Spain,1992,41,44
+ESP,Spain,1993,41,44
+ESP,Spain,1994,41,44
+ESP,Spain,1995,41,44
+ESP,Spain,1996,41,44
+ESP,Spain,1997,41,44
+ESP,Spain,1998,41,44
+ESP,Spain,1999,41,44
+ESP,Spain,2000,42,44
+ESP,Spain,2001,42,44
+ESP,Spain,2002,42,45
+ESP,Spain,2003,42,45
+ESP,Spain,2004,42,45
+ESP,Spain,2005,42,45
+ESP,Spain,2006,42,45
+ESP,Spain,2007,42,45
+ESP,Spain,2008,43,45
+ESP,Spain,2009,43,46
+ESP,Spain,2010,43,46
+ESP,Spain,2011,43,46
+ESP,Spain,2012,43,46
+ESP,Spain,2013,43,46
+ESP,Spain,2014,43,46
+ESP,Spain,2015,44,46
+ESP,Spain,2016,44,46
+ESP,Spain,2017,44,47
+ESP,Spain,2018,44,47
+ESP,Spain,2019,44,47
+ESP,Spain,2020,44,47
+ESP,Spain,2021,44,47
+ESP,Spain,2022,44,47
+ESP,Spain,2023,44,47
+ESP,Spain,2024,44,47
+EST,Estonia,1959,43,46
+EST,Estonia,1960,43,46
+EST,Estonia,1961,43,46
+EST,Estonia,1962,43,45
+EST,Estonia,1963,43,45
+EST,Estonia,1964,43,45
+EST,Estonia,1965,43,45
+EST,Estonia,1966,43,46
+EST,Estonia,1967,42,45
+EST,Estonia,1968,42,45
+EST,Estonia,1969,42,45
+EST,Estonia,1970,42,45
+EST,Estonia,1971,42,45
+EST,Estonia,1972,42,45
+EST,Estonia,1973,42,44
+EST,Estonia,1974,42,45
+EST,Estonia,1975,42,45
+EST,Estonia,1976,41,44
+EST,Estonia,1977,42,44
+EST,Estonia,1978,42,45
+EST,Estonia,1979,41,44
+EST,Estonia,1980,41,44
+EST,Estonia,1981,41,44
+EST,Estonia,1982,42,45
+EST,Estonia,1983,41,44
+EST,Estonia,1984,41,44
+EST,Estonia,1985,41,44
+EST,Estonia,1986,41,43
+EST,Estonia,1987,41,44
+EST,Estonia,1988,42,43
+EST,Estonia,1989,41,43
+EST,Estonia,1990,41,44
+EST,Estonia,1991,41,43
+EST,Estonia,1992,41,44
+EST,Estonia,1993,40,44
+EST,Estonia,1994,40,43
+EST,Estonia,1995,40,43
+EST,Estonia,1996,40,43
+EST,Estonia,1997,41,44
+EST,Estonia,1998,41,44
+EST,Estonia,1999,41,44
+EST,Estonia,2000,41,44
+EST,Estonia,2001,41,43
+EST,Estonia,2002,41,44
+EST,Estonia,2003,41,45
+EST,Estonia,2004,41,43
+EST,Estonia,2005,42,44
+EST,Estonia,2006,42,44
+EST,Estonia,2007,42,44
+EST,Estonia,2008,42,45
+EST,Estonia,2009,42,45
+EST,Estonia,2010,42,44
+EST,Estonia,2011,42,45
+EST,Estonia,2012,43,45
+EST,Estonia,2013,42,45
+EST,Estonia,2014,42,45
+EST,Estonia,2015,43,45
+EST,Estonia,2016,43,45
+EST,Estonia,2017,43,45
+EST,Estonia,2018,43,46
+EST,Estonia,2019,44,46
+EST,Estonia,2020,43,46
+EST,Estonia,2021,44,46
+EST,Estonia,2022,43,47
+EST,Estonia,2023,43,47
+EST,Estonia,2024,43,48
+FIN,Finland,1866,47,49
+FIN,Finland,1867,47,49
+FIN,Finland,1868,47,48
+FIN,Finland,1869,47,49
+FIN,Finland,1870,48,49
+FIN,Finland,1871,48,49
+FIN,Finland,1872,47,49
+FIN,Finland,1873,47,49
+FIN,Finland,1874,48,49
+FIN,Finland,1875,48,49
+FIN,Finland,1876,47,49
+FIN,Finland,1877,48,49
+FIN,Finland,1878,48,49
+FIN,Finland,1879,48,49
+FIN,Finland,1880,48,49
+FIN,Finland,1881,48,49
+FIN,Finland,1882,48,49
+FIN,Finland,1883,48,49
+FIN,Finland,1884,48,49
+FIN,Finland,1885,48,49
+FIN,Finland,1886,48,49
+FIN,Finland,1887,48,49
+FIN,Finland,1888,48,49
+FIN,Finland,1889,48,49
+FIN,Finland,1890,48,49
+FIN,Finland,1891,48,49
+FIN,Finland,1892,47,49
+FIN,Finland,1893,47,49
+FIN,Finland,1894,47,49
+FIN,Finland,1895,48,49
+FIN,Finland,1896,48,49
+FIN,Finland,1897,47,49
+FIN,Finland,1898,48,49
+FIN,Finland,1899,48,49
+FIN,Finland,1900,47,49
+FIN,Finland,1901,47,49
+FIN,Finland,1902,47,49
+FIN,Finland,1903,47,49
+FIN,Finland,1904,47,49
+FIN,Finland,1905,47,49
+FIN,Finland,1906,47,49
+FIN,Finland,1907,47,49
+FIN,Finland,1908,47,49
+FIN,Finland,1909,47,49
+FIN,Finland,1910,47,49
+FIN,Finland,1911,47,49
+FIN,Finland,1912,47,49
+FIN,Finland,1913,47,49
+FIN,Finland,1914,47,49
+FIN,Finland,1915,47,49
+FIN,Finland,1916,47,49
+FIN,Finland,1917,47,49
+FIN,Finland,1918,47,48
+FIN,Finland,1919,47,48
+FIN,Finland,1920,47,48
+FIN,Finland,1921,47,49
+FIN,Finland,1922,47,48
+FIN,Finland,1923,47,48
+FIN,Finland,1924,47,48
+FIN,Finland,1925,47,48
+FIN,Finland,1926,47,48
+FIN,Finland,1927,47,48
+FIN,Finland,1928,47,48
+FIN,Finland,1929,47,48
+FIN,Finland,1930,47,48
+FIN,Finland,1931,47,48
+FIN,Finland,1932,46,48
+FIN,Finland,1933,46,48
+FIN,Finland,1934,46,48
+FIN,Finland,1935,46,48
+FIN,Finland,1936,46,48
+FIN,Finland,1937,46,48
+FIN,Finland,1938,46,48
+FIN,Finland,1939,46,48
+FIN,Finland,1940,46,48
+FIN,Finland,1941,46,48
+FIN,Finland,1942,46,48
+FIN,Finland,1943,46,48
+FIN,Finland,1944,46,48
+FIN,Finland,1945,46,48
+FIN,Finland,1946,46,48
+FIN,Finland,1947,46,48
+FIN,Finland,1948,46,48
+FIN,Finland,1949,46,48
+FIN,Finland,1950,46,48
+FIN,Finland,1951,46,48
+FIN,Finland,1952,46,48
+FIN,Finland,1953,45,47
+FIN,Finland,1954,45,47
+FIN,Finland,1955,45,47
+FIN,Finland,1956,45,47
+FIN,Finland,1957,45,47
+FIN,Finland,1958,45,47
+FIN,Finland,1959,45,47
+FIN,Finland,1960,45,47
+FIN,Finland,1961,45,47
+FIN,Finland,1962,45,47
+FIN,Finland,1963,45,47
+FIN,Finland,1964,45,47
+FIN,Finland,1965,45,47
+FIN,Finland,1966,44,47
+FIN,Finland,1967,44,46
+FIN,Finland,1968,44,46
+FIN,Finland,1969,43,46
+FIN,Finland,1970,43,46
+FIN,Finland,1971,42,45
+FIN,Finland,1972,42,45
+FIN,Finland,1973,42,45
+FIN,Finland,1974,41,45
+FIN,Finland,1975,42,45
+FIN,Finland,1976,41,45
+FIN,Finland,1977,42,45
+FIN,Finland,1978,41,44
+FIN,Finland,1979,41,44
+FIN,Finland,1980,42,45
+FIN,Finland,1981,42,45
+FIN,Finland,1982,42,45
+FIN,Finland,1983,42,45
+FIN,Finland,1984,42,45
+FIN,Finland,1985,42,45
+FIN,Finland,1986,42,44
+FIN,Finland,1987,42,45
+FIN,Finland,1988,42,45
+FIN,Finland,1989,42,45
+FIN,Finland,1990,42,45
+FIN,Finland,1991,42,45
+FIN,Finland,1992,42,45
+FIN,Finland,1993,42,45
+FIN,Finland,1994,42,45
+FIN,Finland,1995,42,45
+FIN,Finland,1996,42,45
+FIN,Finland,1997,42,45
+FIN,Finland,1998,42,45
+FIN,Finland,1999,43,45
+FIN,Finland,2000,43,45
+FIN,Finland,2001,43,45
+FIN,Finland,2002,43,46
+FIN,Finland,2003,43,45
+FIN,Finland,2004,43,45
+FIN,Finland,2005,43,45
+FIN,Finland,2006,43,45
+FIN,Finland,2007,43,45
+FIN,Finland,2008,43,45
+FIN,Finland,2009,43,45
+FIN,Finland,2010,43,46
+FIN,Finland,2011,43,45
+FIN,Finland,2012,43,45
+FIN,Finland,2013,43,45
+FIN,Finland,2014,43,45
+FIN,Finland,2015,43,46
+FIN,Finland,2016,43,45
+FIN,Finland,2017,43,46
+FIN,Finland,2018,43,45
+FIN,Finland,2019,43,46
+FIN,Finland,2020,43,46
+FIN,Finland,2021,43,46
+FIN,Finland,2022,44,46
+FIN,Finland,2023,43,46
+FIN,Finland,2024,43,46
+FRA,France,1892,46,48
+FRA,France,1893,46,48
+FRA,France,1894,46,48
+FRA,France,1895,46,48
+FRA,France,1896,46,48
+FRA,France,1897,46,48
+FRA,France,1898,46,48
+FRA,France,1899,46,48
+FRA,France,1900,46,48
+FRA,France,1901,46,48
+FRA,France,1902,46,48
+FRA,France,1903,46,48
+FRA,France,1904,46,48
+FRA,France,1905,46,48
+FRA,France,1906,46,48
+FRA,France,1907,45,47
+FRA,France,1908,45,47
+FRA,France,1909,45,47
+FRA,France,1910,45,47
+FRA,France,1911,45,47
+FRA,France,1912,45,47
+FRA,France,1913,45,47
+FRA,France,1914,45,47
+FRA,France,1915,45,47
+FRA,France,1916,45,47
+FRA,France,1917,45,47
+FRA,France,1918,45,47
+FRA,France,1919,45,47
+FRA,France,1920,45,47
+FRA,France,1921,45,47
+FRA,France,1922,45,47
+FRA,France,1923,45,47
+FRA,France,1924,45,47
+FRA,France,1925,45,47
+FRA,France,1926,45,47
+FRA,France,1927,45,47
+FRA,France,1928,45,47
+FRA,France,1929,45,47
+FRA,France,1930,45,47
+FRA,France,1931,45,47
+FRA,France,1932,45,47
+FRA,France,1933,44,47
+FRA,France,1934,44,47
+FRA,France,1935,44,47
+FRA,France,1936,44,47
+FRA,France,1937,44,47
+FRA,France,1938,44,46
+FRA,France,1939,44,46
+FRA,France,1940,44,47
+FRA,France,1941,44,47
+FRA,France,1942,45,47
+FRA,France,1943,45,47
+FRA,France,1944,45,47
+FRA,France,1945,45,47
+FRA,France,1946,44,46
+FRA,France,1947,44,46
+FRA,France,1948,44,47
+FRA,France,1949,44,46
+FRA,France,1950,44,46
+FRA,France,1951,44,46
+FRA,France,1952,44,46
+FRA,France,1953,44,46
+FRA,France,1954,44,46
+FRA,France,1955,44,46
+FRA,France,1956,44,46
+FRA,France,1957,44,46
+FRA,France,1958,44,46
+FRA,France,1959,44,46
+FRA,France,1960,44,46
+FRA,France,1961,44,46
+FRA,France,1962,44,46
+FRA,France,1963,44,46
+FRA,France,1964,44,46
+FRA,France,1965,43,46
+FRA,France,1966,43,46
+FRA,France,1967,43,46
+FRA,France,1968,43,46
+FRA,France,1969,43,46
+FRA,France,1970,43,46
+FRA,France,1971,43,46
+FRA,France,1972,43,45
+FRA,France,1973,43,45
+FRA,France,1974,43,45
+FRA,France,1975,42,45
+FRA,France,1976,42,45
+FRA,France,1977,41,44
+FRA,France,1978,41,44
+FRA,France,1979,41,44
+FRA,France,1980,41,44
+FRA,France,1981,41,44
+FRA,France,1982,41,44
+FRA,France,1983,41,44
+FRA,France,1984,41,44
+FRA,France,1985,41,44
+FRA,France,1986,41,44
+FRA,France,1987,41,44
+FRA,France,1988,41,44
+FRA,France,1989,41,44
+FRA,France,1990,41,44
+FRA,France,1991,41,44
+FRA,France,1992,41,44
+FRA,France,1993,42,44
+FRA,France,1994,42,44
+FRA,France,1995,42,44
+FRA,France,1996,42,44
+FRA,France,1997,42,44
+FRA,France,1998,42,44
+FRA,France,1999,42,44
+FRA,France,2000,42,44
+FRA,France,2001,42,45
+FRA,France,2002,42,45
+FRA,France,2003,42,45
+FRA,France,2004,42,45
+FRA,France,2005,43,45
+FRA,France,2006,43,45
+FRA,France,2007,43,45
+FRA,France,2008,43,45
+FRA,France,2009,43,45
+FRA,France,2010,43,45
+FRA,France,2011,43,45
+FRA,France,2012,43,45
+FRA,France,2013,43,45
+FRA,France,2014,43,46
+FRA,France,2015,43,45
+FRA,France,2016,43,46
+FRA,France,2017,43,46
+FRA,France,2018,43,46
+FRA,France,2019,43,46
+FRA,France,2020,43,46
+FRA,France,2021,43,46
+FRA,France,2022,43,46
+FRA,France,2023,43,46
+GBRTENW,"UK, England and Wales",1891,44,44
+GBRTENW,"UK, England and Wales",1901,44,44
+GBRTENW,"UK, England and Wales",1911,46,48
+GBRTENW,"UK, England and Wales",1912,46,48
+GBRTENW,"UK, England and Wales",1913,46,48
+GBRTENW,"UK, England and Wales",1914,46,48
+GBRTENW,"UK, England and Wales",1915,46,48
+GBRTENW,"UK, England and Wales",1916,45,48
+GBRTENW,"UK, England and Wales",1917,45,47
+GBRTENW,"UK, England and Wales",1918,45,47
+GBRTENW,"UK, England and Wales",1919,45,47
+GBRTENW,"UK, England and Wales",1920,46,48
+GBRTENW,"UK, England and Wales",1921,46,48
+GBRTENW,"UK, England and Wales",1922,45,47
+GBRTENW,"UK, England and Wales",1923,45,47
+GBRTENW,"UK, England and Wales",1924,45,47
+GBRTENW,"UK, England and Wales",1925,45,47
+GBRTENW,"UK, England and Wales",1926,45,47
+GBRTENW,"UK, England and Wales",1927,45,47
+GBRTENW,"UK, England and Wales",1928,45,47
+GBRTENW,"UK, England and Wales",1929,45,47
+GBRTENW,"UK, England and Wales",1930,45,47
+GBRTENW,"UK, England and Wales",1931,45,47
+GBRTENW,"UK, England and Wales",1932,44,47
+GBRTENW,"UK, England and Wales",1933,44,47
+GBRTENW,"UK, England and Wales",1934,44,47
+GBRTENW,"UK, England and Wales",1935,44,47
+GBRTENW,"UK, England and Wales",1936,44,47
+GBRTENW,"UK, England and Wales",1937,44,47
+GBRTENW,"UK, England and Wales",1938,44,46
+GBRTENW,"UK, England and Wales",1939,44,46
+GBRTENW,"UK, England and Wales",1940,44,46
+GBRTENW,"UK, England and Wales",1941,44,46
+GBRTENW,"UK, England and Wales",1942,44,46
+GBRTENW,"UK, England and Wales",1943,44,46
+GBRTENW,"UK, England and Wales",1944,44,46
+GBRTENW,"UK, England and Wales",1945,44,46
+GBRTENW,"UK, England and Wales",1946,44,46
+GBRTENW,"UK, England and Wales",1947,44,46
+GBRTENW,"UK, England and Wales",1948,44,46
+GBRTENW,"UK, England and Wales",1949,44,46
+GBRTENW,"UK, England and Wales",1950,44,46
+GBRTENW,"UK, England and Wales",1951,43,46
+GBRTENW,"UK, England and Wales",1952,43,46
+GBRTENW,"UK, England and Wales",1953,43,46
+GBRTENW,"UK, England and Wales",1954,43,46
+GBRTENW,"UK, England and Wales",1955,43,46
+GBRTENW,"UK, England and Wales",1956,43,46
+GBRTENW,"UK, England and Wales",1957,43,46
+GBRTENW,"UK, England and Wales",1958,43,46
+GBRTENW,"UK, England and Wales",1959,43,46
+GBRTENW,"UK, England and Wales",1960,43,46
+GBRTENW,"UK, England and Wales",1961,43,46
+GBRTENW,"UK, England and Wales",1962,43,46
+GBRTENW,"UK, England and Wales",1963,43,46
+GBRTENW,"UK, England and Wales",1964,43,46
+GBRTENW,"UK, England and Wales",1965,43,46
+GBRTENW,"UK, England and Wales",1966,43,46
+GBRTENW,"UK, England and Wales",1967,43,46
+GBRTENW,"UK, England and Wales",1968,43,45
+GBRTENW,"UK, England and Wales",1969,43,45
+GBRTENW,"UK, England and Wales",1970,42,45
+GBRTENW,"UK, England and Wales",1971,42,45
+GBRTENW,"UK, England and Wales",1972,42,45
+GBRTENW,"UK, England and Wales",1973,42,44
+GBRTENW,"UK, England and Wales",1974,42,44
+GBRTENW,"UK, England and Wales",1975,41,44
+GBRTENW,"UK, England and Wales",1976,41,44
+GBRTENW,"UK, England and Wales",1977,41,44
+GBRTENW,"UK, England and Wales",1978,41,44
+GBRTENW,"UK, England and Wales",1979,41,44
+GBRTENW,"UK, England and Wales",1980,41,44
+GBRTENW,"UK, England and Wales",1981,41,45
+GBRTENW,"UK, England and Wales",1982,41,44
+GBRTENW,"UK, England and Wales",1983,41,44
+GBRTENW,"UK, England and Wales",1984,41,44
+GBRTENW,"UK, England and Wales",1985,41,44
+GBRTENW,"UK, England and Wales",1986,41,44
+GBRTENW,"UK, England and Wales",1987,41,44
+GBRTENW,"UK, England and Wales",1988,41,44
+GBRTENW,"UK, England and Wales",1989,41,44
+GBRTENW,"UK, England and Wales",1990,41,44
+GBRTENW,"UK, England and Wales",1991,41,44
+GBRTENW,"UK, England and Wales",1992,41,44
+GBRTENW,"UK, England and Wales",1993,41,44
+GBRTENW,"UK, England and Wales",1994,41,44
+GBRTENW,"UK, England and Wales",1995,42,44
+GBRTENW,"UK, England and Wales",1996,42,44
+GBRTENW,"UK, England and Wales",1997,42,44
+GBRTENW,"UK, England and Wales",1998,42,44
+GBRTENW,"UK, England and Wales",1999,42,44
+GBRTENW,"UK, England and Wales",2000,42,45
+GBRTENW,"UK, England and Wales",2001,42,45
+GBRTENW,"UK, England and Wales",2002,42,45
+GBRTENW,"UK, England and Wales",2003,42,45
+GBRTENW,"UK, England and Wales",2004,42,45
+GBRTENW,"UK, England and Wales",2005,42,45
+GBRTENW,"UK, England and Wales",2006,43,45
+GBRTENW,"UK, England and Wales",2007,43,45
+GBRTENW,"UK, England and Wales",2008,43,45
+GBRTENW,"UK, England and Wales",2009,43,45
+GBRTENW,"UK, England and Wales",2010,43,46
+GBRTENW,"UK, England and Wales",2011,43,46
+GBRTENW,"UK, England and Wales",2012,43,46
+GBRTENW,"UK, England and Wales",2013,43,46
+GBRTENW,"UK, England and Wales",2014,43,46
+GBRTENW,"UK, England and Wales",2015,43,46
+GBRTENW,"UK, England and Wales",2016,43,46
+GBRTENW,"UK, England and Wales",2017,43,46
+GBRTENW,"UK, England and Wales",2018,43,46
+GBRTENW,"UK, England and Wales",2019,43,46
+GBRTENW,"UK, England and Wales",2020,43,46
+GBRTENW,"UK, England and Wales",2021,43,46
+GBRTENW,"UK, England and Wales",2022,43,46
+GBRTENW,"UK, England and Wales",2023,45,47
+GBRTENW,"UK, England and Wales",2024,45,47
+GBR_NIR,"UK, Northern Ireland",1974,44,46
+GBR_NIR,"UK, Northern Ireland",1975,44,46
+GBR_NIR,"UK, Northern Ireland",1976,43,46
+GBR_NIR,"UK, Northern Ireland",1977,43,46
+GBR_NIR,"UK, Northern Ireland",1978,43,46
+GBR_NIR,"UK, Northern Ireland",1979,44,46
+GBR_NIR,"UK, Northern Ireland",1980,43,46
+GBR_NIR,"UK, Northern Ireland",1981,43,46
+GBR_NIR,"UK, Northern Ireland",1982,43,46
+GBR_NIR,"UK, Northern Ireland",1983,43,45
+GBR_NIR,"UK, Northern Ireland",1984,43,45
+GBR_NIR,"UK, Northern Ireland",1985,42,45
+GBR_NIR,"UK, Northern Ireland",1986,43,45
+GBR_NIR,"UK, Northern Ireland",1987,43,45
+GBR_NIR,"UK, Northern Ireland",1988,43,44
+GBR_NIR,"UK, Northern Ireland",1989,43,45
+GBR_NIR,"UK, Northern Ireland",1990,43,45
+GBR_NIR,"UK, Northern Ireland",1991,42,45
+GBR_NIR,"UK, Northern Ireland",1992,43,45
+GBR_NIR,"UK, Northern Ireland",1993,42,44
+GBR_NIR,"UK, Northern Ireland",1994,43,45
+GBR_NIR,"UK, Northern Ireland",1995,42,44
+GBR_NIR,"UK, Northern Ireland",1996,42,45
+GBR_NIR,"UK, Northern Ireland",1997,42,44
+GBR_NIR,"UK, Northern Ireland",1998,42,45
+GBR_NIR,"UK, Northern Ireland",1999,42,46
+GBR_NIR,"UK, Northern Ireland",2000,42,44
+GBR_NIR,"UK, Northern Ireland",2001,42,45
+GBR_NIR,"UK, Northern Ireland",2002,42,45
+GBR_NIR,"UK, Northern Ireland",2003,43,45
+GBR_NIR,"UK, Northern Ireland",2004,42,44
+GBR_NIR,"UK, Northern Ireland",2005,43,45
+GBR_NIR,"UK, Northern Ireland",2006,42,45
+GBR_NIR,"UK, Northern Ireland",2007,42,45
+GBR_NIR,"UK, Northern Ireland",2008,42,45
+GBR_NIR,"UK, Northern Ireland",2009,43,45
+GBR_NIR,"UK, Northern Ireland",2010,43,45
+GBR_NIR,"UK, Northern Ireland",2011,43,45
+GBR_NIR,"UK, Northern Ireland",2012,43,45
+GBR_NIR,"UK, Northern Ireland",2013,43,45
+GBR_NIR,"UK, Northern Ireland",2014,43,45
+GBR_NIR,"UK, Northern Ireland",2015,43,45
+GBR_NIR,"UK, Northern Ireland",2016,43,45
+GBR_NIR,"UK, Northern Ireland",2017,43,45
+GBR_NIR,"UK, Northern Ireland",2018,43,46
+GBR_NIR,"UK, Northern Ireland",2019,43,46
+GBR_NIR,"UK, Northern Ireland",2020,43,45
+GBR_NIR,"UK, Northern Ireland",2021,43,44
+GBR_NIR,"UK, Northern Ireland",2022,43,45
+GBR_NIR,"UK, Northern Ireland",2023,43,45
+GBR_NIR,"UK, Northern Ireland",2024,43,45
+GBR_SCO,"UK, Scotland",1939,44,46
+GBR_SCO,"UK, Scotland",1940,44,46
+GBR_SCO,"UK, Scotland",1941,44,46
+GBR_SCO,"UK, Scotland",1942,44,46
+GBR_SCO,"UK, Scotland",1943,44,46
+GBR_SCO,"UK, Scotland",1944,44,46
+GBR_SCO,"UK, Scotland",1945,44,46
+GBR_SCO,"UK, Scotland",1946,44,46
+GBR_SCO,"UK, Scotland",1947,45,46
+GBR_SCO,"UK, Scotland",1948,44,46
+GBR_SCO,"UK, Scotland",1949,44,46
+GBR_SCO,"UK, Scotland",1950,44,46
+GBR_SCO,"UK, Scotland",1951,44,46
+GBR_SCO,"UK, Scotland",1952,44,46
+GBR_SCO,"UK, Scotland",1953,44,46
+GBR_SCO,"UK, Scotland",1954,44,46
+GBR_SCO,"UK, Scotland",1955,44,46
+GBR_SCO,"UK, Scotland",1956,44,46
+GBR_SCO,"UK, Scotland",1957,44,46
+GBR_SCO,"UK, Scotland",1958,43,46
+GBR_SCO,"UK, Scotland",1959,43,45
+GBR_SCO,"UK, Scotland",1960,43,46
+GBR_SCO,"UK, Scotland",1961,43,46
+GBR_SCO,"UK, Scotland",1962,44,46
+GBR_SCO,"UK, Scotland",1963,43,46
+GBR_SCO,"UK, Scotland",1964,44,46
+GBR_SCO,"UK, Scotland",1965,43,46
+GBR_SCO,"UK, Scotland",1966,43,46
+GBR_SCO,"UK, Scotland",1967,43,46
+GBR_SCO,"UK, Scotland",1968,43,45
+GBR_SCO,"UK, Scotland",1969,43,45
+GBR_SCO,"UK, Scotland",1970,43,45
+GBR_SCO,"UK, Scotland",1971,43,45
+GBR_SCO,"UK, Scotland",1972,42,45
+GBR_SCO,"UK, Scotland",1973,42,44
+GBR_SCO,"UK, Scotland",1974,41,45
+GBR_SCO,"UK, Scotland",1975,42,45
+GBR_SCO,"UK, Scotland",1976,41,44
+GBR_SCO,"UK, Scotland",1977,41,44
+GBR_SCO,"UK, Scotland",1978,40,44
+GBR_SCO,"UK, Scotland",1979,41,43
+GBR_SCO,"UK, Scotland",1980,40,43
+GBR_SCO,"UK, Scotland",1981,41,44
+GBR_SCO,"UK, Scotland",1982,41,43
+GBR_SCO,"UK, Scotland",1983,40,44
+GBR_SCO,"UK, Scotland",1984,40,44
+GBR_SCO,"UK, Scotland",1985,40,43
+GBR_SCO,"UK, Scotland",1986,40,44
+GBR_SCO,"UK, Scotland",1987,40,43
+GBR_SCO,"UK, Scotland",1988,40,43
+GBR_SCO,"UK, Scotland",1989,40,43
+GBR_SCO,"UK, Scotland",1990,41,43
+GBR_SCO,"UK, Scotland",1991,41,43
+GBR_SCO,"UK, Scotland",1992,41,44
+GBR_SCO,"UK, Scotland",1993,41,44
+GBR_SCO,"UK, Scotland",1994,41,43
+GBR_SCO,"UK, Scotland",1995,41,43
+GBR_SCO,"UK, Scotland",1996,41,43
+GBR_SCO,"UK, Scotland",1997,41,44
+GBR_SCO,"UK, Scotland",1998,41,44
+GBR_SCO,"UK, Scotland",1999,41,44
+GBR_SCO,"UK, Scotland",2000,41,44
+GBR_SCO,"UK, Scotland",2001,42,44
+GBR_SCO,"UK, Scotland",2002,42,44
+GBR_SCO,"UK, Scotland",2003,42,44
+GBR_SCO,"UK, Scotland",2004,42,44
+GBR_SCO,"UK, Scotland",2005,42,44
+GBR_SCO,"UK, Scotland",2006,42,44
+GBR_SCO,"UK, Scotland",2007,42,45
+GBR_SCO,"UK, Scotland",2008,42,45
+GBR_SCO,"UK, Scotland",2009,42,45
+GBR_SCO,"UK, Scotland",2010,42,45
+GBR_SCO,"UK, Scotland",2011,43,45
+GBR_SCO,"UK, Scotland",2012,42,45
+GBR_SCO,"UK, Scotland",2013,43,45
+GBR_SCO,"UK, Scotland",2014,43,45
+GBR_SCO,"UK, Scotland",2015,43,45
+GBR_SCO,"UK, Scotland",2016,43,45
+GBR_SCO,"UK, Scotland",2017,43,46
+GBR_SCO,"UK, Scotland",2018,43,45
+GBR_SCO,"UK, Scotland",2019,43,46
+GBR_SCO,"UK, Scotland",2020,43,46
+GBR_SCO,"UK, Scotland",2021,42,45
+GBR_SCO,"UK, Scotland",2022,43,46
+GBR_SCO,"UK, Scotland",2023,43,46
+GBR_SCO,"UK, Scotland",2024,43,45
+GRC,Greece,1950,46,48
+GRC,Greece,1951,46,48
+GRC,Greece,1952,46,48
+GRC,Greece,1953,45,48
+GRC,Greece,1954,45,48
+GRC,Greece,1955,45,47
+GRC,Greece,1956,45,47
+GRC,Greece,1957,45,47
+GRC,Greece,1958,44,47
+GRC,Greece,1959,44,47
+GRC,Greece,1960,44,47
+GRC,Greece,1961,44,47
+GRC,Greece,1962,44,46
+GRC,Greece,1963,43,46
+GRC,Greece,1964,43,46
+GRC,Greece,1965,43,46
+GRC,Greece,1966,43,46
+GRC,Greece,1967,43,46
+GRC,Greece,1968,43,46
+GRC,Greece,1969,43,46
+GRC,Greece,1970,43,46
+GRC,Greece,1971,43,46
+GRC,Greece,1972,43,46
+GRC,Greece,1973,43,46
+GRC,Greece,1974,43,45
+GRC,Greece,1975,43,45
+GRC,Greece,1976,42,45
+GRC,Greece,1977,42,45
+GRC,Greece,1978,42,44
+GRC,Greece,1979,42,45
+GRC,Greece,1980,42,44
+GRC,Greece,1981,42,44
+GRC,Greece,1982,41,44
+GRC,Greece,1983,41,44
+GRC,Greece,1984,41,43
+GRC,Greece,1985,41,43
+GRC,Greece,1986,41,43
+GRC,Greece,1987,41,44
+GRC,Greece,1988,41,43
+GRC,Greece,1989,41,43
+GRC,Greece,1990,41,43
+GRC,Greece,1991,41,44
+GRC,Greece,1992,41,44
+GRC,Greece,1993,41,44
+GRC,Greece,1994,41,44
+GRC,Greece,1995,41,45
+GRC,Greece,1996,41,45
+GRC,Greece,1997,41,45
+GRC,Greece,1998,41,45
+GRC,Greece,1999,41,45
+GRC,Greece,2000,42,46
+GRC,Greece,2001,42,46
+GRC,Greece,2002,42,46
+GRC,Greece,2003,42,46
+GRC,Greece,2004,43,46
+GRC,Greece,2005,42,45
+GRC,Greece,2006,42,46
+GRC,Greece,2007,42,46
+GRC,Greece,2008,42,47
+GRC,Greece,2009,43,47
+HRV,Croatia,1950,45,50
+HRV,Croatia,1951,45,48
+HRV,Croatia,1952,45,50
+HRV,Croatia,1953,46,50
+HRV,Croatia,1954,45,50
+HRV,Croatia,1955,45,50
+HRV,Croatia,1956,44,47
+HRV,Croatia,1957,44,46
+HRV,Croatia,1958,43,46
+HRV,Croatia,1959,44,47
+HRV,Croatia,1960,44,48
+HRV,Croatia,1961,44,47
+HRV,Croatia,1962,43,47
+HRV,Croatia,1963,43,47
+HRV,Croatia,1964,43,50
+HRV,Croatia,1965,43,46
+HRV,Croatia,1966,43,45
+HRV,Croatia,1967,42,46
+HRV,Croatia,1968,42,45
+HRV,Croatia,1969,42,45
+HRV,Croatia,1970,42,46
+HRV,Croatia,1971,42,46
+HRV,Croatia,1972,42,45
+HRV,Croatia,1973,42,45
+HRV,Croatia,1974,42,45
+HRV,Croatia,1975,41,44
+HRV,Croatia,1976,41,44
+HRV,Croatia,1977,41,44
+HRV,Croatia,1978,41,45
+HRV,Croatia,1979,40,50
+HRV,Croatia,1980,40,50
+HRV,Croatia,1981,40,50
+HRV,Croatia,1982,40,44
+HRV,Croatia,1983,40,44
+HRV,Croatia,1984,40,44
+HRV,Croatia,1985,40,43
+HRV,Croatia,1986,40,44
+HRV,Croatia,1987,40,43
+HRV,Croatia,1988,40,43
+HRV,Croatia,1989,40,42
+HRV,Croatia,1990,40,42
+HRV,Croatia,1991,40,42
+HRV,Croatia,1992,40,43
+HRV,Croatia,1993,40,43
+HRV,Croatia,1994,41,43
+HRV,Croatia,1995,41,43
+HRV,Croatia,1996,42,44
+HRV,Croatia,1997,42,44
+HRV,Croatia,1998,41,44
+HRV,Croatia,1999,41,44
+HRV,Croatia,2000,41,44
+HRV,Croatia,2001,41,44
+HRV,Croatia,2002,41,44
+HRV,Croatia,2003,41,43
+HRV,Croatia,2004,41,44
+HRV,Croatia,2005,41,44
+HRV,Croatia,2006,41,44
+HRV,Croatia,2007,41,44
+HRV,Croatia,2008,42,44
+HRV,Croatia,2009,41,44
+HRV,Croatia,2010,41,44
+HRV,Croatia,2011,42,44
+HRV,Croatia,2012,42,45
+HRV,Croatia,2013,42,45
+HRV,Croatia,2014,42,45
+HRV,Croatia,2015,42,45
+HRV,Croatia,2016,42,45
+HRV,Croatia,2017,42,45
+HRV,Croatia,2018,42,45
+HRV,Croatia,2019,42,45
+HRV,Croatia,2020,43,45
+HRV,Croatia,2021,42,45
+HRV,Croatia,2022,43,45
+HRV,Croatia,2023,43,45
+HRV,Croatia,2024,43,45
+HUN,Hungary,1938,45,47
+HUN,Hungary,1947,44,47
+HUN,Hungary,1948,44,47
+HUN,Hungary,1949,45,47
+HUN,Hungary,1950,44,46
+HUN,Hungary,1951,44,46
+HUN,Hungary,1952,44,46
+HUN,Hungary,1953,44,46
+HUN,Hungary,1954,44,46
+HUN,Hungary,1955,44,46
+HUN,Hungary,1956,43,46
+HUN,Hungary,1957,43,45
+HUN,Hungary,1958,43,46
+HUN,Hungary,1959,42,45
+HUN,Hungary,1960,42,45
+HUN,Hungary,1961,42,45
+HUN,Hungary,1962,42,45
+HUN,Hungary,1963,42,44
+HUN,Hungary,1964,41,44
+HUN,Hungary,1965,41,44
+HUN,Hungary,1966,41,45
+HUN,Hungary,1967,41,44
+HUN,Hungary,1968,41,44
+HUN,Hungary,1969,41,44
+HUN,Hungary,1970,41,44
+HUN,Hungary,1971,41,44
+HUN,Hungary,1972,41,44
+HUN,Hungary,1973,41,44
+HUN,Hungary,1974,41,44
+HUN,Hungary,1975,41,44
+HUN,Hungary,1976,40,44
+HUN,Hungary,1977,41,44
+HUN,Hungary,1978,40,43
+HUN,Hungary,1979,40,44
+HUN,Hungary,1980,40,43
+HUN,Hungary,1981,40,43
+HUN,Hungary,1982,39,43
+HUN,Hungary,1983,39,43
+HUN,Hungary,1984,39,43
+HUN,Hungary,1985,39,43
+HUN,Hungary,1986,40,43
+HUN,Hungary,1987,40,43
+HUN,Hungary,1988,40,43
+HUN,Hungary,1989,40,43
+HUN,Hungary,1990,40,43
+HUN,Hungary,1991,40,43
+HUN,Hungary,1992,40,43
+HUN,Hungary,1993,40,43
+HUN,Hungary,1994,40,43
+HUN,Hungary,1995,40,43
+HUN,Hungary,1996,40,43
+HUN,Hungary,1997,40,43
+HUN,Hungary,1998,40,43
+HUN,Hungary,1999,40,43
+HUN,Hungary,2000,40,43
+HUN,Hungary,2001,41,44
+HUN,Hungary,2002,41,44
+HUN,Hungary,2003,41,43
+HUN,Hungary,2004,41,43
+HUN,Hungary,2005,41,43
+HUN,Hungary,2006,41,44
+HUN,Hungary,2007,41,44
+HUN,Hungary,2008,42,44
+HUN,Hungary,2009,42,44
+HUN,Hungary,2010,42,44
+HUN,Hungary,2011,42,44
+HUN,Hungary,2012,42,44
+HUN,Hungary,2013,42,44
+HUN,Hungary,2014,42,44
+HUN,Hungary,2015,42,45
+HUN,Hungary,2016,42,44
+HUN,Hungary,2017,43,45
+HUN,Hungary,2018,42,45
+HUN,Hungary,2019,43,45
+HUN,Hungary,2020,43,45
+HUN,Hungary,2021,44,47
+HUN,Hungary,2022,44,47
+HUN,Hungary,2023,44,47
+HUN,Hungary,2024,44,47
+IRL,Ireland,1955,45,48
+IRL,Ireland,1956,45,47
+IRL,Ireland,1957,46,47
+IRL,Ireland,1958,46,47
+IRL,Ireland,1959,46,47
+IRL,Ireland,1960,46,47
+IRL,Ireland,1961,46,48
+IRL,Ireland,1962,46,47
+IRL,Ireland,1963,46,47
+IRL,Ireland,1964,46,47
+IRL,Ireland,1965,45,47
+IRL,Ireland,1966,46,48
+IRL,Ireland,1967,46,47
+IRL,Ireland,1968,46,47
+IRL,Ireland,1969,46,47
+IRL,Ireland,1970,46,47
+IRL,Ireland,1971,45,48
+IRL,Ireland,1972,45,47
+IRL,Ireland,1973,45,48
+IRL,Ireland,1974,45,49
+IRL,Ireland,1975,45,47
+IRL,Ireland,1976,45,47
+IRL,Ireland,1977,45,47
+IRL,Ireland,1978,45,47
+IRL,Ireland,1979,45,47
+IRL,Ireland,1980,45,46
+IRL,Ireland,1981,45,47
+IRL,Ireland,1982,45,47
+IRL,Ireland,1983,44,47
+IRL,Ireland,1984,44,47
+IRL,Ireland,1985,44,46
+IRL,Ireland,1986,44,46
+IRL,Ireland,1987,44,46
+IRL,Ireland,1988,44,46
+IRL,Ireland,1989,44,46
+IRL,Ireland,1990,43,46
+IRL,Ireland,1991,44,45
+IRL,Ireland,1992,43,46
+IRL,Ireland,1993,43,46
+IRL,Ireland,1994,43,45
+IRL,Ireland,1995,43,46
+IRL,Ireland,1996,43,45
+IRL,Ireland,1997,43,45
+IRL,Ireland,1998,43,45
+IRL,Ireland,1999,43,45
+IRL,Ireland,2000,43,45
+IRL,Ireland,2001,43,45
+IRL,Ireland,2002,43,45
+IRL,Ireland,2003,43,45
+IRL,Ireland,2004,43,45
+IRL,Ireland,2005,43,45
+IRL,Ireland,2006,43,46
+IRL,Ireland,2007,43,46
+IRL,Ireland,2008,43,46
+IRL,Ireland,2009,44,46
+IRL,Ireland,2010,44,46
+IRL,Ireland,2011,43,46
+IRL,Ireland,2012,44,46
+IRL,Ireland,2013,44,46
+IRL,Ireland,2014,44,47
+IRL,Ireland,2015,44,46
+IRL,Ireland,2016,44,47
+IRL,Ireland,2017,44,47
+IRL,Ireland,2018,44,47
+IRL,Ireland,2019,44,47
+IRL,Ireland,2020,44,47
+IRL,Ireland,2021,44,47
+IRL,Ireland,2022,44,47
+IRL,Ireland,2023,45,47
+ISL,Iceland,1853,48,49
+ISL,Iceland,1854,48,49
+ISL,Iceland,1855,48,49
+ISL,Iceland,1856,47,49
+ISL,Iceland,1857,48,49
+ISL,Iceland,1858,48,49
+ISL,Iceland,1859,48,49
+ISL,Iceland,1860,47,49
+ISL,Iceland,1861,48,49
+ISL,Iceland,1862,48,49
+ISL,Iceland,1863,48,49
+ISL,Iceland,1864,48,49
+ISL,Iceland,1865,48,49
+ISL,Iceland,1866,48,49
+ISL,Iceland,1867,48,49
+ISL,Iceland,1868,47,49
+ISL,Iceland,1869,47,49
+ISL,Iceland,1870,47,49
+ISL,Iceland,1871,47,49
+ISL,Iceland,1872,47,49
+ISL,Iceland,1873,48,49
+ISL,Iceland,1874,48,49
+ISL,Iceland,1875,48,49
+ISL,Iceland,1876,48,49
+ISL,Iceland,1877,47,49
+ISL,Iceland,1878,47,49
+ISL,Iceland,1879,47,48
+ISL,Iceland,1880,47,49
+ISL,Iceland,1881,47,49
+ISL,Iceland,1882,47,48
+ISL,Iceland,1883,47,49
+ISL,Iceland,1884,47,48
+ISL,Iceland,1885,47,49
+ISL,Iceland,1886,47,49
+ISL,Iceland,1887,47,49
+ISL,Iceland,1888,47,48
+ISL,Iceland,1889,47,48
+ISL,Iceland,1890,47,48
+ISL,Iceland,1891,47,48
+ISL,Iceland,1892,47,48
+ISL,Iceland,1893,47,49
+ISL,Iceland,1894,47,49
+ISL,Iceland,1895,47,49
+ISL,Iceland,1896,47,49
+ISL,Iceland,1897,47,49
+ISL,Iceland,1898,47,48
+ISL,Iceland,1899,47,48
+ISL,Iceland,1900,47,48
+ISL,Iceland,1901,47,48
+ISL,Iceland,1902,47,48
+ISL,Iceland,1903,47,48
+ISL,Iceland,1904,47,48
+ISL,Iceland,1905,47,48
+ISL,Iceland,1906,47,48
+ISL,Iceland,1907,47,48
+ISL,Iceland,1908,47,48
+ISL,Iceland,1909,47,48
+ISL,Iceland,1910,47,48
+ISL,Iceland,1911,47,48
+ISL,Iceland,1912,47,48
+ISL,Iceland,1913,47,48
+ISL,Iceland,1914,47,48
+ISL,Iceland,1915,47,48
+ISL,Iceland,1916,47,48
+ISL,Iceland,1917,47,48
+ISL,Iceland,1918,47,48
+ISL,Iceland,1919,47,49
+ISL,Iceland,1920,47,48
+ISL,Iceland,1921,47,48
+ISL,Iceland,1922,47,48
+ISL,Iceland,1923,47,48
+ISL,Iceland,1924,47,48
+ISL,Iceland,1925,47,48
+ISL,Iceland,1926,47,48
+ISL,Iceland,1927,47,48
+ISL,Iceland,1928,47,48
+ISL,Iceland,1929,47,48
+ISL,Iceland,1930,47,48
+ISL,Iceland,1931,47,48
+ISL,Iceland,1932,47,48
+ISL,Iceland,1933,47,48
+ISL,Iceland,1934,47,48
+ISL,Iceland,1935,46,48
+ISL,Iceland,1936,47,48
+ISL,Iceland,1937,46,48
+ISL,Iceland,1938,46,48
+ISL,Iceland,1939,46,48
+ISL,Iceland,1940,46,48
+ISL,Iceland,1941,46,48
+ISL,Iceland,1942,46,48
+ISL,Iceland,1943,46,48
+ISL,Iceland,1944,46,48
+ISL,Iceland,1945,46,48
+ISL,Iceland,1946,46,48
+ISL,Iceland,1947,46,48
+ISL,Iceland,1948,46,48
+ISL,Iceland,1949,46,48
+ISL,Iceland,1950,46,48
+ISL,Iceland,1951,46,48
+ISL,Iceland,1952,46,48
+ISL,Iceland,1953,46,48
+ISL,Iceland,1954,46,48
+ISL,Iceland,1955,46,48
+ISL,Iceland,1956,46,48
+ISL,Iceland,1957,46,48
+ISL,Iceland,1958,46,48
+ISL,Iceland,1959,46,48
+ISL,Iceland,1960,45,46
+ISL,Iceland,1961,45,46
+ISL,Iceland,1962,45,46
+ISL,Iceland,1963,44,46
+ISL,Iceland,1964,45,48
+ISL,Iceland,1965,45,48
+ISL,Iceland,1966,46,49
+ISL,Iceland,1967,45,48
+ISL,Iceland,1968,45,48
+ISL,Iceland,1969,44,45
+ISL,Iceland,1970,44,46
+ISL,Iceland,1971,44,47
+ISL,Iceland,1972,44,46
+ISL,Iceland,1973,44,48
+ISL,Iceland,1974,44,45
+ISL,Iceland,1975,44,45
+ISL,Iceland,1976,44,45
+ISL,Iceland,1977,42,46
+ISL,Iceland,1978,42,45
+ISL,Iceland,1979,42,47
+ISL,Iceland,1980,42,45
+ISL,Iceland,1981,43,44
+ISL,Iceland,1982,43,44
+ISL,Iceland,1983,41,44
+ISL,Iceland,1984,41,43
+ISL,Iceland,1985,41,45
+ISL,Iceland,1986,42,44
+ISL,Iceland,1987,42,45
+ISL,Iceland,1988,42,44
+ISL,Iceland,1989,42,45
+ISL,Iceland,1990,41,44
+ISL,Iceland,1991,43,44
+ISL,Iceland,1992,43,44
+ISL,Iceland,1993,42,44
+ISL,Iceland,1994,42,44
+ISL,Iceland,1995,42,45
+ISL,Iceland,1996,42,46
+ISL,Iceland,1997,43,44
+ISL,Iceland,1998,43,44
+ISL,Iceland,1999,42,44
+ISL,Iceland,2000,42,46
+ISL,Iceland,2001,43,44
+ISL,Iceland,2002,42,46
+ISL,Iceland,2003,43,43
+ISL,Iceland,2004,43,45
+ISL,Iceland,2005,42,45
+ISL,Iceland,2006,43,44
+ISL,Iceland,2007,43,45
+ISL,Iceland,2008,43,46
+ISL,Iceland,2009,43,45
+ISL,Iceland,2010,43,44
+ISL,Iceland,2011,43,48
+ISL,Iceland,2012,43,46
+ISL,Iceland,2013,44,46
+ISL,Iceland,2014,42,46
+ISL,Iceland,2015,43,47
+ISL,Iceland,2016,42,48
+ISL,Iceland,2017,43,46
+ISL,Iceland,2018,44,46
+ISL,Iceland,2019,42,49
+ISL,Iceland,2020,43,46
+ISL,Iceland,2021,44,45
+ISL,Iceland,2022,43,49
+ISL,Iceland,2023,43,46
+ISL,Iceland,2024,45,48
+ITA,Italy,1930,47,48
+ITA,Italy,1931,47,48
+ITA,Italy,1932,46,48
+ITA,Italy,1933,46,48
+ITA,Italy,1934,46,48
+ITA,Italy,1935,46,48
+ITA,Italy,1936,46,48
+ITA,Italy,1937,46,48
+ITA,Italy,1938,46,48
+ITA,Italy,1939,46,48
+ITA,Italy,1940,46,48
+ITA,Italy,1941,46,48
+ITA,Italy,1942,46,48
+ITA,Italy,1943,46,48
+ITA,Italy,1944,46,48
+ITA,Italy,1945,46,48
+ITA,Italy,1946,46,48
+ITA,Italy,1947,46,48
+ITA,Italy,1948,46,48
+ITA,Italy,1949,46,48
+ITA,Italy,1950,46,48
+ITA,Italy,1951,46,48
+ITA,Italy,1952,45,47
+ITA,Italy,1953,45,47
+ITA,Italy,1954,45,47
+ITA,Italy,1955,45,47
+ITA,Italy,1956,45,47
+ITA,Italy,1957,45,47
+ITA,Italy,1958,44,47
+ITA,Italy,1959,44,47
+ITA,Italy,1960,44,47
+ITA,Italy,1961,44,47
+ITA,Italy,1962,44,46
+ITA,Italy,1963,44,46
+ITA,Italy,1964,44,46
+ITA,Italy,1965,44,47
+ITA,Italy,1966,44,47
+ITA,Italy,1967,44,46
+ITA,Italy,1968,44,46
+ITA,Italy,1969,44,46
+ITA,Italy,1970,44,46
+ITA,Italy,1971,44,46
+ITA,Italy,1972,44,46
+ITA,Italy,1973,43,46
+ITA,Italy,1974,44,46
+ITA,Italy,1975,43,46
+ITA,Italy,1976,43,46
+ITA,Italy,1977,43,46
+ITA,Italy,1978,43,45
+ITA,Italy,1979,42,45
+ITA,Italy,1980,42,45
+ITA,Italy,1981,42,45
+ITA,Italy,1982,42,44
+ITA,Italy,1983,41,44
+ITA,Italy,1984,41,44
+ITA,Italy,1985,41,44
+ITA,Italy,1986,41,44
+ITA,Italy,1987,41,44
+ITA,Italy,1988,41,44
+ITA,Italy,1989,41,44
+ITA,Italy,1990,41,44
+ITA,Italy,1991,41,44
+ITA,Italy,1992,42,44
+ITA,Italy,1993,41,44
+ITA,Italy,1994,42,44
+ITA,Italy,1995,42,44
+ITA,Italy,1996,42,44
+ITA,Italy,1997,42,45
+ITA,Italy,1998,42,44
+ITA,Italy,1999,42,44
+ITA,Italy,2000,42,44
+ITA,Italy,2001,42,44
+ITA,Italy,2002,42,44
+ITA,Italy,2003,42,44
+ITA,Italy,2004,42,45
+ITA,Italy,2005,42,45
+ITA,Italy,2006,43,45
+ITA,Italy,2007,43,45
+ITA,Italy,2008,43,45
+ITA,Italy,2009,43,45
+ITA,Italy,2010,43,46
+ITA,Italy,2011,43,46
+ITA,Italy,2012,43,46
+ITA,Italy,2013,43,46
+ITA,Italy,2014,43,46
+ITA,Italy,2015,43,46
+ITA,Italy,2016,43,46
+ITA,Italy,2017,44,47
+ITA,Italy,2018,44,47
+ITA,Italy,2019,44,47
+ITA,Italy,2020,44,47
+ITA,Italy,2021,44,47
+ITA,Italy,2022,44,47
+ITA,Italy,2023,44,47
+ITA,Italy,2024,44,50
+JPN,Japan,1925,47,48
+JPN,Japan,1926,47,48
+JPN,Japan,1927,47,48
+JPN,Japan,1928,47,48
+JPN,Japan,1929,47,48
+JPN,Japan,1930,47,48
+JPN,Japan,1937,47,48
+JPN,Japan,1938,47,48
+JPN,Japan,1939,47,48
+JPN,Japan,1940,47,48
+JPN,Japan,1947,46,55
+JPN,Japan,1948,46,49
+JPN,Japan,1949,45,48
+JPN,Japan,1950,45,47
+JPN,Japan,1951,44,46
+JPN,Japan,1952,44,46
+JPN,Japan,1953,44,46
+JPN,Japan,1954,43,46
+JPN,Japan,1955,43,45
+JPN,Japan,1956,43,45
+JPN,Japan,1957,42,45
+JPN,Japan,1958,42,45
+JPN,Japan,1959,42,45
+JPN,Japan,1960,41,44
+JPN,Japan,1961,41,44
+JPN,Japan,1962,41,44
+JPN,Japan,1963,40,44
+JPN,Japan,1964,40,43
+JPN,Japan,1965,40,43
+JPN,Japan,1966,40,43
+JPN,Japan,1967,40,43
+JPN,Japan,1968,40,43
+JPN,Japan,1969,40,43
+JPN,Japan,1970,40,43
+JPN,Japan,1971,40,43
+JPN,Japan,1972,40,43
+JPN,Japan,1973,40,43
+JPN,Japan,1974,39,43
+JPN,Japan,1975,39,43
+JPN,Japan,1976,39,42
+JPN,Japan,1977,39,42
+JPN,Japan,1978,39,42
+JPN,Japan,1979,39,42
+JPN,Japan,1980,39,42
+JPN,Japan,1981,39,42
+JPN,Japan,1982,39,42
+JPN,Japan,1983,39,42
+JPN,Japan,1984,39,42
+JPN,Japan,1985,39,42
+JPN,Japan,1986,39,42
+JPN,Japan,1987,39,42
+JPN,Japan,1988,39,42
+JPN,Japan,1989,39,42
+JPN,Japan,1990,40,42
+JPN,Japan,1991,40,42
+JPN,Japan,1992,40,42
+JPN,Japan,1993,40,43
+JPN,Japan,1994,40,43
+JPN,Japan,1995,40,43
+JPN,Japan,1996,40,43
+JPN,Japan,1997,40,43
+JPN,Japan,1998,40,43
+JPN,Japan,1999,40,43
+JPN,Japan,2000,41,43
+JPN,Japan,2001,41,43
+JPN,Japan,2002,41,43
+JPN,Japan,2003,41,43
+JPN,Japan,2004,41,43
+JPN,Japan,2005,41,43
+JPN,Japan,2006,41,43
+JPN,Japan,2007,41,44
+JPN,Japan,2008,41,44
+JPN,Japan,2009,42,44
+JPN,Japan,2010,42,44
+JPN,Japan,2011,42,44
+JPN,Japan,2012,42,44
+JPN,Japan,2013,42,44
+JPN,Japan,2014,42,44
+JPN,Japan,2015,42,44
+JPN,Japan,2016,43,44
+JPN,Japan,2017,43,44
+JPN,Japan,2018,43,44
+JPN,Japan,2019,43,45
+JPN,Japan,2020,43,45
+JPN,Japan,2021,43,45
+JPN,Japan,2022,43,45
+JPN,Japan,2023,43,45
+JPN,Japan,2024,43,45
+KOR,Republic of Korea,1960,47,49
+KOR,Republic of Korea,1961,48,49
+KOR,Republic of Korea,1962,47,49
+KOR,Republic of Korea,1963,47,49
+KOR,Republic of Korea,1964,47,48
+KOR,Republic of Korea,1965,47,48
+KOR,Republic of Korea,1966,47,48
+KOR,Republic of Korea,1967,46,48
+KOR,Republic of Korea,1968,46,48
+KOR,Republic of Korea,1969,46,48
+KOR,Republic of Korea,1970,46,48
+KOR,Republic of Korea,1971,46,48
+KOR,Republic of Korea,1972,45,47
+KOR,Republic of Korea,1973,46,48
+KOR,Republic of Korea,1974,45,47
+KOR,Republic of Korea,1975,45,47
+KOR,Republic of Korea,1976,44,46
+KOR,Republic of Korea,1977,43,46
+KOR,Republic of Korea,1978,42,45
+KOR,Republic of Korea,1979,41,44
+KOR,Republic of Korea,1980,41,43
+KOR,Republic of Korea,1981,41,43
+KOR,Republic of Korea,1982,40,42
+KOR,Republic of Korea,1983,41,43
+KOR,Republic of Korea,1984,38,42
+KOR,Republic of Korea,1985,37,42
+KOR,Republic of Korea,1986,36,42
+KOR,Republic of Korea,1987,36,40
+KOR,Republic of Korea,1988,36,40
+KOR,Republic of Korea,1989,36,39
+KOR,Republic of Korea,1990,36,39
+KOR,Republic of Korea,1991,38,42
+KOR,Republic of Korea,1992,38,42
+KOR,Republic of Korea,1993,39,42
+KOR,Republic of Korea,1994,39,42
+KOR,Republic of Korea,1995,39,42
+KOR,Republic of Korea,1996,39,43
+KOR,Republic of Korea,1997,39,43
+KOR,Republic of Korea,1998,39,43
+KOR,Republic of Korea,1999,39,43
+KOR,Republic of Korea,2000,40,43
+KOR,Republic of Korea,2001,40,43
+KOR,Republic of Korea,2002,39,43
+KOR,Republic of Korea,2003,40,43
+KOR,Republic of Korea,2004,40,43
+KOR,Republic of Korea,2005,40,43
+KOR,Republic of Korea,2006,40,43
+KOR,Republic of Korea,2007,40,43
+KOR,Republic of Korea,2008,40,43
+KOR,Republic of Korea,2009,40,43
+KOR,Republic of Korea,2010,41,43
+KOR,Republic of Korea,2011,41,43
+KOR,Republic of Korea,2012,41,43
+KOR,Republic of Korea,2013,41,43
+KOR,Republic of Korea,2014,41,44
+KOR,Republic of Korea,2015,41,44
+KOR,Republic of Korea,2016,41,44
+KOR,Republic of Korea,2017,41,44
+KOR,Republic of Korea,2018,42,44
+KOR,Republic of Korea,2019,42,44
+KOR,Republic of Korea,2020,42,44
+KOR,Republic of Korea,2021,42,44
+KOR,Republic of Korea,2022,42,44
+KOR,Republic of Korea,2023,42,44
+KOR,Republic of Korea,2024,42,44
+LTU,Lithuania,1959,45,49
+LTU,Lithuania,1960,45,48
+LTU,Lithuania,1961,45,49
+LTU,Lithuania,1962,45,49
+LTU,Lithuania,1963,45,47
+LTU,Lithuania,1964,45,48
+LTU,Lithuania,1965,44,47
+LTU,Lithuania,1966,45,47
+LTU,Lithuania,1967,44,47
+LTU,Lithuania,1968,44,47
+LTU,Lithuania,1969,44,47
+LTU,Lithuania,1970,43,46
+LTU,Lithuania,1971,44,47
+LTU,Lithuania,1972,44,46
+LTU,Lithuania,1973,44,45
+LTU,Lithuania,1974,43,46
+LTU,Lithuania,1975,43,45
+LTU,Lithuania,1976,43,46
+LTU,Lithuania,1977,43,46
+LTU,Lithuania,1978,43,45
+LTU,Lithuania,1979,43,45
+LTU,Lithuania,1980,42,45
+LTU,Lithuania,1981,43,46
+LTU,Lithuania,1982,43,46
+LTU,Lithuania,1983,43,46
+LTU,Lithuania,1984,43,45
+LTU,Lithuania,1985,42,45
+LTU,Lithuania,1986,42,45
+LTU,Lithuania,1987,42,45
+LTU,Lithuania,1988,42,45
+LTU,Lithuania,1989,41,44
+LTU,Lithuania,1990,41,44
+LTU,Lithuania,1991,41,44
+LTU,Lithuania,1992,41,43
+LTU,Lithuania,1993,41,44
+LTU,Lithuania,1994,40,43
+LTU,Lithuania,1995,40,43
+LTU,Lithuania,1996,41,44
+LTU,Lithuania,1997,40,44
+LTU,Lithuania,1998,40,43
+LTU,Lithuania,1999,41,44
+LTU,Lithuania,2000,40,43
+LTU,Lithuania,2001,41,44
+LTU,Lithuania,2002,41,44
+LTU,Lithuania,2003,41,44
+LTU,Lithuania,2004,41,44
+LTU,Lithuania,2005,41,44
+LTU,Lithuania,2006,41,44
+LTU,Lithuania,2007,41,44
+LTU,Lithuania,2008,41,44
+LTU,Lithuania,2009,41,44
+LTU,Lithuania,2010,41,44
+LTU,Lithuania,2011,41,44
+LTU,Lithuania,2012,42,44
+LTU,Lithuania,2013,42,44
+LTU,Lithuania,2014,42,44
+LTU,Lithuania,2015,42,44
+LTU,Lithuania,2016,42,45
+LTU,Lithuania,2017,42,44
+LTU,Lithuania,2018,42,45
+LTU,Lithuania,2019,42,44
+LTU,Lithuania,2020,43,45
+LTU,Lithuania,2021,43,46
+LTU,Lithuania,2022,43,46
+LTU,Lithuania,2023,43,46
+LTU,Lithuania,2024,43,46
+LVA,Latvia,1965,43,45
+LVA,Latvia,1966,42,45
+LVA,Latvia,1967,42,45
+LVA,Latvia,1968,42,45
+LVA,Latvia,1969,42,44
+LVA,Latvia,1970,42,44
+LVA,Latvia,1971,42,44
+LVA,Latvia,1972,42,44
+LVA,Latvia,1973,42,44
+LVA,Latvia,1974,42,44
+LVA,Latvia,1975,42,44
+LVA,Latvia,1976,42,44
+LVA,Latvia,1977,42,44
+LVA,Latvia,1978,41,43
+LVA,Latvia,1979,41,43
+LVA,Latvia,1980,41,43
+LVA,Latvia,1981,41,43
+LVA,Latvia,1982,41,43
+LVA,Latvia,1983,41,43
+LVA,Latvia,1984,41,43
+LVA,Latvia,1985,41,43
+LVA,Latvia,1986,41,43
+LVA,Latvia,1987,41,43
+LVA,Latvia,1988,42,43
+LVA,Latvia,1989,41,43
+LVA,Latvia,1990,41,43
+LVA,Latvia,1991,41,43
+LVA,Latvia,1992,41,43
+LVA,Latvia,1993,40,43
+LVA,Latvia,1994,41,43
+LVA,Latvia,1995,41,43
+LVA,Latvia,1996,40,43
+LVA,Latvia,1997,41,44
+LVA,Latvia,1998,41,44
+LVA,Latvia,1999,41,44
+LVA,Latvia,2000,41,44
+LVA,Latvia,2001,41,44
+LVA,Latvia,2002,41,44
+LVA,Latvia,2003,41,44
+LVA,Latvia,2004,41,44
+LVA,Latvia,2005,41,44
+LVA,Latvia,2006,41,44
+LVA,Latvia,2007,42,44
+LVA,Latvia,2008,42,44
+LVA,Latvia,2009,42,44
+MDA,Moldova,1961,46,48
+MDA,Moldova,1979,42,44
+MDA,Moldova,1980,42,44
+MDA,Moldova,1981,42,44
+MDA,Moldova,1982,42,43
+MDA,Moldova,1983,42,43
+MDA,Moldova,1984,42,43
+MDA,Moldova,1985,42,43
+MDA,Moldova,1986,42,43
+MDA,Moldova,1987,42,44
+MDA,Moldova,1988,42,44
+MDA,Moldova,1989,42,43
+MDA,Moldova,1990,41,43
+MDA,Moldova,1991,41,43
+MDA,Moldova,1992,41,42
+MDA,Moldova,1993,40,42
+MDA,Moldova,1994,40,42
+MDA,Moldova,1995,40,42
+MDA,Moldova,1996,40,43
+MDA,Moldova,1997,40,43
+MDA,Moldova,1998,40,43
+MDA,Moldova,1999,40,42
+MDA,Moldova,2000,39,42
+MDA,Moldova,2001,39,42
+MDA,Moldova,2002,39,42
+MDA,Moldova,2003,40,42
+MDA,Moldova,2004,40,42
+MDA,Moldova,2005,40,43
+MDA,Moldova,2006,40,43
+MDA,Moldova,2007,40,43
+MDA,Moldova,2008,40,43
+MDA,Moldova,2009,41,43
+MDA,Moldova,2010,41,44
+MDA,Moldova,2011,41,44
+MDA,Moldova,2012,41,44
+MDA,Moldova,2013,41,44
+MDA,Moldova,2014,41,44
+MDA,Moldova,2015,42,45
+MDA,Moldova,2016,42,45
+MDA,Moldova,2017,42,46
+MDA,Moldova,2018,42,45
+MDA,Moldova,2019,43,46
+MDA,Moldova,2020,43,46
+MDA,Moldova,2021,43,46
+MDA,Moldova,2022,43,46
+MDA,Moldova,2023,43,46
+MDA,Moldova,2024,43,46
+MKD,Macedonia,1950,50,50
+MKD,Macedonia,1951,50,50
+MKD,Macedonia,1952,50,50
+MKD,Macedonia,1953,50,50
+MKD,Macedonia,1954,50,50
+MKD,Macedonia,1955,50,50
+MKD,Macedonia,1956,49,50
+MKD,Macedonia,1957,48,50
+MKD,Macedonia,1958,47,49
+MKD,Macedonia,1959,46,48
+MKD,Macedonia,1960,49,50
+MKD,Macedonia,1961,50,50
+MKD,Macedonia,1962,50,50
+MKD,Macedonia,1963,50,50
+MKD,Macedonia,1964,50,50
+MKD,Macedonia,1965,50,50
+MKD,Macedonia,1966,49,50
+MKD,Macedonia,1967,45,48
+MKD,Macedonia,1968,44,46
+MKD,Macedonia,1969,44,47
+MKD,Macedonia,1970,45,50
+MKD,Macedonia,1971,45,50
+MKD,Macedonia,1972,45,48
+MKD,Macedonia,1973,44,47
+MKD,Macedonia,1974,45,50
+MKD,Macedonia,1975,44,46
+MKD,Macedonia,1976,43,46
+MKD,Macedonia,1977,43,46
+MKD,Macedonia,1978,43,46
+MKD,Macedonia,1979,43,47
+MKD,Macedonia,1980,42,46
+MKD,Macedonia,1981,42,45
+MKD,Macedonia,1982,42,45
+MKD,Macedonia,1983,42,45
+MKD,Macedonia,1984,42,44
+MKD,Macedonia,1985,42,45
+MKD,Macedonia,1986,41,43
+MKD,Macedonia,1987,41,43
+MKD,Macedonia,1988,41,43
+MKD,Macedonia,1989,40,42
+MKD,Macedonia,1990,41,43
+MKD,Macedonia,1991,40,42
+MKD,Macedonia,1992,40,42
+MKD,Macedonia,1993,40,43
+MKD,Macedonia,1994,41,43
+MKD,Macedonia,1995,41,44
+MKD,Macedonia,1996,40,42
+MKD,Macedonia,1997,40,42
+MKD,Macedonia,1998,40,42
+MKD,Macedonia,1999,40,42
+MKD,Macedonia,2000,40,42
+MKD,Macedonia,2001,40,42
+MKD,Macedonia,2002,40,43
+MKD,Macedonia,2003,40,42
+MKD,Macedonia,2004,40,43
+MKD,Macedonia,2005,40,43
+MKD,Macedonia,2006,40,43
+MKD,Macedonia,2007,40,43
+MKD,Macedonia,2008,40,43
+MKD,Macedonia,2009,41,44
+MKD,Macedonia,2010,41,44
+MKD,Macedonia,2011,41,44
+MKD,Macedonia,2012,41,44
+MKD,Macedonia,2013,41,45
+MKD,Macedonia,2014,41,45
+MKD,Macedonia,2015,41,45
+MKD,Macedonia,2016,42,45
+MKD,Macedonia,2017,42,45
+MKD,Macedonia,2018,42,46
+MKD,Macedonia,2019,42,46
+MKD,Macedonia,2020,42,45
+MKD,Macedonia,2021,42,46
+MKD,Macedonia,2022,42,46
+MKD,Macedonia,2023,43,46
+MKD,Macedonia,2024,42,46
+NLD,Netherlands,1906,47,48
+NLD,Netherlands,1907,47,48
+NLD,Netherlands,1908,47,48
+NLD,Netherlands,1909,47,48
+NLD,Netherlands,1930,47,48
+NLD,Netherlands,1931,47,48
+NLD,Netherlands,1932,46,48
+NLD,Netherlands,1933,46,48
+NLD,Netherlands,1934,46,48
+NLD,Netherlands,1935,46,48
+NLD,Netherlands,1936,46,48
+NLD,Netherlands,1937,46,48
+NLD,Netherlands,1938,46,48
+NLD,Netherlands,1939,46,48
+NLD,Netherlands,1940,46,48
+NLD,Netherlands,1941,46,48
+NLD,Netherlands,1942,46,48
+NLD,Netherlands,1943,46,48
+NLD,Netherlands,1944,46,48
+NLD,Netherlands,1945,46,48
+NLD,Netherlands,1946,47,48
+NLD,Netherlands,1947,47,48
+NLD,Netherlands,1948,47,48
+NLD,Netherlands,1949,46,48
+NLD,Netherlands,1950,46,47
+NLD,Netherlands,1951,46,47
+NLD,Netherlands,1952,46,47
+NLD,Netherlands,1953,45,47
+NLD,Netherlands,1954,45,47
+NLD,Netherlands,1955,45,47
+NLD,Netherlands,1956,45,47
+NLD,Netherlands,1957,45,47
+NLD,Netherlands,1958,45,47
+NLD,Netherlands,1959,45,47
+NLD,Netherlands,1960,45,47
+NLD,Netherlands,1961,45,47
+NLD,Netherlands,1962,45,47
+NLD,Netherlands,1963,45,47
+NLD,Netherlands,1964,45,47
+NLD,Netherlands,1965,45,47
+NLD,Netherlands,1966,44,47
+NLD,Netherlands,1967,44,46
+NLD,Netherlands,1968,44,46
+NLD,Netherlands,1969,44,46
+NLD,Netherlands,1970,44,46
+NLD,Netherlands,1971,43,46
+NLD,Netherlands,1972,43,45
+NLD,Netherlands,1973,42,45
+NLD,Netherlands,1974,42,44
+NLD,Netherlands,1975,41,45
+NLD,Netherlands,1976,41,44
+NLD,Netherlands,1977,41,44
+NLD,Netherlands,1978,40,44
+NLD,Netherlands,1979,40,44
+NLD,Netherlands,1980,40,43
+NLD,Netherlands,1981,40,44
+NLD,Netherlands,1982,40,44
+NLD,Netherlands,1983,40,44
+NLD,Netherlands,1984,40,44
+NLD,Netherlands,1985,40,44
+NLD,Netherlands,1986,40,44
+NLD,Netherlands,1987,40,44
+NLD,Netherlands,1988,40,43
+NLD,Netherlands,1989,40,44
+NLD,Netherlands,1990,40,44
+NLD,Netherlands,1991,41,43
+NLD,Netherlands,1992,41,44
+NLD,Netherlands,1993,41,44
+NLD,Netherlands,1994,41,44
+NLD,Netherlands,1995,41,43
+NLD,Netherlands,1996,41,44
+NLD,Netherlands,1997,41,43
+NLD,Netherlands,1998,41,44
+NLD,Netherlands,1999,41,44
+NLD,Netherlands,2000,42,44
+NLD,Netherlands,2001,42,44
+NLD,Netherlands,2002,42,44
+NLD,Netherlands,2003,42,44
+NLD,Netherlands,2004,42,44
+NLD,Netherlands,2005,42,44
+NLD,Netherlands,2006,42,44
+NLD,Netherlands,2007,42,44
+NLD,Netherlands,2008,42,44
+NLD,Netherlands,2009,42,44
+NLD,Netherlands,2010,42,44
+NLD,Netherlands,2011,42,45
+NLD,Netherlands,2012,42,45
+NLD,Netherlands,2013,42,45
+NLD,Netherlands,2014,42,45
+NLD,Netherlands,2015,42,44
+NLD,Netherlands,2016,42,45
+NLD,Netherlands,2017,43,45
+NLD,Netherlands,2018,43,45
+NLD,Netherlands,2019,43,45
+NLD,Netherlands,2020,43,45
+NLD,Netherlands,2021,43,45
+NLD,Netherlands,2022,43,45
+NLD,Netherlands,2023,43,45
+NOR,Norway,1946,45,47
+NOR,Norway,1947,45,47
+NOR,Norway,1948,45,47
+NOR,Norway,1949,45,47
+NOR,Norway,1950,45,47
+NOR,Norway,1951,45,47
+NOR,Norway,1952,45,47
+NOR,Norway,1953,45,47
+NOR,Norway,1954,45,46
+NOR,Norway,1955,45,47
+NOR,Norway,1956,44,46
+NOR,Norway,1957,44,46
+NOR,Norway,1958,44,46
+NOR,Norway,1959,44,47
+NOR,Norway,1960,44,46
+NOR,Norway,1961,44,46
+NOR,Norway,1962,44,44
+NOR,Norway,1963,44,44
+NOR,Norway,1964,44,44
+NOR,Norway,1965,44,44
+NOR,Norway,1966,44,44
+NOR,Norway,1967,44,47
+NOR,Norway,1968,44,46
+NOR,Norway,1969,43,46
+NOR,Norway,1970,43,46
+NOR,Norway,1971,43,45
+NOR,Norway,1972,43,45
+NOR,Norway,1973,42,45
+NOR,Norway,1974,42,44
+NOR,Norway,1975,42,44
+NOR,Norway,1976,41,44
+NOR,Norway,1977,41,43
+NOR,Norway,1978,41,44
+NOR,Norway,1979,41,43
+NOR,Norway,1980,40,44
+NOR,Norway,1981,40,43
+NOR,Norway,1982,40,43
+NOR,Norway,1983,41,43
+NOR,Norway,1984,41,44
+NOR,Norway,1985,41,43
+NOR,Norway,1986,41,43
+NOR,Norway,1987,40,43
+NOR,Norway,1988,41,44
+NOR,Norway,1989,41,44
+NOR,Norway,1990,41,44
+NOR,Norway,1991,41,44
+NOR,Norway,1992,41,44
+NOR,Norway,1993,41,44
+NOR,Norway,1994,41,44
+NOR,Norway,1995,41,44
+NOR,Norway,1996,42,44
+NOR,Norway,1997,42,44
+NOR,Norway,1998,42,44
+NOR,Norway,1999,42,44
+NOR,Norway,2000,42,44
+NOR,Norway,2001,42,44
+NOR,Norway,2002,42,44
+NOR,Norway,2003,42,44
+NOR,Norway,2004,42,44
+NOR,Norway,2005,42,45
+NOR,Norway,2006,42,44
+NOR,Norway,2007,42,45
+NOR,Norway,2008,42,45
+NOR,Norway,2009,42,45
+NOR,Norway,2010,42,45
+NOR,Norway,2011,43,45
+NOR,Norway,2012,43,45
+NOR,Norway,2013,43,45
+NOR,Norway,2014,42,45
+NOR,Norway,2015,43,46
+NOR,Norway,2016,43,45
+NOR,Norway,2017,43,46
+NOR,Norway,2018,43,46
+NOR,Norway,2019,43,46
+NOR,Norway,2020,43,45
+NOR,Norway,2021,43,46
+NOR,Norway,2022,43,46
+NOR,Norway,2023,43,46
+NOR,Norway,2024,43,46
+NZL,New Zealand,1937,45,47
+NZL,New Zealand,1938,45,47
+NZL,New Zealand,1939,45,47
+NZL,New Zealand,1940,45,47
+NZL,New Zealand,1941,45,47
+NZL,New Zealand,1942,45,47
+NZL,New Zealand,1943,44,47
+NZL,New Zealand,1944,45,47
+NZL,New Zealand,1945,45,47
+NZL,New Zealand,1946,45,47
+NZL,New Zealand,1947,45,47
+NZL,New Zealand,1948,45,47
+NZL,New Zealand,1949,44,47
+NZL,New Zealand,1950,45,47
+NZL,New Zealand,1951,45,47
+NZL,New Zealand,1952,45,47
+NZL,New Zealand,1953,44,46
+NZL,New Zealand,1954,45,47
+NZL,New Zealand,1955,45,47
+NZL,New Zealand,1956,45,47
+NZL,New Zealand,1957,44,47
+NZL,New Zealand,1958,44,46
+NZL,New Zealand,1959,44,46
+NZL,New Zealand,1960,44,47
+NZL,New Zealand,1961,44,47
+NZL,New Zealand,1962,45,47
+NZL,New Zealand,1963,44,46
+NZL,New Zealand,1964,44,46
+NZL,New Zealand,1965,44,46
+NZL,New Zealand,1966,44,46
+NZL,New Zealand,1967,44,46
+NZL,New Zealand,1968,44,46
+NZL,New Zealand,1969,43,46
+NZL,New Zealand,1970,44,46
+NZL,New Zealand,1971,44,46
+NZL,New Zealand,1972,43,45
+NZL,New Zealand,1973,43,45
+NZL,New Zealand,1974,42,45
+NZL,New Zealand,1975,42,45
+NZL,New Zealand,1976,42,45
+NZL,New Zealand,1977,42,44
+NZL,New Zealand,1978,41,44
+NZL,New Zealand,1979,41,44
+NZL,New Zealand,1980,41,45
+NZL,New Zealand,1981,40,44
+NZL,New Zealand,1982,40,45
+NZL,New Zealand,1983,41,44
+NZL,New Zealand,1984,41,44
+NZL,New Zealand,1985,41,43
+NZL,New Zealand,1986,40,44
+NZL,New Zealand,1987,41,44
+NZL,New Zealand,1988,41,44
+NZL,New Zealand,1989,41,44
+NZL,New Zealand,1990,41,44
+NZL,New Zealand,1991,42,44
+NZL,New Zealand,1992,42,44
+NZL,New Zealand,1993,41,44
+NZL,New Zealand,1994,42,45
+NZL,New Zealand,1995,42,45
+NZL,New Zealand,1996,42,45
+NZL,New Zealand,1997,42,45
+NZL,New Zealand,1998,42,45
+NZL,New Zealand,1999,43,45
+NZL,New Zealand,2000,42,44
+NZL,New Zealand,2001,43,45
+NZL,New Zealand,2002,42,45
+NZL,New Zealand,2003,43,46
+NZL,New Zealand,2004,43,45
+NZL,New Zealand,2005,43,45
+NZL,New Zealand,2006,43,45
+NZL,New Zealand,2007,43,45
+NZL,New Zealand,2008,43,45
+NZL,New Zealand,2009,43,45
+NZL,New Zealand,2010,43,45
+NZL,New Zealand,2011,43,46
+NZL,New Zealand,2012,43,45
+NZL,New Zealand,2013,43,45
+NZL,New Zealand,2014,43,45
+NZL,New Zealand,2015,43,46
+NZL,New Zealand,2016,43,46
+NZL,New Zealand,2017,43,45
+NZL,New Zealand,2018,43,46
+NZL,New Zealand,2019,43,46
+NZL,New Zealand,2020,43,46
+NZL,New Zealand,2021,43,45
+NZL,New Zealand,2022,43,45
+NZL,New Zealand,2023,43,46
+NZL,New Zealand,2024,43,45
+NZL,New Zealand,2025,43,46
+POL,Poland,1948,46,48
+POL,Poland,1949,46,48
+POL,Poland,1950,46,48
+POL,Poland,1951,46,48
+POL,Poland,1952,46,48
+POL,Poland,1953,46,48
+POL,Poland,1954,46,48
+POL,Poland,1955,46,48
+POL,Poland,1956,45,48
+POL,Poland,1957,45,47
+POL,Poland,1958,45,47
+POL,Poland,1959,45,47
+POL,Poland,1960,45,47
+POL,Poland,1961,44,47
+POL,Poland,1962,44,47
+POL,Poland,1963,44,46
+POL,Poland,1964,44,46
+POL,Poland,1965,44,46
+POL,Poland,1966,43,46
+POL,Poland,1967,43,45
+POL,Poland,1968,43,45
+POL,Poland,1969,43,45
+POL,Poland,1970,43,45
+POL,Poland,1971,43,46
+POL,Poland,1972,43,46
+POL,Poland,1973,43,46
+POL,Poland,1974,43,46
+POL,Poland,1975,43,45
+POL,Poland,1976,43,45
+POL,Poland,1977,43,46
+POL,Poland,1978,42,45
+POL,Poland,1979,42,45
+POL,Poland,1980,42,45
+POL,Poland,1981,42,45
+POL,Poland,1982,42,45
+POL,Poland,1983,42,45
+POL,Poland,1984,42,45
+POL,Poland,1985,42,45
+POL,Poland,1986,42,45
+POL,Poland,1987,42,44
+POL,Poland,1988,42,45
+POL,Poland,1989,42,45
+POL,Poland,1990,42,44
+POL,Poland,1991,42,44
+POL,Poland,1992,42,44
+POL,Poland,1993,42,44
+POL,Poland,1994,42,44
+POL,Poland,1995,42,44
+POL,Poland,1996,41,44
+POL,Poland,1997,41,44
+POL,Poland,1998,41,44
+POL,Poland,1999,41,44
+POL,Poland,2000,41,44
+POL,Poland,2001,41,44
+POL,Poland,2002,41,44
+POL,Poland,2003,41,44
+POL,Poland,2004,41,44
+POL,Poland,2005,41,44
+POL,Poland,2006,41,44
+POL,Poland,2007,41,44
+POL,Poland,2008,41,44
+POL,Poland,2009,41,44
+POL,Poland,2010,42,44
+POL,Poland,2011,42,44
+POL,Poland,2012,42,44
+POL,Poland,2013,42,44
+POL,Poland,2014,42,44
+POL,Poland,2015,42,44
+POL,Poland,2016,42,44
+POL,Poland,2017,42,44
+POL,Poland,2018,42,45
+POL,Poland,2019,42,44
+POL,Poland,2020,42,44
+POL,Poland,2021,42,45
+POL,Poland,2022,42,45
+POL,Poland,2023,42,45
+POL,Poland,2024,42,46
+PRT,Portugal,1940,47,50
+PRT,Portugal,1941,47,49
+PRT,Portugal,1942,47,50
+PRT,Portugal,1943,47,50
+PRT,Portugal,1944,47,49
+PRT,Portugal,1945,47,49
+PRT,Portugal,1946,47,49
+PRT,Portugal,1947,47,49
+PRT,Portugal,1948,47,50
+PRT,Portugal,1949,47,49
+PRT,Portugal,1950,47,49
+PRT,Portugal,1951,47,49
+PRT,Portugal,1952,47,50
+PRT,Portugal,1953,47,50
+PRT,Portugal,1954,47,49
+PRT,Portugal,1955,46,48
+PRT,Portugal,1956,46,48
+PRT,Portugal,1957,46,48
+PRT,Portugal,1958,46,48
+PRT,Portugal,1959,46,48
+PRT,Portugal,1960,46,48
+PRT,Portugal,1961,45,48
+PRT,Portugal,1962,46,47
+PRT,Portugal,1963,45,48
+PRT,Portugal,1964,46,48
+PRT,Portugal,1965,45,48
+PRT,Portugal,1966,46,48
+PRT,Portugal,1967,46,48
+PRT,Portugal,1968,45,47
+PRT,Portugal,1969,45,47
+PRT,Portugal,1970,45,48
+PRT,Portugal,1971,45,48
+PRT,Portugal,1972,45,47
+PRT,Portugal,1973,45,48
+PRT,Portugal,1974,45,47
+PRT,Portugal,1975,45,47
+PRT,Portugal,1976,45,47
+PRT,Portugal,1977,45,47
+PRT,Portugal,1978,45,47
+PRT,Portugal,1979,44,47
+PRT,Portugal,1980,44,47
+PRT,Portugal,1981,44,47
+PRT,Portugal,1982,44,47
+PRT,Portugal,1983,44,46
+PRT,Portugal,1984,43,46
+PRT,Portugal,1985,43,46
+PRT,Portugal,1986,43,46
+PRT,Portugal,1987,42,45
+PRT,Portugal,1988,42,45
+PRT,Portugal,1989,42,45
+PRT,Portugal,1990,42,45
+PRT,Portugal,1991,42,44
+PRT,Portugal,1992,41,44
+PRT,Portugal,1993,41,44
+PRT,Portugal,1994,41,44
+PRT,Portugal,1995,41,45
+PRT,Portugal,1996,41,44
+PRT,Portugal,1997,41,44
+PRT,Portugal,1998,42,44
+PRT,Portugal,1999,42,44
+PRT,Portugal,2000,42,44
+PRT,Portugal,2001,42,44
+PRT,Portugal,2002,42,44
+PRT,Portugal,2003,42,45
+PRT,Portugal,2004,42,45
+PRT,Portugal,2005,42,45
+PRT,Portugal,2006,42,45
+PRT,Portugal,2007,42,44
+PRT,Portugal,2008,42,45
+PRT,Portugal,2009,42,45
+PRT,Portugal,2010,42,45
+PRT,Portugal,2011,42,45
+PRT,Portugal,2012,42,45
+PRT,Portugal,2013,42,45
+PRT,Portugal,2014,42,45
+PRT,Portugal,2015,42,45
+PRT,Portugal,2016,43,45
+PRT,Portugal,2017,43,45
+PRT,Portugal,2018,43,46
+PRT,Portugal,2019,43,46
+PRT,Portugal,2020,43,46
+PRT,Portugal,2021,43,46
+PRT,Portugal,2022,44,46
+PRT,Portugal,2023,44,47
+PRT,Portugal,2024,44,46
+ROU,Romania,1955,47,50
+ROU,Romania,1956,46,50
+ROU,Romania,1957,46,50
+ROU,Romania,1958,45,50
+ROU,Romania,1959,45,50
+ROU,Romania,1960,46,50
+ROU,Romania,1961,45,50
+ROU,Romania,1962,45,50
+ROU,Romania,1963,45,50
+ROU,Romania,1964,43,47
+ROU,Romania,1965,43,47
+ROU,Romania,1966,43,47
+ROU,Romania,1967,44,47
+ROU,Romania,1968,44,46
+ROU,Romania,1969,44,46
+ROU,Romania,1970,43,46
+ROU,Romania,1971,43,46
+ROU,Romania,1972,43,45
+ROU,Romania,1973,43,45
+ROU,Romania,1974,43,45
+ROU,Romania,1975,43,45
+ROU,Romania,1976,43,45
+ROU,Romania,1977,43,46
+ROU,Romania,1978,43,46
+ROU,Romania,1979,42,45
+ROU,Romania,1980,42,45
+ROU,Romania,1981,42,45
+ROU,Romania,1982,42,44
+ROU,Romania,1983,41,45
+ROU,Romania,1984,41,45
+ROU,Romania,1985,41,45
+ROU,Romania,1986,42,45
+ROU,Romania,1987,42,45
+ROU,Romania,1988,42,45
+ROU,Romania,1989,42,45
+ROU,Romania,1990,41,44
+ROU,Romania,1991,41,44
+ROU,Romania,1992,40,44
+ROU,Romania,1993,40,44
+ROU,Romania,1994,40,44
+ROU,Romania,1995,40,44
+ROU,Romania,1996,39,44
+ROU,Romania,1997,40,44
+ROU,Romania,1998,40,44
+ROU,Romania,1999,40,43
+ROU,Romania,2000,40,44
+ROU,Romania,2001,40,44
+ROU,Romania,2002,40,43
+ROU,Romania,2003,40,44
+ROU,Romania,2004,40,44
+ROU,Romania,2005,40,44
+ROU,Romania,2006,40,44
+ROU,Romania,2007,40,44
+ROU,Romania,2008,41,44
+ROU,Romania,2009,40,44
+ROU,Romania,2010,41,44
+ROU,Romania,2011,41,44
+ROU,Romania,2012,41,44
+ROU,Romania,2013,41,44
+RUS,Russia,1959,45,49
+RUS,Russia,1960,45,48
+RUS,Russia,1961,44,47
+RUS,Russia,1962,44,47
+RUS,Russia,1963,44,47
+RUS,Russia,1964,44,47
+RUS,Russia,1965,44,47
+RUS,Russia,1966,44,46
+RUS,Russia,1967,43,47
+RUS,Russia,1968,43,46
+RUS,Russia,1969,43,46
+RUS,Russia,1970,42,46
+RUS,Russia,1971,42,45
+RUS,Russia,1972,42,45
+RUS,Russia,1973,42,45
+RUS,Russia,1974,42,45
+RUS,Russia,1975,42,45
+RUS,Russia,1976,42,45
+RUS,Russia,1977,42,45
+RUS,Russia,1978,42,45
+RUS,Russia,1979,41,45
+RUS,Russia,1980,41,45
+RUS,Russia,1981,41,44
+RUS,Russia,1982,41,44
+RUS,Russia,1983,41,44
+RUS,Russia,1984,41,44
+RUS,Russia,1985,41,44
+RUS,Russia,1986,41,44
+RUS,Russia,1987,41,44
+RUS,Russia,1988,41,44
+RUS,Russia,1989,41,44
+RUS,Russia,1990,41,44
+RUS,Russia,1991,40,44
+RUS,Russia,1992,40,43
+RUS,Russia,1993,39,43
+RUS,Russia,1994,39,43
+RUS,Russia,1995,39,43
+RUS,Russia,1996,39,43
+RUS,Russia,1997,39,43
+RUS,Russia,1998,39,43
+RUS,Russia,1999,39,43
+RUS,Russia,2000,39,43
+RUS,Russia,2001,39,43
+RUS,Russia,2002,40,43
+RUS,Russia,2003,40,43
+RUS,Russia,2004,40,43
+RUS,Russia,2005,40,43
+RUS,Russia,2006,40,43
+RUS,Russia,2007,41,44
+RUS,Russia,2008,41,44
+RUS,Russia,2009,41,44
+RUS,Russia,2010,42,44
+RUS,Russia,2011,42,44
+RUS,Russia,2012,42,44
+RUS,Russia,2013,42,44
+RUS,Russia,2014,42,45
+RUS,Russia,2015,42,45
+RUS,Russia,2016,42,45
+RUS,Russia,2017,42,45
+RUS,Russia,2018,42,45
+RUS,Russia,2019,42,45
+RUS,Russia,2020,42,45
+RUS,Russia,2021,42,45
+RUS,Russia,2022,42,45
+SVK,Slovakia,1946,47,49
+SVK,Slovakia,1947,45,48
+SVK,Slovakia,1948,45,49
+SVK,Slovakia,1949,45,48
+SVK,Slovakia,1950,45,49
+SVK,Slovakia,1951,45,48
+SVK,Slovakia,1952,45,48
+SVK,Slovakia,1953,45,48
+SVK,Slovakia,1954,45,47
+SVK,Slovakia,1955,45,48
+SVK,Slovakia,1956,45,47
+SVK,Slovakia,1957,45,47
+SVK,Slovakia,1958,44,47
+SVK,Slovakia,1959,44,47
+SVK,Slovakia,1960,44,46
+SVK,Slovakia,1961,43,46
+SVK,Slovakia,1962,43,46
+SVK,Slovakia,1963,43,46
+SVK,Slovakia,1964,43,46
+SVK,Slovakia,1965,43,46
+SVK,Slovakia,1966,43,46
+SVK,Slovakia,1967,43,46
+SVK,Slovakia,1968,43,45
+SVK,Slovakia,1969,43,45
+SVK,Slovakia,1970,42,45
+SVK,Slovakia,1971,42,45
+SVK,Slovakia,1972,42,45
+SVK,Slovakia,1973,42,45
+SVK,Slovakia,1974,42,45
+SVK,Slovakia,1975,42,44
+SVK,Slovakia,1976,42,44
+SVK,Slovakia,1977,41,44
+SVK,Slovakia,1978,41,44
+SVK,Slovakia,1979,41,44
+SVK,Slovakia,1980,41,44
+SVK,Slovakia,1981,40,44
+SVK,Slovakia,1982,40,44
+SVK,Slovakia,1983,40,43
+SVK,Slovakia,1984,40,43
+SVK,Slovakia,1985,40,43
+SVK,Slovakia,1986,40,43
+SVK,Slovakia,1987,40,43
+SVK,Slovakia,1988,40,43
+SVK,Slovakia,1989,40,43
+SVK,Slovakia,1990,40,43
+SVK,Slovakia,1991,40,43
+SVK,Slovakia,1992,40,43
+SVK,Slovakia,1993,40,43
+SVK,Slovakia,1994,40,43
+SVK,Slovakia,1995,40,43
+SVK,Slovakia,1996,40,43
+SVK,Slovakia,1997,40,43
+SVK,Slovakia,1998,40,43
+SVK,Slovakia,1999,40,43
+SVK,Slovakia,2000,40,43
+SVK,Slovakia,2001,40,43
+SVK,Slovakia,2002,40,43
+SVK,Slovakia,2003,40,43
+SVK,Slovakia,2004,40,43
+SVK,Slovakia,2005,40,44
+SVK,Slovakia,2006,41,43
+SVK,Slovakia,2007,41,44
+SVK,Slovakia,2008,41,44
+SVK,Slovakia,2009,41,44
+SVK,Slovakia,2010,41,44
+SVK,Slovakia,2011,42,44
+SVK,Slovakia,2012,41,44
+SVK,Slovakia,2013,42,44
+SVK,Slovakia,2014,42,44
+SVK,Slovakia,2015,41,44
+SVK,Slovakia,2016,42,44
+SVK,Slovakia,2017,42,44
+SVK,Slovakia,2018,42,44
+SVK,Slovakia,2019,42,45
+SVK,Slovakia,2020,43,46
+SVK,Slovakia,2021,43,46
+SVK,Slovakia,2022,43,46
+SVK,Slovakia,2023,43,46
+SVK,Slovakia,2024,43,46
+SVN,Slovenia,1950,46,48
+SVN,Slovenia,1951,46,48
+SVN,Slovenia,1952,46,47
+SVN,Slovenia,1953,46,48
+SVN,Slovenia,1954,46,48
+SVN,Slovenia,1955,45,47
+SVN,Slovenia,1956,45,47
+SVN,Slovenia,1957,45,47
+SVN,Slovenia,1958,45,47
+SVN,Slovenia,1959,44,47
+SVN,Slovenia,1960,44,47
+SVN,Slovenia,1961,44,47
+SVN,Slovenia,1962,44,46
+SVN,Slovenia,1963,44,47
+SVN,Slovenia,1964,44,46
+SVN,Slovenia,1965,43,46
+SVN,Slovenia,1966,44,46
+SVN,Slovenia,1967,43,46
+SVN,Slovenia,1968,43,46
+SVN,Slovenia,1969,43,46
+SVN,Slovenia,1970,43,45
+SVN,Slovenia,1971,43,45
+SVN,Slovenia,1972,43,45
+SVN,Slovenia,1973,43,45
+SVN,Slovenia,1974,42,45
+SVN,Slovenia,1975,42,45
+SVN,Slovenia,1976,42,44
+SVN,Slovenia,1977,42,44
+SVN,Slovenia,1978,41,43
+SVN,Slovenia,1979,41,43
+SVN,Slovenia,1980,41,43
+SVN,Slovenia,1981,42,45
+SVN,Slovenia,1982,42,45
+SVN,Slovenia,1983,40,44
+SVN,Slovenia,1984,40,44
+SVN,Slovenia,1985,40,44
+SVN,Slovenia,1986,40,44
+SVN,Slovenia,1987,40,44
+SVN,Slovenia,1988,40,44
+SVN,Slovenia,1989,40,43
+SVN,Slovenia,1990,40,43
+SVN,Slovenia,1991,40,43
+SVN,Slovenia,1992,40,43
+SVN,Slovenia,1993,39,43
+SVN,Slovenia,1994,39,43
+SVN,Slovenia,1995,40,43
+SVN,Slovenia,1996,40,43
+SVN,Slovenia,1997,40,43
+SVN,Slovenia,1998,41,43
+SVN,Slovenia,1999,40,43
+SVN,Slovenia,2000,40,43
+SVN,Slovenia,2001,40,43
+SVN,Slovenia,2002,40,43
+SVN,Slovenia,2003,40,43
+SVN,Slovenia,2004,41,43
+SVN,Slovenia,2005,41,43
+SVN,Slovenia,2006,41,44
+SVN,Slovenia,2007,41,44
+SVN,Slovenia,2008,41,44
+SVN,Slovenia,2009,41,44
+SVN,Slovenia,2010,41,45
+SVN,Slovenia,2011,41,44
+SVN,Slovenia,2012,42,44
+SVN,Slovenia,2013,42,44
+SVN,Slovenia,2014,42,44
+SVN,Slovenia,2015,42,45
+SVN,Slovenia,2016,42,45
+SVN,Slovenia,2017,42,45
+SVN,Slovenia,2018,42,46
+SVN,Slovenia,2019,42,44
+SVN,Slovenia,2020,42,45
+SVN,Slovenia,2021,42,44
+SVN,Slovenia,2022,42,45
+SVN,Slovenia,2023,43,45
+SVN,Slovenia,2024,42,45
+SWE,Sweden,1850,48,49
+SWE,Sweden,1851,47,49
+SWE,Sweden,1852,47,49
+SWE,Sweden,1853,47,49
+SWE,Sweden,1854,47,49
+SWE,Sweden,1855,48,49
+SWE,Sweden,1856,48,49
+SWE,Sweden,1857,48,49
+SWE,Sweden,1858,48,49
+SWE,Sweden,1859,48,49
+SWE,Sweden,1860,48,49
+SWE,Sweden,1861,48,49
+SWE,Sweden,1862,48,49
+SWE,Sweden,1863,48,49
+SWE,Sweden,1864,48,49
+SWE,Sweden,1865,48,49
+SWE,Sweden,1866,48,49
+SWE,Sweden,1867,48,49
+SWE,Sweden,1868,47,49
+SWE,Sweden,1869,47,49
+SWE,Sweden,1870,47,49
+SWE,Sweden,1871,48,49
+SWE,Sweden,1872,48,49
+SWE,Sweden,1873,48,49
+SWE,Sweden,1874,48,49
+SWE,Sweden,1875,48,49
+SWE,Sweden,1876,48,49
+SWE,Sweden,1877,48,49
+SWE,Sweden,1878,48,49
+SWE,Sweden,1879,48,49
+SWE,Sweden,1880,48,49
+SWE,Sweden,1881,47,49
+SWE,Sweden,1882,48,49
+SWE,Sweden,1883,47,49
+SWE,Sweden,1884,47,49
+SWE,Sweden,1885,47,49
+SWE,Sweden,1886,47,49
+SWE,Sweden,1887,47,49
+SWE,Sweden,1888,47,49
+SWE,Sweden,1889,47,49
+SWE,Sweden,1890,47,49
+SWE,Sweden,1891,48,49
+SWE,Sweden,1892,47,49
+SWE,Sweden,1893,47,49
+SWE,Sweden,1894,47,49
+SWE,Sweden,1895,47,49
+SWE,Sweden,1896,47,48
+SWE,Sweden,1897,47,49
+SWE,Sweden,1898,47,49
+SWE,Sweden,1899,47,49
+SWE,Sweden,1900,47,49
+SWE,Sweden,1901,47,49
+SWE,Sweden,1902,47,48
+SWE,Sweden,1903,47,49
+SWE,Sweden,1904,47,48
+SWE,Sweden,1905,47,48
+SWE,Sweden,1906,47,48
+SWE,Sweden,1907,47,48
+SWE,Sweden,1908,47,48
+SWE,Sweden,1909,47,48
+SWE,Sweden,1910,47,48
+SWE,Sweden,1911,47,48
+SWE,Sweden,1912,47,48
+SWE,Sweden,1913,46,48
+SWE,Sweden,1914,47,48
+SWE,Sweden,1915,46,48
+SWE,Sweden,1916,46,48
+SWE,Sweden,1917,46,48
+SWE,Sweden,1918,46,48
+SWE,Sweden,1919,46,48
+SWE,Sweden,1920,46,48
+SWE,Sweden,1921,46,48
+SWE,Sweden,1922,46,48
+SWE,Sweden,1923,46,48
+SWE,Sweden,1924,46,48
+SWE,Sweden,1925,46,48
+SWE,Sweden,1926,46,48
+SWE,Sweden,1927,46,48
+SWE,Sweden,1928,46,47
+SWE,Sweden,1929,45,47
+SWE,Sweden,1930,45,47
+SWE,Sweden,1931,45,47
+SWE,Sweden,1932,45,47
+SWE,Sweden,1933,45,47
+SWE,Sweden,1934,45,47
+SWE,Sweden,1935,45,47
+SWE,Sweden,1936,45,47
+SWE,Sweden,1937,45,47
+SWE,Sweden,1938,45,47
+SWE,Sweden,1939,45,47
+SWE,Sweden,1940,45,47
+SWE,Sweden,1941,44,46
+SWE,Sweden,1942,45,46
+SWE,Sweden,1943,45,47
+SWE,Sweden,1944,45,47
+SWE,Sweden,1945,45,46
+SWE,Sweden,1946,45,47
+SWE,Sweden,1947,45,47
+SWE,Sweden,1948,44,47
+SWE,Sweden,1949,44,47
+SWE,Sweden,1950,44,47
+SWE,Sweden,1951,44,46
+SWE,Sweden,1952,44,46
+SWE,Sweden,1953,44,46
+SWE,Sweden,1954,44,46
+SWE,Sweden,1955,44,46
+SWE,Sweden,1956,44,46
+SWE,Sweden,1957,44,46
+SWE,Sweden,1958,43,46
+SWE,Sweden,1959,43,46
+SWE,Sweden,1960,43,46
+SWE,Sweden,1961,43,46
+SWE,Sweden,1962,43,45
+SWE,Sweden,1963,43,45
+SWE,Sweden,1964,43,45
+SWE,Sweden,1965,43,45
+SWE,Sweden,1966,42,45
+SWE,Sweden,1967,43,45
+SWE,Sweden,1968,42,44
+SWE,Sweden,1969,42,45
+SWE,Sweden,1970,42,45
+SWE,Sweden,1971,42,44
+SWE,Sweden,1972,42,44
+SWE,Sweden,1973,41,44
+SWE,Sweden,1974,41,44
+SWE,Sweden,1975,41,44
+SWE,Sweden,1976,40,44
+SWE,Sweden,1977,40,43
+SWE,Sweden,1978,40,43
+SWE,Sweden,1979,41,43
+SWE,Sweden,1980,41,44
+SWE,Sweden,1981,41,44
+SWE,Sweden,1982,41,44
+SWE,Sweden,1983,41,44
+SWE,Sweden,1984,41,44
+SWE,Sweden,1985,41,44
+SWE,Sweden,1986,41,44
+SWE,Sweden,1987,41,44
+SWE,Sweden,1988,41,44
+SWE,Sweden,1989,42,44
+SWE,Sweden,1990,42,44
+SWE,Sweden,1991,42,44
+SWE,Sweden,1992,42,44
+SWE,Sweden,1993,42,44
+SWE,Sweden,1994,42,44
+SWE,Sweden,1995,42,44
+SWE,Sweden,1996,42,44
+SWE,Sweden,1997,42,44
+SWE,Sweden,1998,42,44
+SWE,Sweden,1999,42,44
+SWE,Sweden,2000,42,44
+SWE,Sweden,2001,42,44
+SWE,Sweden,2002,42,45
+SWE,Sweden,2003,42,45
+SWE,Sweden,2004,43,44
+SWE,Sweden,2005,43,45
+SWE,Sweden,2006,43,44
+SWE,Sweden,2007,43,45
+SWE,Sweden,2008,43,45
+SWE,Sweden,2009,43,45
+SWE,Sweden,2010,43,45
+SWE,Sweden,2011,43,45
+SWE,Sweden,2012,43,46
+SWE,Sweden,2013,43,45
+SWE,Sweden,2014,43,45
+SWE,Sweden,2015,43,46
+SWE,Sweden,2016,43,46
+SWE,Sweden,2017,43,46
+SWE,Sweden,2018,43,46
+SWE,Sweden,2019,43,46
+SWE,Sweden,2020,43,46
+SWE,Sweden,2021,43,46
+SWE,Sweden,2022,43,46
+SWE,Sweden,2023,43,46
+SWE,Sweden,2024,43,46
+TWN,Taiwan,1947,47,49
+TWN,Taiwan,1948,47,49
+TWN,Taiwan,1949,48,49
+TWN,Taiwan,1950,48,49
+TWN,Taiwan,1951,48,49
+TWN,Taiwan,1952,48,49
+TWN,Taiwan,1953,48,49
+TWN,Taiwan,1954,48,49
+TWN,Taiwan,1955,48,49
+TWN,Taiwan,1956,48,49
+TWN,Taiwan,1957,47,49
+TWN,Taiwan,1958,47,49
+TWN,Taiwan,1959,47,49
+TWN,Taiwan,1960,47,48
+TWN,Taiwan,1961,47,48
+TWN,Taiwan,1962,47,48
+TWN,Taiwan,1963,47,48
+TWN,Taiwan,1964,46,48
+TWN,Taiwan,1965,46,48
+TWN,Taiwan,1966,46,48
+TWN,Taiwan,1967,45,47
+TWN,Taiwan,1968,45,47
+TWN,Taiwan,1969,45,47
+TWN,Taiwan,1970,44,47
+TWN,Taiwan,1971,44,46
+TWN,Taiwan,1972,43,46
+TWN,Taiwan,1973,43,46
+TWN,Taiwan,1974,43,45
+TWN,Taiwan,1975,42,44
+TWN,Taiwan,1976,42,50
+TWN,Taiwan,1977,42,45
+TWN,Taiwan,1978,41,45
+TWN,Taiwan,1979,41,44
+TWN,Taiwan,1980,40,45
+TWN,Taiwan,1981,40,44
+TWN,Taiwan,1982,40,44
+TWN,Taiwan,1983,39,44
+TWN,Taiwan,1984,39,43
+TWN,Taiwan,1985,38,43
+TWN,Taiwan,1986,38,43
+TWN,Taiwan,1987,38,42
+TWN,Taiwan,1988,38,42
+TWN,Taiwan,1989,39,42
+TWN,Taiwan,1990,39,42
+TWN,Taiwan,1991,39,42
+TWN,Taiwan,1992,39,42
+TWN,Taiwan,1993,39,42
+TWN,Taiwan,1994,39,43
+TWN,Taiwan,1995,40,42
+TWN,Taiwan,1996,40,43
+TWN,Taiwan,1997,40,43
+TWN,Taiwan,1998,40,43
+TWN,Taiwan,1999,40,43
+TWN,Taiwan,2000,40,43
+TWN,Taiwan,2001,40,43
+TWN,Taiwan,2002,40,43
+TWN,Taiwan,2003,40,43
+TWN,Taiwan,2004,40,43
+TWN,Taiwan,2005,40,43
+TWN,Taiwan,2006,40,43
+TWN,Taiwan,2007,40,43
+TWN,Taiwan,2008,40,43
+TWN,Taiwan,2009,40,43
+TWN,Taiwan,2010,41,43
+TWN,Taiwan,2011,41,43
+TWN,Taiwan,2012,41,43
+TWN,Taiwan,2013,41,44
+TWN,Taiwan,2014,42,44
+TWN,Taiwan,2015,42,44
+TWN,Taiwan,2016,42,44
+TWN,Taiwan,2017,42,44
+TWN,Taiwan,2018,42,45
+TWN,Taiwan,2019,42,44
+TWN,Taiwan,2020,42,45
+TWN,Taiwan,2021,42,45
+TWN,Taiwan,2022,42,45
+TWN,Taiwan,2023,42,45
+TWN,Taiwan,2024,42,46
+UKR,Ukraine,1959,43,47
+UKR,Ukraine,1960,43,46
+UKR,Ukraine,1961,43,46
+UKR,Ukraine,1962,43,46
+UKR,Ukraine,1963,43,46
+UKR,Ukraine,1964,43,46
+UKR,Ukraine,1965,43,46
+UKR,Ukraine,1966,43,46
+UKR,Ukraine,1967,42,46
+UKR,Ukraine,1968,42,46
+UKR,Ukraine,1969,42,46
+UKR,Ukraine,1970,42,45
+UKR,Ukraine,1971,42,45
+UKR,Ukraine,1972,42,45
+UKR,Ukraine,1973,42,45
+UKR,Ukraine,1974,42,44
+UKR,Ukraine,1975,42,45
+UKR,Ukraine,1976,42,44
+UKR,Ukraine,1977,42,45
+UKR,Ukraine,1978,41,45
+UKR,Ukraine,1979,41,45
+UKR,Ukraine,1980,41,44
+UKR,Ukraine,1981,41,44
+UKR,Ukraine,1982,41,44
+UKR,Ukraine,1983,41,44
+UKR,Ukraine,1984,41,44
+UKR,Ukraine,1985,41,44
+UKR,Ukraine,1986,41,44
+UKR,Ukraine,1987,41,44
+UKR,Ukraine,1988,41,44
+UKR,Ukraine,1989,40,44
+UKR,Ukraine,1990,40,43
+UKR,Ukraine,1991,40,43
+UKR,Ukraine,1992,40,43
+UKR,Ukraine,1993,39,43
+UKR,Ukraine,1994,39,43
+UKR,Ukraine,1995,39,43
+UKR,Ukraine,1996,38,43
+UKR,Ukraine,1997,39,42
+UKR,Ukraine,1998,39,43
+UKR,Ukraine,1999,38,43
+UKR,Ukraine,2000,38,43
+UKR,Ukraine,2001,38,42
+UKR,Ukraine,2002,39,42
+UKR,Ukraine,2003,39,42
+UKR,Ukraine,2004,39,43
+UKR,Ukraine,2005,39,43
+UKR,Ukraine,2006,40,43
+UKR,Ukraine,2007,40,43
+UKR,Ukraine,2008,40,43
+UKR,Ukraine,2009,41,43
+UKR,Ukraine,2010,41,44
+UKR,Ukraine,2011,41,44
+UKR,Ukraine,2012,41,44
+UKR,Ukraine,2013,41,44
+UKR,Ukraine,2014,42,45
+UKR,Ukraine,2015,42,45
+UKR,Ukraine,2016,42,45
+UKR,Ukraine,2017,42,45
+UKR,Ukraine,2018,42,45
+UKR,Ukraine,2019,42,45
+UKR,Ukraine,2020,42,45
+UKR,Ukraine,2021,42,45
+USA,United States of America,1917,46,48
+USA,United States of America,1918,47,49
+USA,United States of America,1919,46,48
+USA,United States of America,1920,46,48
+USA,United States of America,1921,46,48
+USA,United States of America,1922,46,48
+USA,United States of America,1923,46,48
+USA,United States of America,1924,46,48
+USA,United States of America,1925,46,48
+USA,United States of America,1926,46,48
+USA,United States of America,1927,46,48
+USA,United States of America,1928,46,48
+USA,United States of America,1929,45,48
+USA,United States of America,1930,45,48
+USA,United States of America,1931,45,48
+USA,United States of America,1932,45,48
+USA,United States of America,1933,45,47
+USA,United States of America,1934,44,47
+USA,United States of America,1935,44,47
+USA,United States of America,1936,44,47
+USA,United States of America,1937,44,47
+USA,United States of America,1938,44,46
+USA,United States of America,1939,44,47
+USA,United States of America,1940,44,46
+USA,United States of America,1941,43,46
+USA,United States of America,1942,43,46
+USA,United States of America,1943,43,46
+USA,United States of America,1944,43,46
+USA,United States of America,1945,43,46
+USA,United States of America,1946,44,46
+USA,United States of America,1947,44,46
+USA,United States of America,1948,44,46
+USA,United States of America,1949,44,46
+USA,United States of America,1950,43,46
+USA,United States of America,1951,44,46
+USA,United States of America,1952,44,46
+USA,United States of America,1953,43,46
+USA,United States of America,1954,44,46
+USA,United States of America,1955,44,46
+USA,United States of America,1956,44,46
+USA,United States of America,1957,44,46
+USA,United States of America,1958,44,46
+USA,United States of America,1959,44,46
+USA,United States of America,1960,43,46
+USA,United States of America,1961,43,46
+USA,United States of America,1962,43,46
+USA,United States of America,1963,43,46
+USA,United States of America,1964,43,46
+USA,United States of America,1965,43,45
+USA,United States of America,1966,43,45
+USA,United States of America,1967,43,45
+USA,United States of America,1968,43,45
+USA,United States of America,1969,43,45
+USA,United States of America,1970,42,45
+USA,United States of America,1971,42,45
+USA,United States of America,1972,42,45
+USA,United States of America,1973,42,44
+USA,United States of America,1974,41,44
+USA,United States of America,1975,41,44
+USA,United States of America,1976,41,44
+USA,United States of America,1977,41,44
+USA,United States of America,1978,41,44
+USA,United States of America,1979,41,44
+USA,United States of America,1980,40,44
+USA,United States of America,1981,41,44
+USA,United States of America,1982,41,44
+USA,United States of America,1983,40,44
+USA,United States of America,1984,40,44
+USA,United States of America,1985,41,44
+USA,United States of America,1986,41,44
+USA,United States of America,1987,41,44
+USA,United States of America,1988,41,44
+USA,United States of America,1989,41,44
+USA,United States of America,1990,41,44
+USA,United States of America,1991,41,44
+USA,United States of America,1992,41,44
+USA,United States of America,1993,41,44
+USA,United States of America,1994,42,44
+USA,United States of America,1995,42,44
+USA,United States of America,1996,42,44
+USA,United States of America,1997,42,44
+USA,United States of America,1998,42,44
+USA,United States of America,1999,42,45
+USA,United States of America,2000,42,45
+USA,United States of America,2001,42,45
+USA,United States of America,2002,42,45
+USA,United States of America,2003,42,45
+USA,United States of America,2004,42,45
+USA,United States of America,2005,42,45
+USA,United States of America,2006,42,45
+USA,United States of America,2007,42,45
+USA,United States of America,2008,43,45
+USA,United States of America,2009,43,45
+USA,United States of America,2010,43,45
+USA,United States of America,2011,43,45
+USA,United States of America,2012,43,45
+USA,United States of America,2013,43,45
+USA,United States of America,2014,43,45
+USA,United States of America,2015,43,45
+USA,United States of America,2016,43,45
+USA,United States of America,2017,43,46
+USA,United States of America,2018,43,46
+USA,United States of America,2019,43,46
+USA,United States of America,2020,43,46
+USA,United States of America,2021,43,46
+USA,United States of America,2022,43,46
+USA,United States of America,2023,43,46
+USA,United States of America,2024,43,46

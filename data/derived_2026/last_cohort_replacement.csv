@@ -1,0 +1,39 @@
+code,country,last_cohort_crossing,age_at_last_crossing,first_never_cohort
+USA,United States of America,1984,40,1950
+ISL,Iceland,1983,40,NA
+GBR_NIR,"UK, Northern Ireland",1981,42,1972
+FRA,France,1980,43,1892
+NZL,New Zealand,1980,42,1981
+IRL,Ireland,1975,44,1976
+MKD,Macedonia,1974,42,1975
+ALB,Albania,1973,34,NA
+NOR,Norway,1971,43,1954
+AUS,Australia,1967,47,1968
+SVK,Slovakia,1965,42,1966
+MDA,Moldova,1964,41,1965
+POL,Poland,1964,46,1965
+TWN,Taiwan,1963,37,1964
+ROU,Romania,1962,40,1963
+EST,Estonia,1960,39,1944
+SWE,Sweden,1960,44,1898
+CZE,Czech Republic,1958,41,1943
+KOR,Republic of Korea,1958,42,1959
+PRT,Portugal,1956,45,1953
+ESP,Spain,1953,43,1954
+BIH,Bosnia and Herzegovina,1951,38,1952
+BGR,Bulgaria,1950,37,1933
+GBRTENW,"UK, England and Wales",1950,42,1898
+GBR_SCO,"UK, Scotland",1950,40,1951
+LTU,Lithuania,1949,40,1944
+CAN,Canada,1948,41,1949
+ITA,Italy,1947,44,1948
+DNK,Denmark,1945,38,1946
+NLD,Netherlands,1944,41,1891
+BEL,Belgium,1943,41,1944
+AUT,Austria,1942,46,1943
+CHE,Switzerland,1941,41,1942
+JPN,Japan,1941,38,1910
+FIN,Finland,1940,41,1941
+DEUTE,"Germany, East",1938,40,1939
+DEUTW,"Germany, West",1938,39,1939
+HUN,Hungary,1933,43,1934
