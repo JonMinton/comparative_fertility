@@ -3,9 +3,14 @@ title: "The exceptions collapse: fertility trends for 45 countries revisited"
 subtitle: "DRAFT v0.1 (2026-07-11) — working paper for preprint; not yet reviewed by all listed contributors"
 author:
   - name: Jon Minton
+    affiliations:
+      - name: Independent researcher
+    email: jon.will.minton@gmail.com
+# This work is unaffiliated with the author's employment.
 # Authorship model (Jon, 2026-07-11): v0.1 posts under sole authorship. The 2020
 # co-authors (Pattaro, Vanderbloemen) are acknowledged below and invited to join
-# by contribution; authorship can be added in later preprint versions.
+# by contribution; authorship can be added in later preprint versions. Both were
+# contacted via LinkedIn on 2026-07-11.
 date: 2026-07-11
 bibliography: references.bib
 format:

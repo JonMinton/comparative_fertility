@@ -67,7 +67,7 @@ All Claude-side work is committed locally; nothing is pushed. In review order:
    splits, featured_wall_{nor,usa,kor}, wall_trajectories.
 3. **Skim the two reports** — `reports/validation_2026.md`, `reports/wall_analysis_2026.md`.
 4. **Decide**: commit the combined 2026 CSV? (HFD terms check; currently untracked.)
-5. **Send the courtesy/invitation email** to Serena Pattaro & Laura Vanderbloemen.
+5. ~~Contact Serena & Laura~~ — DONE 2026-07-11 via LinkedIn.
 6. **Push**: `git push origin master feature-claude-update demres-2020` — this
    makes everything public (master already fast-forwarded locally; the
    `demres-2020` tag preserves the 2020-paper state and is signposted in the
