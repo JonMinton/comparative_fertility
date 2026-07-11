@@ -92,8 +92,7 @@ human review, per Jon's preprint-early strategy — review is now post-hoc):
      Fixed same day: Jon's ORCID record updated from his CV (employment
      end-dated PHS 2024-09, added Smith & Nephew Senior Statistician
      2024-09→present, three education entries added: PhD York 2011, MA
-     Nottingham 2004, BEng Nottingham 2003; CodeClan SCQF-8 entry pending
-     dates from Jon); ORCID connected to OSF profile (Jon's OAuth click);
+     Nottingham 2004, BEng Nottingham 2003; CodeClan Professional Software Development SCQF-8, Feb-Jun 2023, Cohort E63); ORCID connected to OSF profile (Jon's OAuth click);
      both preprints now PENDING MODERATION again.
    - SocArXiv pre-moderation ~1–2 days; DOIs assigned on acceptance.
    - Remaining OSF nice-to-haves: upload this workplan file to project storage;
