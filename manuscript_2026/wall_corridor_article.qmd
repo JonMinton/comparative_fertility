@@ -11,6 +11,24 @@ author:
 # contribution in later versions (see descriptive_finding.qmd note); both
 # contacted via LinkedIn 2026-07-11.
 date: 2026-07-11
+abstract: |
+  Whether a cohort can reach replacement fertility depends on when childbearing
+  starts and when it must end. Ages at first birth have risen five to six years
+  since the 1970s; this paper is about the other boundary. Using the updated
+  45-country HFD/HFC panel (1850–2025), we define the effective ceiling of the
+  fertility lifecourse as the highest age with ASFR ≥ 1/200 and show it is
+  behavioural, not biological: 47–48 in nineteenth-century populations, pulled
+  down to 41 by the 1980s as parity control truncated high-parity childbearing,
+  and recovered only to about 43 since — one year per fifteen calendar years.
+  The fertility mass above age 40 (0.02–0.07 children) cannot arithmetically
+  substitute for earlier childbearing. Consequently replacement must now be
+  achieved within a corridor roughly thirteen years wide, and on composite
+  lattice plots the replacement contour visibly terminates at the ceiling —
+  distinguishable from right-censoring — in 43 of 45 countries' recent cohorts.
+  The corridor framing contributes discipline to the debate on accelerating
+  fertility decline: any candidate explanation must match the same
+  age–cohort–timing fingerprint, and postponement converts to quantum loss even
+  under unchanged intentions.
 bibliography: references.bib
 format:
   html:
@@ -73,7 +91,7 @@ Definitions, fixed ex ante in the public workplan:
 
 ## The ceiling is behavioural and nearly fixed
 
-![Effective ceiling trajectories by country, 1950--2025: highest age with ASFR at or above 1/200 (solid) and 1/1000 (dashed).](../figures/figures_2026/wall_trajectories.png){#fig-walls}
+![Effective ceiling trajectories by country, 1950--2025: highest age with ASFR at or above 1/200 (solid) and 1/1000 (dashed).](figures/wall_trajectories.png){#fig-walls}
 
 Pooled decade medians of the primary ceiling: 45 (1950s), 44 (1960s), 42
 (1970s), 41 (1980s and 1990s), 42 (2000s), 42 (2010s), 43 (2020s). The
@@ -84,7 +102,7 @@ data/derived_2026/wall_by_country_year.csv -->
 
 ## The mass behind the ceiling is small
 
-![Cumulative ASFR at ages 40+ (solid) and 35+ (dashed), by country, 1950--2025.](../figures/figures_2026/late_mass_trends.png){#fig-mass}
+![Cumulative ASFR at ages 40+ (solid) and 35+ (dashed), by country, 1950--2025.](figures/late_mass_trends.png){#fig-mass}
 
 Median cumulative fertility above age 40 fell from 0.117 (1950s) to 0.023
 (1980s) and has recovered to 0.065 (2020s) (@fig-mass) --- at its
@@ -94,7 +112,7 @@ their forties below roughly 1.99.
 
 ## Reachability: where the replacement contour meets the wall
 
-![Age at which each cohort's CPCFR reaches 2.05, by country; the dotted reference line marks age 43.](../figures/figures_2026/reachability_crossing_ages.png){#fig-reach}
+![Age at which each cohort's CPCFR reaches 2.05, by country; the dotted reference line marks age 43.](figures/reachability_crossing_ages.png){#fig-reach}
 
 Forty-three of 45 countries have post-war cohorts observed beyond age 44 that
 never reached 2.05; only nine have any cohort born after 1970 that crossed.
@@ -106,7 +124,7 @@ modern ones — before drawing conclusions from first_never_cohort. -->
 
 ## The wall on the surface
 
-![Norway: composite surface with the effective ceiling overdrawn (dotted). Both vertical escapes of the 2.05 contour terminate at the ceiling.](../figures/figures_2026/featured_wall_nor.png){#fig-norwall}
+![Norway: composite surface with the effective ceiling overdrawn (dotted). Both vertical escapes of the 2.05 contour terminate at the ceiling.](figures/featured_wall_nor.png){#fig-norwall}
 
 Overlaying the ceiling on the composite surface (@fig-norwall; US and South
 Korean panels in the repository) makes the two contour-termination modes

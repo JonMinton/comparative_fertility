@@ -12,6 +12,25 @@ author:
 # by contribution; authorship can be added in later preprint versions. Both were
 # contacted via LinkedIn on 2026-07-11.
 date: 2026-07-11
+abstract: |
+  BACKGROUND — Pattaro, Vanderbloemen and Minton (2020) found, across 45
+  countries, that once cohorts fell below the replacement milestone (cumulative
+  pseudo-cohort fertility rate, CPCFR, of 2.05) they tended not to return, with
+  two named exceptions: Norway and the United States. Their data ended in
+  2014–15. OBJECTIVE — To update the 45-country composite lattice plots with
+  Human Fertility Database and Human Fertility Collection data extending to
+  2023–25 and re-examine the exceptions. METHODS — The published combination
+  rules and visual specification are reapplied to the 2026 source releases,
+  with one code-mapping correction restoring France after 2008. RESULTS — Both
+  exceptions have ended or are ending. Norway's replacement contour, having
+  returned for cohorts born 1958–68, escapes vertically for cohorts born after
+  ~1972. The United States' exception persisted longer than its period
+  collapse suggests — cohorts born 1982–84 crossed 2.05 at ages 39–40 — and is
+  fading in the still-censored cohorts beyond. Across the panel, 43 of 45
+  countries now have post-war cohorts observed beyond age 44 that never
+  reached replacement. CONCLUSIONS — A decade of new data strengthens the 2020
+  regularity at the cost of both its exceptions; the geometry of the contour
+  escapes points to a structural ceiling developed in a companion paper.
 bibliography: references.bib
 format:
   html:
@@ -82,7 +101,7 @@ by CPCFR at 2007, the ranking year of the published figures
 
 ## Norway
 
-![Norway: ASFR surface with CPCFR contours at 2.05 (heavy) and 1.50 (light), cohorts observed to 2024.](../figures/figures_2026/norway_only.png){#fig-norway}
+![Norway: ASFR surface with CPCFR contours at 2.05 (heavy) and 1.50 (light), cohorts observed to 2024.](figures/norway_only.png){#fig-norway}
 
 The updated Norway panel (@fig-norway) now shows a complete arc. The 2.05
 contour climbs steeply --- effectively vertically --- for cohorts born around
@@ -111,7 +130,7 @@ as the period-based literature on postponement would predict
 
 ## The panel as a whole
 
-![The fifteen highest-ranked countries by CPCFR at 2007, updated to 2023--25.](../figures/figures_2026/overall_split_1.png){#fig-top15}
+![The fifteen highest-ranked countries by CPCFR at 2007, updated to 2023--25.](figures/overall_split_1.png){#fig-top15}
 
 Across the full panel, 43 of 45 countries now have post-war cohorts observed
 beyond age 44 that never reached replacement. Only nine countries have *any*
