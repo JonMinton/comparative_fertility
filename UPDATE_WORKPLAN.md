@@ -284,7 +284,11 @@ timing. Investigable, but NOT with HFD/HFC alone (rich-country biased):
 needs UN WPP-type estimates for global coverage, i.e. a distinct data
 pipeline, lower age-resolution, different quality caveats. Park until papers
 1–2 are through review; note it connects Phase 4's cross-country-timing idea
-to a global panel.
+to a global panel. Strategy options + objections drafted (2026-07-11):
+`manuscript_2026/universality_strategy.md` — recommended architecture is
+fingerprint-first (WPP descriptive surface), estimated break dates with a
+permutation null, adoption-alignment and age-margin modules for
+discrimination; the crude fixed-2008 shift survives only as a baseline.
 Venue note: Comparative Population Studies published a direct methodological
 descendant (GDR paper, 2026) — evidence of a receptive venue for 1 or 2.
 
