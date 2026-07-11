@@ -68,7 +68,7 @@ human review, per Jon's preprint-early strategy — review is now post-hoc):
 2. **Eyeball the figures** — `figures/figures_2026/`: norway_only, the three
    splits, featured_wall_{nor,usa,kor}, wall_trajectories.
 3. **Skim the two reports** — `reports/validation_2026.md`, `reports/wall_analysis_2026.md`.
-4. **Decide**: commit the combined 2026 CSV? (HFD terms check; currently untracked.)
+4. ~~Decide: commit the combined 2026 CSV?~~ — DONE 2026-07-11: Jon approved; committed (c1ce25d).
 5. ~~Contact Serena & Laura~~ — DONE 2026-07-11 via LinkedIn.
 6. ~~Push~~ — DONE 2026-07-11 (master, feature-claude-update, demres-2020 all on
    GitHub). Remaining: create a GitHub Release from the tag; optionally enable
