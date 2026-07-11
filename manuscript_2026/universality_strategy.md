@@ -166,17 +166,124 @@ turning paper 3 into paper 2.
 
 ---
 
+## Prior art to engage first: the 4G-rollout study (Burn-Murdoch's source)
+
+**Hudson & Moscoso Boedo (Univ. of Cincinnati), SSRN working paper, April
+2026** (not yet peer-reviewed): exploits *staggered subnational rollout of 4G*
+in the US and UK; births fell first and fastest in areas that received
+high-speed mobile connectivity earliest. Their own headline caveat: "Whatever
+the smartphone shock is doing to fertility, it is doing to teens. The entire
+25+ population … exhibits no detrended response in the typical country."
+First task of paper 3's literature phase: obtain the working paper and
+reconstruct the exact estimator (presumably event-study/staggered
+difference-in-differences on area × age-group birth rates).
+
+**Standing methodological objections to log and check against the paper
+itself:**
+1. **The detrending choice is the result.** "No detrended response" for 25+
+   depends entirely on what trend was removed — the same counterfactual
+   hazard as our S1/S2. Critics also run this in reverse: against
+   pre-smartphone extrapolations, the residual teen dip looks artificially
+   sudden.
+2. **Rollout endogeneity.** 4G arrived first in denser, richer, younger,
+   more urban areas whose fertility was already on different trajectories —
+   parallel-trends is the whole game and is doubtful here.
+3. **Staggered-DiD pathologies.** Two-way fixed effects with staggered
+   adoption and heterogeneous effects produces contaminated estimates
+   (Goodman-Bacon decomposition literature); whether they use modern
+   estimators matters.
+4. **Teen-specific confounds.** The US teen-birth collapse (~2008–2015)
+   coincides with LARC expansion and other teen-targeted contraception and
+   policy shifts; an area-level rollout design struggles to separate these.
+5. **Ecological exposure.** Area-level availability is not individual use.
+6. **Two rich anglophone countries** cannot carry a universality claim in
+   either direction — which is precisely the gap paper 3 exploits.
+
+Note the strategic asymmetry: their design is *micro/quasi-experimental*
+within two countries; ours is *macro/structural* across all countries. The
+two are complementary, and the paper should say so rather than compete.
+
+## Strategy S8 — Lexis-field ("pseudospatial") approaches: the acid test
+
+Jon's framing: the age × period ASFR surface is pseudospatial data — a 2-D
+field on a lattice — so adoption hypotheses become *geometric* hypotheses
+about where and how a change-front crosses the field. If adoption reached
+younger people first and spread to older ages, the response should not be a
+clean vertical step in period but an **age-graded front**: a step function in
+period whose onset year increases with age.
+
+**The model taxonomy** (each adoption pattern implies a distinct, fittable
+signature; all are statements about the *sign of change* field
+∂ASFR/∂t, not about levels):
+
+| Model | Adoption pattern | Signature on the Lexis surface |
+|---|---|---|
+| M1 | Simultaneous shock, all ages (crisis-like, or instant saturation) | Vertical front: onset year constant in age |
+| M2 | Young-first diffusion up the age scale | Sloped front: onset year rising with age, slope = 1/velocity (years of age per calendar year), between vertical and the cohort diagonal |
+| M3 | Cohort-carried (socialized-in-adolescence) | 45° front along cohort diagonals: onset year rises 1-for-1 with age |
+| M4 | Cross-population staggering | Same within-country geometry, but front onset varies by country adoption date / development |
+
+**Estimators, simplest first:**
+- **Front extraction (the workhorse).** For each country × single age (or
+  5-year group), estimate the break year of the ASFR series (S2 machinery,
+  one dimension lower). Then regress estimated break year on age within each
+  country: slope ≈ 0 → M1; slope ≈ 1 → M3; intermediate stable slope → M2
+  with measurable diffusion velocity; no coherent front → none of the above.
+  Two parameters per country (onset, velocity) then travel to the
+  cross-country stage: regress onset on adoption date/development (M4).
+  Communicable, visualizable (fitted front overlaid on the surface — the
+  house style), and each competing story is a parameter value, not a vibe.
+- **Competing parametric surface fits.** Fit M1/M2/M3 as constrained
+  interaction structures on the ASFR (or log-ASFR) field per country and
+  compare by information criteria — the formal version of the same test.
+- **Image-analysis analogies** (edge detection on the first-difference
+  surface, spatial autocorrelation of residuals) as robustness/illustration,
+  not headline — reviewers in demography will trust break regressions over
+  Sobel filters.
+
+**Objections:**
+- **Tempo mimicry (the big one).** A postponement wave moves the ridge of the
+  surface upward in age over time and generates *young-age decline followed
+  by older-age decline* mechanically — an M2-looking front with no diffusion
+  of anything except birth timing. Any front finding must be shown to
+  survive, e.g., analysis of cumulative (CPCFR) milestones or comparison
+  with mean-age dynamics; this is where the corridor paper's machinery
+  re-enters.
+- ASFR surfaces are smooth; breaks are blurred and onset dating at single
+  ages is noisy, especially at high ages near the wall (low levels → divide
+  the field's usable age range honestly).
+- Resolution split: the fine test needs single-year Lexis squares (HFD/HFC
+  panel — rich-country biased); the global panel (WPP) only supports 5-year
+  groups → run the fine test on the 45-country panel, the coarse test
+  globally, and report both, mirroring S6's two-resolution design.
+- Multiple testing across country × age break searches; pre-specify the
+  break-search window (1995–2019) and use the S2 permutation null.
+
+**Verdict:** this is the acid test and the paper's most original module — it
+converts the within-country adoption-pattern question into estimable geometry
+using exactly the data structure papers 1–2 are built on. Promote to the
+analytic core alongside S2.
+
+---
+
 ## Recommended architecture (for discussion, not decided)
 
-**Staged, S4 spine with S2 core and S3+S6 as discriminating modules:**
+**Staged, S4 spine with S2+S8 core and S3+S6 as discriminating modules:**
 
+0. **Literature phase:** obtain Hudson & Moscoso Boedo (SSRN 2026),
+   reconstruct their estimator, log which of objections 1–6 apply, and
+   position paper 3 as the complementary macro/structural test.
 1. **Fingerprint first (S4):** one frozen WPP vintage; global acceleration
    surface ordered by development; vital-registration subsample robustness.
 2. **Dating second (S2):** estimated break dates, 1990–2019 window,
    permutation null; histogram by development tercile.
-3. **Discrimination third (S3 + S6):** adoption-aligned event time; age-margin
-   fingerprint at two resolutions.
-4. **S1 appears only as the transparent baseline** in a robustness table; S5
+3. **Geometry third (S8 — the acid test):** front extraction per country
+   (onset + diffusion velocity by age); M1/M2/M3 adjudication on the
+   45-country single-year panel, coarse version globally; tempo-mimicry
+   check via cumulative milestones.
+4. **Discrimination fourth (S3 + S6):** adoption-aligned event time;
+   age-margin fingerprint at two resolutions.
+5. **S1 appears only as the transparent baseline** in a robustness table; S5
    omitted; S7 deferred.
 5. **Pre-specification:** estimation windows, functional forms, vintage,
    subsample definitions, and the reversion-vs-regime test all fixed in this
