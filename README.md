@@ -51,6 +51,18 @@ and `scripts/two_contour_version_of_figures.R` is the script that produced the
 figures in the paper (kept byte-for-byte as published; the 2026 scripts never
 modify it).
 
+> **Reproduction vs. replication of the 2020 findings.** The published results
+> remain *reproducible* from this repository (frozen data + frozen scripts, and
+> the [`demres-2020`](../../releases/tag/demres-2020) tag preserves the full
+> 2020-era state including the manuscript history under `manuscript/`). They
+> are, however, no longer exactly *replicable from fresh source downloads*:
+> both the HFD and HFC revise historical series, and the revisions between the
+> 2016 and 2026 releases are documented in
+> [`reports/validation_2026.md`](reports/validation_2026.md) (largest for
+> Ireland, Spain and Denmark). This is inherent to living databases — and part
+> of the case for updating. The frozen CSV in this repo is the authoritative
+> record of the paper's inputs; anything not marked `_2026` is 2020-era.
+
 ## The paper
 
 The paper introduces a refinement of the Lexis surface for fertility: **level

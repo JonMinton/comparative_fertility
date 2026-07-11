@@ -61,6 +61,11 @@ an unmapped country code, so the published figures showed France ending in
 2008; the updated build restores France to 2023. A back-revision audit against
 the 2016 dataset is included in the repository; the largest differences
 (Ireland, Spain, Denmark) reflect HFD's own revisions of historical exposures.
+A consequence worth stating plainly: the 2020 findings remain reproducible from
+the dataset frozen in the repository, but they are not exactly replicable from
+fresh source downloads, because the source databases have themselves been
+revised --- an inherent property of living data infrastructures, and part of
+the motivation for periodic updates of this kind.
 
 All figures use the published visual specification: viridis (reversed)
 level-plot shading of ASFR on birth-year $\times$ age panels, solid contours at
