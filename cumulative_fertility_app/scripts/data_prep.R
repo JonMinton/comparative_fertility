@@ -3,11 +3,18 @@
 # Data 
 country_codes <- read_csv("data/code_definitions.csv")
 
-if(file.exists("data/data_combined_and_standardised.csv")){
+if(file.exists("data/data_combined_and_standardised_2026.csv")){
+  # 2026 update: HFD/HFC releases to 2023-25 (see repo UPDATE_WORKPLAN.md);
+  # extra `source` column dropped to keep the original pipeline unchanged
+  dta_simplified <- read.csv(
+    "data/data_combined_and_standardised_2026.csv"
+  ) %>% select(code, year, age, asfr) %>% tbl_df %>%
+    arrange(code, year, age)
+} else if(file.exists("data/data_combined_and_standardised.csv")){
   dta_simplified <- read.csv(
     "data/data_combined_and_standardised.csv"
-  ) %>% tbl_df %>% 
-    arrange(code, year, age) 
+  ) %>% tbl_df %>%
+    arrange(code, year, age)
 } else {
   source("scripts/hfc_hfd_data_combine.R")
 }
@@ -47,7 +54,7 @@ dta <- dta %>%
 
 
 ordered_codes <- dta  %>% 
-  filter(year == 2007)  %T>% print(sample_n(10)) %>% 
+  filter(year == 2007)  %>%
   group_by(code) %>% 
   mutate(last_ccfr = max(my_ccfr, na.rm= T))  %>% 
   ungroup  %>% 
