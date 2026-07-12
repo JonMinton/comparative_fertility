@@ -94,6 +94,15 @@ human review, per Jon's preprint-early strategy — review is now post-hoc):
      2024-09→present, three education entries added: PhD York 2011, MA
      Nottingham 2004, BEng Nottingham 2003; CodeClan Professional Software Development SCQF-8, Feb-Jun 2023, Cohort E63); ORCID connected to OSF profile (Jon's OAuth click);
      both preprints now PENDING MODERATION again.
+   - RESUBMITTED (2026-07-12, Jon): both preprints back in the moderation
+     queue with the sole flagged issue resolved — ORCID
+     (0000-0003-1207-6259) is linked to the OSF profile and publicly shows
+     research activity from 2017 and earlier (45 works, employment,
+     education). Anonymous API still 403s both (= pending, as expected).
+   - CO-AUTHORS (2026-07-12, Jon): .docx builds of both drafts shared with
+     Serena Pattaro and Laura Vanderbloemen (tracked-changes/comments
+     channel per the two-channel review setup; join-by-contribution
+     invitation for v2+).
    - SocArXiv pre-moderation ~1–2 days; DOIs assigned on acceptance.
    - Remaining OSF nice-to-haves: upload this workplan file to project storage;
      verify components display as public; GitHub add-on link (needs Jon's OAuth).
