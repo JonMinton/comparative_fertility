@@ -1,10 +1,10 @@
 # Preregistration protocol — "Did fertility change everywhere at once? A universality test of the post-2008 acceleration"
 
-*DRAFT v0.1 for OSF registration (secondary-data preregistration format).
-Prepared 2026-07-11. NOT YET REGISTERED — bracketed [DECISION:] items must be
-resolved by JM before freezing. Once frozen, this document is registered on
-OSF (immutable) and this file carries the registration DOI; subsequent
-changes follow §10 (Deviations policy).*
+*v1.0 FROZEN FOR REGISTRATION (secondary-data preregistration format).
+Prepared 2026-07-11; all open parameters resolved and adopted by JM
+2026-07-12 (see §11). This version is registered on OSF (immutable); the
+registration link is appended below on completion. Subsequent changes follow
+§10 (Deviations policy).*
 
 ---
 
@@ -14,7 +14,7 @@ changes follow §10 (Deviations policy).*
 test of the post-2008 acceleration in fertility decline.
 
 **Authors.** Jon Minton (Independent researcher; jon.will.minton@gmail.com;
-ORCID to be added). This work is unaffiliated with the author's employment.
+ORCID 0000-0003-1207-6259). This work is unaffiliated with the author's employment.
 
 **AI-assistance disclosure.** This protocol was drafted with AI assistance
 (Claude, Anthropic) under the direction of JM, consistent with the disclosure
@@ -105,8 +105,7 @@ window 1995–2015 (≥5 years of data on each side of any candidate break).
 2020–2024 data are displayed only in exploratory figures, clearly marked,
 and never enter break estimation (COVID rule).
 
-**Population exclusions.** Countries with population < [DECISION: proposed
-500,000] at 2010; country-series with fewer than 25 observed years within
+**Population exclusions.** Countries with population < 500,000 at 2010; country-series with fewer than 25 observed years within
 1990–2019; WPP countries whose fertility inputs are wholly survey/model-based
 throughout 1990–2019 are excluded from confirmatory tiers (retained in the
 exploratory fingerprint, labelled).
@@ -116,8 +115,7 @@ exploratory fingerprint, labelled).
 - **CONFIRMATORY:** H1 (common break), H2 (front geometry), each with its
   tempo-mimicry co-primary and the uniform-vs-differential decomposition.
 - **SECONDARY:** H3 (adoption vs development gradient); the age-margin
-  fingerprint (S6); the no-recession-countries contrast [DECISION: promote
-  to confirmatory? see §11].
+  fingerprint (S6); 
 - **EXPLORATORY (registered as such, no inferential claims):** the S4 global
   acceleration fingerprint surfaces (country × year first/second differences
   ordered by development); all 2020–2024 displays; any analysis not listed
@@ -176,10 +174,9 @@ age (WLS, weights = inverse break-date variance). Let β be the slope, with
 **Country classification.** M1 if CI includes 0 and excludes 1. M3 if CI
 includes 1 and excludes 0. M2 if CI excludes BOTH 0 and 1 and 0 < β̂ < 1
 (diffusion velocity = 1/β̂ years of age per calendar year). INDETERMINATE
-otherwise, or if no coherent front exists (fewer than [DECISION: proposed
-12] of 24 ages yield a dateable break).
+otherwise, or if no coherent front exists (fewer than 12 of 24 ages yield a dateable break).
 
-**Panel decision rule.** H2 is SUPPORTED if ≥ [DECISION: proposed 60%] of
+**Panel decision rule.** H2 is SUPPORTED if ≥ 60% of
 classifiable countries are M2; NOT SUPPORTED if M1 or M3 pluralities;
 reported descriptively otherwise. Country classifications use
 Benjamini–Hochberg FDR at q = 0.05 across countries for the CI-based calls.
@@ -188,7 +185,7 @@ Benjamini–Hochberg FDR at q = 0.05 across countries for the CI-based calls.
 mechanically mimics M2. For each M2-classified country we therefore test a
 quantum component on cumulative cohort trajectories: CPCFR at age 30 (and
 35) for cohorts reaching that age post-onset must fall relative to the last
-three pre-onset cohorts by ≥ [DECISION: proposed 0.05 children] for at least
+three pre-onset cohorts by ≥ 0.05 children for at least
 three consecutive cohorts. M2 classifications failing this are downgraded to
 "M2-tempo" (front reflects timing, not quantum) and H2's support tally
 counts only quantum-confirmed M2 countries. [Note: this check runs on
@@ -204,7 +201,7 @@ conditional on adoption.
 **Test.** Regress country onset on τ_c and HDI-2007 (and GDP alternative).
 SUPPORTED if (i) the τ_c coefficient is positive, p < 0.05; and (ii) the
 development coefficient conditional on τ_c is equivalent to zero by TOST
-with bounds ± [DECISION: proposed 1.5 years of onset per 1 SD of HDI].
+with bounds ±1.5 years of onset per 1 SD of HDI.
 Collinearity between adoption and development is reported (VIF); if VIF > 10
 the test is reported as non-identified rather than forced.
 
@@ -234,7 +231,7 @@ the test is reported as non-identified rather than forced.
 - Level vs log outcomes.
 - High-income-only vs full-panel replications of H1.
 - No-recession-countries contrast: countries without a 2008–09 real-GDP
-  contraction (World Bank WDI) — did they break anyway? [DECISION: status]
+  contraction (World Bank WDI) — did they break anyway? (status: robustness, adopted)
 - Excluding countries whose adoption date is within ±1 year of 2008 (crisis
   de-confounding subset).
 
@@ -263,17 +260,14 @@ immutable). The repo's commit history provides the fine-grained audit trail.
 Preprint versions of the eventual paper will cite the registration DOI and
 state conformity/deviations in a dedicated subsection.
 
-## 11. Open decisions to resolve before freezing [all JM]
+## 11. Parameter decisions — ADOPTED (JM, 2026-07-12)
 
-- [DECISION: §3] Minimum population threshold (proposed 500,000 at 2010).
-- [DECISION: §5-H2] Minimum dateable ages for a country to be classifiable
-  (proposed 12 of 24); panel support threshold (proposed ≥60% of
-  classifiable countries M2).
-- [DECISION: §5-H2] Quantum threshold for the tempo downgrade (proposed
-  CPCFR-at-30 fall ≥ 0.05 children over ≥3 consecutive cohorts).
-- [DECISION: §5-H3] TOST equivalence bound for the development null
-  (proposed ±1.5 years onset per 1 SD HDI).
-- [DECISION: §7] Status of the no-recession contrast: robustness (current)
-  or promoted to secondary hypothesis.
-- [DECISION: venue] Demographic Research descriptive-finding vs full
-  research article — affects reporting length, not analysis.
+- §3 minimum population threshold: **500,000 at 2010**.
+- §5-H2 classifiability: **≥ 12 of 24 ages** dateable; panel support rule:
+  **≥ 60% of classifiable countries M2**.
+- §5-H2 tempo-downgrade quantum threshold: **CPCFR-at-30 fall ≥ 0.05
+  children over ≥ 3 consecutive cohorts**.
+- §5-H3 TOST equivalence bound: **±1.5 years of onset per 1 SD of HDI**.
+- §7 no-recession contrast: **robustness item, not a headline hypothesis**.
+- Venue (DR descriptive finding vs full article) remains open; it affects
+  reporting length only, not any registered analysis choice.
