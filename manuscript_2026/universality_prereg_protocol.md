@@ -271,3 +271,17 @@ state conformity/deviations in a dedicated subsection.
 - §7 no-recession contrast: **robustness item, not a headline hypothesis**.
 - Venue (DR descriptive finding vs full article) remains open; it affects
   reporting length only, not any registered analysis choice.
+
+---
+
+## Registration (completed)
+
+Registered on OSF as an Open-Ended Registration on 2026-07-12, made public
+immediately: **https://osf.io/j3tbq** (component: https://osf.io/zs3wn;
+umbrella project: https://osf.io/3ju29). The registration summary carries the
+full decision rules and permalinks this protocol at commit `2eb0733`
+(https://github.com/JonMinton/comparative_fertility/blob/2eb07332eaae686b31656097723d82e016ad49d9/manuscript_2026/universality_prereg_protocol.md).
+The protocol `.md` and rendered `.pdf` are archived as supplemental files
+inside the registration. UN WPP 2024 download may now proceed (§4:
+registration precedes download). This appendix note is the only change since
+the frozen v1.0 text, per the header.

@@ -302,7 +302,13 @@ research tracks; focal PDFs obtained (no SSRN login needed; local copies
 git-ignored); headline finding: H&MB's "25+ null" is near-tautological given
 their eq.-6 detrending (verified against the PDF), reconciling it with
 Myers & Hooper's 33-52% all-ages claim and defining paper 3's niche. ~35
-verified refs added to references.bib Part 3. Next: prereg protocol drafting. — recommended architecture is
+verified refs added to references.bib Part 3. PROTOCOL FROZEN & REGISTERED
+(2026-07-12): `manuscript_2026/universality_prereg_protocol.md` v1.0 frozen at
+commit `2eb0733`; registered on OSF as an Open-Ended Registration, public
+immediately: **https://osf.io/j3tbq** (component zs3wn, project 3ju29), with
+the protocol .md + .pdf archived inside the registration and the full decision
+rules + SHA permalink in the registration summary. Registration precedes any
+WPP download — the WPP 2024 pull is now unblocked. — recommended architecture is
 fingerprint-first (WPP descriptive surface), estimated break dates with a
 permutation null, adoption-alignment and age-margin modules for
 discrimination; the crude fixed-2008 shift survives only as a baseline.
