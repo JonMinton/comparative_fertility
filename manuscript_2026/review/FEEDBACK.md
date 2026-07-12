@@ -94,3 +94,25 @@ Entry template:
   section; "never the only populations" passage added with crossing cohorts
   from data/derived_2026/last_cohort_replacement.csv, sharpening what the
   2020 exception claim actually was (rich-world recovery).
+
+## F-006
+- date: 2026-07-12
+- source: chat (Jon, during Zoom call with Laura Vanderbloemen)
+- paper: DF (primarily; CC framing benefits too)
+- locus: figures / framing
+- comment: The 2020-era annotated figure `figures/usanor_annotated_two_contour.png`
+  contains labelled "speculative extrapolation of replacement contour" lines
+  (magenta dotted) — Norway continuing at ~age 43, USA at ~37 — i.e., the
+  published paper DREW its forecast. The update should exploit this:
+  (a) a "prediction vs outcome" figure overlaying the 2020 extrapolations with
+  the realized 2026 contours (Norway: failed immediately — vertical escape at
+  cohorts >~1972; USA: half-right — crossings continued but at 39-40, drifting
+  toward the wall, censored beyond 1985); (b) reframe the update as the
+  RESOLUTION of an explicitly drawn forecast, not merely newer data. Note also
+  the 2020 annotation "Replacement age 43" = the corridor paper's ceiling,
+  annotated in plain sight.
+- status: accepted
+- action/response: planned for v2 — rebuild the overlay figure (old two-contour
+  panels + magenta extrapolation + 2026 realized contours), add framing
+  sentence to DF intro/conclusions; CC discussion may cite the 2020 annotation
+  as the ceiling's first (untheorized) appearance.

@@ -21,6 +21,9 @@ Preprint record: <https://osf.io/preprints/socarxiv/8cb5g_v1>
 - [ ] Jon's post-hoc read-through edits (wording of US claim; co-author
       invitation text; general pass)
 - [ ] Possible sentence on the vanished US plateau in the US section (F-002)
+- [ ] "Prediction vs outcome" overlay figure: 2020 speculative extrapolations
+      graded against realized 2026 contours; reframe update as forecast
+      resolution (F-006)
 - [ ] Any changes arising from Serena/Laura review copies
 
 ---
