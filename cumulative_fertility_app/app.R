@@ -7,7 +7,13 @@
 #    http://shiny.rstudio.com/
 #
 
-library(tidyverse)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(stringr)
+library(purrr)
+library(ggplot2)
+library(tibble)
 library(lattice)
 library(latticeExtra)
 library(shiny)
