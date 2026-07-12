@@ -203,8 +203,11 @@ panel function instead, visually identical). Outputs in `figures/figures_2026/`:
 The Norway panel now shows the full arc: the 2.05 contour goes vertical (~age 43)
 for cohorts born ~1950, RETURNS to ~age 40 for the 1958–68 cohorts (the paper's
 exception), then goes vertical again at cohorts born ~1972 — the reversal, in one
-image. Remaining 🟡: app data refresh + redeploy (needs shinyapps token);
-Norway/USA annotation figures for the manuscript.
+image. App REDEPLOYED 2026-07-12 with the 2026 dataset (first redeploy since
+2019; datascapes token still valid locally; fixes: explicit library()
+calls replacing tidyverse meta-package, archive latticeExtra 0.6-28,
+removed stale %T>% debug idiom; verified live). Remaining 🟡: Norway/USA
+annotation figures for the manuscript (F-006 overlay covers this).
 
 ## Preprint-early strategy (Jon, 2026-07-11) + manuscript drafts — STARTED
 
