@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"id":"grp-results","type":"group","x":300,"y":-620,"width":1000,"height":1240,"label":"FIGURES & RESULTS — Phase 2"},
+		{"id":"grp-sources","type":"group","x":-1700,"y":-560,"width":460,"height":1000,"label":"SOURCES (registration required; raw files git-ignored)"},
+		{"id":"grp-pub","type":"group","x":1380,"y":-300,"width":470,"height":620,"label":"PUBLICATION"},
+		{"id":"grp-ingest","type":"group","x":-1140,"y":-420,"width":420,"height":620,"label":"INGESTION — Phase 1"},
+		{"id":"n-hfd","type":"text","text":"**Human Fertility Database**\nhumanfertility.org\n\n`asfrRR.txt` — bulk zip, build 2026-07-02\n39 populations · Lexis squares (ACY)\n\nNOR/USA → 2024 · DNK → 2025\nKOR 2000–2024 (new)","x":-1660,"y":-520,"width":380,"height":250,"color":"3"},
+		{"id":"n-hfc","type":"text","text":"**Human Fertility Collection**\nfertilitydata.org\n\n`HFC_ASFRstand_TOT` — build 2026-07-07\nFills pre-HFD historical years +\nHFC-only populations (AUS, BIH, MDA, MKD, NZL → 2024/25; ALB/GRC/LVA/ROU stale)","x":-1660,"y":-240,"width":380,"height":260,"color":"3"},
+		{"id":"n-codes","type":"text","text":"**Country lookup**\n`data/hfc/code_definitions.csv`\nnames · geography · `to_keep` flags","x":-1660,"y":60,"width":380,"height":130,"color":"3"},
+		{"id":"n-terms","type":"text","text":"⚖️ **Terms note**: raw HFD/HFC not redistributed; combined derived CSV committed (2016 precedent). Published 2020 findings **reproducible** from frozen in-repo data, **not replicable** from fresh downloads (sources revise).","x":-1660,"y":230,"width":380,"height":190,"color":"1"},
+		{"id":"n-ingest","type":"text","text":"**`scripts/ingest_2026.R`**\n\nCombination rules (as published 2020):\n- HFD ≻ HFC per country-year\n- within HFC: STAT ≻ ODE ≻ RE\n- single-year periods, AgeDef = ACY\n- internal gaps ≤ 4 yr → linear interp, flagged","x":-1100,"y":-380,"width":340,"height":260,"color":"2"},
+		{"id":"n-fix","type":"text","text":"⚠️ **FRATNP → FRA fix**\nOld build silently dropped HFD France (unmapped code) → published figures ended France at 2008. Restored to 1892–2023.","x":-1100,"y":-80,"width":340,"height":170,"color":"1"},
+		{"id":"n-csv","type":"text","text":"**Combined dataset**\n`data/data_combined_and_standardised_2026.csv`\n\n51 populations · 168,099 rows · 1850–2025\ncolumns: code, year, age, asfr, **source** (hfd/hfc/interp)","x":-620,"y":-330,"width":360,"height":190,"color":"5"},
+		{"id":"n-valid","type":"text","text":"**Validation**\n`reports/validation_2026.md`\n\n148k overlap cells audited vs 2016 build — all discrepancies explained (HFD back-revisions: IRL, ESP, DNK; KOR source switch; HFC refcode rule). **Build accepted.**","x":-620,"y":-90,"width":360,"height":210,"color":"1"},
+		{"id":"n-prep","type":"text","text":"**Shared prep**\n`scripts/functions_2026.R :: prepare_dta_2026()`\n\nCPFR + cohort CCFR (lagged cumsum) · `series_ok` (cohort observed from age ≤ 16) · published exclusions (CHL, CHN, TUR, GBR_NP, DEUTNP; RKS drops via ranking) → **45-country panel** · countries ranked by CCFR @ 2007 (age ≤ 49)","x":-160,"y":-260,"width":380,"height":280,"color":"5"},
+		{"id":"n-figs","type":"text","text":"**`scripts/figures_2026.R`**\nPublished visual spec, no latticeExtra (fill + contours in one panel fn): viridis reversed · contours CPCFR = 2.05 (heavy) & 1.50 (light) · year ≥ 1950 · age ≤ 50","x":340,"y":-580,"width":420,"height":190,"color":"4"},
+		{"id":"n-nor","type":"file","file":"figures/figures_2026/norway_only.png","x":340,"y":-350,"width":377,"height":330},
+		{"id":"n-usa","type":"file","file":"figures/figures_2026/usa_only.png","x":810,"y":-350,"width":377,"height":330},
+		{"id":"n-splits","type":"text","text":"**Panel figures**\n`overall_gridded.png` (45 countries) + `overall_split_{1,2,3}.png` (15/page, manuscript layout)","x":810,"y":-580,"width":440,"height":140,"color":"4"},
+		{"id":"n-claims","type":"text","text":"**Headline results**\n- **Norway**: 2.05 contour returns for cohorts 1958–68, escapes vertically for cohorts ≳ 1972 — the 2020 exception REVERSED\n- **USA**: exception *persisted* — cohorts 1982–84 crossed 2.05 (ages 39/39/40, verified, no interpolation); 1985+ censored → \"fading, not collapsed\"\n- 43/45 countries: post-war cohorts observed past 44 that never crossed\n- only 9 countries have any cohort born ≥ 1970 crossing\n- Korea (new): last crossing cohort 1958; TFR 0.75 (2024)\n- Norway/USA never the *only* replacement populations — the rich-world *recoveries*","x":340,"y":30,"width":910,"height":330,"color":"4"},
+		{"id":"n-tables","type":"text","text":"**Derived table**\n`data/derived_2026/last_cohort_replacement.csv` — last cohort to reach 2.05 per country","x":340,"y":400,"width":420,"height":140,"color":"4"},
+		{"id":"n-qmd","type":"text","text":"**Manuscript (Quarto)**\n`manuscript_2026/descriptive_finding.qmd`\n+ shared `references.bib`\n\nDR Descriptive Finding format · v0.1 AI-drafted (disclosed) · co-authors invited by contribution","x":1420,"y":-260,"width":390,"height":230,"color":"6"},
+		{"id":"n-preprint","type":"text","text":"**Preprint & OSF**\nSocArXiv `8cb5g_v1` — *pending moderation*\nOSF component `mkr79` (supplemental)\nUmbrella project `osf.io/3ju29`\nCC-BY 4.0 · versioned (v2 after review)","x":1420,"y":30,"width":390,"height":230,"color":"6"}
+	],
+	"edges":[
+		{"id":"e1","fromNode":"n-hfd","fromSide":"right","toNode":"n-ingest","toSide":"left","label":"preferred"},
+		{"id":"e2","fromNode":"n-hfc","fromSide":"right","toNode":"n-ingest","toSide":"left","label":"fills gaps"},
+		{"id":"e3","fromNode":"n-codes","fromSide":"right","toNode":"n-ingest","toSide":"left"},
+		{"id":"e4","fromNode":"n-ingest","fromSide":"bottom","toNode":"n-fix","toSide":"top"},
+		{"id":"e5","fromNode":"n-ingest","fromSide":"right","toNode":"n-csv","toSide":"left"},
+		{"id":"e6","fromNode":"n-csv","fromSide":"bottom","toNode":"n-valid","toSide":"top","label":"audit vs 2016"},
+		{"id":"e7","fromNode":"n-csv","fromSide":"right","toNode":"n-prep","toSide":"left"},
+		{"id":"e8","fromNode":"n-prep","fromSide":"right","toNode":"n-figs","toSide":"left"},
+		{"id":"e9","fromNode":"n-figs","fromSide":"bottom","toNode":"n-nor","toSide":"top"},
+		{"id":"e10","fromNode":"n-figs","fromSide":"right","toNode":"n-splits","toSide":"left"},
+		{"id":"e11","fromNode":"n-splits","fromSide":"bottom","toNode":"n-usa","toSide":"top"},
+		{"id":"e12","fromNode":"n-nor","fromSide":"bottom","toNode":"n-claims","toSide":"top"},
+		{"id":"e13","fromNode":"n-usa","fromSide":"bottom","toNode":"n-claims","toSide":"top"},
+		{"id":"e14","fromNode":"n-claims","fromSide":"bottom","toNode":"n-tables","toSide":"top","label":"quantified in"},
+		{"id":"e15","fromNode":"n-claims","fromSide":"right","toNode":"n-qmd","toSide":"left"},
+		{"id":"e16","fromNode":"n-qmd","fromSide":"bottom","toNode":"n-preprint","toSide":"top","label":"typst PDF → submit"}
+	]
+}

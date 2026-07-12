@@ -1,0 +1,41 @@
+{
+  "nodes": [
+    {"id":"n-spine","type":"text","text":"**Shared data spine** (see `descriptive_finding_pipeline.canvas` for detail)\n\nHFD + HFC (2026 builds) → `ingest_2026.R` → combined CSV (51 pops, 1850–2025) → `prepare_dta_2026()` → 45-country panel with CPFR/CCFR + `series_ok`","x":-1660,"y":-160,"width":420,"height":230,"color":"5"},
+    {"id":"n-exante","type":"text","text":"📌 **Ex-ante analytic choices** (fixed in `UPDATE_WORKPLAN.md` *before* running on updated data; old-data prototypes disclosed)\n\n- effective ceiling: highest age with ASFR ≥ **1/200** (sensitivity 1/1000)\n- *never* = observed past age 44 without crossing 2.05\n- per-country trajectories primary; pooled medians context only","x":-1660,"y":130,"width":420,"height":290,"color":"1"},
+
+    {"id":"grp-analysis","type":"group","label":"ANALYSIS — Phase 3: scripts/wall_2026.R","x":-1120,"y":-500,"width":520,"height":1050},
+    {"id":"n-ceiling","type":"text","text":"**1 · Effective ceiling**\nper country-year, both thresholds\n→ `wall_by_country_year.csv`\n→ `wall_trajectories.png` (45 panels)","x":-1080,"y":-460,"width":440,"height":170,"color":"2"},
+    {"id":"n-mass","type":"text","text":"**2 · Late-fertility mass**\ncumulative ASFR at 35+ / 40+\n→ `late_fertility_mass.csv`\n→ `late_mass_trends.png`","x":-1080,"y":-260,"width":440,"height":160,"color":"2"},
+    {"id":"n-reach","type":"text","text":"**3 · Reachability**\nper cohort: age CPCFR first ≥ 2.05\nstatus ∈ {crossed, never, censored}\n→ `ccfr_crossing_ages.csv`\n→ `last_cohort_replacement.csv`\n→ `reachability_crossing_ages.png`","x":-1080,"y":-70,"width":440,"height":210,"color":"2"},
+    {"id":"n-featured","type":"text","text":"**4 · Featured surfaces with ceiling overdrawn**\n`is_wall` overlay via shared plot fn\n→ `featured_wall_{nor,usa,kor}.png`\n\nDistinguishes **wall-terminated** contours (end *at* the dotted ceiling) from **censored** ones (cut by data edge)","x":-1080,"y":170,"width":440,"height":230,"color":"2"},
+    {"id":"n-report","type":"text","text":"**Summary report**\n`reports/wall_analysis_2026.md` — decade medians, reachability counts, last-cohort table","x":-1080,"y":430,"width":440,"height":100,"color":"2"},
+
+    {"id":"n-wallnor","type":"file","file":"figures/figures_2026/featured_wall_nor.png","x":-500,"y":-500,"width":470,"height":350},
+    {"id":"n-wallusa","type":"file","file":"figures/figures_2026/featured_wall_usa.png","x":-500,"y":-110,"width":470,"height":350},
+    {"id":"n-walltraj","type":"text","text":"**45-panel diagnostics**\n`wall_trajectories.png` · `late_mass_trends.png` · `reachability_crossing_ages.png` (dotted reference at age 43)","x":-500,"y":280,"width":470,"height":140,"color":"4"},
+
+    {"id":"n-claims","type":"text","text":"**Headline results**\n- Ceiling is *behavioural, not biological*: 47–48 (C19th) → **41** (1980s–90s floor) → **43** (2020s) — one year back per ~15 calendar years\n- 40+ fertility mass: 0.117 (1950s) → 0.023 (1980s) → **0.065** (2020s) ≈ 3% of a 2.05 target — cannot arithmetically rescue replacement\n- ⇒ **the corridor**: replacement must occur inside ≈ 13 years (≈ age 30 → 43) while first-birth ages rose 5–6 yrs against a ceiling that recovered 2\n- Norway: both 2.05 escapes are **wall-terminations**; USA: right end **censored** at cohort 1984 — verdict pending\n- Visual-complexity note: ceiling = 5th encoding, better read as a **third reading** of one ASFR field (level / accumulation / boundary); densest form confined to this paper","x":30,"y":-380,"width":560,"height":520,"color":"4"},
+
+    {"id":"grp-pub","type":"group","label":"PUBLICATION","x":660,"y":-300,"width":470,"height":640},
+    {"id":"n-qmd","type":"text","text":"**Manuscript (Quarto)**\n`manuscript_2026/wall_corridor_article.qmd`\n+ shared `references.bib`\n\nFull research article · discussion holds the *light-not-heat* line: stylized facts any explanation (economic, housing, connectivity) must match · TODOs marked for v2","x":700,"y":-260,"width":390,"height":270,"color":"6"},
+    {"id":"n-preprint","type":"text","text":"**Preprint & OSF**\nSocArXiv `8jqad_v1` — *pending moderation*\nOSF component `2yzmc` (supplemental)\nUmbrella project `osf.io/3ju29`\nCC-BY 4.0 · versioned","x":700,"y":60,"width":390,"height":230,"color":"6"},
+
+    {"id":"n-next","type":"text","text":"**Feeds forward →** paper 3 (universality test): S8 Lexis-field front geometry reuses this machinery; CPCFR milestones are the tempo-mimicry check. See `manuscript_2026/universality_strategy.md` + `universality_prereg_protocol.md`","x":30,"y":220,"width":560,"height":170,"color":"6"}
+  ],
+  "edges": [
+    {"id":"e1","fromNode":"n-spine","fromSide":"right","toNode":"n-ceiling","toSide":"left"},
+    {"id":"e2","fromNode":"n-spine","fromSide":"right","toNode":"n-mass","toSide":"left"},
+    {"id":"e3","fromNode":"n-spine","fromSide":"right","toNode":"n-reach","toSide":"left"},
+    {"id":"e4","fromNode":"n-spine","fromSide":"right","toNode":"n-featured","toSide":"left"},
+    {"id":"e5","fromNode":"n-exante","fromSide":"right","toNode":"grp-analysis","toSide":"left","label":"binds"},
+    {"id":"e6","fromNode":"n-featured","fromSide":"right","toNode":"n-wallnor","toSide":"left"},
+    {"id":"e7","fromNode":"n-featured","fromSide":"right","toNode":"n-wallusa","toSide":"left"},
+    {"id":"e8","fromNode":"n-ceiling","fromSide":"right","toNode":"n-walltraj","toSide":"left"},
+    {"id":"e9","fromNode":"n-wallnor","fromSide":"right","toNode":"n-claims","toSide":"left","label":"wall-terminated"},
+    {"id":"e10","fromNode":"n-wallusa","fromSide":"right","toNode":"n-claims","toSide":"left","label":"censored"},
+    {"id":"e11","fromNode":"n-report","fromSide":"right","toNode":"n-claims","toSide":"bottom"},
+    {"id":"e12","fromNode":"n-claims","fromSide":"right","toNode":"n-qmd","toSide":"left"},
+    {"id":"e13","fromNode":"n-qmd","fromSide":"bottom","toNode":"n-preprint","toSide":"top"},
+    {"id":"e14","fromNode":"n-claims","fromSide":"bottom","toNode":"n-next","toSide":"top"}
+  ]
+}
