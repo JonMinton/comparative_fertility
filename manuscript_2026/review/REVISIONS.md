@@ -104,3 +104,48 @@ pending (see UPDATE_WORKPLAN.md).
 - [ ] Integrate last-cohort table; split 'never' category by era (source TODO)
 - [ ] Jon's post-hoc read-through edits
 - [ ] Single-vs-merged (DF+CC) decision before any resubmission
+
+---
+
+# MERGED — "The closing corridor: fertility trends for 45 countries revisited"
+
+Source: `manuscript_2026/closing_corridor_merged.qmd`. Merges and supersedes
+DF + CC (both retained in repo for provenance). One-paper decision: Jon,
+2026-07-14. Not yet submitted anywhere. Target: Demographic Research
+(Research Article); alternates CPS, PDR Data & Perspectives.
+
+## v0.1 (2026-07-14) — first merged draft
+- Structure: acceleration debate as motivation → 2020 baseline + forecasts
+  (published Fig 2 + 2018 drawn extrapolations) → 2026 rebuild methods +
+  ex-ante ceiling definitions → Results I forecast resolution (scoreboard,
+  Norway, USA, panel, last-cohort table with the ages-40–44 observation as
+  the hinge) → Results II ceiling/corridor (trajectories, late mass,
+  reachability, featured walls NOR + USA with censored-vs-wall-terminated,
+  5th-encoding note) → "From reading surfaces to building models" (informal
+  model building; M1/M2/M3 surface geometries; tempo + mean-reversion
+  mimics; 25+ null detrending point; prereg osf.io/j3tbq as the formal
+  companion; COVID subsection per F-009) → Discussion (stylized facts;
+  limitations; agentic-workflow subsection §7.3) → Conclusions.
+- Body ~4,850 words + structured abstract; 9 figures; 2 tables. Renders
+  clean to html + docx; all citations resolve.
+- Design decisions taken in-draft (flag to JM): Burn-Murdoch named
+  generically ("substantial popular following"), scholarly citations carry
+  the thesis (hudson2026teen, moscoso2026wide, myers2026iphone,
+  billari2019broadband + diffusion classics) — add a specific FT citation
+  only if JM wants the populariser named. Agentic-AI value case placed as
+  Discussion §7.3 ("workflow… staleness problem") + factual line in
+  reproducibility note + front-matter disclosure. F-001 actioned here (USA
+  featured-wall embedded). F-009 actioned here (COVID subsection).
+
+## toward v0.2 / submission
+- [ ] JM read-through; title decision; DR template/AI-policy check
+- [ ] F-002 vanished-plateau paragraph + script (fits Results I US section
+      or Discussion)
+- [ ] F-006 composite overlay figure (2020 magenta lines redrawn on 2026
+      surfaces) — would replace or join @fig-2018-draft
+- [ ] Deeper literature positioning (tempo/quantum, recuperation,
+      latest-late, cohort forecasts) if DR-bound
+- [ ] Contributor outreach (Tier 0 Serena/Laura CRediT offer; Tier 1
+      Riffe/Klüsener/Sander; Tier 2 Bijak; Alexander COI-flagged) once JM
+      approves the outreach artifact
+- [ ] Two-page extended abstract + figure set as the outreach artifact
