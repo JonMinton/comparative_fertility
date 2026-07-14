@@ -113,6 +113,17 @@ human review, per Jon's preprint-early strategy — review is now post-hoc):
      could carry a merged paper) vs keep two. Decision to be informed by DR
      article types/lengths and alternative journals — discussion in session
      2026-07-14. DF meanwhile reframed as forecast-resolution (F-010).
+   - DIRECTION HARDENING (Jon, 2026-07-14 evening): ONE paper, not many;
+     more people potentially involved via contributorship→authorship; an
+     explicit visualisation→modelling bridge; the social-media/acceleration
+     debate as the motivating example; AAI's role (rapid update of existing
+     research, preventing staleness) presented as a FEATURE of the workflow,
+     not a point of shame. Merged-article structure + contributor-outreach
+     analysis drafted in session (see chat log 2026-07-14). DR editorial
+     facts checked: EiC Anna Matysiak; Monica Alexander is a DR associate
+     editor (COI note if approached); 2020 collection guest editors
+     Riffe/Klüsener/Sander and past EiC Bijak (2018–2024) are unconflicted
+     outreach candidates. Awaiting Jon's decisions on structure + outreach.
    - CO-AUTHORS (2026-07-12, Jon): .docx builds of both drafts shared with
      Serena Pattaro and Laura Vanderbloemen (tracked-changes/comments
      channel per the two-channel review setup; join-by-contribution
