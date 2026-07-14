@@ -116,3 +116,50 @@ Entry template:
   panels + magenta extrapolation + 2026 realized contours), add framing
   sentence to DF intro/conclusions; CC discussion may cite the 2020 annotation
   as the ceiling's first (untheorized) appearance.
+
+## F-007
+- date: 2026-07-14
+- source: word-doc (Laura Vanderbloemen, returned copy in review/returned/)
+- paper: DF
+- locus: anchored at Figure 3 caption (fifteen-panel figure)
+- comment: (verbatim) "awesome, everything is very clear. Up to this point.
+  Just occurred to me after reading that a little bit more context from the
+  2020 paper might be worthwhile kind of like a little summary box of key
+  pts, just for helping the reader to catch up w the complexity"
+- status: received
+- action/response: to be discussed with JM before any edit. Candidate: a
+  compact "the 2020 baseline in brief" element placed before the panel-wide
+  results — possibly as a small claims-then-vs-now table, which would also
+  serve F-006's prediction-vs-outcome reframe. DR format constraints on
+  text boxes to be checked (a table survives typesetting; a box may not).
+
+## F-008
+- date: 2026-07-14
+- source: word-doc (Laura Vanderbloemen)
+- paper: CC
+- locus: figures (featured surfaces)
+- comment: (verbatim) "the graphs look really great! Nice to see the Korea data"
+- status: received
+- action/response: no change required; confirms keeping the Korea featured
+  panel prominent.
+
+## F-009
+- date: 2026-07-14
+- source: word-doc (Laura Vanderbloemen)
+- paper: CC (discussion; touches DF framing via F-006)
+- locus: discussion — COVID and the 2020 prediction
+- comment: (verbatim) "also, interesting that your prediction held back in
+  2020, even though you wouldn't have known the extent of Covid at that
+  time, which maybe suggests that Covid didn't move the trends though that
+  does seem kind of surprising, or maybe Covid was part of a broader trend
+  that affected, both (fert & pandemic likelihood)?"
+- status: received
+- action/response: to be discussed with JM before any edit. Candidate: short
+  CC-discussion paragraph — the post-2008 acceleration predates the pandemic
+  by a decade; pandemic-era observations (2020–24) show dip-and-rebound
+  texture without visible deflection of the corridor trend; the disciplined
+  test lives in the preregistered paper-3 design (osf.io/j3tbq), which
+  excludes COVID years from estimation. Laura's common-cause speculation
+  acknowledged as beyond scope (light-not-heat rule). Precision guard: per
+  F-006 the 2020 prediction only half-held (USA), and failed for Norway —
+  any "prediction held" sentence must say which part.
