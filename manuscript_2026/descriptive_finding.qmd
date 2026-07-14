@@ -1,6 +1,6 @@
 ---
 title: "The exceptions collapse: fertility trends for 45 countries revisited"
-subtitle: "DRAFT v0.1 (2026-07-11) — working paper for preprint; not yet reviewed by all listed contributors"
+subtitle: "DRAFT v0.2 (2026-07-14) — sole-authored working paper; comments welcome"
 author:
   - name: Jon Minton
     affiliations:
@@ -11,26 +11,36 @@ author:
 # co-authors (Pattaro, Vanderbloemen) are acknowledged below and invited to join
 # by contribution; authorship can be added in later preprint versions. Both were
 # contacted via LinkedIn on 2026-07-11.
-date: 2026-07-11
+date: 2026-07-14
 abstract: |
   BACKGROUND — Pattaro, Vanderbloemen and Minton (2020) found, across 45
   countries, that once cohorts fell below the replacement milestone (cumulative
   pseudo-cohort fertility rate, CPCFR, of 2.05) they tended not to return, with
-  two named exceptions: Norway and the United States. Their data ended in
-  2014–15. OBJECTIVE — To update the 45-country composite lattice plots with
-  Human Fertility Database and Human Fertility Collection data extending to
-  2023–25 and re-examine the exceptions. METHODS — The published combination
-  rules and visual specification are reapplied to the 2026 source releases,
-  with one code-mapping correction restoring France after 2008. RESULTS — Both
-  exceptions have ended or are ending. Norway's replacement contour, having
-  returned for cohorts born 1958–68, escapes vertically for cohorts born after
-  ~1972. The United States' exception persisted longer than its period
-  collapse suggests — cohorts born 1982–84 crossed 2.05 at ages 39–40 — and is
-  fading in the still-censored cohorts beyond. Across the panel, 43 of 45
-  countries now have post-war cohorts observed beyond age 44 that never
-  reached replacement. CONCLUSIONS — A decade of new data strengthens the 2020
-  regularity at the cost of both its exceptions; the geometry of the contour
-  escapes points to a structural ceiling developed in a companion paper.
+  two named exceptions: Norway and the United States. Reading the geometry of
+  their published surfaces, the authors went further and extrapolated
+  qualitatively: Norway looked "likely to lose replacement fertility levels
+  over the next few years," while replacement seemed likely to "be sustained
+  for longer in the United States." Their data ended in 2014–15. OBJECTIVE —
+  To update the 45-country composite lattice plots with Human Fertility
+  Database and Human Fertility Collection data extending to 2023–25, treating
+  the 2020 extrapolations as forecasts now open to resolution. METHODS — The
+  published combination rules and visual specification are reapplied to the
+  2026 source releases, with one code-mapping correction restoring France
+  after 2008. RESULTS — Both extrapolations were correct in direction and too
+  gentle in magnitude. Norway's replacement contour, having returned for
+  cohorts born 1958–68, escapes vertically for cohorts born after ~1972: the
+  predicted loss was not gradual but total. The United States' exception was
+  indeed sustained longer — cohorts born 1982–84 crossed 2.05 — but only at
+  ages 39–40, two to three years above the "replacement age 37" annotated in
+  2020, and it is fading in the still-censored cohorts beyond. Across the
+  panel, 43 of 45 countries now have post-war cohorts observed beyond age 44
+  that never reached replacement. CONCLUSIONS — A decade of new data
+  strengthens the 2020 regularity at the cost of both its exceptions. That
+  visual extrapolation produced falsifiable forecasts which resolved in the
+  right direction — erring only by understating severity — is evidence for
+  the surface-reading method itself as a tool for informal model building;
+  the geometry of the contour escapes points to a structural ceiling
+  developed in a companion paper.
 bibliography: references.bib
 format:
   html:
@@ -44,18 +54,22 @@ format:
 > <jon.will.minton@gmail.com>. Comments will be logged in the project's public
 > feedback register (`manuscript_2026/review/FEEDBACK.md` on GitHub), actioned,
 > and credited; substantive contributions meeting authorship criteria are
-> recognized with co-authorship in later preprint versions. This is v0.1,
-> corresponding to SocArXiv preprint version 1.
+> recognized with co-authorship in later preprint versions, with consent.
+> This is v0.2 (2026-07-14), not yet submitted anywhere.
 :::
 
 ::: {.callout-note}
-**Draft status.** This is an early working version posted for open comment; the
-analysis is reproducible from <https://github.com/JonMinton/Comparative_Fertility>
-(see `UPDATE_WORKPLAN.md` there for the decision log). Figures and numbers are
-machine-generated from the pipeline described in Methods. Comments welcome ---
-and contributions meeting authorship criteria will be recognized with
-co-authorship in later versions. This update builds on @pattaro2020, co-authored
-with Serena Pattaro and Laura Vanderbloemen, who are warmly invited to rejoin.
+**Draft status and authorship.** This is a sole-authored working version
+posted for open comment; Jon Minton is the only author and is solely
+responsible for its content. It updates @pattaro2020, whose co-authors Serena
+Pattaro and Laura Vanderbloemen are acknowledged for the original work but
+are not authors of this version; contributions meeting authorship criteria
+will be recognized with co-authorship in later versions, with consent. The
+manuscript was drafted with AI assistance (Claude, Anthropic) under the
+author's direction. The analysis is reproducible from
+<https://github.com/JonMinton/Comparative_Fertility> (see `UPDATE_WORKPLAN.md`
+there for the decision log); figures and numbers are machine-generated from
+the pipeline described in Methods.
 :::
 
 # Background
@@ -70,16 +84,43 @@ countries: once a country's cohorts fell below the replacement milestone
 Norway, where cohorts born after the 1950s regained replacement, and the United
 States, for cohorts born after the late 1960s.
 
+## The 2020 extrapolations
+
+![Figure 2 of @pattaro2020 as published: composite fertility lattice plots for Norway and the United States with the original annotations, including the terminal contour readings "Replacement age 43" (Norway) and "Replacement age 37" (United States). Reproduced from the open-access original (CC BY 3.0 DE).](figures/pattaro2020_fig2_published.png){#fig-2020-published}
+
+The 2020 paper did more than describe its two exceptions: reading the
+trajectories of the replacement contours in its Figure 2 (reproduced here as
+@fig-2020-published), it extrapolated them. The published discussion reasoned
+that the contour "has been trending upwards for Norway but falling for the
+United States," that cumulative fertility by age 43 is in practice close to
+completed fertility, and concluded that "Norway looks likely to lose
+replacement fertility levels over the next few years," whereas "we might
+assume that replacement levels will be sustained for longer in the United
+States" [@pattaro2020, pp. 699--700]. These are qualitative forecasts, formed
+by visual reasoning about where each contour was heading and how much
+childbearing remained available above it.
+
+![Pre-publication working version of the same figure (project repository, September 2018), in which the extrapolations were drawn rather than stated: dotted lines labelled "speculative extrapolation of replacement contour" rise steeply for Norway and continue nearly flat, near age 37--38, for the United States. The drawn lines were dropped in revision; the published text retained their verbal equivalents. Draft-era colour palette differs from the published specification.](figures/usanor_extrapolation_2018draft.png){#fig-2018-draft}
+
+The forecasts were, in an earlier working version of the figure, drawn
+explicitly (@fig-2018-draft). That version --- publicly timestamped in the
+project repository in September 2018, before publication --- shows the
+extrapolations as dotted "speculative extrapolation" lines: for Norway a
+steep rise, replacement reached only at ever-later ages and hence soon not at
+all; for the United States a near-flat continuation just above age 37. The
+drawn lines did not survive review, but their verbal counterparts did, and
+the repository provenance makes the informal forecast concrete and datable.
 A decade of new data has since accumulated, covering the years in which
 period fertility fell to record lows across the Nordic countries
 [@comolli2021; @hellstrand2020], the United States [@kearney2022], and East
-Asia [@yoo2018].
+Asia [@yoo2018] --- enough observation for the forecasts to resolve.
 
 # Objective
 
 To update the 45-country composite lattice plots with HFD and HFC data
 extending to 2023--25, and to re-examine the status of the two named
-exceptions.
+exceptions, treating the 2020 extrapolations as forecasts whose resolution
+can now be read from the updated surfaces.
 
 # Methods
 
@@ -109,6 +150,17 @@ by CPCFR at 2007, the ranking year of the published figures
 
 # Results
 
+Table 1 states the resolutions first; the sections that follow show them on
+the updated surfaces.
+
+| Reading in @pattaro2020 | Outcome on data to 2023--25 |
+|:---|:---|
+| "Once countries have fallen below a replacement fertility level, they tend to not return to it." | Strengthened: 43 of 45 countries now have post-war cohorts observed beyond age 44 that never reached replacement. |
+| Norway "looks likely to lose replacement fertility levels over the next few years." | Correct in direction, exceeded in severity: no cohort born after 1971 reaches replacement at any observed age; the contour escapes vertically rather than drifting. Period TFR 1.98 (2009) → 1.40 (2023). |
+| "Replacement levels will be sustained for longer in the United States" (annotated "Replacement age 37"). | Correct so far, but eroding faster than drawn: crossings continue through the 1984 cohort, at ages 39--40 rather than near 37; cohorts beyond are censored and running lower at every age. |
+
+: The 2020 extrapolations and their resolutions. {#tbl-scoreboard}
+
 ## Norway
 
 ![Norway: ASFR surface with CPCFR contours at 2.05 (heavy) and 1.50 (light), cohorts observed to 2024.](figures/norway_only.png){#fig-norway}
@@ -123,6 +175,15 @@ reaches replacement at any observed age. The 1.50 contour drifts steadily
 upward, reaching roughly age 36 for cohorts born in the late 1980s before
 censoring. Norway's period TFR fell from 1.98 in 2009 to 1.40 in 2023, a
 record low [@hfd2026].
+
+Set against the 2020 extrapolation, this is a resolution in the predicted
+direction but of greater severity. The drawn version of the forecast
+(@fig-2018-draft) had the replacement contour climbing over roughly fifteen
+further cohorts; the verbal version anticipated loss "over the next few
+years." What the updated surface shows instead is that the loss was already
+complete at the data edge the 2020 authors were reading: the contour does not
+climb --- it terminates. The forecast erred only in imagining a gradual exit
+where the exit was, in the event, immediate and total.
 
 ## United States
 
@@ -139,6 +200,17 @@ every age but remain right-censored. The US exception has thus not yet
 collapsed in cohort terms; it is fading from below, cohort by cohort, exactly
 as the period-based literature on postponement would predict
 [@sobotka2017; @kearney2022].
+
+This too resolves the 2020 extrapolation as directionally right and too
+gentle. Replacement *was* "sustained for longer in the United States" ---
+by some twenty further birth cohorts. But the drawn forecast continued the
+contour near-flat from "replacement age 37" (@fig-2018-draft), and the
+realized crossings occurred at 39--40: the contour rose by two to three
+years of age in under two decades of cohorts, converging on the terminal
+ages at which the Norwegian contour had already escaped. Sustained, that is,
+not by stable timing but by pushing childbearing against the upper edge of
+the reproductive lifecourse --- a distinction invisible in period TFR and
+legible only on the surface.
 
 ## The panel as a whole
 
@@ -172,6 +244,22 @@ these escapes --- contours climbing through ages at which little fertility
 remains --- points to a structural constraint on any return to replacement,
 which we develop in a companion paper on the effective upper boundary of the
 fertility lifecourse.
+
+There is also a methodological conclusion. The 2020 extrapolations were not
+outputs of a formal model: they were acts of *informal model building* ---
+qualitative, falsifiable forecasts formed by reading the geometry of a
+fertility surface, using visible structure (where a contour is heading; how
+much childbearing remains available above it) as the model. Both forecasts
+resolved in the predicted direction, and both erred the same way,
+understating severity. That shared failure mode is itself informative: what
+the visual extrapolations could not see was the boundary they were
+extrapolating toward --- the effective upper edge of the fertility
+lifecourse, annotated in 2020 as "replacement age 43" without being
+theorized. We take the resolution of these forecasts as evidence that
+surface visualization of this kind is not decoration applied after
+modelling, but a disciplined way of forming expectations about demographic
+structure --- and of discovering, when those expectations fail in a
+patterned way, where the missing structure lies.
 
 ::: {.callout-note}
 **Reproducibility and contributions.** Code, combined data, validation

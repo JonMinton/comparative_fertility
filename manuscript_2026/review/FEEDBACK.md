@@ -163,3 +163,45 @@ Entry template:
   acknowledged as beyond scope (light-not-heat rule). Precision guard: per
   F-006 the 2020 prediction only half-held (USA), and failed for Norway —
   any "prediction held" sentence must say which part.
+
+## F-010
+- date: 2026-07-14
+- source: chat (Jon)
+- paper: DF ("the main paper")
+- locus: whole-paper framing
+- comment: Reframe DF around the qualitative extrapolations the 2020 paper
+  made for the USA and Norway — correct in direction, but the realized
+  declines were more severe than the visual extrapolation suggested. Include
+  the existing 2020 figures, then the updates, highlighting the visual
+  method's value for "informal model building" about demographic structure
+  and fertility trends. Compatible with F-007.
+- status: actioned (in source, 2026-07-14)
+- action/response: Verification first (Jon's precondition): the published
+  paper's Figure 2 is annotated ("Replacement age 43/37") but contains NO
+  drawn extrapolation lines; the extrapolations are VERBAL in §3.2
+  (pp. 699–700); the magenta "speculative extrapolation of replacement
+  contour" lines exist in the pre-publication working figure, git-dated
+  2018-09-29, public on GitHub (cited by the published paper). Reframe
+  implemented with that honest provenance: new Background subsection with
+  both figures and verbatim quotes; scoreboard table; resolution paragraphs;
+  informal-model-building conclusion; abstract rewrite. See REVISIONS.md
+  v0.2 entry.
+
+## F-011
+- date: 2026-07-14
+- source: osf (SocArXiv moderator, Philip N. Cohen — identical wording on
+  both papers)
+- paper: both
+- locus: submission metadata / author block
+- comment: (verbatim) "The 'note' is in the metadata form, but not in the
+  paper. The unconsenting co-authors are not listed. This is irregular. We
+  only accept complete papers with consistent metadata that matches across
+  forms and the paper."
+- status: accepted
+- action/response: DF source fixed 2026-07-14: subtitle no longer says
+  "not yet reviewed by all listed contributors"; draft-status callout states
+  sole authorship explicitly, acknowledges the 2020 co-authors without
+  implying authorship, adds "with consent" to the co-authorship offer, and
+  carries the AI-assistance note in the paper body. Same treatment TO DO for
+  CC. Strategic response (Jon): no resubmission until the manuscript is
+  substantially more developed; single-vs-merged decision first.

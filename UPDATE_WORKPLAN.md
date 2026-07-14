@@ -99,6 +99,20 @@ human review, per Jon's preprint-early strategy — review is now post-hoc):
      (0000-0003-1207-6259) is linked to the OSF profile and publicly shows
      research activity from 2017 and earlier (45 works, employment,
      education). Anonymous API still 403s both (= pending, as expected).
+   - REJECTED AGAIN (2026-07-14), identical moderator wording on both papers
+     (Philip N. Cohen): "The 'note' is in the metadata form, but not in the
+     paper. The unconsenting co-authors are not listed. This is irregular. We
+     only accept complete papers with consistent metadata that matches across
+     forms and the paper." Logged as F-011. STRATEGY (Jon, 2026-07-14): no
+     rapid resubmission — SocArXiv moderation is not a rapid-iteration
+     channel; next submission only when the manuscript is substantially more
+     developed. Authorship/metadata consistency fixed in both qmd sources
+     same day (v0.2). OPEN DECISION: merge DF+CC back into a single fuller
+     paper (Jon leaning; fits DR's range better than an update-alone paper;
+     the 5th-encoding + visualisation-as-informal-model-building material
+     could carry a merged paper) vs keep two. Decision to be informed by DR
+     article types/lengths and alternative journals — discussion in session
+     2026-07-14. DF meanwhile reframed as forecast-resolution (F-010).
    - CO-AUTHORS (2026-07-12, Jon): .docx builds of both drafts shared with
      Serena Pattaro and Laura Vanderbloemen (tracked-changes/comments
      channel per the two-channel review setup; join-by-contribution
