@@ -5,6 +5,47 @@
 
 ---
 
+## ⚡ STATE OF PLAY (handover, 2026-07-17)
+
+**The live manuscript is `manuscript_2026/closing_corridor_merged.qmd`**
+("The closing corridor: fertility trends for 45 countries revisited") —
+one merged paper per Jon's decision; DF and CC qmds are superseded but
+retained for provenance. Renders to html + docx (docx uses
+`custom-reference.docx` for bordered tables). Feedback register
+`manuscript_2026/review/FEEDBACK.md` runs F-001..F-017; changelog in
+`review/REVISIONS.md` (see its MERGED section for the to-do list).
+
+Done and in the merged draft: forecast-resolution framing (published Fig 2
++ 2018 drawn extrapolations, both verified against the DemRes 42-23 PDF);
+ceiling/corridor results; **the squeeze** (scripts/squeeze_2026.R — peak
+age 24→31 vs ceiling 45→41→43, gap 20→12 yrs, peak ASFR 0.19→0.11;
+45-panel figure); APC primer (F-012); grandmothering ceiling mechanism
+(F-015, Laura's suggestion, credited by name — CRediT case); visualization
+→ modelling bridge citing prereg osf.io/j3tbq; COVID subsection; agentic-
+workflow discussion §7.3; Ritchie OWID convergence insight (2026-07-16)
+cited as the TFR-only foil; Burn-Murdoch FT column (May 2026) cited —
+**exact FT headline still to verify** (paywall; bib note marks it).
+
+Status elsewhere: paper-3 preregistration REGISTERED and public
+(osf.io/j3tbq; WPP-2024 download now permitted, not yet done). SocArXiv:
+both v1 preprints rejected twice (final reason = metadata/authorship
+consistency, F-011 — fixed in sources); strategy = no resubmission until
+the merged paper is complete, then submit fresh. Shiny app redeployed with
+2026 data. ORCID/OSF linked and populated.
+
+Next actions (in rough order): Jon's read-through of the merged draft →
+his framing calls (title; keep 2018 draft figure vs F-006 overlay rebuild;
+Burn-Murdoch named or generic) → remaining content items F-006 (overlay
+figure) and F-002 (US vanished-plateau paragraph + script) → contributor
+outreach (Tier 0: Serena/Laura CRediT offers; Tier 1: Riffe/Klüsener/
+Sander; Tier 2: Bijak; NOTE Monica Alexander is a current DR associate
+editor = COI-flagged; do NOT approach EiC Matysiak) via a 2-page extended
+abstract + figure set → DR template + AI-policy check → SocArXiv fresh
+submission when genuinely complete. Paper 3 (WPP pull) can proceed in
+parallel any time.
+
+---
+
 ## Semaphore key
 
 - 🔴 **Jon must do this** — blocks everything downstream; cannot be automated
