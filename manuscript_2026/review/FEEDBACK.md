@@ -218,13 +218,11 @@ Entry template:
   application in which not distinguishing among them, would cause an error in
   judgement, or or an example, that shows how distinguishing among them can
   help refine our understanding of populations, and improve prediction"
-- status: received
-- action/response: proposed (pending JM): short APC primer paragraph in the
-  Introduction or Background — sets up §6's period-front / diffusion-slope /
-  cohort-diagonal geometries, which currently arrive without the APC frame
-  being named. Candidate worked example: the US period-TFR collapse vs
-  cohort persistence already in Results I (not distinguishing period from
-  cohort reads the US as "collapsed" a decade early).
+- status: actioned (in source, 2026-07-17)
+- action/response: APC primer paragraph added to the merged Introduction,
+  with the US as the worked example (period accounting misdates the end of
+  the US exception by ~two decades) and a closing line mapping age/cohort/
+  period onto the surface axes.
 
 ## F-013
 - date: 2026-07-16
@@ -244,10 +242,10 @@ Entry template:
 - paper: MERGED
 - locus: Table 1
 - comment: (verbatim) "I think this table might look better with borders"
-- status: accepted
-- action/response: docx table styling needs a custom reference-doc (Quarto's
-  default Word table style is borderless). Planned for the
-  submission-formatting pass; HTML/PDF outputs already render borders.
+- status: actioned (2026-07-17)
+- action/response: custom-reference.docx generated (pandoc default + borders
+  injected into the "Table" style); merged qmd docx format now uses it;
+  verified the rendered docx references the bordered style.
 
 ## F-015
 - date: 2026-07-16
@@ -269,7 +267,15 @@ Entry template:
   check (grandparental childcare & daughters' fertility; grandmother
   hypothesis). NOTE: this is the kind of substantive contribution the
   contributorship→authorship route was designed for — strengthens the CRediT
-  case for LV.
+  case for LV. ACTIONED (in source, 2026-07-17): "Why did the ceiling fall,
+  and why does it stay low?" paragraph added to the ceiling subsection —
+  parity control + the grandmothering/kin-care channel, cited to Hawkes et
+  al. 1998 (long post-reproductive helping span), Aassve/Meroni/Pronzato
+  2012 (EJP; grandparental childcare raises daughters' fertility) and
+  Tanskanen & Rotkirch 2014 (DemRes; fertility intentions), with a testable
+  signature flagged (ceiling recovery slowest where grandparental care
+  substitutes for formal provision). LV credited by name in the
+  reproducibility/acknowledgements note. Status: actioned (in source).
 
 ## F-016
 - date: 2026-07-16
@@ -282,3 +288,22 @@ Entry template:
 - status: received
 - action/response: no change; endorsement of the merged structure and
   figure-text integration.
+
+## F-017
+- date: 2026-07-17
+- source: chat (Jon)
+- paper: MERGED
+- locus: Results II — new subsection
+- comment: Combine the age from which future contributions to completed
+  cohort fertility become very small (the effective ceiling) with the age of
+  peak fertility, showing a "squeeze": peak age rising, minimal-fertility
+  boundary lowering. Colour-code peak age by the age-year-specific fertility
+  rate — a simplification/distillation of the Lexis surfaces. Tie to the
+  OWID/Ritchie TFR convergence-down piece: our added value is the means by
+  which the levelling-down occurred.
+- status: actioned (in source, 2026-07-17)
+- action/response: scripts/squeeze_2026.R + derived CSV + 45-panel figure;
+  "The squeeze" subsection in Results II; abstract and Discussion updated;
+  Ritchie (OWID, 2026-07-16) cited in Introduction, squeeze subsection, and
+  stylized-facts paragraph. Caveats recorded: ties-to-youngest modal ages
+  (US plateau, F-002), small-population noise, per-country panels primary.

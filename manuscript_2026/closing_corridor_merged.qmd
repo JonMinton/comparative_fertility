@@ -41,7 +41,12 @@ abstract: |
   childbearing. Replacement must now be achieved inside a corridor roughly
   thirteen years wide, and on the updated surfaces the replacement contour
   visibly terminates at the ceiling, distinguishably from right-censoring, in
-  43 of 45 countries' recent cohorts. CONCLUSIONS — A decade of new data
+  43 of 45 countries' recent cohorts. Distilling each surface to three
+  numbers per year shows the squeeze panel-wide: the median age of peak
+  fertility rose from 24 to 31 while the ceiling recovered only to 43, the
+  peak-to-ceiling distance narrowing from twenty years to twelve as the rate
+  at the peak nearly halved — the age-structure mechanics beneath the widely
+  noted convergence of total fertility rates. CONCLUSIONS — A decade of new data
   strengthens the 2020 regularity at the cost of both its exceptions. The
   same surface-reading practice that produced falsifiable forecasts in 2020,
   applied to the post-2008 acceleration of fertility decline, generates the
@@ -56,7 +61,8 @@ bibliography: references.bib
 format:
   html:
     embed-resources: true
-  docx: default
+  docx:
+    reference-doc: custom-reference.docx
 ---
 
 ::: {.content-visible when-format="docx"}
@@ -96,7 +102,10 @@ in some cases recovering — turned more steeply downward at some point after
 the late 2000s, and the near-simultaneity of the turn has attracted an
 explanation to match: the arrival, from 2007–08 onward, of the smartphone
 and the social-media ecology it carries. That thesis now has a substantial
-popular following and a growing research literature, from broadband and
+popular following — carried above all by data journalism in the *Financial
+Times* arguing that mass smartphone adoption tracks the decline's timing
+across otherwise dissimilar countries [@burnmurdoch2026phones] — and a
+growing research literature, from broadband and
 mobile-phone studies [@billari2019broadband; @guldi2017; @rotondi2020] to
 recent working papers attributing much of the post-2007 decline in the
 United States to digital-technology exposure [@hudson2026teen;
@@ -112,10 +121,34 @@ running ahead of its descriptive foundations, and mostly on the wrong
 summary statistic. Total fertility rates collapse precisely the structure on
 which the candidate explanations differ: *which ages* lost fertility, *which
 cohorts* carry the loss, whether milestones are delayed or abandoned, and
-whether the change arrived everywhere at once or diffused. What preserves
-that structure is the fertility surface — age by cohort by rate — and a
-practice of reading it that a 2020 paper by Pattaro, Vanderbloemen and
-Minton developed for exactly this comparative purpose [@pattaro2020].
+whether the change arrived everywhere at once or diffused. The limitation is
+not hypothetical: the most widely read descriptive accounts of the decline
+are TFR-based — a recent Our World in Data insight documents fertility rates
+converging steeply downward across countries with very different starting
+points, while offering, by construction, no account of the ages through
+which the convergence ran [@ritchie2026convergence]. What preserves that
+structure is the fertility surface — age by cohort by rate — and a practice
+of reading it that a 2020 paper by Pattaro, Vanderbloemen and Minton
+developed for exactly this comparative purpose [@pattaro2020].
+
+A reader coming to these debates fresh needs one distinction above all:
+between age, period, and cohort effects. Age effects are lifecycle
+regularities — fertility concentrated in the twenties and early thirties.
+Period effects strike all ages in the same calendar years: a crisis, a
+pandemic, a price shock. Cohort effects travel with generations, set early
+and carried forward as each cohort ages. The three are easy to conflate and
+expensive to confuse, and the United States supplies the cautionary example
+this paper returns to repeatedly: its period TFR fell from 2.12 to 1.59
+after 2007, so on period evidence alone the American fertility exception
+died in the financial crisis — yet cohort-cumulative milestones show women
+born as late as 1984 completing replacement-level childbearing in the
+2020s. Period accounting misdates the end of the US exception by nearly two
+decades, because postponed births are debited to the years in which they
+did not occur rather than credited to the cohorts that eventually had them
+[@sobotka2017]. Keeping the three effects distinguishable is what
+Lexis-surface methods are for [@pattaro2020; @burkimsher2017]: on the
+surfaces used throughout this paper, age runs up the vertical axis, cohorts
+run along the horizontal, and period effects appear as diagonal bands.
 
 We proceed in three movements. First, an update with a resolution: the 2020
 paper did something unusual for a descriptive visualization piece — it made
@@ -360,6 +393,26 @@ roughly one year of age per fifteen calendar years — despite three decades
 of assisted reproduction, postponement, and policy variation. The ceiling
 behaves like a structural feature, not a margin under active renegotiation.
 
+Why did the ceiling fall, and why does it stay low? Parity control is the
+canonical mechanism: stopping behaviour truncated high-parity childbearing
+from the top down. But stopping plausibly interacts with a second,
+intergenerational channel. As first births moved later and maternal
+employment rose against scarce formal childcare, women in their forties
+increasingly occupy the years the old ceiling once covered as
+*grandmothers*: the late reproductive years are reallocated to the care of
+daughters' children rather than to continued childbearing. Such a
+reallocation is consistent with the life-history literature on the
+distinctively long human post-reproductive helping span [@hawkes1998], and
+with evidence that available grandparental childcare raises daughters'
+fertility and fertility intentions [@aassve2012grandparenting;
+@tanskanen2014grandparental]. On this reading the modern ceiling is not
+merely a residue of stopping; it is actively maintained by a kin division
+of labour in which a forty-something cohort adds descendants faster through
+its children's fertility than through its own. The reading carries a
+testable signature — ceiling recovery should be slowest where grandparental
+childcare substitutes most for formal provision — which we flag for the
+parity-specific extension discussed below.
+
 ## The mass behind the ceiling is small
 
 Median cumulative fertility above age 40 fell from 0.117 children (1950s)
@@ -371,6 +424,41 @@ cumulative fertility below roughly 1.99, no historically observed amount of
 40+ childbearing reaches 2.05. Late recuperation can and does finish
 journeys that are nearly complete [@beaujouan2020]; it cannot substitute
 for the years the corridor has consumed.
+
+## The squeeze: peak age against the ceiling
+
+![The squeeze across the panel, 1950--2025: modal age of the fertility schedule (points, shaded by the ASFR at the peak — darker is higher, matching the surfaces) rising toward the effective ceiling (line).](figures/squeeze_trajectories.png){#fig-squeeze}
+
+The surfaces contain a simpler story that can be distilled into three
+numbers per country-year: the modal (peak) age of the fertility schedule,
+the ASFR at that peak, and the effective ceiling. @fig-squeeze plots the
+first against the third, with the second carried by shading. Pooled medians
+across the panel: the peak age stood at 24 from the 1950s through the
+1970s, then rose steadily — 25 (1980s), 27 (1990s), 29 (2000s), 30 (2010s),
+31 (2020s) — while the ceiling descended from 45 to its 1980s–90s floor of
+41 and recovered only to 43. The distance between where childbearing is
+concentrated and where it effectively ends has narrowed from twenty years
+to twelve — a forty percent contraction, closed mostly from below. The
+shading adds a third fact: the peak is not only later but *lower*, the
+median ASFR at the peak age falling by nearly half, from 0.19 (1960s) to
+0.11 (2020s). Schedules have shifted later, flattened, and compressed
+against a nearly fixed upper boundary.
+
+This, we suggest, is the age-structure mechanics beneath the convergence of
+period fertility documented in TFR terms elsewhere
+[@ritchie2026convergence; @wilson2001; @dorius2008]. Convergence in the
+total says nothing about the route; on the evidence of @fig-squeeze the
+route is common. Country after country — whether starting from South
+Korea's mid-century ceiling near 48 or the near-universal early peaks of
+south-eastern Europe — arrives at the same configuration: a later, lower,
+narrower schedule pressed against a low-forties ceiling. The corridor is
+the shape into which the world's fertility schedules are converging; the
+TFR convergence is its one-dimensional shadow. Two caveats attach. The
+modal age is read conservatively (ties broken to the youngest age, so flat
+or plateau schedules — the United States' historical plateau among them —
+register early peaks), and single-year modal ages are noisy in small
+populations: the per-country panels, not the pooled medians, are again the
+primary output.
 
 ## Reachability: where the replacement contour meets the wall
 
@@ -508,9 +596,12 @@ housing, partnering, smartphone-era social change — must match the same
 fingerprint: which ages lost fertility, which cohorts carry the loss,
 whether milestones are delayed (tempo) or abandoned (quantum), why
 near-identical exposures produce heterogeneous national responses
-[@comolli2021; @hellstrand2020], and — the constraint this paper adds — why
-the final departures from replacement, in country after country, occurred
-pressed against a nearly fixed ceiling in the low forties. The ceiling also
+[@comolli2021; @hellstrand2020], and — the constraints this paper adds —
+why the final departures from replacement, in country after country,
+occurred pressed against a nearly fixed ceiling in the low forties, and why
+fertility schedules everywhere are converging on the same later, lower,
+narrower shape even as total rates converge downward
+[@ritchie2026convergence]. The ceiling also
 converts postponement arithmetic into quantum consequences even under
 unchanged intentions: trajectories that start later run into an upper
 boundary that has moved two years while starting ages moved six.
@@ -586,7 +677,9 @@ drafting were assisted by Claude (Anthropic) under the author's direction;
 all analyses are re-runnable end-to-end and all numbers in this draft are
 machine-generated from the pipeline. The author thanks Serena Pattaro and
 Laura Vanderbloemen, co-authors of the 2020 paper, for the original work
-this paper updates and for review comments on the working papers.
+this paper updates and for review comments on the working papers and the
+merged draft; the grandparental-care mechanism discussed in Results II was
+suggested by Laura Vanderbloemen in review.
 <!-- TODO: CRediT roles; funding statement; formal acknowledgements pass
 once contributor conversations conclude -->
 :::

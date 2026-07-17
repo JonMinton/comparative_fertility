@@ -143,13 +143,26 @@ DF + CC (both retained in repo for provenance). One-paper decision: Jon,
       comments logged as F-012..F-016; overall endorsement ("Awesome paper!")
 - [x] Math-mode symbol rendering in docx fixed (F-013): $>$, $\times$, $\geq$,
       $<$ → plain Unicode
-- [ ] APC primer paragraph in Introduction (F-012, proposed, pending JM) —
-      candidate worked example: US period collapse vs cohort persistence
-- [ ] Grandmothering/childcare channel as candidate ceiling mechanism
-      (F-015, proposed, pending JM + literature check) — strengthens LV
-      CRediT case
-- [ ] Word table borders via custom reference-doc (F-014) — submission
-      formatting pass
+- [x] APC primer paragraph in Introduction (F-012) — US worked example;
+      axes mapping sentence (2026-07-17)
+- [x] Grandmothering/kin-care channel added as candidate ceiling mechanism
+      (F-015) — Hawkes 1998, Aassve et al. 2012, Tanskanen & Rotkirch 2014
+      verified and cited; LV credited by name in acknowledgements note
+- [x] Word table borders via custom-reference.docx (F-014) — verified in
+      rendered docx
+- [x] NEW subsection "The squeeze: peak age against the ceiling" (Jon's
+      direction, 2026-07-17; logged F-017): scripts/squeeze_2026.R distils
+      each surface to peak age (colour-coded by ASFR at peak) vs ceiling;
+      pooled medians peak 24→31, ceiling 45→41→43, gap 20→12 yrs, peak ASFR
+      0.19→0.11; figure squeeze_trajectories.png (45 panels); framed as the
+      age-structure mechanics beneath TFR convergence-down
+      [@ritchie2026convergence, OWID Data Insight 2026-07-16, verified]
+- [x] Burn-Murdoch FT citation prepared and introduced organically in the
+      Introduction (@burnmurdoch2026phones): mid-May 2026 FT data column,
+      canonical URL ft.com/content/fba35eca-…; exact headline unrecoverable
+      via aggregators (FT paywall blocks fetch) — bib note says verify
+      headline before submission
+- [x] Abstract RESULTS + Discussion stylized-facts updated with the squeeze
 - [ ] JM read-through; title decision; DR template/AI-policy check
 - [ ] F-002 vanished-plateau paragraph + script (fits Results I US section
       or Discussion)
