@@ -185,7 +185,7 @@ Asia [@yoo2018] — enough observation for the forecasts to resolve.
 We reapply the combination rules of @pattaro2020 to the current HFD
 [@hfd2026] and HFC [@hfc2026] releases: HFD is preferred over HFC for any
 country-year; within the HFC, single-year periods with age in completed
-years are retained under the collection preference STAT $>$ ODE $>$ RE;
+years are retained under the collection preference STAT > ODE > RE;
 small internal gaps (at most four years) are linearly interpolated and
 flagged. The updated panel spans 1850–2025 (51 populations before the
 published exclusions; the same 45-country panel after them). One correction
@@ -204,7 +204,7 @@ infrastructures, and part of the motivation for periodic updates of this
 kind.
 
 All surface figures use the published visual specification: viridis
-(reversed) level-plot shading of ASFR on birth-year $\times$ age panels,
+(reversed) level-plot shading of ASFR on birth-year × age panels,
 solid contours at CPCFR = 2.05 and 1.50, years 1950 onward, ages up to 50,
 and countries ordered by CPCFR at 2007, the ranking year of the published
 figures [@sarkar2008; @garnier2018].
@@ -215,7 +215,7 @@ Three quantities, with definitions fixed ex ante in the repository's public
 workplan before the analysis ran on the updated data:
 
 - **Effective ceiling** of population $c$ in year $t$: the highest age at
-  which ASFR $\geq$ 1/200 (primary threshold), with 1/1000 as a sensitivity
+  which ASFR ≥ 1/200 (primary threshold), with 1/1000 as a sensitivity
   threshold. The thresholds operationalize "ages at which childbearing is
   still a live behavioural possibility" rather than a biological limit.
 - **Late-fertility mass**: cumulative ASFR at ages 40+ (and 35+) in a given
@@ -347,7 +347,7 @@ annotated it without theorizing it: "Replacement age 43."
 
 ![Effective ceiling trajectories by country, 1950--2025: highest age with ASFR at or above 1/200 (solid) and 1/1000 (dashed).](figures/wall_trajectories.png){#fig-walls}
 
-Defining the effective ceiling as the highest age with ASFR $\geq$ 1/200,
+Defining the effective ceiling as the highest age with ASFR ≥ 1/200,
 the pooled decade medians run: 45 (1950s), 44 (1960s), 42 (1970s), 41
 (1980s and 1990s), 42 (2000s), 42 (2010s), 43 (2020s) (@fig-walls). Three
 features matter. First, the nineteenth-century populations of the panel

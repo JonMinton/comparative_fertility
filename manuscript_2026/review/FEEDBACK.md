@@ -205,3 +205,80 @@ Entry template:
   carries the AI-assistance note in the paper body. Same treatment TO DO for
   CC. Strategic response (Jon): no resubmission until the manuscript is
   substantially more developed; single-vs-merged decision first.
+
+## F-012
+- date: 2026-07-16
+- source: word-doc (Laura Vanderbloemen, returned merged-draft copy in
+  review/returned/)
+- paper: MERGED
+- locus: Introduction
+- comment: (verbatim) "perhaps at some point good to remember/remind about
+  the distinction among age, period and cohort effects, how they differ, and
+  why it matters to be able to distinguish among them. Maybe an example of an
+  application in which not distinguishing among them, would cause an error in
+  judgement, or or an example, that shows how distinguishing among them can
+  help refine our understanding of populations, and improve prediction"
+- status: received
+- action/response: proposed (pending JM): short APC primer paragraph in the
+  Introduction or Background — sets up §6's period-front / diffusion-slope /
+  cohort-diagonal geometries, which currently arrive without the APC frame
+  being named. Candidate worked example: the US period-TFR collapse vs
+  cohort persistence already in Results I (not distinguishing period from
+  cohort reads the US as "collapsed" a decade early).
+
+## F-013
+- date: 2026-07-16
+- source: word-doc (Laura Vanderbloemen)
+- paper: MERGED
+- locus: Methods — "Do these arrows need help" (combination-rules para);
+  "x doesn't look right" (visual-spec para)
+- comment: math-mode symbols ($>$, $\times$) render poorly in the docx
+  channel.
+- status: actioned (in source, 2026-07-16 comments; fixed 2026-07-17)
+- action/response: replaced inline math-mode $>$ and $\times$ with plain
+  Unicode (">", "×") in the merged source; re-rendered docx/html.
+
+## F-014
+- date: 2026-07-16
+- source: word-doc (Laura Vanderbloemen)
+- paper: MERGED
+- locus: Table 1
+- comment: (verbatim) "I think this table might look better with borders"
+- status: accepted
+- action/response: docx table styling needs a custom reference-doc (Quarto's
+  default Word table style is borderless). Planned for the
+  submission-formatting pass; HTML/PDF outputs already render borders.
+
+## F-015
+- date: 2026-07-16
+- source: word-doc (Laura Vanderbloemen)
+- paper: MERGED
+- locus: Results II — ceiling decade medians
+- comment: (verbatim) "another driver might possibly have been 40-ish,
+  cohorts, becoming grandmothers in contexts where Mum is employed outside
+  home & childcare was scarce, and therefore culturally became more likely to
+  help their own daughters with childcare, rather than continue with
+  fertility until later ages of their 40s?"
+- status: received
+- action/response: substantive candidate mechanism for WHY the ceiling fell
+  and stays low — an intergenerational-childcare/grandmothering channel
+  (kin substitution: potential late-fertility years reallocated to
+  grandparental care where maternal employment is high and formal childcare
+  scarce). Proposed (pending JM): add to the ceiling discussion as a
+  candidate behavioural mechanism alongside parity control, with literature
+  check (grandparental childcare & daughters' fertility; grandmother
+  hypothesis). NOTE: this is the kind of substantive contribution the
+  contributorship→authorship route was designed for — strengthens the CRediT
+  case for LV.
+
+## F-016
+- date: 2026-07-16
+- source: word-doc (Laura Vanderbloemen)
+- paper: MERGED
+- locus: Conclusions
+- comment: (verbatim) "Awesome paper! I really like the way the graphs are
+  incorporated with the text and explanations are very clear and nicely tied
+  with the graphs."
+- status: received
+- action/response: no change; endorsement of the merged structure and
+  figure-text integration.

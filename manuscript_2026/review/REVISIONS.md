@@ -138,6 +138,18 @@ DF + CC (both retained in repo for provenance). One-paper decision: Jon,
   featured-wall embedded). F-009 actioned here (COVID subsection).
 
 ## toward v0.2 / submission
+- [x] Laura's returned copy of the MERGED draft reviewed (2026-07-16;
+      review/returned/closing_corridor_merged_LV_2026-07-16.docx) — six
+      comments logged as F-012..F-016; overall endorsement ("Awesome paper!")
+- [x] Math-mode symbol rendering in docx fixed (F-013): $>$, $\times$, $\geq$,
+      $<$ → plain Unicode
+- [ ] APC primer paragraph in Introduction (F-012, proposed, pending JM) —
+      candidate worked example: US period collapse vs cohort persistence
+- [ ] Grandmothering/childcare channel as candidate ceiling mechanism
+      (F-015, proposed, pending JM + literature check) — strengthens LV
+      CRediT case
+- [ ] Word table borders via custom reference-doc (F-014) — submission
+      formatting pass
 - [ ] JM read-through; title decision; DR template/AI-policy check
 - [ ] F-002 vanished-plateau paragraph + script (fits Results I US section
       or Discussion)
