@@ -434,3 +434,30 @@ Entry template:
   which part held. Also to decide: what §6 becomes if the model-building
   bridge is no longer a headline contribution (fold M1/M2/M3 + prereg into
   Discussion?).
+
+## F-025
+- date: 2026-07-19
+- source: chat (Jon)
+- paper: MERGED
+- locus: whole-manuscript architecture
+- comment: Think of the work as THREE coordinated artifacts: (1) a repo
+  updated with agentic support amid renewed interest in fertility patterns;
+  (2) a main manuscript that progresses through one spine of argument
+  relentlessly, without asides/eddies; (3) an appendix of additional
+  materials generated from (1) that (2) refers to without derailing
+  momentum. Spine (i)–(viii): renewed interest/accelerating decline →
+  the 2020 codebase and visualisation → limited uptake (complexity;
+  methodologists' suspicion that visualisation yields no predictions) →
+  the 2020 pedagogic annotations DID contain checkable predictions →
+  update shows qualitatively correct / quantitatively optimistic for both
+  populations, legitimating "reading off graphs" for medium-term
+  forecasting → high-attention accounts are period-TFR-based and the full
+  Lexis surface can finesse them → slight formalisation of the "age of no
+  return"/ceiling age and peak fertility age+level on a single chart →
+  the squeeze, explaining the headline trends in more resolution.
+- status: accepted (blueprint drafted)
+- action/response: full mapping in manuscript_2026/RESTRUCTURE_PLAN.md —
+  current-section → spine-beat/supplement destinations, S1–S8 supplement
+  plan, style directives, and three remaining calls (2×2 left column;
+  distilled squeeze chart; title). Implementation awaits Jon's OK on the
+  blueprint.

@@ -178,8 +178,14 @@ DF + CC (both retained in repo for provenance). One-paper decision: Jon,
       em-dashes (F-019). Discussion to frame agentic scaffolds on
       established codebases as the safe first use, contrasted with
       from-scratch LLM drafting (F-020 parenthetical).
-- [ ] Restructure per F-020/F-021 once discussed with JM; then title
-      decision; DR template/AI-policy check
+- [x] Restructure blueprint agreed (2026-07-19, F-025 three-artifact spine
+      directive): see `manuscript_2026/RESTRUCTURE_PLAN.md` for the full
+      current-section → spine/supplement mapping, S1–S8 supplement plan,
+      style directives, and the three remaining calls
+- [ ] Execute restructure per RESTRUCTURE_PLAN.md on JM's OK (includes
+      2×2 composite build, distilled squeeze chart, supplement qmd,
+      F-002 → S8, F-019 dash sweep); then title decision; DR
+      template/AI-policy check
 - [ ] F-002 vanished-plateau paragraph + script (fits Results I US section
       or Discussion)
 - [ ] F-006 composite overlay figure (2020 magenta lines redrawn on 2026

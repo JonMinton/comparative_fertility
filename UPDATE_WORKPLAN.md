@@ -5,15 +5,26 @@
 
 ---
 
-## ⚡ STATE OF PLAY (handover, 2026-07-17)
+## ⚡ STATE OF PLAY (handover, 2026-07-19)
 
 **The live manuscript is `manuscript_2026/closing_corridor_merged.qmd`**
 ("The closing corridor: fertility trends for 45 countries revisited") —
 one merged paper per Jon's decision; DF and CC qmds are superseded but
 retained for provenance. Renders to html + docx (docx uses
 `custom-reference.docx` for bordered tables). Feedback register
-`manuscript_2026/review/FEEDBACK.md` runs F-001..F-017; changelog in
+`manuscript_2026/review/FEEDBACK.md` runs F-001..F-025; changelog in
 `review/REVISIONS.md` (see its MERGED section for the to-do list).
+
+**2026-07-19: v0.2 restructure agreed in principle — read
+`manuscript_2026/RESTRUCTURE_PLAN.md` before touching the qmd.** Jon's
+tracked-changes round (F-018..F-024, archived in `review/returned/`) and
+his three-artifact spine directive (F-025): repo = factory; MS = one
+relentless spine (i)–(viii) in three phases (method & why revisit →
+forecasts checked → formalisation & squeeze); supplement
+(`supplementary_materials.qmd`, S1–S8 planned) absorbs the eddies
+(M1/M2/M3 → S5; full panels → S1; US plateau F-002 → S8). Blueprint holds
+three open calls (2×2 left column; distilled squeeze chart; title).
+Implementation starts on Jon's OK.
 
 Done and in the merged draft: forecast-resolution framing (published Fig 2
 + 2018 drawn extrapolations, both verified against the DemRes 42-23 PDF);
