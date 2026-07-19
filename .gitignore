@@ -7,3 +7,7 @@ manuscript_2026/*.html
 manuscript_2026/review/returned/
 manuscript_2026/literature_local/
 .Rapp.history
+
+# Word lock files
+~$*
+**/~$*
