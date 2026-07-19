@@ -163,7 +163,23 @@ DF + CC (both retained in repo for provenance). One-paper decision: Jon,
       via aggregators (FT paywall blocks fetch) — bib note says verify
       headline before submission
 - [x] Abstract RESULTS + Discussion stylized-facts updated with the squeeze
-- [ ] JM read-through; title decision; DR template/AI-policy check
+- [x] JM read-through received (2026-07-19; tracked changes + 6 comments on
+      the rendered docx, archived as
+      review/returned/closing_corridor_merged_JM_2026-07-19.docx) — logged
+      F-018..F-024. Headline: restructure to method-first → update-as-
+      reproducibility-result → forecasts as a latter part (F-020); 2×2
+      old/new composite figure for NOR+USA replacing the current
+      forecast-resolution figures, with Ritchie/Burn-Murdoch introduced
+      AFTER the resolution and the squeeze as the response (F-021, which
+      supersedes the open F-006 decision); contributions paragraph
+      rewritten in track changes (F-024); panel subsection retitle or
+      appendix (F-022); methods possibly expanded (F-023); acceleration
+      claim needs dated sources at first use (F-018); hyphens not
+      em-dashes (F-019). Discussion to frame agentic scaffolds on
+      established codebases as the safe first use, contrasted with
+      from-scratch LLM drafting (F-020 parenthetical).
+- [ ] Restructure per F-020/F-021 once discussed with JM; then title
+      decision; DR template/AI-policy check
 - [ ] F-002 vanished-plateau paragraph + script (fits Results I US section
       or Discussion)
 - [ ] F-006 composite overlay figure (2020 magenta lines redrawn on 2026

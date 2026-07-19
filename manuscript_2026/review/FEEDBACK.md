@@ -307,3 +307,130 @@ Entry template:
   Ritchie (OWID, 2026-07-16) cited in Introduction, squeeze subsection, and
   stylized-facts paragraph. Caveats recorded: ties-to-youngest modal ages
   (US plateau, F-002), small-population noise, per-country panels primary.
+
+## F-018
+- date: 2026-07-19
+- source: word-doc (Jon; tracked changes + comments on the rendered merged
+  docx, archived as review/returned/closing_corridor_merged_JM_2026-07-19.docx)
+- paper: MERGED
+- locus: Introduction, opening paragraph ("Fertility decline appears to have
+  accelerated… turned more steeply downward at some point after the late
+  2000s")
+- comment: "Since when? Sources?" — the acceleration claim needs dating and
+  citation support at the point it is first made.
+- status: received
+- action/response: pending discussion. Candidate anchors already in the bib:
+  ritchie2026convergence (OWiD), burnmurdoch2026phones (FT), plus the
+  scholarly acceleration citations in §6; question is which to surface in
+  the opening paragraph vs later per the F-021 restructure.
+
+## F-019
+- date: 2026-07-19
+- source: word-doc (Jon)
+- paper: MERGED
+- locus: global style
+- comment: "hypens not em-dashes throughout".
+- status: received
+- action/response: pending — mechanical find/replace in the qmd once the
+  restructure settles (em-dashes → hyphens/spaced dashes per Jon's
+  preference).
+
+## F-020
+- date: 2026-07-19
+- source: word-doc (Jon; comment on §2 heading "The 2020 baseline and its
+  forecasts")
+- paper: MERGED
+- locus: overall structure
+- comment: §2 "maybe needs placing a bit later. We are combining two aims at
+  once": (1) first briefly reintroduce the visualisation method and how to
+  read it; (2) then show that the earlier results could be successfully
+  updated because code, algorithm and sources were all reproducible; (3) the
+  informal forecasts embedded in the 2020 pedagogic figures then form a
+  specific LATTER part of the manuscript. Parenthetical for the Discussion:
+  present agentic scaffolds + frontier models for replication/update work on
+  ALREADY-ESTABLISHED codebases as a safe and defensible first use of
+  agentic AI in coding, contrasted with from-scratch LLM paper development
+  where the risk of neither understanding nor verifying method/claims is
+  much greater.
+- status: received
+- action/response: pending discussion — this is the spine of the proposed
+  restructure (with F-021); §7.3 gains the safe-first-use vs from-scratch
+  contrast.
+
+## F-021
+- date: 2026-07-19
+- source: word-doc (Jon; comment on Results I "Norway" heading)
+- paper: MERGED
+- locus: Results I — figure architecture and narrative order
+- comment: Simplify and merge the existing forecast-resolution figures into
+  one 2×2 composite (leaning 2×2 over 3×2): columns = old-with-projection
+  vs updated; rows = Norway, USA. The annotated 2020 figures do double duty
+  — reintroducing how to read the plots AND stating the falsifiable claims
+  the new data verify/falsify. The scoreboard table + conclusion follow the
+  composite. THEN a passage on why Norway lost replacement earlier and USA
+  declines were more severe than projected, which is the point where
+  Ritchie, Burn-Murdoch and related theses get introduced — with the
+  squeeze diagrams presented as responses to them.
+- status: received
+- action/response: pending discussion. Supersedes the open F-006 decision
+  (overlay vs two-figure treatment): neither — a 2×2 old/new grid. Also
+  relocates the debate-facing material from the Introduction to a
+  post-resolution position.
+
+## F-022
+- date: 2026-07-19
+- source: word-doc (Jon; comment on "The panel as a whole" heading)
+- paper: MERGED
+- locus: Results I — panel subsection
+- comment: "This isn't the panel as a whole. We have more populations."
+  Either justify in-text why only these figures appear in the manuscript,
+  and/or move panel-scale figures to an appendix/supplement referred to
+  parenthetically.
+- status: received
+- action/response: pending discussion — interacts with DR's format (DR
+  handles supplementary materials well; the Shiny app is the natural
+  full-panel home and is already cited).
+
+## F-023
+- date: 2026-07-19
+- source: word-doc (Jon; comment on the shared-failure-mode paragraph)
+- paper: MERGED
+- locus: Methods vs Results boundary
+- comment: "Consider if we need the methods to be more clearly defined. If
+  so should we have more in methods?" — anchored where the ceiling concept
+  does interpretive work in Results.
+- status: received
+- action/response: pending discussion — candidate moves: ceiling/corridor
+  operational definitions fully into §3 Methods, leaving Results to apply
+  them; squeeze construction (peak age, ties-to-youngest, colour encoding)
+  likewise.
+
+## F-024
+- date: 2026-07-19
+- source: word-doc (Jon; tracked rewrite of the Introduction roadmap
+  paragraph "We proceed in three movements…")
+- paper: MERGED
+- locus: Introduction — contributions statement
+- comment: Rewritten in tracked changes to "This paper makes three
+  contributions in the following sequence" then enumerates FOUR: (1) update
+  the 2020 visualization paper with new data, noting it included qualitative
+  forecasts for Norway and the USA; (2) compare those projections with the
+  updated data — both correct (Norway lost replacement, USA did not),
+  though declines greater than projected in either case; (3) formalize the
+  ceiling intuition (age beyond which future contribution to completed
+  cohort fertility is marginal); (4) the squeeze — ceiling falling while
+  the age of peak fertility ("midpoint") rises. The DELETED text is the old
+  three-movements framing, including the "bridge" movement (surface
+  visualization as informal model building; M1/M2/M3; the preregistered
+  protocol as formal companion) — no longer billed as a headline
+  contribution. Small tracked insertions elsewhere: "(TFRs)" and "(OWiD)"
+  abbreviations at first use.
+- status: received
+- action/response: pending discussion. Two flags for Jon: (a) "three
+  contributions" vs four enumerated; (b) the USA claim — per the F-009
+  precision guard, "the USA would not [lose replacement]" only half-held
+  (last cohort to reach replacement at 40 is 1984; retention was achieved by
+  pushing against the terminal ages), so the resolution sentence should say
+  which part held. Also to decide: what §6 becomes if the model-building
+  bridge is no longer a headline contribution (fold M1/M2/M3 + prereg into
+  Discussion?).
