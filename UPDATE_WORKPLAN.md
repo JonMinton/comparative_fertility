@@ -15,16 +15,23 @@ retained for provenance. Renders to html + docx (docx uses
 `manuscript_2026/review/FEEDBACK.md` runs F-001..F-025; changelog in
 `review/REVISIONS.md` (see its MERGED section for the to-do list).
 
-**2026-07-19: v0.2 restructure agreed in principle — read
-`manuscript_2026/RESTRUCTURE_PLAN.md` before touching the qmd.** Jon's
-tracked-changes round (F-018..F-024, archived in `review/returned/`) and
-his three-artifact spine directive (F-025): repo = factory; MS = one
-relentless spine (i)–(viii) in three phases (method & why revisit →
-forecasts checked → formalisation & squeeze); supplement
-(`supplementary_materials.qmd`, S1–S8 planned) absorbs the eddies
-(M1/M2/M3 → S5; full panels → S1; US plateau F-002 → S8). Blueprint holds
-three open calls (2×2 left column; distilled squeeze chart; title).
-Implementation starts on Jon's OK.
+**2026-07-19: v0.2 restructure EXECUTED** per Jon's three-artifact spine
+directive (F-025) and same-day call answers (F-026/F-027; design record in
+`manuscript_2026/RESTRUCTURE_PLAN.md`). The MS now runs: method + 3D
+terrain (fig lexis3d_ridge_norway) + why-uptake-was-limited → Methods with
+formal AAPF/ANR algebra → forecast check (2×2 old/new composite,
+`forecast_check_2x2.png`, left column re-rendered from tag `demres-2020`
+data with the 2018 extrapolations redrawn) → beyond-TFR → the shortening
+runway (pooled squeeze chart) → Discussion (incl. safe-first-use agentic
+framing) → Conclusions. Terminology: **ANR** (age of no return) and
+**AAPF** (age and amount of peak fertility); usable runway 21→12 yrs.
+Title PROVISIONAL: "Running out of runway: fertility trends for 45
+countries revisited" — awaiting Jon. Supplement `supplementary_materials.qmd`
+S1–S8 (S8 closes F-002: US plateau 1992–2006, 13 plateau years, longest in
+panel). Both render clean (html+docx). New scripts:
+forecast_check_2x2_2026.R, squeeze_pooled_2026.R, lexis_3d_ridge_2026.R,
+us_plateau_2026.R. To-do list: review/REVISIONS.md "toward v0.3".
+NOTE: create a pre-submission archive tag at submission (F-026 condition).
 
 Done and in the merged draft: forecast-resolution framing (published Fig 2
 + 2018 drawn extrapolations, both verified against the DemRes 42-23 PDF);

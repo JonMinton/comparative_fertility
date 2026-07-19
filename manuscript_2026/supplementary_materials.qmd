@@ -1,0 +1,200 @@
+---
+title: "Running out of runway: fertility trends for 45 countries revisited - Supplementary materials"
+subtitle: "Supplement to the MERGED DRAFT v0.2 (2026-07-19); sections S1-S8"
+author:
+  - name: Jon Minton
+    affiliations:
+      - name: Independent researcher
+    email: jon.will.minton@gmail.com
+date: 2026-07-19
+bibliography: references.bib
+format:
+  html:
+    embed-resources: true
+  docx:
+    reference-doc: custom-reference.docx
+---
+
+::: {.callout-note}
+All materials here are generated from the public project repository
+(<https://github.com/JonMinton/comparative_fertility>); each section names
+its generating script. The 2020-vintage state of the repository is
+preserved at tag `demres-2020`. Terms: AAPF = age and amount of peak
+fertility; ANR = age of no return; CPCFR = cumulative pseudo-cohort
+fertility rate; definitions in the main paper, Section 3.2.
+:::
+
+# S1. The full 45-country composite panel
+
+The main paper features Norway and the United States; the full panel,
+updated to 2023-25 and ordered by CPCFR at 2007 as in @pattaro2020, is
+shown here in three blocks of fifteen. An interactive version, with
+country selection and animation over time, is maintained at
+<https://datascapes.shinyapps.io/cumulative_fertility_app/>.
+Script: `scripts/figures_2026.R`.
+
+![Countries ranked 31-45 by CPCFR at 2007, updated to 2023-25.](figures/overall_split_1.png){#fig-s1a}
+
+![Countries ranked 16-30 by CPCFR at 2007, updated to 2023-25.](figures/overall_split_2.png){#fig-s1b}
+
+![Countries ranked 1-15 by CPCFR at 2007, updated to 2023-25.](figures/overall_split_3.png){#fig-s1c}
+
+# S2. Featured ANR overlays: censored versus wall-terminated
+
+The main paper's featured Norway panel shows both escapes of
+the replacement contour terminating at the ANR. The United States panel
+below shows the contrast that matters for the still-open US verdict: its
+contour's right end is cut by the data edge - censored, not
+wall-terminated. South Korea, the panel's extreme case, is included for
+comparison. Script: `scripts/wall_2026.R`.
+
+![United States: composite surface with the ANR overdrawn (dotted). The replacement contour climbs toward the boundary but its right end is censored - the verdict on the 1985+ cohorts is still open.](figures/featured_wall_usa.png){#fig-s2a}
+
+![South Korea: composite surface with the ANR overdrawn (dotted).](figures/featured_wall_kor.png){#fig-s2b}
+
+# S3. Per-country squeeze trajectories
+
+The pooled-median squeeze chart in the main paper
+summarises 45 per-country trajectories; they are shown in full here.
+Single-year modal ages are noisy in small populations, and ties are broken
+to the youngest age (see S8), which is why the per-country panels - not
+the pooled medians - are the primary output. Derived data:
+`data/derived_2026/squeeze_by_country_year.csv`.
+Script: `scripts/squeeze_2026.R`.
+
+![The squeeze by country, 1950-2025: modal age of the fertility schedule (points, shaded by the ASFR at the peak) and the ANR (line).](figures/squeeze_trajectories.png){#fig-s3}
+
+# S4. ANR trajectories, sensitivity, and the full last-cohort table
+
+Per-country ANR trajectories at both thresholds are shown below: the
+1/1000 boundary sits roughly two years above the primary 1/200 boundary
+and moves in parallel, so the narrative in the main paper is not sensitive
+to the choice. Late-fertility mass trajectories (cumulative ASFR at ages
+40+ and 35+) are in the repository (`late_mass_trends.png`). The full
+45-country version of the main paper's last-cohort table is at
+`data/derived_2026/last_cohort_replacement.csv`.
+Script: `scripts/wall_2026.R`.
+
+![Effective ANR trajectories by country, 1950-2025: highest age with ASFR at or above 1/200 (solid) and 1/1000 (dashed).](figures/wall_trajectories.png){#fig-s4}
+
+# S5. From reading surfaces to testing causes: candidate geometries and their mimics
+
+This section sets out the reasoning, summarised in the main paper's
+Discussion, that connects surface reading to the preregistered protocol
+([osf.io/j3tbq](https://osf.io/j3tbq)).
+
+The candidate explanations for the post-2008 acceleration differ precisely
+in the surface geometry they imply. A *period shock* - the 2008 financial
+crisis and its long shadow [@sobotka2011; @goldstein2009] - should appear
+as a vertical front: fertility falling across all childbearing ages in the
+same calendar years, with intensity graded by each country's economic
+exposure. A *diffusion process* riding a new communication technology -
+the smartphone thesis in its behaviourally explicit form [@hudson2026teen;
+@moscoso2026wide; @myers2026iphone; @billari2019broadband] - should
+appear, in its simplest young-first variant, as a *sloped* front: onset
+earliest at the youngest, most-connected ages and arriving at older ages
+with a lag, in country after country regardless of development level, as
+the older diffusion literature would expect of behaviour spreading through
+communication networks [@bongaartswatkins1996; @casterline2001;
+@roserobixby1993]. A *cohort-carried* change - new cohorts bringing
+revised intentions with them as they age through the childbearing years -
+should travel along the 45-degree diagonal of the Lexis surface.
+
+The updated panels are suggestive on inspection: post-2008 lightening of
+the surface is visible at young ages in many countries, including several
+where the crisis narrative fits poorly. But adjudication by eye fails,
+for exactly the reason the main paper's forecast check teaches: unaided
+surface reading is powerful at generating hypotheses and systematically
+fallible at extrapolating them. Two specific mimics discipline any
+reading of the acceleration. *Tempo mimicry*: postponement alone moves
+fertility out of young ages first, so a young-first front can be produced
+by delay without any quantum change - distinguishing them requires
+following cohort cumulative milestones, which the CPCFR contours carry.
+*Mean-reversion mimicry*: several countries entered 2008 at the top of a
+recuperation upswing [@goldstein2009; @myrskyla2013], so a post-2008
+"break" can be manufactured by reversion to an older trend. Existing
+evidence on the digital thesis, moreover, is largely teen-focused or
+single-country [@guldi2017; @kearney2015media; @jaeger2020], and the most
+prominent null for ages 25+ rests on a detrending that removes any effect
+common to all ages by construction [@moscoso2026wide] - so the question
+of a *level* response across the full age range remains open.
+
+These considerations motivate the preregistered universality test: a
+global panel (UN World Population Prospects 2024, escaping the
+rich-country selection of the HFD/HFC), break-date estimation, an
+age-gradient classification of onset (period-shock versus young-first
+versus cohort-carried), tempo guards built from CPCFR milestones, and
+equivalence tests against development gradients. The protocol was frozen
+and registered publicly on 12 July 2026, before its outcome data were
+downloaded; the main paper deliberately runs none of its estimators.
+
+# S6. COVID-19 on the surfaces
+
+COVID-19 arrived on these surfaces as texture, not trend: dips in 2020-21
+births and partial rebounds in several countries, superimposed on an
+acceleration that was already a decade old at the pandemic's onset. The
+runway quantities (AAPF, ANR, late mass, reachability) move smoothly
+through the pandemic years in the per-country trajectories of S3 and S4.
+Whether the pandemic left a persistent mark - or shared causes with the
+broader decline - is exactly the kind of question the eye cannot settle;
+the preregistered protocol excludes 2020-24 from its estimation windows
+and treats pandemic-era displays as exploratory.
+
+# S7. Provenance of the 2020 extrapolations
+
+The main paper's forecast-check figure redraws the 2020-era
+extrapolations onto re-rendered surfaces. The two source artifacts are
+reproduced here.
+
+The published Figure 2 of @pattaro2020 carried pedagogic annotations -
+including the terminal contour readings "Replacement age 43" (Norway) and
+"Replacement age 37" (United States) - but no drawn extrapolation lines;
+the forecasts appear in the published text: the contour "has been trending
+upwards for Norway but falling for the United States"; "Norway looks
+likely to lose replacement fertility levels over the next few years";
+"we might assume that replacement levels will be sustained for longer in
+the United States" [@pattaro2020, pp. 699-700].
+
+![Figure 2 of @pattaro2020 as published (CC BY 3.0 DE): composite fertility lattice plots for Norway and the United States with the original annotations.](figures/pattaro2020_fig2_published.png){#fig-s7a}
+
+The extrapolations were drawn explicitly in a pre-publication working
+version of the figure, publicly timestamped in the project repository in
+September 2018, as dotted lines labelled "speculative extrapolation of
+replacement contour": rising steeply for Norway; continuing nearly flat,
+near age 37-38, for the United States. The drawn lines were dropped in
+revision; the published text retained their verbal equivalents. The
+working figure uses a draft-era colour palette that differs from the
+published specification - one reason the main paper re-renders the
+2020-vintage data (repository tag `demres-2020`,
+`data/data_combined_and_standardised.csv`) in the current specification
+rather than reproducing this figure in the comparison.
+
+![Pre-publication working version (project repository, September 2018), with the drawn "speculative extrapolation" lines.](figures/usanor_extrapolation_2018draft.png){#fig-s7b}
+
+Digitized coordinates for the redrawn magenta lines in the main paper's
+forecast check are recorded in `scripts/forecast_check_2x2_2026.R`; they
+are approximate to the eye against @fig-s7b.
+
+# S8. The vanished US plateau
+
+The United States was historically unusual for a flat-peaked - potentially
+bimodal, subgroup-mixture - ASFR age profile, which is why the AAPF's
+tie-to-youngest rule matters there and why the US is not used as the
+terrain example in the main paper. Operationalising plateau width as the
+number of single-year ages whose ASFR is within 90% of that year's
+maximum, and calling a country-year a plateau year at width 9 or more:
+the United States had thirteen plateau years, 1992-2006 - by far the
+longest run in the panel (the next longest is Albania's six years in the
+1950s-60s; only five countries have any). The plateau collapsed from the
+left after the late 2000s with the teen and early-twenties fertility
+decline, and by the 2020s the US profile is a conventional late single
+peak (median width 6, matching its pre-1990 value). Total-schedule
+analysis cannot distinguish subgroup convergence from early-subgroup
+collapse; birth-order data would [@zeman2018], and the by-birth-order
+collections already assembled in the repository are the natural extension.
+Derived data: `data/derived_2026/plateau_width_by_country_year.csv`.
+Script: `scripts/us_plateau_2026.R`.
+
+![Width of the near-peak age range (ages within 90% of the year's peak ASFR): United States versus the 45-country median, 1950-2025. Dashed line: the plateau criterion (9 ages).](figures/us_plateau_width.png){#fig-s8}
+
+# References

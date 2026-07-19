@@ -182,10 +182,52 @@ DF + CC (both retained in repo for provenance). One-paper decision: Jon,
       directive): see `manuscript_2026/RESTRUCTURE_PLAN.md` for the full
       current-section → spine/supplement mapping, S1–S8 supplement plan,
       style directives, and the three remaining calls
-- [ ] Execute restructure per RESTRUCTURE_PLAN.md on JM's OK (includes
-      2×2 composite build, distilled squeeze chart, supplement qmd,
-      F-002 → S8, F-019 dash sweep); then title decision; DR
-      template/AI-policy check
+
+## v0.2 (2026-07-19) — restructure executed (F-025; calls answered same day)
+- [x] New spine: Intro (renewed interest, dated sources, three-phase
+      roadmap) → §2 method + 3D terrain figure (F-027) + "why uptake was
+      limited" (complexity; methodologists' suspicion) → §3 Methods incl.
+      formal AAPF/ANR definitions with operationalisation justifications
+      (F-026, F-023) → §4 forecast check (2×2 old/new composite from tag
+      demres-2020 data with redrawn extrapolations, F-021/F-006; scoreboard;
+      last-cohort table; "what the check establishes") → §5 beyond-TFR
+      (debate relocated out of Intro) → §6 the shortening runway (ANR
+      behavioural + grandmothering; featured NOR wall; pooled squeeze chart;
+      runway arithmetic) → §7 Discussion (stylized facts; surfaces-to-models
+      compressed w/ prereg pointer; COVID compact; limitations; workflow
+      §7.4 safe-first-use vs from-scratch contrast per F-020) → Conclusions.
+- [x] Terminology: ANR (age of no return) replaces "effective ceiling";
+      AAPF (age and amount of peak fertility) = the ridge; usable runway =
+      ANR − AAPF age. Title PROVISIONAL: "Running out of runway: fertility
+      trends for 45 countries revisited" (Jon to confirm).
+- [x] New figures: forecast_check_2x2.png (scripts/forecast_check_2x2_2026.R;
+      validated endpoints NOR 1971@43 both vintages, USA 1976@38 → 1984@40),
+      squeeze_pooled.png (scripts/squeeze_pooled_2026.R; runway 21 yrs 1955
+      → 12 yrs 2023), lexis3d_ridge_norway.png (scripts/lexis_3d_ridge_2026.R),
+      us_plateau_width.png (scripts/us_plateau_2026.R).
+- [x] Supplement created: supplementary_materials.qmd, S1–S8 (S1 full
+      panels; S2 featured walls USA+KOR; S3 45-panel squeeze; S4 ANR
+      trajectories + sensitivity + full last-cohort table; S5 geometries +
+      mimics [old §6 moved wholesale]; S6 COVID; S7 extrapolation
+      provenance incl. published Fig 2 + 2018 draft; S8 vanished US plateau
+      — closes F-002 with script-generated numbers: plateau years 1992–2006,
+      13 yrs, longest in panel).
+- [x] F-019 dash sweep: authored prose hyphen-only (remaining em/en dashes
+      are verbatim bib titles and CSL page ranges).
+- [x] Both docs render clean to html + docx; 0 unresolved refs; AAPF/ANR
+      algebra as native Word equations; body w/ refs ≈ 6.4k words.
+
+## toward v0.3 / submission
+- [ ] JM read-through of v0.2; CONFIRM provisional title; confirm the
+      "qualitatively correct, quantitatively optimistic" USA wording reads
+      right against the F-009 precision guard (which-part-held is in §4
+      prose)
+- [ ] Verify exact FT headline (burnmurdoch2026phones) before submission
+- [ ] Deeper literature positioning (tempo/quantum, recuperation,
+      latest-late, cohort forecasts) if DR-bound
+- [ ] Contributor outreach (tiers per workplan) once JM approves artifact
+- [ ] DR template + AI-policy check; create pre-submission archive tag at
+      submission (F-026 condition)
 - [ ] F-002 vanished-plateau paragraph + script (fits Results I US section
       or Discussion)
 - [ ] F-006 composite overlay figure (2020 magenta lines redrawn on 2026

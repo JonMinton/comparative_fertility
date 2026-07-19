@@ -53,16 +53,25 @@ three-vs-four contributions inconsistency (F-024a):
 - Terminology: formal term **ceiling age**, introduced with the informal
   gloss **"age of no return" (ANR)** — per Jon's (vii)
 
-## Open calls for Jon (with recommendations)
+## Calls — RESOLVED 2026-07-19 (Jon's answers; restructure executed same day)
 
-1. **Left column of the 2×2 (F-021):** (a) use the 2018 working figure as-is
-   (provenance-honest; palette mismatch) vs (b) re-render 2020-vintage data
-   in the 2026 house style with the extrapolation lines redrawn, provenance
-   in caption + S7. **Recommend (b)** — the columns then differ only by data
-   window, so the reader sees the update, not a palette change.
-2. **Distilled squeeze chart for §6:** pooled panel medians (peak age +
-   ceiling lines, ribbon for spread, colour for peak ASFR) vs a
-   selected-countries small multiple. **Recommend pooled-median single
-   panel**; 45-country detail in S3.
-3. **Title:** revisit after restructure — "The closing corridor" still fits
-   the spine's destination.
+1. **Left column of the 2×2:** re-render approved, conditional on a
+   trackable GitHub link to the previous figures' data → left column built
+   from tag `demres-2020` data, linked in Methods, script header, and S7;
+   a further archive tag freezes the repo at submission (in checklist).
+2. **Distilled squeeze chart:** pooled-median panel agreed → built
+   (`squeeze_pooled.png`); 45 panels in S3.
+3. **Title/metaphor:** runway metaphor adopted (Jon's proposal): AAPF =
+   ridge / max speed (his coinage "age and amount of peak fertility");
+   ANR = age of no return, used in preference to "ceiling age"; core
+   argument = max speed later + lower, runway end sooner. Title
+   PROVISIONAL: "Running out of runway: fertility trends for 45 countries
+   revisited" — awaiting Jon's confirmation; trivially revertable.
+4. (Mid-turn additions, same day:) formal algebra for AAPF/ANR in Methods
+   with operationalisation justifications (F-026); 3D terrain figure with
+   the AAPF ridge highlighted, Norway (F-027). Both in v0.2.
+
+**Status: executed in v0.2 (closing_corridor_merged.qmd + 
+supplementary_materials.qmd, both rendering clean). This file is now the
+record of the v0.2 design; the live to-do list is review/REVISIONS.md
+("toward v0.3 / submission").**

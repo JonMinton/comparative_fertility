@@ -461,3 +461,45 @@ Entry template:
   plan, style directives, and three remaining calls (2×2 left column;
   distilled squeeze chart; title). Implementation awaits Jon's OK on the
   blueprint.
+
+## F-026
+- date: 2026-07-19
+- source: chat (Jon, mid-restructure)
+- paper: MERGED
+- locus: Methods
+- comment: If methodologists prefer algebra over graphs alone, we SHOULD
+  provide mathematical definitions of AAPF and ANR, along with
+  justifications for how we operationalise the latter. (Same turn: rerender
+  of the 2020-vintage panels approved conditional on a trackable GitHub
+  link to the data behind the previous figures - use tags, incl. an archive
+  tag of the repo state prior to submission; pooled squeeze chart agreed;
+  runway metaphor proposed with AAPF = ridge/max speed and ANR - preferred
+  over "ceiling age" - = end of runway.)
+- status: actioned (v0.2)
+- action/response: Methods §3.2 "Formal definitions: AAPF and ANR" - f(x,t)
+  notation, CPCFR sum, AAPF as argmax with tie rule, ANR as max{x: f >=
+  1/200} with three-part operationalisation justification (absolute not
+  relative threshold; interpretability + small residual mass; robustness to
+  1/1000), reachability, usable runway = ANR - AAPF age. Tag provenance:
+  left column of the 2x2 re-rendered from tag demres-2020 data, linked in
+  script header and Methods; pre-submission archive tag added to the
+  submission checklist. Runway adopted as the organizing metaphor
+  throughout; ANR replaces "effective ceiling"; title provisionally
+  "Running out of runway: fertility trends for 45 countries revisited"
+  (flagged for Jon's confirmation).
+
+## F-027
+- date: 2026-07-19
+- source: chat (Jon, mid-restructure)
+- paper: MERGED
+- locus: §2 method reintroduction
+- comment: For AAPF it will be useful to have a 3D visualisation of an
+  example Lexis surface (almost all but the USA would be fine), where the
+  ridge is highlighted.
+- status: actioned (v0.2)
+- action/response: scripts/lexis_3d_ridge_2026.R - Norway 1950-2024 persp()
+  terrain, viridis-reversed facets matching the lattice plots, AAPF crest
+  line in magenta with leader label; @fig-terrain opens §2.1 (the lattice
+  plots introduced as the bird's-eye view of this terrain). Norway chosen
+  for its clean single peak; the US plateau exclusion is explained in the
+  caption and S8.
