@@ -216,6 +216,16 @@ DF + CC (both retained in repo for provenance). One-paper decision: Jon,
       are verbatim bib titles and CSL page ranges).
 - [x] Both docs render clean to html + docx; 0 unresolved refs; AAPF/ANR
       algebra as native Word equations; body w/ refs ≈ 6.4k words.
+- [x] Figure correction round (F-028, same day): 2×2 rebuilt with true
+      field contours (vertical escapes to infinity restored; USA censoring
+      preserved); extrapolations digitized programmatically from the 2018
+      PNG (extract_2018_extrapolation.py + QC overlay + CSV) and confined
+      to the 2020-vintage panels — extraction showed Norway's drawn line
+      held ~43 to cohort ~1981 before turning vertical, so the realized
+      escape came a decade of cohorts sooner than drawn (prose + scoreboard
+      corrected). 3D figure now lexis3d_aapf_panels.png: France/Norway/
+      South Korea 3×2, terrain (theta +30, phi 42, ridge cells magenta)
+      beside each country's AAPF trajectory.
 
 ## toward v0.3 / submission
 - [ ] JM read-through of v0.2; CONFIRM provisional title; confirm the

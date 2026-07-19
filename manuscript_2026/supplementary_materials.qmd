@@ -160,8 +160,9 @@ the United States" [@pattaro2020, pp. 699-700].
 The extrapolations were drawn explicitly in a pre-publication working
 version of the figure, publicly timestamped in the project repository in
 September 2018, as dotted lines labelled "speculative extrapolation of
-replacement contour": rising steeply for Norway; continuing nearly flat,
-near age 37-38, for the United States. The drawn lines were dropped in
+replacement contour": for Norway holding near age 43 for a further decade
+of cohorts before turning vertical; for the United States continuing
+nearly flat, near age 37-38, to the panel's edge. The drawn lines were dropped in
 revision; the published text retained their verbal equivalents. The
 working figure uses a draft-era colour palette that differs from the
 published specification - one reason the main paper re-renders the
@@ -171,9 +172,11 @@ rather than reproducing this figure in the comparison.
 
 ![Pre-publication working version (project repository, September 2018), with the drawn "speculative extrapolation" lines.](figures/usanor_extrapolation_2018draft.png){#fig-s7b}
 
-Digitized coordinates for the redrawn magenta lines in the main paper's
-forecast check are recorded in `scripts/forecast_check_2x2_2026.R`; they
-are approximate to the eye against @fig-s7b.
+The magenta lines in the main paper's forecast check are digitized
+programmatically from @fig-s7b by pixel extraction with tick-mark
+calibration (`scripts/extract_2018_extrapolation.py`, with a QC overlay
+in the repository); the coordinates are at
+`data/derived_2026/extrapolation_2018_digitized.csv`.
 
 # S8. The vanished US plateau
 

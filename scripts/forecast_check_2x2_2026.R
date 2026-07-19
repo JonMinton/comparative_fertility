@@ -1,20 +1,23 @@
-# Forecast-check 2x2 composite (F-021, Jon's design 2026-07-19):
+# Forecast-check 2x2 composite (F-021 design; F-028 corrections):
 #   rows    = Norway, USA
 #   columns = 2020-vintage data (with the drawn extrapolations) | 2026 update
 # Left column re-renders the data frozen at repository tag `demres-2020`
 # (data/data_combined_and_standardised.csv at that tag) in the 2026 house
 # style, so the only difference between columns is the data window:
 #   https://github.com/JonMinton/comparative_fertility/blob/demres-2020/data/data_combined_and_standardised.csv
-# The magenta dotted extrapolation lines are redrawn from the September 2018
-# working figure (figures/usanor_annotated_two_contour.png); the published
-# paper carried their verbal equivalents (Pattaro et al. 2020, pp. 699-700).
-# Digitized coordinates are approximate to the eye; the original figure is
-# reproduced in the supplement (S7).
 #
-# CPCFR milestone "contours" are drawn as per-cohort crossing-age lines
-# (first age at which cumulative pseudo-cohort fertility reaches the
-# milestone) - equivalent to levelplot contours because CPCFR is monotone in
-# age, and cleaner to annotate.
+# F-028 corrections (Jon, 2026-07-19):
+#   - CPCFR milestones drawn as TRUE FIELD CONTOURS of cumulative fertility
+#     over (birth year, age), not per-cohort crossing-age polylines, so that
+#     where cohorts stop reaching a milestone within fully observed data the
+#     contour escapes vertically ("goes to infinity"), as in the published
+#     figures; censored contours end at the data edge instead.
+#   - The magenta extrapolation lines are digitized programmatically from
+#     the September 2018 working figure (scripts/extract_2018_extrapolation.py
+#     -> data/derived_2026/extrapolation_2018_digitized.csv), replacing
+#     hand-eyeballed coordinates. The actual Norway line runs nearly flat at
+#     age ~43 for cohorts ~1972-81 and then turns vertical.
+#   - Extrapolation lines appear ONLY on the 2020-vintage panels.
 #
 # Usage: Rscript scripts/forecast_check_2x2_2026.R path/to/data_2020vintage.csv
 #        (extract first:  git show demres-2020:data/data_combined_and_standardised.csv > path)
@@ -60,29 +63,20 @@ dta <- bind_rows(old, new) %>%
                                          "2026 update (data to 2023-25)"))
   )
 
-# Per-cohort milestone crossing ages (only series observed from age <= 16)
-crossings <- dta %>%
-  filter(series_ok, !is.na(my_ccfr)) %>%
-  group_by(vintage, country, code, birth_year) %>%
-  summarise(
-    age_205 = if (any(my_ccfr >= 2.05)) min(age[my_ccfr >= 2.05]) else NA_real_,
-    age_150 = if (any(my_ccfr >= 1.50)) min(age[my_ccfr >= 1.50]) else NA_real_,
-    .groups = "drop"
-  )
+# Complete rectangular grid per panel for field contouring: NA outside the
+# observed series_ok region (contours end at data edges = censoring; escape
+# through the top within fully observed data = "to infinity").
+contour_grid <- dta %>%
+  mutate(ccfr_ok = if_else(series_ok, my_ccfr, NA_real_)) %>%
+  select(vintage, country, birth_year, age, ccfr_ok) %>%
+  group_by(vintage, country) %>%
+  complete(birth_year = full_seq(birth_year, 1), age = 12:50) %>%
+  ungroup()
 
-# Redrawn "speculative extrapolation" lines (2018 working figure, digitized)
-extrap <- bind_rows(
-  tibble(country = "Norway",
-         birth_year = c(1972, 1976, 1979, 1982, 1984),
-         age        = c(43, 44, 46, 48.5, 50)),
-  tibble(country = "United States",
-         birth_year = c(1977, 1985, 1995, 2004),
-         age        = c(37, 37.3, 37.8, 38.2))
-)
-extrap_both <- bind_rows(
-  extrap %>% mutate(vintage = levels(dta$vintage)[1]),
-  extrap %>% mutate(vintage = levels(dta$vintage)[2])
-) %>% mutate(vintage = factor(vintage, levels = levels(dta$vintage)))
+# Digitized 2020-era extrapolations (2018 working figure), left panels only
+extrap <- read_csv("data/derived_2026/extrapolation_2018_digitized.csv",
+                   col_types = cols()) %>%
+  mutate(vintage = factor(levels(dta$vintage)[1], levels = levels(dta$vintage)))
 
 # Panel annotations
 ann <- tribble(
@@ -91,7 +85,7 @@ ann <- tribble(
   "Norway",         1,          1959,        49,  "..re-established\n1956 cohort",   0,
   "Norway",         1,          1969,        40,  "replacement age 43",              1,
   "Norway",         1,          2008,        47,  "speculative extrapolation\n(drawn 2018; published verbally)", 1,
-  "Norway",         2,          2008,        48,  "realized: contour terminates -\nno cohort after 1971\nreaches replacement",  1,
+  "Norway",         2,          2008,        48,  "realized: contour escapes -\nno cohort after 1971\nreaches replacement",  1,
   "United States",  1,          1948,        49,  "replacement lost\n1950 cohort..", 1,
   "United States",  1,          1966,        49,  "..re-established\n1963 cohort",   0,
   "United States",  1,          1975,        34,  "replacement age 37",              1,
@@ -105,16 +99,14 @@ p <- ggplot(dta, aes(x = birth_year, y = age)) +
   scale_fill_viridis(direction = -1, name = "ASFR",
                      limits = c(0, max(dta$asfr, na.rm = TRUE)),
                      breaks = c(0, 0.1, 0.2)) +
-  geom_line(data = crossings %>% filter(!is.na(age_150)),
-            aes(y = age_150), linewidth = 0.35, colour = "black") +
-  geom_line(data = crossings %>% filter(!is.na(age_205)),
-            aes(y = age_205), linewidth = 0.9, colour = "black") +
-  geom_line(data = extrap_both %>% filter(as.integer(vintage) == 1),
-            aes(group = country), colour = "magenta", linewidth = 0.8,
-            linetype = "dotted") +
-  geom_line(data = extrap_both %>% filter(as.integer(vintage) == 2),
-            aes(group = country), colour = "magenta", linewidth = 0.5,
-            linetype = "dotted", alpha = 0.55) +
+  geom_contour(data = contour_grid, aes(z = ccfr_ok),
+               breaks = 1.50, linewidth = 0.35, colour = "black",
+               na.rm = TRUE) +
+  geom_contour(data = contour_grid, aes(z = ccfr_ok),
+               breaks = 2.05, linewidth = 0.9, colour = "black",
+               na.rm = TRUE) +
+  geom_line(data = extrap, aes(group = country), colour = "magenta",
+            linewidth = 0.8, linetype = "dotted") +
   geom_text(data = ann, aes(label = label, hjust = hjust),
             size = 2.6, lineheight = 0.95, vjust = 1) +
   facet_grid(country ~ vintage) +
@@ -123,9 +115,9 @@ p <- ggplot(dta, aes(x = birth_year, y = age)) +
     x = "Birth year", y = "Age in years",
     title = "The 2020 extrapolations and what the new data showed",
     subtitle = paste0(
-      "Shading: ASFR (darker = higher). Heavy line: age at which each cohort's cumulative fertility (CPCFR) reaches 2.05 (replacement); ",
-      "thin line: 1.50.\nMagenta dotted: the 2020-era speculative extrapolations, redrawn from the September 2018 working figure ",
-      "(ghosted on the updated panels for comparison)."
+      "Shading: ASFR (darker = higher). Heavy contour: cumulative cohort fertility (CPCFR) = 2.05 (replacement); thin: 1.50. ",
+      "Contours escaping\nthrough the top mark cohorts that never reach the milestone; contours cut at the data edge are censored. ",
+      "Magenta dotted: the 2020-era\nspeculative extrapolations (September 2018 working figure, digitized), on the 2020-vintage panels only."
     )
   ) +
   theme_minimal(base_size = 10) +
@@ -140,12 +132,18 @@ dir.create("figures/figures_2026", showWarnings = FALSE, recursive = TRUE)
 ggsave("figures/figures_2026/forecast_check_2x2.png", p,
        width = 27, height = 21, units = "cm", dpi = 300)
 
-# Console check: crossing endpoints per vintage
-crossings %>%
-  filter(!is.na(age_205)) %>%
+# Console check: last crossing cohorts (for the caption/scoreboard, computed
+# from the same field the contours are drawn on)
+dta %>%
+  filter(series_ok, !is.na(my_ccfr)) %>%
+  group_by(vintage, country, birth_year) %>%
+  summarise(crossed = any(my_ccfr >= 2.05),
+            age_at = if (any(my_ccfr >= 2.05)) min(age[my_ccfr >= 2.05]) else NA_real_,
+            .groups = "drop") %>%
+  filter(crossed) %>%
   group_by(vintage, country) %>%
   summarise(last_cohort = max(birth_year),
-            age_at_last = age_205[birth_year == max(birth_year)],
+            age_at_last = age_at[birth_year == max(birth_year)],
             .groups = "drop") %>%
   as.data.frame() %>%
   print()

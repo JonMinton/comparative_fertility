@@ -503,3 +503,39 @@ Entry template:
   plots introduced as the bird's-eye view of this terrain). Norway chosen
   for its clean single peak; the US plateau exclusion is explained in the
   caption and S8.
+
+## F-028
+- date: 2026-07-19
+- source: chat (Jon, reviewing the v0.2 figures)
+- paper: MERGED
+- locus: @fig-2x2 forecast check; @fig-terrain 3D figure
+- comment: (a) The redrawn 2x2 figures are incorrect in a couple of places
+  - revert to what was actually produced earlier: the CPCFR contours must
+  show ages going to infinity (vertical escapes) where cohorts stop
+  reaching replacement in fully observed data; the extrapolation lines
+  were in approximately the wrong place; and they were shown on both the
+  earlier and updated panels when they belong on the earlier panels only.
+  (b) 3D figure: switch example to France; theta from -30 to +30 (age
+  low-to-high on the right edge); make it 3x2 (three countries, smaller
+  terrain left, corresponding AAPF chart right); view more from above so
+  the 3D-to-2D correspondence is easier to parse; and colour the actual
+  peak cells rather than hovering a line above the surface.
+- status: actioned (v0.2 figure correction round, same day)
+- action/response: (a) Contours are now true field contours of CPCFR over
+  (birth year, age) via geom_contour on an NA-masked complete grid -
+  vertical escapes render (Norway 2026 panel escapes after 1971; USA stays
+  censored at the data edge, verdict open). Extrapolations digitized
+  PROGRAMMATICALLY from the 2018 PNG (scripts/extract_2018_extrapolation.py:
+  pixel extraction + tick calibration; QC overlay
+  figures/figures_2026/extrapolation_2018_overlay_check.png; coordinates
+  data/derived_2026/extrapolation_2018_digitized.csv). Extraction revealed
+  the true Norway line holds ~43 flat through cohorts ~1981 then turns
+  vertical - so the realized escape came a DECADE of cohorts sooner than
+  drawn; scoreboard and Norway prose corrected accordingly. Lines now on
+  2020-vintage panels only. (b) lexis_3d_ridge_2026.R rewritten:
+  France/Norway/South Korea 3x2, theta=+30, phi=42, ridge cells coloured
+  bright magenta (not dark purple - the viridis-reversed scale ends dark
+  purple exactly at the ridge), AAPF trajectory chart to the right of each
+  terrain, shared colour key; figure now lexis3d_aapf_panels.png
+  (supersedes lexis3d_ridge_norway.png, removed). Supersedes the F-027
+  single-panel implementation.

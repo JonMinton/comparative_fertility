@@ -132,11 +132,11 @@ per woman, drawn for 45 countries on a common specification [@sarkar2008].
 The underlying object is a surface in the literal sense: fertility as a
 terrain over age and time, whose height at any point is the ASFR
 (@fig-terrain). The lattice plots are the bird's-eye view of this terrain,
-with height carried by shading; the crest line of the terrain - the age at
-which each year's schedule peaks, and the rate at that peak - is a feature
-we will return to and name in Section 3.
+with height carried by shading; the terrain's crest - the cells where each
+year's schedule peaks, and the rate in those cells - is a feature we will
+return to and name in Section 3.
 
-![The fertility surface as terrain: Norway, 1950-2024. The height of the surface at each year and age is the ASFR; shading matches the lattice plots used throughout (darker is higher). The magenta crest line is the AAPF ridge - the age and amount of peak fertility - formalized in Section 3. The composite lattice plots read this terrain from above. (Norway is used as the example because its schedules have a clean single peak; see Supplement S8 for the United States' historically flat-topped profile.)](figures/lexis3d_ridge_norway.png){#fig-terrain}
+![The fertility surface as terrain, viewed from high above so that the correspondence with the fully overhead lattice plots is direct: France, Norway, and South Korea, 1950-2024 (South Korea from 1960). Left column: the ASFR terrain, shading matching the lattice plots (darker is higher); the cells forming the crest of each year's schedule are coloured magenta - these cells are the AAPF, the age and amount of peak fertility, formalized in Section 3. (Magenta rather than dark purple, because the shading scale itself ends in dark purple exactly where the ridge sits.) Right column: the AAPF trajectory each surface distils to - the age of the magenta cells over time, shaded by the rate in them. The United States is not used as an example because its historically flat-topped schedules make the ridge ill-defined (Supplement S8).](figures/lexis3d_aapf_panels.png){#fig-terrain}
 
 Reading the flattened surface requires one distinction above all: between
 age, period, and cohort effects. Age effects are lifecycle regularities -
@@ -278,8 +278,9 @@ levels over the next few years," whereas "we might assume that replacement
 levels will be sustained for longer in the United States" [@pattaro2020,
 pp. 699-700]. In a pre-publication working version of the figure the
 forecasts were drawn rather than stated, as dotted lines labelled
-"speculative extrapolation of replacement contour": climbing steeply for
-Norway, continuing near-flat at age 37 for the United States. The drawn
+"speculative extrapolation of replacement contour": for Norway holding
+near age 43 for a further decade of cohorts before turning vertical; for
+the United States continuing near-flat at age 37. The drawn
 lines were dropped in revision but are publicly timestamped in the project
 repository (September 2018; Supplement S7 reproduces both the published
 figure and the working version), which makes the informal forecasts
@@ -291,16 +292,19 @@ United States, and East Asia [@comolli2021; @hellstrand2020; @kearney2022;
 ## Then and now
 
 @fig-2x2 puts the check in a single view: the 2020-vintage panels,
-re-rendered from the tagged data with the extrapolations redrawn, beside
-the updated panels, with the extrapolations ghosted for comparison.
-@tbl-scoreboard states the resolutions.
+re-rendered from the tagged data with the extrapolations restored, beside
+the updated panels. On these composites a replacement contour can end in
+two ways, and the distinction carries the results: a contour that escapes
+vertically through the top of a fully observed region marks cohorts that
+never reach the milestone at any age, while a contour cut at the diagonal
+data edge is merely censored. @tbl-scoreboard states the resolutions.
 
-![The 2020 extrapolations and what the new data showed. Rows: Norway, United States. Left column: the 2020-vintage data (repository tag `demres-2020`), re-rendered in the current visual specification, with the 2020-era speculative extrapolations redrawn in magenta from the September 2018 working figure. Right column: the 2026 update, with the extrapolations ghosted. Heavy line: age at which each cohort's CPCFR reaches 2.05; thin line: 1.50.](figures/forecast_check_2x2.png){#fig-2x2}
+![The 2020 extrapolations and what the new data showed. Rows: Norway, United States. Left column: the 2020-vintage data (repository tag `demres-2020`), re-rendered in the current visual specification, with the 2020-era speculative extrapolations in magenta, digitized from the September 2018 working figure (Supplement S7); they appear on the 2020-vintage panels only. Right column: the 2026 update. Heavy contour: CPCFR = 2.05 (replacement); thin: 1.50. Contours escaping through the top mark cohorts that never reach the milestone; contours cut at the data edge are censored.](figures/forecast_check_2x2.png){#fig-2x2}
 
 | Reading in @pattaro2020 | Outcome on data to 2023-25 |
 |:---|:---|
 | "Once countries have fallen below a replacement fertility level, they tend to not return to it." | Strengthened: 43 of 45 countries now have post-war cohorts observed beyond age 44 that never reached replacement. |
-| Norway "looks likely to lose replacement fertility levels over the next few years." | Qualitatively correct; quantitatively optimistic: the loss was already complete at the data edge being read. No cohort born after 1971 reaches replacement at any observed age - the contour does not climb, it terminates. Period TFR 1.98 (2009) to 1.40 (2023). |
+| Norway "looks likely to lose replacement fertility levels over the next few years." | Qualitatively correct; quantitatively optimistic: the loss was already complete at the data edge being read. The drawn extrapolation held the contour near age 43 for a further decade of cohorts before its vertical exit; in the event the vertical escape comes immediately after the 1971 cohort - no later-born cohort reaches replacement at any observed age. Period TFR 1.98 (2009) to 1.40 (2023). |
 | "Replacement levels will be sustained for longer in the United States" (drawn extrapolation: sustained near age 37). | Qualitatively correct; quantitatively optimistic: crossings continue through the 1984 cohort - some twenty further cohorts - but at ages 39-40, not 37, and cohorts beyond are censored and running lower at every age. |
 
 : The 2020 extrapolations and their resolutions. {#tbl-scoreboard}
@@ -309,10 +313,11 @@ For Norway, the updated panel shows a complete arc: the replacement
 contour climbs effectively vertically for cohorts born around 1950,
 returns to the surface at around age 40 for cohorts born 1958-68 - the
 recovery that made Norway the 2020 paper's leading exception [@kravdal2016]
-- and then escapes vertically a second time for cohorts born after
-approximately 1971. The 2020 forecast anticipated a gradual exit, the
-contour climbing over roughly fifteen further cohorts; the realized exit
-was immediate and total.
+- and then escapes vertically a second time immediately after the 1971
+cohort. The drawn 2020 forecast had anticipated the same shape but a
+decade later: its dotted line holds near age 43 through cohorts born to
+about 1981 before turning vertical (@fig-2x2, left). The realized exit
+came ten cohorts sooner, and was total.
 
 For the United States the statement must be more careful, and the care is
 itself instructive. In cohort terms the US exception *persisted*: cohorts
