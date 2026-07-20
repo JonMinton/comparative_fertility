@@ -114,6 +114,81 @@ Quarto/BibTeX manuscript modernization are planned. Key new artifacts:
   the early 40s. 43 of 45 countries have post-war cohorts observed past age 44
   that never reached 2.05.
 
+## Pipeline map
+
+The pipeline is maintained as an Obsidian canvas —
+[`canvases/runway_paper_pipeline.canvas`](canvases/runway_paper_pipeline.canvas)
+— whose node prose, embedded figures, and spatial layout make it the full,
+mutually intelligible map of how data and analyses are orchestrated; open it
+in Obsidian. GitHub cannot render `.canvas` files, so the summary below is
+**auto-generated from the canvas** by
+[`scripts/canvas_to_mermaid.py`](scripts/canvas_to_mermaid.py). After editing
+the canvas, rerun:
+
+```sh
+python3 scripts/canvas_to_mermaid.py canvases/runway_paper_pipeline.canvas --update-readme README.md
+```
+
+(The superseded v0.1 maps, `descriptive_finding_pipeline.canvas` and
+`corridor_paper_pipeline.canvas`, are retained for provenance and carry
+supersession banners.)
+
+<!-- pipeline-map:start -->
+```mermaid
+flowchart LR
+  subgraph grp_sources["SOURCES (registration required; raw files git-ignored)"]
+    n_hfd["Human Fertility Database"]
+    n_hfc["Human Fertility Collection"]
+    n_terms["⚖️ Terms note: raw HFD/HFC not redistributed; combined deri…"]
+  end
+  subgraph grp_analysis["ANALYSIS — runway quantities & forecast check"]
+    n_2x2["Forecast check forecast_check_2x2_2026.R"]
+    n_wall["ANR wall_2026.R"]
+    n_squeeze["AAPF + squeeze squeeze_2026.R"]
+    n_pooled["Pooled squeeze squeeze_pooled_2026.R"]
+    n_3d["3D terrain lexis_3d_ridge_2026.R"]
+    n_lattice["Lattice panels figures_2026.R → 45-country splits (S1) · US…"]
+  end
+  subgraph grp_artifacts["THREE COORDINATED ARTIFACTS (F-025)"]
+    n_a1["Artifact 1 — the repository (this one, public on GitHub)"]
+    n_a2["Artifact 2 — main manuscript"]
+    n_a3["Artifact 3 — supplement supplementary_materials.qmd"]
+  end
+  n_ingest["scripts/ingest_2026.R"]
+  n_valid["Validation"]
+  n_tag["📌 Tag provenance"]
+  n_csv["Combined dataset"]
+  n_exante["📌 Ex-ante analytic choices (fixed in UPDATE_WORKPLAN.md bef…"]
+  f_2x2("forecast_check_2x2.png")
+  f_terrain("lexis3d_aapf_panels.png")
+  f_pooled("squeeze_pooled.png")
+  f_panels("squeeze_trajectories.png")
+  n_results["Headline results"]
+  n_prereg["Feeds forward → universality test (separate, confirmatory)"]
+  n_todo["Toward v0.3 / submission (REVISIONS.md)"]
+  n_provenance["🗂 Superseded working papers (v0.1, retained for provenance)…"]
+  n_hfd -->|"preferred"| n_ingest
+  n_hfc -->|"fills gaps"| n_ingest
+  n_ingest --> n_csv
+  n_ingest -->|"audit vs 2016"| n_valid
+  n_tag -->|"2020-vintage data"| n_2x2
+  n_csv --> grp_analysis
+  n_exante -->|"binds"| grp_analysis
+  n_2x2 --> f_2x2
+  n_3d --> f_terrain
+  n_pooled --> f_pooled
+  n_squeeze --> f_panels
+  n_wall --> n_results
+  f_2x2 -->|"resolutions"| n_results
+  f_panels --> n_results
+  n_results --> n_a2
+  n_a2 -->|"refers without derailing"| n_a3
+  n_a1 -->|"generates"| n_a2
+  n_a2 -->|"defers causal step"| n_prereg
+  n_a2 --> n_todo
+```
+<!-- pipeline-map:end -->
+
 ## Repo structure
 
 ```
