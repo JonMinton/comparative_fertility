@@ -11,3 +11,6 @@ manuscript_2026/literature_local/
 # Word lock files
 ~$*
 **/~$*
+
+# Obsidian per-user app config (canvases/ *.canvas files are tracked content)
+.obsidian/
