@@ -1,5 +1,6 @@
 {
 	"nodes":[
+		{"id":"n-superseded","type":"text","text":"⛔ **SUPERSEDED** (2026-07-19, F-025): the DF and CC working papers were merged into `manuscript_2026/closing_corridor_merged.qmd` — *Running out of runway*. Current pipeline map: **`runway_paper_pipeline.canvas`**. This canvas is retained for provenance of the v0.1 descriptive-finding round.","x":-1700,"y":-860,"width":1160,"height":130,"color":"1"},
 		{"id":"grp-results","type":"group","x":300,"y":-620,"width":1000,"height":1240,"label":"FIGURES & RESULTS — Phase 2"},
 		{"id":"grp-sources","type":"group","x":-1700,"y":-560,"width":460,"height":1000,"label":"SOURCES (registration required; raw files git-ignored)"},
 		{"id":"grp-pub","type":"group","x":1380,"y":-300,"width":470,"height":620,"label":"PUBLICATION"},

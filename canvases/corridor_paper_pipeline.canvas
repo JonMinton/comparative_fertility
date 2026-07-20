@@ -1,5 +1,6 @@
 {
   "nodes": [
+    {"id":"n-superseded","type":"text","text":"⛔ **SUPERSEDED** (2026-07-19, F-025): the DF and CC working papers were merged into `manuscript_2026/closing_corridor_merged.qmd` — *Running out of runway*. Current pipeline map: **`runway_paper_pipeline.canvas`**. This canvas is retained for provenance of the v0.1 corridor-article round.","x":-1660,"y":-760,"width":1160,"height":130,"color":"1"},
     {"id":"n-spine","type":"text","text":"**Shared data spine** (see `descriptive_finding_pipeline.canvas` for detail)\n\nHFD + HFC (2026 builds) → `ingest_2026.R` → combined CSV (51 pops, 1850–2025) → `prepare_dta_2026()` → 45-country panel with CPFR/CCFR + `series_ok`","x":-1660,"y":-160,"width":420,"height":230,"color":"5"},
     {"id":"n-exante","type":"text","text":"📌 **Ex-ante analytic choices** (fixed in `UPDATE_WORKPLAN.md` *before* running on updated data; old-data prototypes disclosed)\n\n- effective ceiling: highest age with ASFR ≥ **1/200** (sensitivity 1/1000)\n- *never* = observed past age 44 without crossing 2.05\n- per-country trajectories primary; pooled medians context only","x":-1660,"y":130,"width":420,"height":290,"color":"1"},
 

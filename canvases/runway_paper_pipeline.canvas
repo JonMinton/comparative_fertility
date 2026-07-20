@@ -1,0 +1,61 @@
+{
+  "nodes": [
+    {"id":"grp-sources","type":"group","label":"SOURCES (registration required; raw files git-ignored)","x":-2160,"y":-560,"width":460,"height":800},
+    {"id":"n-hfd","type":"text","text":"**Human Fertility Database**\nhumanfertility.org\n\n`asfrRR.txt` — bulk zip, build 2026-07-02\n39 populations · Lexis squares (ACY)\nNOR/USA → 2024 · DNK → 2025\nKOR 2000–2024 (new)","x":-2120,"y":-520,"width":380,"height":230,"color":"3"},
+    {"id":"n-hfc","type":"text","text":"**Human Fertility Collection**\nfertilitydata.org\n\n`HFC_ASFRstand_TOT` — build 2026-07-07\nFills pre-HFD years + HFC-only pops\n(AUS, BIH, MDA, MKD, NZL → 2024/25;\nALB 2008 · GRC/LVA 2009 · ROU 2013 stale)","x":-2120,"y":-260,"width":380,"height":250,"color":"3"},
+    {"id":"n-terms","type":"text","text":"⚖️ **Terms note**: raw HFD/HFC not redistributed; combined derived CSV committed (2016 precedent). 2020 findings **reproducible** from frozen in-repo data, **not replicable** from fresh downloads (sources revise).","x":-2120,"y":20,"width":380,"height":190,"color":"1"},
+
+    {"id":"n-ingest","type":"text","text":"**`scripts/ingest_2026.R`**\n\nCombination rules (as published 2020):\n- HFD ≻ HFC per country-year\n- within HFC: STAT ≻ ODE ≻ RE\n- internal gaps ≤ 4 yr → linear interp, flagged\n\n⚠️ **FRATNP → FRA fix**: old build silently dropped HFD France → published figures ended France at 2008; restored to 1892–2023","x":-1600,"y":-460,"width":360,"height":330,"color":"2"},
+    {"id":"n-valid","type":"text","text":"**Validation**\n`reports/validation_2026.md`\n\n148k overlap cells audited vs 2016 build — all discrepancies explained (HFD back-revisions: IRL, ESP, DNK; KOR source switch). **Build accepted.**","x":-1600,"y":-80,"width":360,"height":200,"color":"1"},
+    {"id":"n-tag","type":"text","text":"📌 **Tag provenance**\n`demres-2020` (on GitHub) = full repo state + data behind the published 2020 paper — readers can return to it from the paper's link. The 2020-vintage panels of the forecast-check figure are re-rendered **from tag data**.\n\nA further **archive tag** freezes the repo at submission (F-026).","x":-1600,"y":170,"width":360,"height":280,"color":"1"},
+
+    {"id":"n-csv","type":"text","text":"**Combined dataset**\n`data/data_combined_and_standardised_2026.csv`\n51 populations · 168,099 rows · 1850–2025\n\n→ `prepare_dta_2026()` (`functions_2026.R`): CPFR + pseudo-cohort CCFR, `series_ok`, published exclusions → **45-country panel**","x":-1160,"y":-380,"width":380,"height":270,"color":"5"},
+    {"id":"n-exante","type":"text","text":"📌 **Ex-ante analytic choices** (fixed in `UPDATE_WORKPLAN.md` before running on updated data)\n\n- **ANR**: highest age with ASFR ≥ **1/200** (sensitivity 1/1000)\n- **AAPF**: argmax of schedule, ties → youngest age\n- *never* = observed past 44 without crossing 2.05; else *censored*\n- per-country trajectories primary; pooled medians context","x":-1160,"y":-60,"width":380,"height":310,"color":"1"},
+
+    {"id":"grp-analysis","type":"group","label":"ANALYSIS — runway quantities & forecast check","x":-680,"y":-620,"width":520,"height":1240},
+    {"id":"n-2x2","type":"text","text":"**Forecast check** `forecast_check_2x2_2026.R`\n+ `extract_2018_extrapolation.py`\n2020-vintage (from tag) vs 2026 panels; 2018 drawn extrapolations **digitized from the PNG** (QC overlay + CSV); true field contours — vertical escapes render (F-028)","x":-640,"y":-580,"width":440,"height":230,"color":"2"},
+    {"id":"n-wall","type":"text","text":"**ANR** `wall_2026.R`\nper country-year, both thresholds → `wall_by_country_year.csv` · featured walls (NOR/USA/KOR) · reachability · `last_cohort_replacement.csv`","x":-640,"y":-310,"width":440,"height":170,"color":"2"},
+    {"id":"n-squeeze","type":"text","text":"**AAPF + squeeze** `squeeze_2026.R`\n→ `squeeze_by_country_year.csv` · 45-panel figure ordered by **vintage-adjusted latest TFR** (panel-median correction for 9 pre-2022 series; F-034/F-035) → `latest_tfr_by_country.csv`","x":-640,"y":-100,"width":440,"height":200,"color":"2"},
+    {"id":"n-pooled","type":"text","text":"**Pooled squeeze** `squeeze_pooled_2026.R`\ncross-country medians + IQR ribbons, usable-runway arrows","x":-640,"y":140,"width":440,"height":120,"color":"2"},
+    {"id":"n-3d","type":"text","text":"**3D terrain** `lexis_3d_ridge_2026.R`\nFrance/Norway/South Korea 3×2: ASFR terrain (AAPF cells magenta) beside each AAPF trajectory (F-027/F-028)","x":-640,"y":300,"width":440,"height":150,"color":"2"},
+    {"id":"n-lattice","type":"text","text":"**Lattice panels** `figures_2026.R` → 45-country splits (S1) · **US plateau** `us_plateau_2026.R` → S8","x":-640,"y":490,"width":440,"height":110,"color":"2"},
+
+    {"id":"f-2x2","type":"file","file":"figures/figures_2026/forecast_check_2x2.png","x":-80,"y":-620,"width":440,"height":330},
+    {"id":"f-terrain","type":"file","file":"figures/figures_2026/lexis3d_aapf_panels.png","x":420,"y":-620,"width":440,"height":330},
+    {"id":"f-pooled","type":"file","file":"figures/figures_2026/squeeze_pooled.png","x":-80,"y":-240,"width":440,"height":330},
+    {"id":"f-panels","type":"file","file":"figures/figures_2026/squeeze_trajectories.png","x":420,"y":-240,"width":440,"height":330},
+
+    {"id":"n-results","type":"text","text":"**Headline results**\n- 2020 forecasts resolved: both **qualitatively correct, quantitatively optimistic** — Norway's contour escapes immediately after cohort 1971 (a decade of cohorts sooner than drawn); USA crossings continue to cohort 1984 but at ages 39–40 not 37, censored beyond — verdict open\n- Every terminal crossing since 1970 (bar Albania) at ages 40–44 → a common boundary the extrapolations treated as open space\n- **ANR is behavioural, nearly fixed**: 47–48 (C19th) → 41 (1980s–90s) → 43 (2020s); tail movement ART-propped, socioeconomically stratified\n- **AAPF**: age 24 → 31; rate at peak 0.19 → 0.11\n- **Usable runway**: ~20 yrs → **12 yrs** — later, lower, narrower everywhere; TFR convergence is its one-dimensional shadow\n- 43/45 countries: post-war cohorts past 44 that never crossed 2.05","x":-80,"y":140,"width":940,"height":480,"color":"4"},
+
+    {"id":"grp-artifacts","type":"group","label":"THREE COORDINATED ARTIFACTS (F-025)","x":940,"y":-620,"width":500,"height":1240},
+    {"id":"n-a1","type":"text","text":"**Artifact 1 — the repository** (this one, public on GitHub)\nAgentic updating under author direction: decision log fixed ex ante · feedback register `review/FEEDBACK.md` **F-001..F-035** (incl. Gemini Pro review round F-029..F-033, verbatim in `review/model_review_2026-07-20.md`) · `REVISIONS.md` changelog · tags for return points","x":980,"y":-580,"width":420,"height":290,"color":"6"},
+    {"id":"n-a2","type":"text","text":"**Artifact 2 — main manuscript**\n`manuscript_2026/closing_corridor_merged.qmd`\n*Running out of runway: fertility trends for 45 countries revisited* (title provisional)\n\nSpine: renewed interest → 2020 method → limited uptake → the 2020 annotations WERE predictions → checked: right direction, optimistic → TFR debate needs age structure → AAPF/ANR formalised → the squeeze\n\nFigures: 3D terrain · forecast-check 2×2 · Norway wall · pooled squeeze · 45-panel squeeze (TFR-ordered)","x":980,"y":-240,"width":420,"height":430,"color":"6"},
+    {"id":"n-a3","type":"text","text":"**Artifact 3 — supplement** `supplementary_materials.qmd`\nS1 45-country lattice panels · S2 featured walls (USA censored, KOR) · S3 panel-ordering record (vintage adjustment) · S4 ANR sensitivity 1/1000 · S5 candidate geometries & mimics · S6 COVID as texture · S7 2018 extrapolation provenance · S8 vanished US plateau","x":980,"y":240,"width":420,"height":280,"color":"6"},
+
+    {"id":"n-prereg","type":"text","text":"**Feeds forward → universality test** (separate, confirmatory)\nOSF prereg [osf.io/j3tbq](https://osf.io/j3tbq) frozen 12 Jul 2026 *before* outcome data download · UN WPP 2024 global panel · break dates, age-gradient onset, tempo guards · this paper runs none of its estimators","x":1500,"y":-240,"width":400,"height":270,"color":"5"},
+    {"id":"n-todo","type":"text","text":"**Toward v0.3 / submission** (`REVISIONS.md`)\nJM read-through · confirm title · verify FT headline · contributor outreach (2-page abstract artifact) · DR template + AI-policy check · **archive tag at submission**","x":1500,"y":70,"width":400,"height":220,"color":"1"},
+
+    {"id":"n-provenance","type":"text","text":"🗂 Superseded working papers (v0.1, retained for provenance): `descriptive_finding.qmd` + `wall_corridor_article.qmd`, mapped in `descriptive_finding_pipeline.canvas` + `corridor_paper_pipeline.canvas`","x":940,"y":680,"width":500,"height":150,"color":"0"}
+  ],
+  "edges": [
+    {"id":"e1","fromNode":"n-hfd","fromSide":"right","toNode":"n-ingest","toSide":"left","label":"preferred"},
+    {"id":"e2","fromNode":"n-hfc","fromSide":"right","toNode":"n-ingest","toSide":"left","label":"fills gaps"},
+    {"id":"e3","fromNode":"n-ingest","fromSide":"right","toNode":"n-csv","toSide":"left"},
+    {"id":"e4","fromNode":"n-ingest","fromSide":"bottom","toNode":"n-valid","toSide":"top","label":"audit vs 2016"},
+    {"id":"e5","fromNode":"n-tag","fromSide":"right","toNode":"n-2x2","toSide":"left","label":"2020-vintage data"},
+    {"id":"e6","fromNode":"n-csv","fromSide":"right","toNode":"grp-analysis","toSide":"left"},
+    {"id":"e7","fromNode":"n-exante","fromSide":"right","toNode":"grp-analysis","toSide":"left","label":"binds"},
+    {"id":"e8","fromNode":"n-2x2","fromSide":"right","toNode":"f-2x2","toSide":"left"},
+    {"id":"e9","fromNode":"n-3d","fromSide":"right","toNode":"f-terrain","toSide":"left"},
+    {"id":"e10","fromNode":"n-pooled","fromSide":"right","toNode":"f-pooled","toSide":"left"},
+    {"id":"e11","fromNode":"n-squeeze","fromSide":"right","toNode":"f-panels","toSide":"left"},
+    {"id":"e12","fromNode":"n-wall","fromSide":"bottom","toNode":"n-results","toSide":"left"},
+    {"id":"e13","fromNode":"f-2x2","fromSide":"bottom","toNode":"n-results","toSide":"top","label":"resolutions"},
+    {"id":"e14","fromNode":"f-panels","fromSide":"bottom","toNode":"n-results","toSide":"top"},
+    {"id":"e15","fromNode":"n-results","fromSide":"right","toNode":"n-a2","toSide":"left"},
+    {"id":"e16","fromNode":"n-a2","fromSide":"bottom","toNode":"n-a3","toSide":"top","label":"refers without derailing"},
+    {"id":"e17","fromNode":"n-a1","fromSide":"bottom","toNode":"n-a2","toSide":"top","label":"generates"},
+    {"id":"e18","fromNode":"n-a2","fromSide":"right","toNode":"n-prereg","toSide":"left","label":"defers causal step"},
+    {"id":"e19","fromNode":"n-a2","fromSide":"right","toNode":"n-todo","toSide":"left"}
+  ]
+}
