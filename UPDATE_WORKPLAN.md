@@ -12,7 +12,11 @@
 one merged paper per Jon's decision; DF and CC qmds are superseded but
 retained for provenance. Renders to html + docx (docx uses
 `custom-reference.docx` for bordered tables). Feedback register
-`manuscript_2026/review/FEEDBACK.md` runs F-001..F-025; changelog in
+`manuscript_2026/review/FEEDBACK.md` runs F-001..F-035 (F-029..F-033:
+Gemini Pro review of 2026-07-20, verbatim in
+`review/model_review_2026-07-20.md`; F-034/F-035: 45-country squeeze
+panel into main text, ordered by vintage-adjusted latest TFR; all
+actioned); changelog in
 `review/REVISIONS.md` (see its MERGED section for the to-do list).
 
 **2026-07-19: v0.2 restructure EXECUTED** per Jon's three-artifact spine

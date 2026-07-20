@@ -117,7 +117,11 @@ that the surfaces make visible - the age and amount of peak fertility
 (AAPF) and the age of no return (ANR) - and show that their convergent
 trajectories, peak later and lower, endpoint sooner, are the age-structure
 mechanics beneath the TFR convergence now drawing attention: cohorts are
-running out of runway.
+running out of runway. The runway's endpoint proves the stubborn term,
+and for its near-fixity across three decades of postponement we will
+propose, beyond stopping behaviour, a life-history interpretation - the
+late reproductive years reallocated from childbearing to grandmothering -
+stated as a testable mechanism in Section 6.
 
 # The visualization method, and why it deserves a second look
 
@@ -232,7 +236,14 @@ data:
     f^{*}_{c}(t) = f_{c}\!\left(x^{*}_{c}(t),\, t\right),$$
   with ties broken to the youngest tied age, so flat or plateau schedules
   are read conservatively (the United States' historical plateau makes this
-  choice consequential; Supplement S8).
+  choice consequential; Supplement S8). The raw argmax is preferred to a
+  smoothed estimate of the modal age deliberately: smoothing would
+  introduce bandwidth choices that could not be fixed ex ante, and would
+  blur exactly the plateau schedules of interest. The cost is volatility -
+  on a near-flat schedule, sampling noise can shunt the strict maximum
+  across a band of several ages between adjacent years, and the tie rule
+  dampens but does not remove such steps - so AAPF trajectories are read
+  for trend rather than year-to-year movement.
 - **Age of no return (ANR).** The effective upper end of the fertility
   lifecourse: the highest age at which childbearing remains a live
   behavioural possibility rather than a rarity,
@@ -299,7 +310,7 @@ vertically through the top of a fully observed region marks cohorts that
 never reach the milestone at any age, while a contour cut at the diagonal
 data edge is merely censored. @tbl-scoreboard states the resolutions.
 
-![The 2020 extrapolations and what the new data showed. Rows: Norway, United States. Left column: the 2020-vintage data (repository tag `demres-2020`), re-rendered in the current visual specification, with the 2020-era speculative extrapolations in magenta, digitized from the September 2018 working figure (Supplement S7); they appear on the 2020-vintage panels only. Right column: the 2026 update. Heavy contour: CPCFR = 2.05 (replacement); thin: 1.50. Contours escaping through the top mark cohorts that never reach the milestone; contours cut at the data edge are censored.](figures/forecast_check_2x2.png){#fig-2x2}
+![The 2020 extrapolations and what the new data showed. Birth cohorts run along the horizontal axis and age up the vertical, so period effects appear as 45-degree diagonals (Section 2.1). Rows: Norway, United States. Left column: the 2020-vintage data (repository tag `demres-2020`), re-rendered in the current visual specification, with the 2020-era speculative extrapolations in magenta, digitized from the September 2018 working figure (Supplement S7); they appear on the 2020-vintage panels only. Right column: the 2026 update. Heavy contour: CPCFR = 2.05 (replacement); thin: 1.50. Contours escaping through the top mark cohorts that never reach the milestone; contours cut at the data edge are censored.](figures/forecast_check_2x2.png){#fig-2x2}
 
 | Reading in @pattaro2020 | Outcome on data to 2023-25 |
 |:---|:---|
@@ -412,8 +423,13 @@ the 1980s tracks the spread of parity control: stopping behaviour
 truncated high-parity childbearing from the top down. Third, the recovery
 since the 1990s trough has been slow and remarkably uniform - roughly one
 year of age per fifteen calendar years - despite three decades of assisted
-reproduction, postponement, and policy variation. The ANR behaves like a
-structural feature of modern fertility regimes, not a margin under active
+reproduction, postponement, and policy variation. What movement there is
+at the right tail, moreover, is increasingly propped up by assisted
+reproduction, whose use is concentrated at precisely these ages and
+strongly socioeconomically stratified [@beaujouan2020]: such recovery as
+exists is partly medically purchased and unevenly available, not a
+general loosening of the boundary. The ANR behaves like a structural
+feature of modern fertility regimes, not a margin under active
 renegotiation.
 
 Why does it stay low? Stopping behaviour is the canonical mechanism, but
@@ -457,7 +473,7 @@ between where childbearing is concentrated and where it effectively ends -
 has narrowed from about twenty years to twelve, a forty percent
 contraction, closed mostly from below.
 
-![The squeeze, 1950-2025: cross-country medians of the AAPF age (points, shaded by the rate at the peak) and the ANR (line), with interquartile ribbons. The vertical arrows mark the usable runway. Per-country trajectories: Supplement S3.](figures/squeeze_pooled.png){#fig-squeeze}
+![The squeeze, 1950-2025: cross-country medians of the AAPF age (points, shaded by the rate at the peak) and the ANR (line), with interquartile ribbons. The vertical arrows mark the usable runway. Per-country trajectories: @fig-squeeze-panels.](figures/squeeze_pooled.png){#fig-squeeze}
 
 The runway metaphor states what the chart shows. For a cohort to reach
 replacement it must accumulate 2.05 births before its fertility
@@ -480,17 +496,25 @@ approximately ages 30 to 43 - and each terminal crossing in
 
 This, we suggest, is the resolution the TFR debate lacks. Convergence in
 the total says nothing about the route; on the evidence of @fig-squeeze
-and its per-country panels (Supplement S3) the route is common. Country
-after country - from South Korea's mid-century ANR near 48 to the
-near-universal early peaks of south-eastern Europe - arrives at the same
-configuration: a later, lower, narrower schedule pressed against a
-low-forties boundary. The TFR convergence documented by
+and the full 45-country panel of @fig-squeeze-panels the route is
+common. Country after country - from South Korea's mid-century ANR near
+48 to the near-universal early peaks of south-eastern Europe - arrives
+at the same configuration: a later, lower, narrower schedule pressed
+against a low-forties boundary. The TFR convergence documented by
 @ritchie2026convergence is the one-dimensional shadow of fertility
-schedules converging on the same squeezed shape. Two caveats attach: the
-modal age is read conservatively (ties to the youngest age, so plateau
-schedules register early peaks - Supplement S8), and single-year modal
-ages are noisy in small populations, which is why per-country panels
-remain the primary output.
+schedules converging on the same squeezed shape - and
+@fig-squeeze-panels, which restores the full-panel presentation of the
+2020 paper in distilled form, makes the correspondence direct by
+ordering its panels by each country's latest period TFR
+(vintage-adjusted where a series ends early; Supplement S3): descending
+the ordering, from Moldova to South Korea, the trajectories do not
+change shape, only how far along the shared route they have travelled. Two caveats attach: the modal age is read conservatively
+(ties to the youngest age, so plateau schedules register early peaks -
+Supplement S8), and single-year modal ages are noisy in small
+populations, which is why the per-country panels, not the pooled
+medians, are the primary output.
+
+![The squeeze in all 45 countries, 1950-2025: the AAPF (points, shaded by the rate at the peak) and the ANR (line). Panels are ordered by latest period TFR, highest first - so the panel order itself is the TFR convergence, and the trajectories within the panels are its age-structure mechanics. For the nine series ending before 2022, the observed TFR is vintage-adjusted by the panel-median decline since the last observed year (strip labels show year: observed → adjusted); method and ordering table in Supplement S3.](figures/squeeze_trajectories.png){#fig-squeeze-panels}
 
 # Discussion
 
@@ -589,10 +613,11 @@ fixing analytic choices before they ran, a feedback register recording
 reviewer comments and their disposition, versioned manuscripts, an archive
 tag freezing the pre-update state, and a preregistration for the
 confirmatory step. We record this not as a disclosure liability but as a
-finding about method: periodic, audited, AI-assisted rebuilds are a
-practical answer to staleness in descriptive demography, and the update
-cadence of a paper can become a property of its repository rather than of
-its authors' spare time.
+finding about method - a blueprint rather than a personal workflow
+choice: periodic, audited, AI-assisted rebuilds are a structural answer
+to staleness in longitudinal quantitative knowledge work, demographic
+surveillance especially, and the update cadence of a paper can become a
+property of its repository rather than of its authors' spare time.
 
 # Conclusions
 

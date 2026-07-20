@@ -52,17 +52,38 @@ comparison. Script: `scripts/wall_2026.R`.
 
 ![South Korea: composite surface with the ANR overdrawn (dotted).](figures/featured_wall_kor.png){#fig-s2b}
 
-# S3. Per-country squeeze trajectories
+# S3. Per-country squeeze trajectories: ordering and derived data
 
-The pooled-median squeeze chart in the main paper
-summarises 45 per-country trajectories; they are shown in full here.
-Single-year modal ages are noisy in small populations, and ties are broken
-to the youngest age (see S8), which is why the per-country panels - not
-the pooled medians - are the primary output. Derived data:
-`data/derived_2026/squeeze_by_country_year.csv`.
+The full 45-country panel of AAPF and ANR trajectories appears in the
+main paper (Section 6.2), ordered by latest period TFR, highest first -
+from Moldova (1.66) to the Republic of Korea (0.75). This section
+records what stands behind that ordering. TFRs are computed as the sum
+of single-year ASFRs; country-years with fewer than 30 observed ages
+are skipped, so a partial final year cannot understate a country's TFR.
+
+Latest observed years are not common across the panel: nine series end
+in 2021 or earlier (Albania 2008, Greece and Latvia 2009, Romania 2013,
+both Germanys 2017, Belarus 2018, Ukraine and Bulgaria 2021), and since
+TFRs have declined almost everywhere since, ordering raw last-observed
+values would rank stale series systematically too high. The last year
+common to all 45 series is 2008 - before the acceleration this paper
+concerns - so a common-year ordering is no remedy. Instead, series
+ending before 2022 are *vintage-adjusted* from the panel itself: the
+last observed TFR is multiplied by the panel-median ratio of latest to
+same-year TFR among the 36 series observed in 2022-25. The correction
+is thus the panel-wide decline the paper documents, applied at the
+median; it uses no external data. It moves Greece from 12th to 32nd
+(1.52 observed in 2009, 1.22 adjusted) and both Germanys out of the top
+ten to mid-table (~1.36-1.40) - in each case close to externally
+reported recent values. Ukraine's adjusted value (1.03) is still likely
+optimistic, since a panel-median correction cannot reflect the war.
+Adjusted panels carry both values in their strip labels (year: observed
+→ adjusted); the ordering is a presentational choice only and no
+analytical quantity depends on it.
+Ordering table (observed and adjusted values, factors, ranks):
+`data/derived_2026/latest_tfr_by_country.csv`.
+Trajectory data: `data/derived_2026/squeeze_by_country_year.csv`.
 Script: `scripts/squeeze_2026.R`.
-
-![The squeeze by country, 1950-2025: modal age of the fertility schedule (points, shaded by the ASFR at the peak) and the ANR (line).](figures/squeeze_trajectories.png){#fig-s3}
 
 # S4. ANR trajectories, sensitivity, and the full last-cohort table
 
@@ -134,7 +155,8 @@ COVID-19 arrived on these surfaces as texture, not trend: dips in 2020-21
 births and partial rebounds in several countries, superimposed on an
 acceleration that was already a decade old at the pandemic's onset. The
 runway quantities (AAPF, ANR, late mass, reachability) move smoothly
-through the pandemic years in the per-country trajectories of S3 and S4.
+through the pandemic years in the per-country trajectories of the main
+paper's 45-country squeeze figure and of S4.
 Whether the pandemic left a persistent mark - or shared causes with the
 broader decline - is exactly the kind of question the eye cannot settle;
 the preregistered protocol excludes 2020-24 from its estimation windows

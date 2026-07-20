@@ -539,3 +539,147 @@ Entry template:
   terrain, shared colour key; figure now lexis3d_aapf_panels.png
   (supersedes lexis3d_ridge_norway.png, removed). Supersedes the F-027
   single-panel implementation.
+
+## F-029
+- date: 2026-07-20
+- source: other (external LLM review pasted by Jon; confirmed by Jon
+  2026-07-20 as Gemini Pro - verbatim text and attribution notes in
+  review/model_review_2026-07-20.md; overall verdict "Revise, minor to
+  moderate")
+- paper: MERGED
+- locus: Methods §3.2, AAPF definition
+- comment: Address the volatility of the raw argmax: on a flat schedule,
+  noise can bounce the strict maximum across a 5-10-year age band,
+  creating step-function artifacts in the AAPF trajectory. Acknowledge
+  this, or say why a smoothed density estimate of the peak was bypassed.
+- status: actioned (v0.2)
+- action/response: two sentences added to the AAPF bullet in §3.2: raw
+  argmax preferred deliberately because smoothing would introduce
+  bandwidth choices not fixable ex ante and would blur exactly the
+  plateau schedules of interest; volatility cost acknowledged (tie rule
+  dampens but does not remove steps; trajectories read for trend, not
+  year-to-year movement). Complements the existing small-population
+  noise caveat at the end of §6.2.
+
+## F-030
+- date: 2026-07-20
+- source: other (external LLM review; see F-029)
+- paper: MERGED
+- locus: §6.1, the ANR
+- comment: Contextualize the ANR with ART: the right tail of the modern
+  runway is increasingly propped up by medical intervention, which is
+  highly socioeconomically stratified - grounding the metric in clinical
+  reality and strengthening the claim that the boundary is hard to push.
+- status: actioned (v0.2)
+- action/response: sentence added to §6.1 (third feature): the tail's
+  movement is increasingly propped up by assisted reproduction,
+  concentrated at these ages and strongly socioeconomically stratified
+  [@beaujouan2020] - recovery partly medically purchased and unevenly
+  available, not a general loosening. Limitations already carried the
+  prospective ART sensitivity; unchanged.
+
+## F-031
+- date: 2026-07-20
+- source: other (external LLM review; see F-029)
+- paper: MERGED
+- locus: §8 (workflow note)
+- comment: Keep the section tightly scoped (done well via the staleness
+  problem); strengthen by explicitly framing it as a blueprint for the
+  integrated use of agentic AI in quantitative knowledge work - a
+  structural solution for longitudinal demographic surveillance, not a
+  personal workflow choice.
+- status: actioned (v0.2)
+- action/response: closing sentence reworded: "a finding about method - a
+  blueprint rather than a personal workflow choice: periodic, audited,
+  AI-assisted rebuilds are a structural answer to staleness in
+  longitudinal quantitative knowledge work, demographic surveillance
+  especially...". Scope of the section otherwise unchanged.
+
+## F-032
+- date: 2026-07-20
+- source: other (external LLM review; see F-029)
+- paper: MERGED
+- locus: first lattice figure caption
+- comment: For readers who gloss over §2.1's age/period/cohort text, add
+  a one-sentence geometry reminder to the first surface figure's caption
+  (cohorts horizontal, age vertical, period effects as 45-degree
+  diagonals).
+- status: actioned (v0.2)
+- action/response: reminder sentence added to the @fig-2x2 caption - the
+  first flattened lattice view in reading order (@fig-terrain, which
+  precedes it, is the 3D terrain where the geometry differs) - with a
+  pointer back to Section 2.1. The reviewer's alternative (a stylized
+  legend graphic) not pursued for now; could ride on a figure-pipeline
+  pass if wanted.
+
+## F-033
+- date: 2026-07-20
+- source: other (external LLM review; see F-029)
+- paper: MERGED
+- locus: Introduction / §6.1 grandparenting hypothesis
+- comment: The grandparenting channel arrives late and feels speculative
+  relative to the preceding quantification; flag in the introduction that
+  the paper will propose a life-history/intergenerational mechanism for
+  the upper boundary, priming the theoretical payoff.
+- status: actioned (v0.2)
+- action/response: sentence appended to the introduction's three-phase
+  paragraph: the runway's endpoint is the stubborn term, and for its
+  near-fixity we will propose, beyond stopping behaviour, a life-history
+  interpretation (late reproductive years reallocated to grandmothering),
+  stated as a testable mechanism in Section 6.
+
+## F-034
+- date: 2026-07-20
+- source: chat (Jon, first read-through of v0.2; same message confirmed
+  the F-029..F-033 reviewer as Gemini Pro)
+- paper: MERGED
+- locus: §6.2 / Supplement S3
+- comment: Bring the supplement figure showing all 45 countries' ANRs
+  and AAPFs into the main doc - this restores a symmetry with the
+  original paper, especially so long as the countries are ordinally
+  arranged by (say) latest TFRs.
+- status: actioned (v0.2)
+- action/response: squeeze_2026.R reworked - panels now ordered by
+  period TFR in each country's latest observed year, highest first
+  (Moldova 1.66 -> Republic of Korea 0.75; value in each strip label;
+  ordering written to data/derived_2026/latest_tfr_by_country.csv;
+  country-years with <30 observed ages skipped so partial final years
+  cannot understate TFR), and figure labels moved to AAPF/ANR
+  vocabulary (they predated the F-026 rename). The figure enters §6.2
+  as @fig-squeeze-panels after the route-is-common paragraph, with new
+  prose: the panel order itself is the TFR convergence, the
+  trajectories within the panels its age-structure mechanics; caveat
+  recorded that latest observed years range 2008-2025 (Albania 2008,
+  Greece/Latvia 2009, Romania 2013, both Germanys 2017). Supplement S3
+  repurposed as the ordering/derived-data record (S1-S8 numbering left
+  stable); S6 cross-ref adjusted. Decade medians unchanged by the
+  rerun, so no prose numbers move.
+
+## F-035
+- date: 2026-07-20
+- source: chat (Jon, on the F-034 implementation)
+- paper: MERGED
+- locus: @fig-squeeze-panels ordering / Supplement S3
+- comment: Does use of TFR in the last available year create an issue
+  when two countries have very different last available years? If so
+  suggest an alternative, like last common year, and/or perhaps an
+  imputed/projected final TFR.
+- status: actioned (v0.2)
+- action/response: Yes - nine series end 2008-2021 and raw last-observed
+  TFRs rank them systematically too high (Greece 12th of 45 on a 2009
+  value). Last common year is 2008 (Albania), i.e. pre-acceleration, so
+  no remedy; own-trend extrapolation also rejected (Greece's pre-2009
+  trend was RISING and would project upward). Adopted: imputation via
+  panel-internal vintage adjustment - last observed TFR times the
+  panel-median ratio of latest to same-year TFR among the 36 series
+  observed 2022-25; self-contained, one line of arithmetic, and the
+  correction is the panel-wide decline the paper documents. Effects:
+  Greece 12th -> 32nd (1.52 -> 1.22), Germany East 3rd -> 22nd, Germany
+  West 6th -> 25th (both ~1.36-1.40, near externally reported values),
+  Latvia -> 1.05 (matches reported ~1.09), Albania 21st -> 37th; Ukraine
+  1.03 flagged as still optimistic (war). Adjusted panels show both
+  values in strip labels (year: observed -> adjusted); method + rejected
+  alternatives + ordering table documented in Supplement S3; noted there
+  that ordering is presentational only - no analytical quantity depends
+  on it. latest_tfr_by_country.csv now carries observed and adjusted
+  values, factors, and ranks.

@@ -226,6 +226,31 @@ DF + CC (both retained in repo for provenance). One-paper decision: Jon,
       corrected). 3D figure now lexis3d_aapf_panels.png: France/Norway/
       South Korea 3×2, terrain (theta +30, phi 42, ridge cells magenta)
       beside each country's AAPF trajectory.
+- [x] External LLM review round (F-029..F-033, 2026-07-20; verbatim in
+      model_review_2026-07-20.md; verdict "Revise, minor to moderate").
+      Five text-only edits, all actioned same day: argmax-vs-smoothing
+      rationale + volatility caveat in §3.2; ART stratification sentence
+      in §6.1; §8 closing reframed as blueprint (not personal workflow);
+      APC geometry reminder added to @fig-2x2 caption; grandmothering
+      mechanism primed in the introduction. Reviewer confirmed by Jon as
+      Gemini Pro. Render check passed (html).
+- [x] F-034 (Jon's first v0.2 read-through, 2026-07-20): 45-country
+      squeeze panel promoted from Supplement S3 into §6.2
+      (@fig-squeeze-panels), restoring the original paper's full-panel
+      symmetry. squeeze_2026.R reworked: panels ordered by latest-year
+      period TFR, highest first (Moldova 1.66 → Korea 0.75; TFR in strip
+      labels; ordering CSV written; <30-age years skipped), AAPF/ANR
+      vocabulary on the figure. S3 repurposed as ordering/derived-data
+      record (S1–S8 numbering stable); S6 cross-ref adjusted; decade
+      medians unchanged on rerun.
+- [x] F-035 (Jon, same day): mixed-vintage ordering fixed - series
+      ending before 2022 (nine, Albania 2008 .. Bulgaria 2021) now
+      vintage-adjusted by the panel-median TFR decline since their last
+      observed year (last common year is 2008, so no remedy; own-trend
+      extrapolation rejected - Greece's pre-2009 trend rose). Greece
+      12th→32nd, Germanys →mid-table, Latvia adj. 1.05 ≈ reported;
+      Ukraine flagged optimistic (war). Both values in strip labels;
+      method + table in S3.
 
 ## toward v0.3 / submission
 - [ ] JM read-through of v0.2; CONFIRM provisional title; confirm the
